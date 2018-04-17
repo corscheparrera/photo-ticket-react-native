@@ -43,8 +43,9 @@ export default class Login extends React.Component {
           onChangeText={password => this.setState({ password })}
           value={this.state.password}
         />
-        <Button title="Connexion" onPress={this.handleLogin} />
+        <Button style={styles.button} title="Connexion" onPress={this.handleLogin} />
         <Button
+          style={styles.button}
           title="C'est votre première utilisation?"
           onPress={() => this.props.navigation.navigate('SignUp')}
         />
@@ -65,5 +66,9 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     borderWidth: 1,
     marginTop: 8,
+  },
+  button: {
+    height: 40,
+    marginTop: 20,
   },
 })

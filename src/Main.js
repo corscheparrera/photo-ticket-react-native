@@ -23,19 +23,27 @@ export default class Main extends React.Component {
 
     return (
       <View style={styles.container}>
-        <Image style={{ marginBottom: 60 }} source={require('./images/logo.png')} />
-        <Text>Bonjour {currentUser && currentUser.email}!</Text>
-        <Button
-          title="Prendre une photo"
-          onPress={() => this.props.navigation.navigate('InfoPage')}
-        />
-        <Button title="Informations" onPress={() => this.props.navigation.navigate('InfoPage')} />
-        <Button
-          title="Mentions légales"
-          onPress={() => this.props.navigation.navigate('MentionsLegales')}
-        />
+        <View style={styles.navBar}>
+          <Text style={styles.navBarHeader}>Photo Ticket</Text>
+        </View>
+        <View style={styles.content}>
+          <Text>Bonjour {currentUser && currentUser.email}!</Text>
+          <Image
+            style={{ marginBottom: 40, marginTop: 40 }}
+            source={require('./images/logo.png')}
+          />
+          <Button
+            title="Prendre une photo"
+            onPress={() => this.props.navigation.navigate('InfoPage')}
+          />
+          <Button title="Informations" onPress={() => this.props.navigation.navigate('InfoPage')} />
+          <Button
+            title="Mentions légales"
+            onPress={() => this.props.navigation.navigate('MentionsLegales')}
+          />
 
-        <Button title="Déconnexion" onPress={this.signOutUser} />
+          <Button title="Déconnexion" onPress={this.signOutUser} />
+        </View>
       </View>
     )
   }
@@ -44,7 +52,31 @@ export default class Main extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  navBar: {
+    flexDirection: 'row',
+    paddingTop: 30,
+    height: 64,
+    backgroundColor: '#05E085',
+  },
+  navBarButton: {
+    color: '#FFFFFF',
+    textAlign: 'center',
+    width: 64,
+  },
+  navBarHeader: {
+    flex: 1,
+    color: '#FFFFFF',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  content: {
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    // backgroundColor: '#374046',
+  },
+  text: {
+    // color: '#EEEEEE',
   },
 })

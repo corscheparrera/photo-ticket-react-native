@@ -43,8 +43,9 @@ export default class SignUp extends React.Component {
           onChangeText={password => this.setState({ password })}
           value={this.state.password}
         />
-        <Button title="Enregistrer" onPress={this.handleSignUp} />
+        <Button style={styles.button} title="Enregistrer" onPress={this.handleSignUp} />
         <Button
+          style={styles.button}
           title="Vous avez déjà un compte? Connexion"
           onPress={() => this.props.navigation.navigate('Login')}
         />
@@ -65,5 +66,8 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     borderWidth: 1,
     marginTop: 8,
+  },
+  button: {
+    marginTop: 20,
   },
 })
