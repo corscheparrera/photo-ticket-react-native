@@ -1,5 +1,13 @@
 import React from 'react'
-import { StyleSheet, Text, TextInput, View, Button, Image } from 'react-native'
+import {
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+  Button,
+  Image,
+  KeyboardAvoidingView,
+} from 'react-native'
 import firebase from 'react-native-firebase'
 
 export default class Login extends React.Component {
@@ -16,7 +24,7 @@ export default class Login extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <KeyboardAvoidingView style={styles.container} behavior="padding">
         <Image style={{ marginBottom: 60 }} source={require('./images/logo.png')} />
         <Text>Connectez-vous</Text>
         {this.state.errorMessage && <Text style={{ color: 'red' }}>{this.state.errorMessage}</Text>}
@@ -40,7 +48,7 @@ export default class Login extends React.Component {
           title="C'est votre première utilisation?"
           onPress={() => this.props.navigation.navigate('SignUp')}
         />
-      </View>
+      </KeyboardAvoidingView>
     )
   }
 }
