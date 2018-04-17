@@ -9,6 +9,8 @@ import Login from './Login'
 import Main from './Main'
 import InfoPage from './InfoPage'
 import MentionsLegales from './MentionsLegales'
+import Settings from './Settings'
+import Header from './Header'
 
 // create our app's navigation stack
 // source https://medium.com/react-native-training/react-native-firebase-authentication-7652e1d2c8a2
@@ -20,6 +22,8 @@ const App = SwitchNavigator(
     Main,
     InfoPage,
     MentionsLegales,
+    Settings,
+    Header,
   },
   {
     initialRouteName: 'Loading',
