@@ -1,8 +1,7 @@
 import React from 'react'
-import { StyleSheet, Platform, Image, Text, View, Button } from 'react-native'
+import { StyleSheet, Platform, Image, Text, View, Button, TouchableHighlight } from 'react-native'
 import firebase from 'react-native-firebase'
 import Icon from 'react-native-vector-icons/FontAwesome'
-import Camera from 'react-native-camera'
 
 import Header from './Header'
 
@@ -39,22 +38,10 @@ export default class Main extends React.Component {
             style={{ marginBottom: 40, marginTop: 40 }}
             source={require('./images/logo.png')}
           />
-          <Camera
-            ref={cam => {
-              this.camera = cam
-            }}
-            style={styles.view}
-            aspect={Camera.constants.Aspect.fill}
-            captureTarget={Camera.constants.CaptureTarget.disk}
-          >
-            <Text style={styles.capture} onPress={this.takePicture.bind(this)}>
-              [CAPTURE]
-            </Text>
-          </Camera>
 
           <Button
             title="Prendre une photo"
-            onPress={() => this.props.navigation.navigate('InfoPage')}
+            onPress={() => this.props.navigation.navigate('CameraView')}
           />
           <Button title="Informations" onPress={() => this.props.navigation.navigate('InfoPage')} />
           <Button
