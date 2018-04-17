@@ -1,4 +1,4 @@
-package com.invertase.rnfirebasestarter;
+package com.ticketphoto.ticketphoto;
 
 import android.app.Application;
 

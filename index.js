@@ -1,3 +1,3 @@
-import { AppRegistry } from 'react-native';
-import App from './App';
-AppRegistry.registerComponent('RNFirebaseStarter', () => App);
+import { AppRegistry } from 'react-native'
+import App from './src/App'
+AppRegistry.registerComponent('ticketPhoto', () => App)
