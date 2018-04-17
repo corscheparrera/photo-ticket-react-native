@@ -4,16 +4,24 @@ import { SwitchNavigator } from 'react-navigation'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 export default class Header extends React.Component {
-  render() {
-    return (
-      <View style={styles.navBar}>
+  toggleLeftNavIcon() {
+    if (this.props.navigation.state.key === 'Main') {
+      return <Icon style={styles.navBarButton} name="home" size={20} />
+    } else {
+      return (
         <Icon
           style={styles.navBarButton}
           name="arrow-left"
           size={20}
           onPress={() => this.props.navigation.navigate('Main')}
         />
-
+      )
+    }
+  }
+  render() {
+    return (
+      <View style={styles.navBar}>
+        {this.toggleLeftNavIcon()}
         <Text style={styles.navBarHeader}>{this.props.title}</Text>
         <Icon
           style={styles.navBarButton}
@@ -25,6 +33,7 @@ export default class Header extends React.Component {
     )
   }
 }
+
 const styles = StyleSheet.create({
   navBar: {
     flexDirection: 'row',
