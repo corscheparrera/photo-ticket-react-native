@@ -31,7 +31,6 @@ export default class CameraView extends React.Component {
     this.state = {
       imagePath: '',
       isLoading: false,
-      rawText: '',
       formattedText: '',
     }
   }
@@ -56,7 +55,6 @@ export default class CameraView extends React.Component {
         .then(response => {
           this.parseData(response)
         })
-        .then(() => this.extractInfraction())
     })
   }
 
@@ -81,40 +79,39 @@ export default class CameraView extends React.Component {
   }
   parseData = res => {
     const resultArray = res.data.responses['0'].fullTextAnnotation.text.split('\n')
+
     console.log(resultArray)
+
+    // Index # of "Description de l'infraction"
+    const indexDescription = resultArray.findIndex(x => x == "Description de l'infraction")
+
+    // Index # of "Art." Title
+    const indexArticle = resultArray.findIndex(x => x.includes('Art: '))
+
+    // Description de l'infraction (titre)
+    const descriptionTitre = resultArray[indexDescription].toString()
+
+    // Description de l'infraction (paragraphe)
+    const descriptionPar = resultArray.slice(indexDescription + 1, indexArticle).toString()
+
+    // Article enfreint
+    const articleEnfreint = resultArray[indexArticle]
+
+    // Infraction
+    const infraction = descriptionTitre + ': ' + descriptionPar + ' ' + articleEnfreint
+
     this.setState({
+      formattedText: {
+        descriptionTitre: descriptionTitre,
+        descriptionPar: descriptionPar,
+        articleEnfreint: articleEnfreint,
+      },
       isLoading: false,
-      rawText: resultArray,
     })
   }
 
   retryPicture = () => {
     this.setState({ imagePath: '' })
-  }
-
-  extractInfraction = () => {
-    const rawText = this.state.rawText
-    console.log(rawText)
-
-    // Index # of "Description de l'infraction"
-    const indexDescription = rawText.findIndex(x => x == "Description de l'infraction")
-
-    // Index # of "Art." Title
-    const indexArticle = rawText.findIndex(x => x.includes('Art: '))
-
-    // Description de l'infraction (titre)
-    const descriptionTitre = rawText[indexDescription].toString()
-
-    // Description de l'infraction (paragraphe)
-    const descriptionPar = rawText.slice(indexDescription + 1, indexArticle).toString()
-
-    // Article enfreint
-    const articleEnfreint = rawText[indexArticle]
-
-    // Infraction
-    const infraction = descriptionTitre + ': ' + descriptionPar + ' ' + articleEnfreint
-
-    this.setState({ formattedText: infraction })
   }
 
   render() {
@@ -144,7 +141,7 @@ export default class CameraView extends React.Component {
           <ActivityIndicator size="large" />
         </View>
       )
-    } else if (this.state.imagePath && !this.state.isLoading && !this.state.rawText) {
+    } else if (this.state.imagePath && !this.state.isLoading && !this.state.formattedText) {
       return (
         // Part 2: Confirm that photo quality is sufficient
         <View style={styles.container}>
@@ -163,8 +160,13 @@ export default class CameraView extends React.Component {
       )
     } else {
       return (
-        <View style={styles.content}>
-          <Text>{this.state.formattedText}</Text>
+        <View style={styles.container}>
+          <Header title="Infraction" navigation={this.props.navigation} />
+          <View style={styles.content}>
+            <Text>{this.state.formattedText.articleEnfreint}</Text>
+            <Text>{this.state.formattedText.descriptionTitre}</Text>
+            <Text>{this.state.formattedText.descriptionPar}</Text>
+          </View>
         </View>
       )
     }
@@ -209,6 +211,7 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    padding: 15,
+    // alignItems: 'center',
   },
 })
