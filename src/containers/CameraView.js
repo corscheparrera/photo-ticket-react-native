@@ -164,7 +164,7 @@ export default class CameraView extends React.Component {
           <Header title="Infraction" navigation={this.props.navigation} />
           <View style={styles.content}>
             <Text>{this.state.formattedText.articleEnfreint}</Text>
-            <Text>{this.state.formattedText.descriptionTitre}</Text>
+            <Text>{this.state.formattedText.descriptionTitre}:</Text>
             <Text>{this.state.formattedText.descriptionPar}</Text>
           </View>
         </View>
