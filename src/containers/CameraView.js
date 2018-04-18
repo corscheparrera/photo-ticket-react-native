@@ -14,8 +14,10 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 import Camera from 'react-native-camera'
 import RNFetchBlob from 'react-native-fetch-blob'
 import axios from 'axios'
+import stringSimilarity from 'string-similarity'
 
 import Header from '../components/Header'
+
 // import { uploadImage } from '../utils/helpers'
 // import uploadImage from './uploadImage'
 
@@ -32,6 +34,7 @@ export default class CameraView extends React.Component {
       imagePath: '',
       isLoading: false,
       formattedText: '',
+      badFocus: false,
     }
   }
   takePicture = () => {
@@ -54,6 +57,13 @@ export default class CameraView extends React.Component {
         .then(base64image => this.useGoogleVision(base64image))
         .then(response => {
           this.parseData(response)
+        })
+        .catch(error => {
+          console.log(error)
+          this.setState({
+            badFocus: true,
+            isLoading: false,
+          })
         })
     })
   }
@@ -79,11 +89,17 @@ export default class CameraView extends React.Component {
   }
   parseData = res => {
     const resultArray = res.data.responses['0'].fullTextAnnotation.text.split('\n')
-
     console.log(resultArray)
 
+    // stringSimilarity: Finds degree of similarity between two strings, based on Dice's Coefficient, which is mostly better than Levenshtein distance.
+    // Why use the function? In order too find the correct index of 'Description de l'infraction' string, if we use the ===, we would not always find the index because sometimes,
+    // b/c of a bad focus on the photo, the string can be mispelled, thus, return an error undfined.
+
+    const matches = stringSimilarity.findBestMatch("Description de l'infraction", resultArray)
+    const descriptionString = matches.bestMatch.target
+    console.log(matches.bestMatch)
     // Index # of "Description de l'infraction"
-    const indexDescription = resultArray.findIndex(x => x == "Description de l'infraction")
+    const indexDescription = resultArray.findIndex(x => x == descriptionString)
 
     // Index # of "Art." Title
     const indexArticle = resultArray.findIndex(x => x.includes('Art: '))
@@ -97,17 +113,21 @@ export default class CameraView extends React.Component {
     // Article enfreint
     const articleEnfreint = resultArray[indexArticle]
 
-    // Infraction
-    const infraction = descriptionTitre + ': ' + descriptionPar + ' ' + articleEnfreint
-
-    this.setState({
-      formattedText: {
-        descriptionTitre: descriptionTitre,
-        descriptionPar: descriptionPar,
-        articleEnfreint: articleEnfreint,
-      },
-      isLoading: false,
-    })
+    if (matches.bestMatch.rating < 0.7) {
+      this.setState({
+        badFocus: true,
+        isLoading: false,
+      })
+    } else {
+      this.setState({
+        formattedText: {
+          descriptionTitre: descriptionTitre,
+          descriptionPar: descriptionPar,
+          articleEnfreint: articleEnfreint,
+        },
+        isLoading: false,
+      })
+    }
   }
 
   retryPicture = () => {
@@ -141,7 +161,12 @@ export default class CameraView extends React.Component {
           <ActivityIndicator size="large" />
         </View>
       )
-    } else if (this.state.imagePath && !this.state.isLoading && !this.state.formattedText) {
+    } else if (
+      this.state.imagePath &&
+      !this.state.isLoading &&
+      !this.state.formattedText &&
+      !this.state.badFocus
+    ) {
       return (
         // Part 2: Confirm that photo quality is sufficient
         <View style={styles.container}>
@@ -156,6 +181,29 @@ export default class CameraView extends React.Component {
             <Icon style={styles.navBarButton} name="remove" size={24} onPress={this.retryPicture} />
           </View>
           <Image source={{ uri: this.state.imagePath }} style={styles.preview} />
+        </View>
+      )
+    } else if (this.state.badFocus) {
+      return (
+        <View style={styles.container}>
+          <Header title="Infraction" navigation={this.props.navigation} />
+          <View style={styles.content}>
+            <Text>Mauvais focus</Text>
+            <TouchableHighlight
+              onPress={() =>
+                this.setState({
+                  imagePath: '',
+                  badFocus: false,
+                })
+              }
+              underlayColor="white"
+              activeOpacity={0.7}
+            >
+              <View style={styles.button}>
+                <Text style={styles.buttonText}>Reprendre une photo</Text>
+              </View>
+            </TouchableHighlight>
+          </View>
         </View>
       )
     } else {
@@ -218,6 +266,21 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     padding: 15,
-    // alignItems: 'center',
+    alignItems: 'center',
+  },
+  button: {
+    borderRadius: 10,
+    borderWidth: 10,
+    borderColor: '#33AAFF',
+    backgroundColor: '#33AAFF',
+    padding: 5,
+    marginTop: 20,
+    width: 200,
+    justifyContent: 'center',
+  },
+  buttonText: {
+    color: '#FFFFFF',
+    fontWeight: 'bold',
+    fontSize: 18,
   },
 })

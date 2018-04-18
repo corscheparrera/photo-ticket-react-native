@@ -1,8 +1,8 @@
 ### Description
 
-Application mobile ios/android permettant à un utilisateur de prendre en photo un constat d'infraction afin d'avoir un traducion simple, non juridique, de ce qu'on lui reproche. Ainsi, l'utilisateur sera mieux à même à prendre une décision de plaider coupable ou non. Pour un utilisateur désirant de l'assistance juridique, l'application permet de chatter avec un avocat.
+Application mobile ios/android permettant à un utilisateur de prendre en photo un constat d'infraction afin d'avoir un traduction simple, non juridique, de ce qu'on lui reproche. Ainsi, l'utilisateur sera mieux à même à prendre une décision de plaider coupable ou non. Pour un utilisateur désirant de l'assistance juridique, l'application permet de chatter avec un avocat.
 
-### Getting Started
+### Installation
 
 À venir
 
@@ -22,3 +22,9 @@ https://reactnavigation.org/
 
 React Native
 https://facebook.github.io/react-native/
+
+Google Vision API
+https://cloud.google.com/vision/?hl=fr
+
+Firebase
+https://firebase.google.com/
