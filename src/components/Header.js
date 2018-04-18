@@ -10,14 +10,14 @@ export default class Header extends React.Component {
         <Icon
           style={styles.navBarButton}
           name="home"
-          size={20}
+          size={24}
           onPress={() => this.props.navigation.navigate('Home')}
         />
         <Text style={styles.navBarHeader}>{this.props.title}</Text>
         <Icon
           style={styles.navBarButton}
           name="gear"
-          size={20}
+          size={24}
           onPress={() => this.props.navigation.navigate('Settings')}
         />
       </View>
@@ -42,5 +42,6 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontWeight: 'bold',
     textAlign: 'center',
+    fontSize: 18,
   },
 })

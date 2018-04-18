@@ -136,8 +136,8 @@ export default class CameraView extends React.Component {
       )
     } else if (this.state.isLoading) {
       return (
-        <View style={styles.container}>
-          <Text>Loading</Text>
+        <View style={styles.loader}>
+          <Text>Analyse en cours</Text>
           <ActivityIndicator size="large" />
         </View>
       )
@@ -149,11 +149,11 @@ export default class CameraView extends React.Component {
             <Icon
               style={styles.navBarButton}
               name="check"
-              size={20}
+              size={24}
               onPress={this.confirmedImage}
             />
             <Text style={styles.navBarHeader}>Photo Ticket</Text>
-            <Icon style={styles.navBarButton} name="remove" size={20} onPress={this.retryPicture} />
+            <Icon style={styles.navBarButton} name="remove" size={24} onPress={this.retryPicture} />
           </View>
           <Image source={{ uri: this.state.imagePath }} style={styles.preview} />
         </View>
@@ -174,6 +174,11 @@ export default class CameraView extends React.Component {
 }
 
 const styles = StyleSheet.create({
+  loader: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   container: {
     flex: 1,
     backgroundColor: '#F5FCFF',
@@ -207,6 +212,7 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontWeight: 'bold',
     textAlign: 'center',
+    fontSize: 18,
   },
   content: {
     flex: 1,

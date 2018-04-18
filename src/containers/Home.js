@@ -22,18 +22,27 @@ export default class Home extends React.Component {
         <View style={styles.content}>
           <Text>Bonjour {currentUser && currentUser.email}!</Text>
           <Image
-            style={{ marginBottom: 40, marginTop: 40 }}
+            style={{ marginBottom: 20, marginTop: 20 }}
             source={require('../images/logo.png')}
           />
-
-          <Button
-            title="Prendre une photo"
+          <TouchableHighlight
             onPress={() => this.props.navigation.navigate('CameraView')}
-          />
-          <Button
-            title="Mentions légales"
+            underlayColor="white"
+            activeOpacity={0.7}
+          >
+            <View style={styles.button}>
+              <Text style={styles.buttonText}>Prendre une photo</Text>
+            </View>
+          </TouchableHighlight>
+          <TouchableHighlight
             onPress={() => this.props.navigation.navigate('MentionsLegales')}
-          />
+            underlayColor="white"
+            activeOpacity={0.7}
+          >
+            <View style={styles.button}>
+              <Text style={styles.buttonText}>Mentions légales</Text>
+            </View>
+          </TouchableHighlight>
         </View>
       </View>
     )
@@ -61,5 +70,20 @@ const styles = StyleSheet.create({
     color: 'red',
     padding: 15,
     margin: 45,
+  },
+  button: {
+    borderRadius: 10,
+    borderWidth: 10,
+    borderColor: '#33AAFF',
+    backgroundColor: '#33AAFF',
+    padding: 5,
+    marginTop: 20,
+    width: 200,
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: '#FFFFFF',
+    fontWeight: 'bold',
+    fontSize: 18,
   },
 })
