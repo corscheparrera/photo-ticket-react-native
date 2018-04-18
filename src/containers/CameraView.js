@@ -5,7 +5,6 @@ import {
   Image,
   Text,
   View,
-  Button,
   TouchableHighlight,
   ActivityIndicator,
 } from 'react-native'
@@ -17,6 +16,7 @@ import axios from 'axios'
 import stringSimilarity from 'string-similarity'
 
 import Header from '../components/Header'
+import ButtonPrimary from '../components/ButtonPrimary'
 
 // import { uploadImage } from '../utils/helpers'
 // import uploadImage from './uploadImage'
@@ -95,7 +95,7 @@ export default class CameraView extends React.Component {
     // Why use the function? In order too find the correct index of 'Description de l'infraction' string, if we use the ===, we would not always find the index because sometimes,
     // b/c of a bad focus on the photo, the string can be mispelled, thus, return an error undfined.
 
-    const matches = stringSimilarity.findBestMatch("Description de l'infraction", resultArray)
+    const matches = stringSimilarity.findBestMatch("Description de l'infraction:", resultArray)
     const descriptionString = matches.bestMatch.target
     console.log(matches.bestMatch)
     // Index # of "Description de l'infraction"
@@ -189,20 +189,15 @@ export default class CameraView extends React.Component {
           <Header title="Infraction" navigation={this.props.navigation} />
           <View style={styles.content}>
             <Text>Mauvais focus</Text>
-            <TouchableHighlight
+            <ButtonPrimary
               onPress={() =>
                 this.setState({
                   imagePath: '',
                   badFocus: false,
                 })
               }
-              underlayColor="white"
-              activeOpacity={0.7}
-            >
-              <View style={styles.button}>
-                <Text style={styles.buttonText}>Reprendre une photo</Text>
-              </View>
-            </TouchableHighlight>
+              text="Reprendre une photo"
+            />
           </View>
         </View>
       )
@@ -267,20 +262,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: 15,
     alignItems: 'center',
-  },
-  button: {
-    borderRadius: 10,
-    borderWidth: 10,
-    borderColor: '#33AAFF',
-    backgroundColor: '#33AAFF',
-    padding: 5,
-    marginTop: 20,
-    width: 200,
-    justifyContent: 'center',
-  },
-  buttonText: {
-    color: '#FFFFFF',
-    fontWeight: 'bold',
-    fontSize: 18,
   },
 })

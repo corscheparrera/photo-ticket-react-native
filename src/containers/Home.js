@@ -4,6 +4,7 @@ import firebase from 'react-native-firebase'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 import Header from '../components/Header'
+import ButtonPrimary from '../components/ButtonPrimary'
 
 export default class Home extends React.Component {
   state = { currentUser: null }
@@ -25,24 +26,14 @@ export default class Home extends React.Component {
             style={{ marginBottom: 20, marginTop: 20 }}
             source={require('../images/logo.png')}
           />
-          <TouchableHighlight
+          <ButtonPrimary
             onPress={() => this.props.navigation.navigate('CameraView')}
-            underlayColor="white"
-            activeOpacity={0.7}
-          >
-            <View style={styles.button}>
-              <Text style={styles.buttonText}>Prendre une photo</Text>
-            </View>
-          </TouchableHighlight>
-          <TouchableHighlight
+            text="Prendre une photo"
+          />
+          <ButtonPrimary
             onPress={() => this.props.navigation.navigate('MentionsLegales')}
-            underlayColor="white"
-            activeOpacity={0.7}
-          >
-            <View style={styles.button}>
-              <Text style={styles.buttonText}>Mentions légales</Text>
-            </View>
-          </TouchableHighlight>
+            text="Mentions légales"
+          />
         </View>
       </View>
     )
@@ -70,20 +61,5 @@ const styles = StyleSheet.create({
     color: 'red',
     padding: 15,
     margin: 45,
-  },
-  button: {
-    borderRadius: 10,
-    borderWidth: 10,
-    borderColor: '#33AAFF',
-    backgroundColor: '#33AAFF',
-    padding: 5,
-    marginTop: 20,
-    width: 200,
-    alignItems: 'center',
-  },
-  buttonText: {
-    color: '#FFFFFF',
-    fontWeight: 'bold',
-    fontSize: 18,
   },
 })

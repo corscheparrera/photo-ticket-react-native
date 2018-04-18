@@ -1,14 +1,8 @@
 import React from 'react'
-import {
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-  Button,
-  Image,
-  KeyboardAvoidingView,
-} from 'react-native'
+import { StyleSheet, Text, TextInput, View, Image, KeyboardAvoidingView } from 'react-native'
 import firebase from 'react-native-firebase'
+
+import ButtonPrimary from '../components/ButtonPrimary'
 
 export default class Login extends React.Component {
   state = { email: '', password: '', errorMessage: null }
@@ -26,7 +20,7 @@ export default class Login extends React.Component {
     return (
       <KeyboardAvoidingView style={styles.container} behavior="padding">
         <Image style={{ marginBottom: 60 }} source={require('../images/logo.png')} />
-        <Text>Connectez-vous</Text>
+        <Text style={styles.title}>Connectez-vous</Text>
         {this.state.errorMessage && <Text style={{ color: 'red' }}>{this.state.errorMessage}</Text>}
         <TextInput
           style={styles.textInput}
@@ -43,11 +37,16 @@ export default class Login extends React.Component {
           onChangeText={password => this.setState({ password })}
           value={this.state.password}
         />
-        <Button style={styles.button} title="Connexion" onPress={this.handleLogin} />
-        <Button
-          style={styles.button}
-          title="C'est votre première utilisation?"
+
+        <ButtonPrimary onPress={this.handleLogin} text="Connexion" />
+
+        <ButtonPrimary
           onPress={() => this.props.navigation.navigate('SignUp')}
+          text="C'est votre première utilisation?"
+          txtColor="#33AAFF"
+          buttonColor="transparent"
+          largeur={300}
+          weight="normal"
         />
       </KeyboardAvoidingView>
     )
@@ -60,15 +59,18 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  title: {
+    color: '#33AAFF',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
   textInput: {
     height: 40,
     width: '90%',
-    borderColor: 'gray',
+    borderColor: '#33AAFF',
     borderWidth: 1,
+    borderRadius: 10,
     marginTop: 8,
-  },
-  button: {
-    height: 40,
-    marginTop: 20,
+    textAlign: 'center',
   },
 })

@@ -4,6 +4,7 @@ import firebase from 'react-native-firebase'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 import Header from '../components/Header'
+import ButtonPrimary from '../components/ButtonPrimary'
 
 export default class Settings extends Component {
   state = { currentUser: null }
@@ -28,7 +29,7 @@ export default class Settings extends Component {
         <Header title="Settings" navigation={this.props.navigation} />
         <View style={styles.content}>
           <Text>Email: {currentUser && currentUser.email}</Text>
-          <Button title="Déconnexion" onPress={this.signOutUser} />
+          <ButtonPrimary text="Déconnexion" onPress={this.signOutUser} />
         </View>
       </View>
     )

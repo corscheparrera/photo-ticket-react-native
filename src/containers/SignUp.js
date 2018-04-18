@@ -10,6 +10,8 @@ import {
 } from 'react-native'
 import firebase from 'react-native-firebase'
 
+import ButtonPrimary from '../components/ButtonPrimary'
+
 export default class SignUp extends React.Component {
   state = { email: '', password: '', errorMessage: null }
 
@@ -26,7 +28,7 @@ export default class SignUp extends React.Component {
     return (
       <KeyboardAvoidingView style={styles.container} behavior="padding">
         <Image style={{ marginBottom: 60 }} source={require('../images/logo.png')} />
-        <Text>Créez votre compte</Text>
+        <Text style={styles.title}>Créez votre compte</Text>
         {this.state.errorMessage && <Text style={{ color: 'red' }}>{this.state.errorMessage}</Text>}
         <TextInput
           style={styles.textInput}
@@ -43,11 +45,15 @@ export default class SignUp extends React.Component {
           onChangeText={password => this.setState({ password })}
           value={this.state.password}
         />
-        <Button style={styles.button} title="Enregistrer" onPress={this.handleSignUp} />
-        <Button
-          style={styles.button}
-          title="Vous avez déjà un compte? Connexion"
+
+        <ButtonPrimary onPress={this.handleSignUp} text="Enregistrer" />
+        <ButtonPrimary
           onPress={() => this.props.navigation.navigate('Login')}
+          text="Vous avez déjà un compte?"
+          txtColor="#33AAFF"
+          buttonColor="transparent"
+          largeur={300}
+          weight="normal"
         />
       </KeyboardAvoidingView>
     )
@@ -60,15 +66,18 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  title: {
+    color: '#33AAFF',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
   textInput: {
     height: 40,
     width: '90%',
-    borderColor: 'gray',
+    borderColor: '#33AAFF',
     borderWidth: 1,
+    borderRadius: 10,
     marginTop: 8,
-  },
-  button: {
-    height: 40,
-    marginTop: 20,
+    textAlign: 'center',
   },
 })
