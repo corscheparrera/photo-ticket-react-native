@@ -3,21 +3,20 @@ import { View, Text, Button, StyleSheet } from 'react-native'
 import { SwitchNavigator } from 'react-navigation'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-import Header from './Header'
+import Header from '../components/Header'
 
-export default class InfoPage extends React.Component {
+export default class MentionsLegales extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Header title="Informations" navigation={this.props.navigation} />
+        <Header title="Mentions legales" navigation={this.props.navigation} />
         <View style={styles.content}>
-          <Text style={styles.text}>Les informations iront ici!</Text>
+          <Text style={styles.text}>Les mentions légales iront ici!</Text>
         </View>
       </View>
     )
   }
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,

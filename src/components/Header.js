@@ -11,7 +11,7 @@ export default class Header extends React.Component {
           style={styles.navBarButton}
           name="home"
           size={20}
-          onPress={() => this.props.navigation.navigate('Main')}
+          onPress={() => this.props.navigation.navigate('Home')}
         />
         <Text style={styles.navBarHeader}>{this.props.title}</Text>
         <Icon

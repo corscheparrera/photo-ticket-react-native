@@ -3,9 +3,9 @@ import { StyleSheet, Platform, Image, Text, View, Button, TouchableHighlight } f
 import firebase from 'react-native-firebase'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-import Header from './Header'
+import Header from '../components/Header'
 
-export default class Main extends React.Component {
+export default class Home extends React.Component {
   state = { currentUser: null }
 
   componentDidMount() {
@@ -23,14 +23,13 @@ export default class Main extends React.Component {
           <Text>Bonjour {currentUser && currentUser.email}!</Text>
           <Image
             style={{ marginBottom: 40, marginTop: 40 }}
-            source={require('./images/logo.png')}
+            source={require('../images/logo.png')}
           />
 
           <Button
             title="Prendre une photo"
             onPress={() => this.props.navigation.navigate('CameraView')}
           />
-          <Button title="Informations" onPress={() => this.props.navigation.navigate('InfoPage')} />
           <Button
             title="Mentions légales"
             onPress={() => this.props.navigation.navigate('MentionsLegales')}

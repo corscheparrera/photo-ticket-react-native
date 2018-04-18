@@ -3,7 +3,7 @@ import { View, Text, Button, StyleSheet } from 'react-native'
 import firebase from 'react-native-firebase'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-import Header from './Header'
+import Header from '../components/Header'
 
 export default class Settings extends Component {
   state = { currentUser: null }

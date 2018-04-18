@@ -10,44 +10,44 @@ import {
 } from 'react-native'
 import firebase from 'react-native-firebase'
 
-export default class Login extends React.Component {
+export default class SignUp extends React.Component {
   state = { email: '', password: '', errorMessage: null }
 
-  handleLogin = () => {
+  handleSignUp = () => {
     const { email, password } = this.state
     firebase
       .auth()
-      .signInWithEmailAndPassword(email, password)
-      .then(() => this.props.navigation.navigate('Main'))
+      .createUserWithEmailAndPassword(email, password)
+      .then(user => this.props.navigation.navigate('Main'))
       .catch(error => this.setState({ errorMessage: error.message }))
   }
 
   render() {
     return (
       <KeyboardAvoidingView style={styles.container} behavior="padding">
-        <Image style={{ marginBottom: 60 }} source={require('./images/logo.png')} />
-        <Text>Connectez-vous</Text>
+        <Image style={{ marginBottom: 60 }} source={require('../images/logo.png')} />
+        <Text>Créez votre compte</Text>
         {this.state.errorMessage && <Text style={{ color: 'red' }}>{this.state.errorMessage}</Text>}
         <TextInput
           style={styles.textInput}
-          autoCapitalize="none"
           placeholder="Email"
+          autoCapitalize="none"
           onChangeText={email => this.setState({ email })}
           value={this.state.email}
         />
         <TextInput
-          secureTextEntry
           style={styles.textInput}
+          secureTextEntry
           autoCapitalize="none"
           placeholder="Password"
           onChangeText={password => this.setState({ password })}
           value={this.state.password}
         />
-        <Button style={styles.button} title="Connexion" onPress={this.handleLogin} />
+        <Button style={styles.button} title="Enregistrer" onPress={this.handleSignUp} />
         <Button
           style={styles.button}
-          title="C'est votre première utilisation?"
-          onPress={() => this.props.navigation.navigate('SignUp')}
+          title="Vous avez déjà un compte? Connexion"
+          onPress={() => this.props.navigation.navigate('Login')}
         />
       </KeyboardAvoidingView>
     )
