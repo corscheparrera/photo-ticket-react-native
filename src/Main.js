@@ -10,20 +10,7 @@ export default class Main extends React.Component {
 
   componentDidMount() {
     const { currentUser } = firebase.auth()
-
     this.setState({ currentUser })
-  }
-
-  takePicture() {
-    const options = {}
-    this.camera
-      .capture({ metadata: options })
-      .then(data => {
-        console.log(data)
-      })
-      .catch(error => {
-        console.log(error)
-      })
   }
 
   render() {
