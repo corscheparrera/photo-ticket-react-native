@@ -13,10 +13,10 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 import Camera from 'react-native-camera'
 import RNFetchBlob from 'react-native-fetch-blob'
 import axios from 'axios'
-import stringSimilarity from 'string-similarity'
 
 import Header from '../components/Header'
 import ButtonPrimary from '../components/ButtonPrimary'
+import { useGoogleVision, parseData } from '../utils/helpers'
 
 // import { uploadImage } from '../utils/helpers'
 // import uploadImage from './uploadImage'
@@ -50,81 +50,32 @@ export default class CameraView extends React.Component {
     this.uploadImage(this.state.imagePath)
   }
 
-  uploadImage = uri => {
-    return new Promise((resolve, reject) => {
-      fs
-        .readFile(uri, 'base64')
-        .then(base64image => this.useGoogleVision(base64image))
-        .then(response => {
-          this.parseData(response)
-        })
-        .catch(error => {
-          console.log(error)
-          this.setState({
-            badFocus: true,
-            isLoading: false,
-          })
-        })
-    })
-  }
-
-  useGoogleVision = base64image => {
-    return axios.post(
-      `https://vision.googleapis.com/v1/images:annotate?key=AIzaSyCAzY_-ph4ukwBkvEbEcmKmTDXMZUIjw5k`,
-      {
-        requests: [
-          {
-            image: {
-              content: base64image,
-            },
-            features: [
-              {
-                type: 'TEXT_DETECTION',
-              },
-            ],
+  uploadImage = async uri => {
+    try {
+      let base64image = await fs.readFile(uri, 'base64')
+      let response = await useGoogleVision(base64image)
+      let textIsOk = parseData(response)
+      if (textIsOk) {
+        this.setState({
+          formattedText: {
+            descriptionPar: textIsOk.descriptionPar,
+            articleEnfreint: textIsOk.articleEnfreint,
           },
-        ],
+          isLoading: false,
+        })
+      } else {
+        // Si OCR reconnait le titre mais qu'il contient trop de fautes
+        this.setState({
+          badFocus: true,
+          isLoading: false,
+        })
       }
-    )
-  }
-  parseData = res => {
-    const resultArray = res.data.responses['0'].fullTextAnnotation.text.split('\n')
-    console.log(resultArray)
-
-    // stringSimilarity: Finds degree of similarity between two strings, based on Dice's Coefficient, which is mostly better than Levenshtein distance.
-    // Why use the function? In order too find the correct index of 'Description de l'infraction' string, if we use the ===, we would not always find the index because sometimes,
-    // b/c of a bad focus on the photo, the string can be mispelled, thus, return an error undfined.
-
-    const matches = stringSimilarity.findBestMatch("Description de l'infraction:", resultArray)
-    const descriptionString = matches.bestMatch.target
-    console.log(matches.bestMatch)
-    // Index # of "Description de l'infraction"
-    const indexDescription = resultArray.findIndex(x => x == descriptionString)
-
-    // Index # of "Art." Title
-    const indexArticle = resultArray.findIndex(x => x.includes('Art: '))
-
-    // Description de l'infraction (titre)
-    const descriptionTitre = resultArray[indexDescription].toString()
-
-    // Description de l'infraction (paragraphe)
-    const descriptionPar = resultArray.slice(indexDescription + 1, indexArticle).toString()
-
-    // Article enfreint
-    const articleEnfreint = resultArray[indexArticle]
-
-    if (matches.bestMatch.rating < 0.7) {
+      this.setState
+    } catch (err) {
+      // Si OCR ne reconnait pas de texte
+      console.log('erreur :', err)
       this.setState({
         badFocus: true,
-        isLoading: false,
-      })
-    } else {
-      this.setState({
-        formattedText: {
-          descriptionTitre: descriptionTitre,
-          descriptionPar: descriptionPar,
-          articleEnfreint: articleEnfreint,
-        },
         isLoading: false,
       })
     }
@@ -207,7 +158,7 @@ export default class CameraView extends React.Component {
           <Header title="Infraction" navigation={this.props.navigation} />
           <View style={styles.content}>
             <Text>{this.state.formattedText.articleEnfreint}</Text>
-            <Text>{this.state.formattedText.descriptionTitre}:</Text>
+            <Text>Description de l'infraction:</Text>
             <Text>{this.state.formattedText.descriptionPar}</Text>
           </View>
         </View>
