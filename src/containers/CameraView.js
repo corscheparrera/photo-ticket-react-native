@@ -18,9 +18,6 @@ import Header from '../components/Header'
 import ButtonPrimary from '../components/ButtonPrimary'
 import { useGoogleVision, parseData } from '../utils/helpers'
 
-// import { uploadImage } from '../utils/helpers'
-// import uploadImage from './uploadImage'
-
 // Prepare Blob support
 const Blob = RNFetchBlob.polyfill.Blob
 const fs = RNFetchBlob.fs
@@ -40,12 +37,10 @@ export default class CameraView extends React.Component {
   takePicture = () => {
     const options = {}
     this.camera.capture({ metadata: options }).then(data => {
-      console.log(data.path)
       this.setState({ imagePath: data.path })
     })
   }
   confirmedImage = () => {
-    console.log(this.state.imagePath)
     this.setState({ isLoading: true })
     this.uploadImage(this.state.imagePath)
   }
@@ -70,9 +65,8 @@ export default class CameraView extends React.Component {
           isLoading: false,
         })
       }
-      this.setState
     } catch (err) {
-      // Si OCR ne reconnait pas de texte
+      // Si OCR ne reconnait pas de texte OU autre
       console.log('erreur :', err)
       this.setState({
         badFocus: true,

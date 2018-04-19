@@ -41,7 +41,7 @@ export default class Login extends React.Component {
         <ButtonPrimary onPress={this.handleLogin} text="Connexion" />
 
         <ButtonPrimary
-          onPress={() => this.props.navigation.navigate('SignUp')}
+          onPress={() => this.props.navigation.goBack()}
           text="C'est votre première utilisation?"
           txtColor="#33AAFF"
           buttonColor="transparent"

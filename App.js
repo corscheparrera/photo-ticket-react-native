@@ -11,29 +11,35 @@ import MentionsLegales from './src/containers/MentionsLegales'
 import Settings from './src/containers/Settings'
 import CameraView from './src/containers/CameraView'
 
-const AppStack = StackNavigator({
-  Home: Home,
-  MentionsLegales: MentionsLegales,
-  Settings: Settings,
-  CameraView: CameraView,
-})
-const AuthStack = StackNavigator({ Login: Login, SignUp: SignUp })
+// configurer les routes avec React Native est un peu différent de React
+// J'ai donc suivi la documentation de React Navigation qui fournis un exemple pour native
+// https://reactnavigation.org/docs/auth-flow.html
 
-// create our app's navigation stack
-// source https://medium.com/react-native-training/react-native-firebase-authentication-7652e1d2c8a2
-const App = SwitchNavigator(
+const AppStack = StackNavigator(
   {
-    Loading,
-    SignUp,
-    Login,
-    Home,
-    MentionsLegales,
-    Settings,
-    CameraView,
+    Home: Home,
+    MentionsLegales: MentionsLegales,
+    Settings: Settings,
+    CameraView: CameraView,
+  },
+  {
+    headerMode: 'none',
+  }
+)
+const AuthStack = StackNavigator(
+  { Login: Login, SignUp: SignUp },
+  {
+    headerMode: 'none',
+  }
+)
+
+export default (App = SwitchNavigator(
+  {
+    Loading: Loading,
+    App: AppStack,
+    Auth: AuthStack,
   },
   {
     initialRouteName: 'Loading',
   }
-)
-
-export default App
+))
