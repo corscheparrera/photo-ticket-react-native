@@ -50,7 +50,6 @@ export default class SignUp extends React.Component {
         <ButtonPrimary
           onPress={() => this.props.navigation.navigate('Login')}
           text="Vous avez déjà un compte?"
-          txtColor="#33AAFF"
           buttonColor="transparent"
           largeur={300}
           weight="normal"

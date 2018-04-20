@@ -43,7 +43,6 @@ export default class Login extends React.Component {
         <ButtonPrimary
           onPress={() => this.props.navigation.goBack()}
           text="C'est votre première utilisation?"
-          txtColor="#33AAFF"
           buttonColor="transparent"
           largeur={300}
           weight="normal"

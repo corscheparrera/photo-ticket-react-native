@@ -1,24 +1,41 @@
 import React from 'react'
 import { View, Text, Button, StyleSheet } from 'react-native'
-import { SwitchNavigator } from 'react-navigation'
+import { NavigationActions } from 'react-navigation'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 export default class Header extends React.Component {
   render() {
+    const { navigate, goBack, state, dispatch } = this.props.navigation
+    // The Reset action wipes the whole navigation state
+    const resetAction = NavigationActions.reset({
+      index: 0,
+      actions: [NavigationActions.navigate({ routeName: 'Home' })],
+    })
+
     return (
       <View style={styles.navBar}>
         <Icon
           style={styles.navBarButton}
-          name="home"
+          name={state.routeName === 'Home' ? 'camera' : 'arrow-left'}
           size={24}
-          onPress={() => this.props.navigation.navigate('Home')}
+          onPress={() => {
+            if (state.routeName !== 'Home') {
+              goBack()
+            } else {
+              navigate('CameraView')
+            }
+          }}
         />
         <Text style={styles.navBarHeader}>{this.props.title}</Text>
         <Icon
           style={styles.navBarButton}
-          name="gear"
+          name={state.routeName === 'Settings' ? '' : 'gear'}
           size={24}
-          onPress={() => this.props.navigation.navigate('Settings')}
+          onPress={() => {
+            if (state.routeName !== 'Settings') {
+              navigate('Settings')
+            }
+          }}
         />
       </View>
     )

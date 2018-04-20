@@ -93,9 +93,7 @@ export default class CameraView extends React.Component {
             aspect={Camera.constants.Aspect.fill}
             captureTarget={Camera.constants.CaptureTarget.disk}
           >
-            <Text style={styles.capture} onPress={this.takePicture}>
-              [CAPTURE]
-            </Text>
+            <Icon color="#05E085" name="dot-circle-o" size={96} onPress={this.takePicture} />
           </Camera>
         </View>
       )
@@ -133,6 +131,7 @@ export default class CameraView extends React.Component {
         <View style={styles.container}>
           <Header title="Infraction" navigation={this.props.navigation} />
           <View style={styles.content}>
+            <Icon color="#000000" name="eye-slash" size={96} onPress={this.confirmedImage} />
             <Text>Mauvais focus</Text>
             <ButtonPrimary
               onPress={() =>
@@ -141,7 +140,7 @@ export default class CameraView extends React.Component {
                   badFocus: false,
                 })
               }
-              text="Reprendre une photo"
+              text="Réessayer"
             />
           </View>
         </View>
