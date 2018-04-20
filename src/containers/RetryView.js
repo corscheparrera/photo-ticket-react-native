@@ -7,13 +7,14 @@ import ButtonPrimary from '../components/ButtonPrimary'
 
 export default class RetryView extends React.Component {
   render() {
+    let { navigation, retryPicture } = this.props
     return (
       <View style={styles.container}>
-        <Header title="Infraction" navigation={this.props.navigation} />
+        <Header title="Infraction" navigation={navigation} />
         <View style={styles.content}>
-          <Icon color="#000000" name="eye-slash" size={96} onPress={this.confirmedImage} />
+          <Icon color="#000000" name="eye-slash" size={96} />
           <Text>Mauvais focus</Text>
-          <ButtonPrimary onPress={() => this.props.retryPicture()} text="Réessayer" />
+          <ButtonPrimary onPress={() => retryPicture()} text="Réessayer" />
         </View>
       </View>
     )

@@ -2,12 +2,6 @@
 import axios from 'axios'
 import stringSimilarity from 'string-similarity'
 
-// // Prepare Blob support
-// const Blob = RNFetchBlob.polyfill.Blob
-// const fs = RNFetchBlob.fs
-// window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest
-// window.Blob = Blob
-
 export const useGoogleVision = base64image => {
   return axios.post(
     `https://vision.googleapis.com/v1/images:annotate?key=AIzaSyCAzY_-ph4ukwBkvEbEcmKmTDXMZUIjw5k`,

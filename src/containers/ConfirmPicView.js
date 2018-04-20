@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import ButtonPrimary from '../components/ButtonPrimary'
 export default class ConfirmPicView extends React.Component {
   render() {
+    let { confirmedImage, discardPicture, uri } = this.props
     return (
       <View style={styles.container}>
         <View style={styles.navBar}>
@@ -13,17 +14,17 @@ export default class ConfirmPicView extends React.Component {
             style={styles.navBarButton}
             name="check"
             size={24}
-            onPress={() => this.props.confirmedImage()}
+            onPress={() => confirmedImage()}
           />
           <Text style={styles.navBarHeader}>Photo Ticket</Text>
           <Icon
             style={styles.navBarButton}
             name="remove"
             size={24}
-            onPress={() => this.props.discardPicture()}
+            onPress={() => discardPicture()}
           />
         </View>
-        <Image source={{ uri: this.props.uri }} style={styles.preview} />
+        <Image source={{ uri: uri }} style={styles.preview} />
       </View>
     )
   }

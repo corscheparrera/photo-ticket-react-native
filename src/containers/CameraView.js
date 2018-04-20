@@ -21,12 +21,6 @@ import ConfirmPicView from './ConfirmPicView'
 import ButtonPrimary from '../components/ButtonPrimary'
 import { useGoogleVision, parseData } from '../utils/helpers'
 
-// Prepare Blob support
-const Blob = RNFetchBlob.polyfill.Blob
-const fs = RNFetchBlob.fs
-window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest
-window.Blob = Blob
-
 export default class CameraView extends React.Component {
   constructor(props) {
     super(props)
@@ -38,12 +32,6 @@ export default class CameraView extends React.Component {
     }
   }
 
-  retryPicture = () => {
-    this.setState({
-      imagePath: '',
-      badFocus: false,
-    })
-  }
   takePicture = () => {
     const options = {}
     this.camera.capture({ metadata: options }).then(data => {
@@ -54,8 +42,22 @@ export default class CameraView extends React.Component {
     this.setState({ isLoading: true })
     this.uploadImage(this.state.imagePath)
   }
-
+  discardPicture = () => {
+    this.setState({ imagePath: '' })
+  }
+  retryPicture = () => {
+    this.setState({
+      imagePath: '',
+      badFocus: false,
+    })
+  }
   uploadImage = async uri => {
+    // Prepare Blob support
+    const Blob = RNFetchBlob.polyfill.Blob
+    const fs = RNFetchBlob.fs
+    window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest
+    window.Blob = Blob
+
     try {
       let base64image = await fs.readFile(uri, 'base64')
       let response = await useGoogleVision(base64image)
@@ -83,10 +85,6 @@ export default class CameraView extends React.Component {
         isLoading: false,
       })
     }
-  }
-
-  discardPicture = () => {
-    this.setState({ imagePath: '' })
   }
 
   render() {

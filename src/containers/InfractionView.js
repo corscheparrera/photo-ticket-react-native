@@ -6,13 +6,14 @@ import { View, StyleSheet, Text } from 'react-native'
 import Header from '../components/Header'
 export default class Cam extends React.Component {
   render() {
+    let { navigation, data } = this.props
     return (
       <View style={styles.container}>
-        <Header title="Infraction" navigation={this.props.navigation} />
+        <Header title="Infraction" navigation={navigation} />
         <View style={styles.content}>
-          <Text>{this.props.data.articleEnfreint}</Text>
+          <Text>{data.articleEnfreint}</Text>
           <Text>Description de l'infraction:</Text>
-          <Text>{this.props.data.descriptionPar}</Text>
+          <Text>{data.descriptionPar}</Text>
         </View>
       </View>
     )
