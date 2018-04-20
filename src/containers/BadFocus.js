@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 import Header from '../components/Header'
 import ButtonPrimary from '../components/ButtonPrimary'
 
-export default class RetryView extends React.Component {
+export default class BadFocus extends React.Component {
   render() {
     let { navigation, retryPicture } = this.props
     return (

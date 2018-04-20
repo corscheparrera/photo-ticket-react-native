@@ -1,24 +1,15 @@
 import React from 'react'
-import {
-  StyleSheet,
-  Platform,
-  Image,
-  Text,
-  View,
-  TouchableHighlight,
-  ActivityIndicator,
-} from 'react-native'
-import firebase from 'react-native-firebase'
+import { StyleSheet, Text, View, ActivityIndicator } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import Camera from 'react-native-camera'
 import RNFetchBlob from 'react-native-fetch-blob'
 import axios from 'axios'
 
 import Header from '../components/Header'
-import RetryView from './RetryView'
+import BadFocus from './BadFocus'
 import InfractionView from './InfractionView'
 import ConfirmPicView from './ConfirmPicView'
-import ButtonPrimary from '../components/ButtonPrimary'
+import CamView from './CamView'
 import { useGoogleVision, parseData } from '../utils/helpers'
 
 export default class CameraView extends React.Component {
@@ -32,12 +23,10 @@ export default class CameraView extends React.Component {
     }
   }
 
-  takePicture = () => {
-    const options = {}
-    this.camera.capture({ metadata: options }).then(data => {
-      this.setState({ imagePath: data.path })
-    })
+  getUrl = data => {
+    this.setState({ imagePath: data.path })
   }
+
   confirmedImage = () => {
     this.setState({ isLoading: true })
     this.uploadImage(this.state.imagePath)
@@ -91,33 +80,9 @@ export default class CameraView extends React.Component {
     if (!this.state.imagePath) {
       return (
         // Part 1:  Take a photo
-        <View style={styles.container}>
-          <Header title="Photo Ticket" navigation={this.props.navigation} />
-          <Camera
-            ref={cam => {
-              this.camera = cam
-            }}
-            style={styles.preview}
-            aspect={Camera.constants.Aspect.fill}
-            captureTarget={Camera.constants.CaptureTarget.disk}
-          >
-            <Icon color="#05E085" name="dot-circle-o" size={96} onPress={this.takePicture} />
-          </Camera>
-        </View>
+        <CamView getUrl={this.getUrl} navigation={this.props.navigation} />
       )
-    } else if (this.state.isLoading) {
-      return (
-        <View style={styles.loader}>
-          <Text>Analyse en cours</Text>
-          <ActivityIndicator size="large" />
-        </View>
-      )
-    } else if (
-      this.state.imagePath &&
-      !this.state.isLoading &&
-      !this.state.formattedText &&
-      !this.state.badFocus
-    ) {
+    } else if (!this.state.isLoading && !this.state.badFocus && !this.state.formattedText) {
       return (
         // Part 2: Confirm that photo quality is sufficient
         <ConfirmPicView
@@ -126,8 +91,18 @@ export default class CameraView extends React.Component {
           discardPicture={this.discardPicture}
         />
       )
+    } else if (this.state.isLoading) {
+      // Part 3:  Loading while fetching Google vision response
+      return (
+        <View style={styles.loader}>
+          <Text>Analyse en cours</Text>
+          <ActivityIndicator size="large" />
+        </View>
+      )
+      // Part 4:  Show if pic is out of focus
     } else if (this.state.badFocus) {
-      return <RetryView retryPicture={this.retryPicture} navigation={this.props.navigation} />
+      return <BadFocus retryPicture={this.retryPicture} navigation={this.props.navigation} />
+      // Part 5:  Show if Google visison as returned data
     } else {
       return <InfractionView data={this.state.formattedText} navigation={this.props.navigation} />
     }
@@ -138,30 +113,6 @@ const styles = StyleSheet.create({
   loader: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
-  },
-  container: {
-    flex: 1,
-    backgroundColor: '#F5FCFF',
-  },
-  preview: {
-    flex: 1,
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-  },
-  capture: {
-    flex: 0,
-    backgroundColor: '#fff',
-    borderRadius: 5,
-    color: '#000',
-    padding: 10,
-    margin: 40,
-  },
-
-  content: {
-    flex: 1,
-    justifyContent: 'center',
-    padding: 15,
     alignItems: 'center',
   },
 })
