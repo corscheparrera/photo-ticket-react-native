@@ -53,6 +53,7 @@ export default class SignUp extends React.Component {
           buttonColor="transparent"
           largeur={300}
           weight="normal"
+          txtColor="#000000"
         />
       </KeyboardAvoidingView>
     )

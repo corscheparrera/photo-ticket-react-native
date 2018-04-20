@@ -1,20 +1,35 @@
 import React from 'react'
-import { View, StyleSheet, Text } from 'react-native'
-
+import { View, StyleSheet, Text, ScrollView } from 'react-native'
+import { material, iOSColors, systemWeights } from 'react-native-typography'
 // import Icon from 'react-native-vector-icons/FontAwesome'
 
 import Header from '../components/Header'
+import ButtonPrimary from '../components/ButtonPrimary'
 export default class Cam extends React.Component {
   render() {
     let { navigation, data } = this.props
     return (
       <View style={styles.container}>
         <Header title="Infraction" navigation={navigation} />
-        <View style={styles.content}>
-          <Text>{data.articleEnfreint}</Text>
-          <Text>Description de l'infraction:</Text>
-          <Text>{data.descriptionPar}</Text>
-        </View>
+        <ScrollView>
+          <View style={styles.content}>
+            <View style={styles.paragraph}>
+              <Text style={styles.title}>{data.article}</Text>
+              <Text style={styles.title}>{data.règlement}</Text>
+            </View>
+
+            <View style={styles.paragraph}>
+              <Text style={styles.title}>Résumé: </Text>
+              <Text style={styles.text}>{data.résumé}</Text>
+            </View>
+            <View style={styles.paragraph}>
+              <Text style={styles.title}>Conditions:</Text>
+              <Text style={styles.text}>{data.conditions}</Text>
+              <ButtonPrimary text="Consulter un avocat gratuitement" />
+              <ButtonPrimary text="Voir l'article de loi originale" />
+            </View>
+          </View>
+        </ScrollView>
       </View>
     )
   }
@@ -25,10 +40,25 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#F5FCFF',
   },
+  paragraph: {
+    paddingBottom: 25,
+  },
   content: {
     flex: 1,
     justifyContent: 'center',
     padding: 15,
-    alignItems: 'center',
+    // alignItems: 'center',
+  },
+  text: {
+    ...material.titleObject,
+    color: iOSColors.black,
+    ...systemWeights.light,
+    fontSize: 14,
+  },
+  title: {
+    ...material.titleObject,
+    color: iOSColors.black,
+    ...systemWeights.semibold,
+    fontSize: 16,
   },
 })

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { View, Text, Button, StyleSheet } from 'react-native'
 import firebase from 'react-native-firebase'
 import Icon from 'react-native-vector-icons/FontAwesome'
+import { material, iOSColors, systemWeights } from 'react-native-typography'
 
 import Header from '../components/Header'
 import ButtonPrimary from '../components/ButtonPrimary'
@@ -28,7 +29,7 @@ export default class Settings extends Component {
       <View style={styles.container}>
         <Header title="Settings" navigation={this.props.navigation} />
         <View style={styles.content}>
-          <Text>Email: {currentUser && currentUser.email}</Text>
+          <Text style={styles.text}>Email: {currentUser && currentUser.email}</Text>
           <ButtonPrimary text="Déconnexion" onPress={this.signOutUser} />
         </View>
       </View>
@@ -44,5 +45,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  text: {
+    ...material.titleObject,
+    color: iOSColors.black,
+    ...systemWeights.light,
   },
 })

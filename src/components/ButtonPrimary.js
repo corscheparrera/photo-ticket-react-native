@@ -4,13 +4,13 @@ import { human } from 'react-native-typography'
 
 export default class ButtonPrimary extends React.Component {
   render() {
-    let { onPress, text, buttonColor, largeur, weight } = this.props
+    let { onPress, text, txtColor, buttonColor, largeur, weight } = this.props
     return (
       <View>
         <TouchableHighlight
           style={{
             marginTop: 20,
-            borderRadius: 10,
+            borderRadius: 5,
             borderWidth: 2,
             borderColor: buttonColor,
           }}
@@ -20,7 +20,7 @@ export default class ButtonPrimary extends React.Component {
         >
           <View
             style={{
-              // backgroundColor: buttonColor,
+              backgroundColor: buttonColor,
               padding: 12,
               width: largeur,
               alignItems: 'center',
@@ -30,7 +30,7 @@ export default class ButtonPrimary extends React.Component {
               style={{
                 fontWeight: weight,
                 fontSize: 18,
-                color: buttonColor,
+                color: txtColor,
               }}
             >
               {text}
@@ -42,8 +42,8 @@ export default class ButtonPrimary extends React.Component {
   }
 }
 ButtonPrimary.defaultProps = {
-  // buttonColor: '#33AAFF',
-  buttonColor: '#000000',
+  buttonColor: '#33AAFF',
+  txtColor: '#FFFFFF',
   largeur: 200,
   weight: 'bold',
 }

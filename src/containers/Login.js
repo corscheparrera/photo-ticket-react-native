@@ -38,15 +38,19 @@ export default class Login extends React.Component {
           value={this.state.password}
         />
 
-        <ButtonPrimary onPress={this.handleLogin} text="Connexion" />
+        <ButtonPrimary onPress={this.handleLogin} text="Connexion" buttonColor="#33AAFF" />
 
-        <ButtonPrimary
+        <Text
           onPress={() => this.props.navigation.goBack()}
-          text="C'est votre première utilisation?"
-          buttonColor="transparent"
-          largeur={300}
-          weight="normal"
-        />
+          style={{
+            paddingTop: 24,
+            fontWeight: 'normal',
+            fontSize: 18,
+            color: '#000000',
+          }}
+        >
+          C'est votre première utilisation?
+        </Text>
       </KeyboardAvoidingView>
     )
   }

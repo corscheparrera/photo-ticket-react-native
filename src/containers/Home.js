@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, Platform, Image, Text, View, Button, TouchableHighlight } from 'react-native'
 import firebase from 'react-native-firebase'
 import Icon from 'react-native-vector-icons/FontAwesome'
-import { human } from 'react-native-typography'
+import { material, iOSColors, systemWeights } from 'react-native-typography'
 
 import Header from '../components/Header'
 import ButtonPrimary from '../components/ButtonPrimary'
@@ -22,7 +22,7 @@ export default class Home extends React.Component {
       <View style={styles.container}>
         <Header title="Photo Ticket" navigation={this.props.navigation} />
         <View style={styles.content}>
-          <Text style={human.title2}>Bienvenu {currentUser && currentUser.email} </Text>
+          <Text style={styles.text}>Bienvenu {currentUser && currentUser.email} </Text>
           <Image
             style={{ marginBottom: 40, marginTop: 40 }}
             source={require('../images/logo.png')}
@@ -62,5 +62,10 @@ const styles = StyleSheet.create({
     color: 'red',
     padding: 15,
     margin: 45,
+  },
+  text: {
+    ...material.titleObject,
+    color: iOSColors.black,
+    ...systemWeights.light,
   },
 })

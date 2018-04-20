@@ -54,8 +54,12 @@ export default class CameraView extends React.Component {
       if (textIsOk) {
         this.setState({
           formattedText: {
-            descriptionPar: textIsOk.descriptionPar,
-            articleEnfreint: textIsOk.articleEnfreint,
+            article: textIsOk.art,
+            résumé: textIsOk.résumé,
+            règlement: textIsOk.règlement,
+            type: textIsOk.type,
+            conditions: textIsOk.conditions,
+            point: textIsOk.point,
           },
           isLoading: false,
         })

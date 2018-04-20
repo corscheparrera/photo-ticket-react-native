@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
+import { View, StyleSheet, Text } from 'react-native'
 
 import Icon from 'react-native-vector-icons/FontAwesome'
 import Camera from 'react-native-camera'
@@ -16,6 +16,7 @@ export default class CamView extends React.Component {
     return (
       <View style={styles.container}>
         <Header title="Photo Ticket" navigation={this.props.navigation} />
+
         <Camera
           ref={cam => {
             this.camera = cam
@@ -24,6 +25,13 @@ export default class CamView extends React.Component {
           aspect={Camera.constants.Aspect.fill}
           captureTarget={Camera.constants.CaptureTarget.disk}
         >
+          <Text
+            style={{
+              fontWeight: 'bold',
+            }}
+          >
+            Frame your ticket
+          </Text>
           <Icon color="#05E085" name="dot-circle-o" size={96} onPress={() => this.takePicture()} />
         </Camera>
       </View>
