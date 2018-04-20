@@ -15,6 +15,8 @@ import RNFetchBlob from 'react-native-fetch-blob'
 import axios from 'axios'
 
 import Header from '../components/Header'
+import RetryView from './RetryView'
+import InfractionView from './InfractionView'
 import ButtonPrimary from '../components/ButtonPrimary'
 import { useGoogleVision, parseData } from '../utils/helpers'
 
@@ -33,6 +35,13 @@ export default class CameraView extends React.Component {
       formattedText: '',
       badFocus: false,
     }
+  }
+
+  retryPicture = () => {
+    this.setState({
+      imagePath: '',
+      badFocus: false,
+    })
   }
   takePicture = () => {
     const options = {}
@@ -75,7 +84,7 @@ export default class CameraView extends React.Component {
     }
   }
 
-  retryPicture = () => {
+  discardPicture = () => {
     this.setState({ imagePath: '' })
   }
 
@@ -121,41 +130,20 @@ export default class CameraView extends React.Component {
               onPress={this.confirmedImage}
             />
             <Text style={styles.navBarHeader}>Photo Ticket</Text>
-            <Icon style={styles.navBarButton} name="remove" size={24} onPress={this.retryPicture} />
+            <Icon
+              style={styles.navBarButton}
+              name="remove"
+              size={24}
+              onPress={this.discardPicture}
+            />
           </View>
           <Image source={{ uri: this.state.imagePath }} style={styles.preview} />
         </View>
       )
     } else if (this.state.badFocus) {
-      return (
-        <View style={styles.container}>
-          <Header title="Infraction" navigation={this.props.navigation} />
-          <View style={styles.content}>
-            <Icon color="#000000" name="eye-slash" size={96} onPress={this.confirmedImage} />
-            <Text>Mauvais focus</Text>
-            <ButtonPrimary
-              onPress={() =>
-                this.setState({
-                  imagePath: '',
-                  badFocus: false,
-                })
-              }
-              text="Réessayer"
-            />
-          </View>
-        </View>
-      )
+      return <RetryView retryPicture={this.retryPicture} navigation={this.props.navigation} />
     } else {
-      return (
-        <View style={styles.container}>
-          <Header title="Infraction" navigation={this.props.navigation} />
-          <View style={styles.content}>
-            <Text>{this.state.formattedText.articleEnfreint}</Text>
-            <Text>Description de l'infraction:</Text>
-            <Text>{this.state.formattedText.descriptionPar}</Text>
-          </View>
-        </View>
-      )
+      return <InfractionView data={this.state.formattedText} navigation={this.props.navigation} />
     }
   }
 }

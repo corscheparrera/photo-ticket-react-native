@@ -6,7 +6,6 @@ import { human } from 'react-native-typography'
 
 import Header from '../components/Header'
 import ButtonPrimary from '../components/ButtonPrimary'
-import AppText from '../components/AppText'
 
 export default class Home extends React.Component {
   state = { currentUser: null }

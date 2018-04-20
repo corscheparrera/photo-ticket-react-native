@@ -11,7 +11,7 @@ export default class ButtonPrimary extends React.Component {
           style={{
             marginTop: 20,
             borderRadius: 10,
-            borderWidth: 1,
+            borderWidth: 2,
             borderColor: buttonColor,
           }}
           onPress={onPress}
@@ -42,7 +42,8 @@ export default class ButtonPrimary extends React.Component {
   }
 }
 ButtonPrimary.defaultProps = {
-  buttonColor: '#33AAFF',
+  // buttonColor: '#33AAFF',
+  buttonColor: '#000000',
   largeur: 200,
   weight: 'bold',
 }
