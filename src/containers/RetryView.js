@@ -4,7 +4,8 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 
 import Header from '../components/Header'
 import ButtonPrimary from '../components/ButtonPrimary'
-export default class Cam extends React.Component {
+
+export default class RetryView extends React.Component {
   render() {
     return (
       <View style={styles.container}>

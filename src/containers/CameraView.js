@@ -17,6 +17,7 @@ import axios from 'axios'
 import Header from '../components/Header'
 import RetryView from './RetryView'
 import InfractionView from './InfractionView'
+import ConfirmPicView from './ConfirmPicView'
 import ButtonPrimary from '../components/ButtonPrimary'
 import { useGoogleVision, parseData } from '../utils/helpers'
 
@@ -121,24 +122,11 @@ export default class CameraView extends React.Component {
     ) {
       return (
         // Part 2: Confirm that photo quality is sufficient
-        <View style={styles.container}>
-          <View style={styles.navBar}>
-            <Icon
-              style={styles.navBarButton}
-              name="check"
-              size={24}
-              onPress={this.confirmedImage}
-            />
-            <Text style={styles.navBarHeader}>Photo Ticket</Text>
-            <Icon
-              style={styles.navBarButton}
-              name="remove"
-              size={24}
-              onPress={this.discardPicture}
-            />
-          </View>
-          <Image source={{ uri: this.state.imagePath }} style={styles.preview} />
-        </View>
+        <ConfirmPicView
+          uri={this.state.imagePath}
+          confirmedImage={this.confirmedImage}
+          discardPicture={this.discardPicture}
+        />
       )
     } else if (this.state.badFocus) {
       return <RetryView retryPicture={this.retryPicture} navigation={this.props.navigation} />
@@ -171,24 +159,7 @@ const styles = StyleSheet.create({
     padding: 10,
     margin: 40,
   },
-  navBar: {
-    flexDirection: 'row',
-    paddingTop: 30,
-    height: 64,
-    backgroundColor: '#05E085',
-  },
-  navBarButton: {
-    color: '#FFFFFF',
-    textAlign: 'center',
-    width: 64,
-  },
-  navBarHeader: {
-    flex: 1,
-    color: '#FFFFFF',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    fontSize: 18,
-  },
+
   content: {
     flex: 1,
     justifyContent: 'center',
