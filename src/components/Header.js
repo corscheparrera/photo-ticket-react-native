@@ -16,23 +16,23 @@ export default class Header extends React.Component {
       <View style={styles.navBar}>
         <Icon
           style={styles.navBarButton}
-          name={state.routeName === 'Home' ? 'camera' : 'arrow-left'}
+          name={this.props.title === 'Photo Ticket' ? 'camera' : 'arrow-left'}
           size={24}
           onPress={() => {
-            if (state.routeName !== 'Home') {
+            if (this.props.title !== 'Photo Ticket') {
               goBack()
             } else {
-              navigate('CameraView')
+              // navigate('CameraView')
             }
           }}
         />
         <Text style={styles.navBarHeader}>{this.props.title}</Text>
         <Icon
           style={styles.navBarButton}
-          name={state.routeName === 'Settings' ? '' : 'gear'}
+          name={this.props.title === 'Settings' ? '' : 'gear'}
           size={24}
           onPress={() => {
-            if (state.routeName !== 'Settings') {
+            if (this.props.title !== 'Settings') {
               navigate('Settings')
             }
           }}

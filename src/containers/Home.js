@@ -1,71 +1,143 @@
 import React from 'react'
-import { StyleSheet, Platform, Image, Text, View, Button, TouchableHighlight } from 'react-native'
 import firebase from 'react-native-firebase'
+import { StyleSheet, Text, View, ActivityIndicator } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome'
-import { material, iOSColors, systemWeights } from 'react-native-typography'
-
+import Camera from 'react-native-camera'
+import RNFetchBlob from 'react-native-fetch-blob'
+import axios from 'axios'
+import Menus from './Menus'
 import Header from '../components/Header'
-import ButtonPrimary from '../components/ButtonPrimary'
+import BadFocus from './BadFocus'
+import InfractionView from './InfractionView'
+import ConfirmPicView from './ConfirmPicView'
+import CamView from './CamView'
+import { useGoogleVision, parseData } from '../utils/helpers'
 
 export default class Home extends React.Component {
-  state = { currentUser: null }
-
+  constructor(props) {
+    super(props)
+    this.state = {
+      currentUser: null,
+      imagePath: '',
+      isLoading: false,
+      formattedText: '',
+      badFocus: false,
+      cameraIsOpen: false,
+    }
+  }
   componentDidMount() {
     const { currentUser } = firebase.auth()
     this.setState({ currentUser })
   }
+  opencam = () => {
+    this.setState({
+      cameraIsOpen: true,
+    })
+  }
+  getUrl = data => {
+    this.setState({ imagePath: data.path })
+  }
+
+  confirmedImage = () => {
+    this.setState({ isLoading: true })
+    this.uploadImage(this.state.imagePath)
+  }
+  discardPicture = () => {
+    this.setState({ imagePath: '' })
+  }
+  retryPicture = () => {
+    this.setState({
+      imagePath: '',
+      badFocus: false,
+    })
+  }
+  uploadImage = async uri => {
+    // Prepare Blob support
+    const Blob = RNFetchBlob.polyfill.Blob
+    const fs = RNFetchBlob.fs
+    window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest
+    window.Blob = Blob
+
+    try {
+      let base64image = await fs.readFile(uri, 'base64')
+      let response = await useGoogleVision(base64image)
+      let textIsOk = parseData(response)
+      if (textIsOk) {
+        this.setState({
+          formattedText: {
+            article: textIsOk.art,
+            résumé: textIsOk.résumé,
+            règlement: textIsOk.règlement,
+            type: textIsOk.type,
+            conditions: textIsOk.conditions,
+            point: textIsOk.point,
+          },
+          isLoading: false,
+        })
+      } else {
+        // Si OCR reconnait le titre mais qu'il contient trop de fautes
+        this.setState({
+          badFocus: true,
+          isLoading: false,
+        })
+      }
+    } catch (err) {
+      // Si OCR ne reconnait pas de texte OU autre
+      console.log('erreur :', err)
+      this.setState({
+        badFocus: true,
+        isLoading: false,
+      })
+    }
+  }
 
   render() {
     const { currentUser } = this.state
+    if (!this.state.cameraIsOpen) {
+      return (
+        <Menus
+          navigation={this.props.navigation}
+          currentUser={this.state.currentUser}
+          opencam={this.opencam}
+        />
+      )
+    }
 
-    return (
-      <View style={styles.container}>
-        <Header title="Photo Ticket" navigation={this.props.navigation} />
-        <View style={styles.content}>
-          <Text style={styles.text}>Bienvenu {currentUser && currentUser.email} </Text>
-          <Image
-            style={{ marginBottom: 40, marginTop: 40 }}
-            source={require('../images/logo.png')}
-          />
-          <ButtonPrimary
-            onPress={() => this.props.navigation.navigate('CameraView')}
-            text="Prendre une photo"
-          />
-          <ButtonPrimary
-            onPress={() => this.props.navigation.navigate('MentionsLegales')}
-            text="Mentions légales"
-          />
+    if (!this.state.imagePath) {
+      return (
+        // Part 1:  Take a photo
+        <CamView getUrl={this.getUrl} navigation={this.props.navigation} />
+      )
+    } else if (!this.state.isLoading && !this.state.badFocus && !this.state.formattedText) {
+      return (
+        // Part 2: Confirm that photo quality is sufficient
+        <ConfirmPicView
+          uri={this.state.imagePath}
+          confirmedImage={this.confirmedImage}
+          discardPicture={this.discardPicture}
+        />
+      )
+    } else if (this.state.isLoading) {
+      // Part 3:  Loading while fetching Google vision response
+      return (
+        <View style={styles.loader}>
+          <Text>Analyse en cours</Text>
+          <ActivityIndicator size="large" />
         </View>
-      </View>
-    )
+      )
+      // Part 4:  Show if pic is out of focus
+    } else if (this.state.badFocus) {
+      return <BadFocus retryPicture={this.retryPicture} navigation={this.props.navigation} />
+      // Part 5:  Show if Google visison as returned data
+    } else {
+      return <InfractionView data={this.state.formattedText} navigation={this.props.navigation} />
+    }
   }
 }
-
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  content: {
+  loader: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  view: {
-    flex: 1,
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-  },
-  capture: {
-    flex: 0,
-    backgroundColor: 'steelblue',
-    borderRadius: 10,
-    color: 'red',
-    padding: 15,
-    margin: 45,
-  },
-  text: {
-    ...material.titleObject,
-    color: iOSColors.black,
-    ...systemWeights.light,
   },
 })

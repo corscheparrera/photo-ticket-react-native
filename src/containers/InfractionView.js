@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet, Text, ScrollView } from 'react-native'
+import { View, StyleSheet, Text, ScrollView, Button } from 'react-native'
 import { material, iOSColors, systemWeights } from 'react-native-typography'
 // import Icon from 'react-native-vector-icons/FontAwesome'
 
@@ -25,9 +25,8 @@ export default class Cam extends React.Component {
             <View style={styles.paragraph}>
               <Text style={styles.title}>Conditions:</Text>
               <Text style={styles.text}>{data.conditions}</Text>
-              <ButtonPrimary text="Consulter un avocat gratuitement" />
-              <ButtonPrimary text="Voir l'article de loi originale" />
             </View>
+            <Button title="Consulter un avocat gratuitement" />
           </View>
         </ScrollView>
       </View>
