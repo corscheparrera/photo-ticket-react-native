@@ -15,7 +15,7 @@ export default class CamView extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Header title="Photo" navigation={this.props.navigation} />
+        <Header title="Photo" navigation={this.props.navigation} closeCam={this.props.closeCam} />
 
         <Camera
           ref={cam => {

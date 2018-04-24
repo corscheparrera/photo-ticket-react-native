@@ -18,7 +18,7 @@ export default class Menus extends React.Component {
             style={{ marginBottom: 40, marginTop: 40 }}
             source={require('../images/logo.png')}
           />
-          <ButtonPrimary onPress={() => this.props.opencam()} text="Prendre une photo" />
+          <ButtonPrimary onPress={() => this.props.openCam()} text="Prendre une photo" />
           <ButtonPrimary
             onPress={() => this.props.navigation.navigate('MentionsLegales')}
             text="Mentions légales"

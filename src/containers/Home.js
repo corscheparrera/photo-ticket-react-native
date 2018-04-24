@@ -6,7 +6,6 @@ import Camera from 'react-native-camera'
 import RNFetchBlob from 'react-native-fetch-blob'
 import axios from 'axios'
 import Menus from './Menus'
-import Header from '../components/Header'
 import BadFocus from './BadFocus'
 import InfractionView from './InfractionView'
 import ConfirmPicView from './ConfirmPicView'
@@ -29,9 +28,14 @@ export default class Home extends React.Component {
     const { currentUser } = firebase.auth()
     this.setState({ currentUser })
   }
-  opencam = () => {
+  openCam = () => {
     this.setState({
       cameraIsOpen: true,
+    })
+  }
+  closeCam = () => {
+    this.setState({
+      cameraIsOpen: false,
     })
   }
   getUrl = data => {
@@ -98,7 +102,7 @@ export default class Home extends React.Component {
         <Menus
           navigation={this.props.navigation}
           currentUser={this.state.currentUser}
-          opencam={this.opencam}
+          openCam={this.openCam}
         />
       )
     }
@@ -106,7 +110,7 @@ export default class Home extends React.Component {
     if (!this.state.imagePath) {
       return (
         // Part 1:  Take a photo
-        <CamView getUrl={this.getUrl} navigation={this.props.navigation} />
+        <CamView getUrl={this.getUrl} navigation={this.props.navigation} closeCam={this.closeCam} />
       )
     } else if (!this.state.isLoading && !this.state.badFocus && !this.state.formattedText) {
       return (
