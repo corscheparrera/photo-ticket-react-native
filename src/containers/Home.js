@@ -95,46 +95,64 @@ export default class Home extends React.Component {
     }
   }
 
+  displayView = () => {
+    if (!this.state.cameraIsOpen) {
+      return 'Main Menu'
+    } else if (!this.state.imagePath) {
+      return 'Cam View'
+    } else if (!this.state.isLoading && !this.state.badFocus && !this.state.formattedText) {
+      return 'Confirm Pic View'
+    } else if (this.state.isLoading) {
+      return 'Loading'
+    } else if (this.state.badFocus) {
+      return 'Bad Focus'
+    } else return 'InfractionView'
+  }
+
   render() {
     const { currentUser } = this.state
-    if (!this.state.cameraIsOpen) {
-      return (
-        <MainMenu
-          navigation={this.props.navigation}
-          currentUser={this.state.currentUser}
-          openCam={this.openCam}
-        />
-      )
-    }
 
-    if (!this.state.imagePath) {
-      return (
-        // Part 1:  Take a photo
-        <CamView getUrl={this.getUrl} navigation={this.props.navigation} closeCam={this.closeCam} />
-      )
-    } else if (!this.state.isLoading && !this.state.badFocus && !this.state.formattedText) {
-      return (
-        // Part 2: Confirm that photo quality is sufficient
-        <ConfirmPicView
-          uri={this.state.imagePath}
-          confirmedImage={this.confirmedImage}
-          discardPicture={this.discardPicture}
-        />
-      )
-    } else if (this.state.isLoading) {
-      // Part 3:  Loading while fetching Google vision response
-      return (
-        <View style={styles.loader}>
-          <Text>Analyse en cours</Text>
-          <ActivityIndicator size="large" />
-        </View>
-      )
-      // Part 4:  Show if pic is out of focus
-    } else if (this.state.badFocus) {
-      return <BadFocus retryPicture={this.retryPicture} navigation={this.props.navigation} />
-      // Part 5:  Show if Google visison as returned data
-    } else {
-      return <InfractionView data={this.state.formattedText} navigation={this.props.navigation} />
+    switch (this.displayView()) {
+      case 'Main Menu':
+        return (
+          <MainMenu
+            navigation={this.props.navigation}
+            currentUser={this.state.currentUser}
+            openCam={this.openCam}
+          />
+        )
+        break
+      case 'Cam View':
+        return (
+          <CamView
+            getUrl={this.getUrl}
+            navigation={this.props.navigation}
+            closeCam={this.closeCam}
+          />
+        )
+        break
+      case 'Confirm Pic View':
+        return (
+          <ConfirmPicView
+            uri={this.state.imagePath}
+            confirmedImage={this.confirmedImage}
+            discardPicture={this.discardPicture}
+          />
+        )
+        break
+      case 'Loading':
+        return (
+          <View style={styles.loader}>
+            <Text>Analyse en cours</Text>
+            <ActivityIndicator size="large" />
+          </View>
+        )
+        break
+      case 'Bad Focus':
+        return <BadFocus retryPicture={this.retryPicture} navigation={this.props.navigation} />
+        break
+      default:
+        return <InfractionView data={this.state.formattedText} navigation={this.props.navigation} />
     }
   }
 }

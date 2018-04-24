@@ -5,7 +5,7 @@ import { material, iOSColors, systemWeights } from 'react-native-typography'
 import Header from '../components/Header'
 import ButtonPrimary from '../components/ButtonPrimary'
 
-export default class MainMenu extends React.Component {
+export default class Menus extends React.Component {
   render() {
     return (
       <View style={styles.container}>
