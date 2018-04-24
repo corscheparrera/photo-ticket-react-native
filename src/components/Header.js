@@ -21,7 +21,7 @@ export default class Header extends React.Component {
           onPress={() => {
             if (this.props.title === 'Photo') {
               this.props.closeCam()
-            } else {
+            } else if (this.props.title !== 'Photo Ticket') {
               goBack()
             }
           }}

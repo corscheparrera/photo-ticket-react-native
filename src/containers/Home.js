@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 import Camera from 'react-native-camera'
 import RNFetchBlob from 'react-native-fetch-blob'
 import axios from 'axios'
-import Menus from './Menus'
+import MainMenu from './MainMenu'
 import BadFocus from './BadFocus'
 import InfractionView from './InfractionView'
 import ConfirmPicView from './ConfirmPicView'
@@ -99,7 +99,7 @@ export default class Home extends React.Component {
     const { currentUser } = this.state
     if (!this.state.cameraIsOpen) {
       return (
-        <Menus
+        <MainMenu
           navigation={this.props.navigation}
           currentUser={this.state.currentUser}
           openCam={this.openCam}
