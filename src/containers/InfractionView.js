@@ -14,7 +14,7 @@ export default class Cam extends React.Component {
         <ScrollView>
           <View style={styles.content}>
             <View style={styles.paragraph}>
-              <Text style={styles.title}>{data.article}</Text>
+              <Text style={styles.title}>{data.art}</Text>
               <Text style={styles.title}>{data.règlement}</Text>
             </View>
 

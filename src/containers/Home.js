@@ -69,12 +69,7 @@ export default class Home extends React.Component {
       if (textIsOk) {
         this.setState({
           formattedText: {
-            article: textIsOk.art,
-            résumé: textIsOk.résumé,
-            règlement: textIsOk.règlement,
-            type: textIsOk.type,
-            conditions: textIsOk.conditions,
-            point: textIsOk.point,
+            ...textIsOk,
           },
           isLoading: false,
         })
