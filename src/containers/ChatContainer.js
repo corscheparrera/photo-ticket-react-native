@@ -1,20 +1,18 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, TextInput, Screen } from 'react-native'
+import { View, Text, StyleSheet, TextInput } from 'react-native'
 import firebase from 'react-native-firebase'
 import { material, iOSColors, systemWeights } from 'react-native-typography'
 import { GiftedChat } from 'react-native-gifted-chat'
 
 import Header from '../components/Header'
 import ButtonPrimary from '../components/ButtonPrimary'
-import { getUid, loadMessages, sendMessage, closeChat } from '../utils/BackendChat'
-import Icon from 'react-native-vector-icons/FontAwesome'
+import BackendChat from '../utils/BackendChat'
+
 const database = firebase.database()
 export default class ChatContainer extends Component {
   constructor() {
     super()
     this.state = {
-      currentUser: null,
-      uid: '',
       messages: [],
     }
   }
@@ -23,10 +21,6 @@ export default class ChatContainer extends Component {
   }
   startChat = async () => {
     try {
-      const { currentUser } = await firebase.auth()
-      await this.setState({ currentUser })
-      let uid = currentUser.ui
-      await this.setState({ uid })
       await firebase.database().goOnline()
     } catch (e) {
       console.log(e)
@@ -34,7 +28,7 @@ export default class ChatContainer extends Component {
   }
 
   componentDidMount() {
-    loadMessages(message => {
+    BackendChat.loadMessages(message => {
       this.setState(previousState => {
         return {
           messages: GiftedChat.append(previousState.messages, message),
@@ -43,7 +37,7 @@ export default class ChatContainer extends Component {
     })
   }
   componentWillUnmount = () => {
-    closeChat()
+    BackendChat.closeChat()
   }
 
   render() {
@@ -55,10 +49,10 @@ export default class ChatContainer extends Component {
           renderAvatar={null}
           messages={this.state.messages}
           onSend={message => {
-            sendMessage(message)
+            BackendChat.sendMessage(message)
           }}
           user={{
-            _id: this.state.uid,
+            _id: BackendChat.getUid(),
             name: 'max',
           }}
           placeholder="Écrire un message..."
@@ -70,23 +64,5 @@ export default class ChatContainer extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-  navBar: {
-    flexDirection: 'row',
-    paddingTop: 30,
-    height: 64,
-    backgroundColor: '#05E085',
-  },
-  navBarButton: {
-    color: '#FFFFFF',
-    textAlign: 'center',
-    width: 64,
-  },
-  navBarHeader: {
-    flex: 1,
-    color: '#FFFFFF',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    fontSize: 18,
   },
 })
