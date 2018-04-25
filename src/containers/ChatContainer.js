@@ -2,9 +2,12 @@ import React, { Component } from 'react'
 import { View, Text, StyleSheet, TextInput } from 'react-native'
 import firebase from 'react-native-firebase'
 import { material, iOSColors, systemWeights } from 'react-native-typography'
+import { GiftedChat } from 'react-native-gifted-chat'
 
 import Header from '../components/Header'
 import ButtonPrimary from '../components/ButtonPrimary'
+import { getUid, loadMessages, sendMessage, closeChat } from '../utils/BackendChat'
+
 const database = firebase.database()
 export default class ChatContainer extends Component {
   constructor() {
@@ -12,11 +15,12 @@ export default class ChatContainer extends Component {
     this.state = {
       currentUser: null,
       uid: '',
-      chat: [],
-      text: '',
+      messages: [],
     }
   }
-
+  componentWillMount() {
+    this.startChat()
+  }
   startChat = async () => {
     try {
       const { currentUser } = await firebase.auth()
@@ -24,64 +28,78 @@ export default class ChatContainer extends Component {
       let uid = currentUser.email.replace(/\.|@/g, '')
       await this.setState({ uid })
       await firebase.database().goOnline()
-      await this.pushUsernameFirebase()
+      // await database
+      //   .ref(`chat/messages-${this.state.uid}`)
+      //   .on('child_added', x => this.updateState(x.val()))
     } catch (e) {
       console.log(e)
     }
   }
+  // updateState = data => {
+  //   this.setState({
+  //     chat: this.state.chat.concat([data]),
+  //   })
+  // }
+  // renderMessanges = (data, i) => {
+  //   if (data) {
+  //     return (
+  //       <Text key={i}>
+  //         {data.username}: {data.text} send at {data.time}
+  //       </Text>
+  //     )
+  //   }
+  // }
+  // _handleClick = async () => {
+  //   let time = Date.now()
+  //   let msg = { ...this.state.msg, time }
+  //   await this.setState({ msg })
+  //   await database.ref(`chat/messages-${this.state.uid}`).push({
+  //     username: this.state.currentUser.email,
+  //     text: this.state.msg.text,
+  //     time: this.state.msg.time,
+  //   })
+  // }
   componentDidMount() {
-    this.startChat()
+    loadMessages(message => {
+      this.setState(previousState => {
+        return {
+          messages: GiftedChat.append(previousState.messages, message),
+        }
+      })
+    })
   }
-
-  pushUsernameFirebase = () => {
-    let ref = database.ref(`/users-${this.state.uid}`)
-    let pushId = ref.push({ username: this.state.user, status: 'online' }).key
-    database
-      .ref(`/messages-${this.state.uid}`)
-      .push({ username: this.state.currentUser.email, text: "I'm online" })
-
-    let disconnectTask = {}
-    disconnectTask[pushId] = {
-      username: this.state.currentUser.email,
-      status: 'offline',
-    }
-    ref.onDisconnect().update(disconnectTask)
-    this.alertUserStatus()
-  }
-
-  alertUserStatus = () => {
-    database.ref(`/users-${this.state.uid}`).on('child_changed', x => this.displayStatus(x.val()))
-  }
-
-  displayStatus = data => {
-    database
-      .ref(`/messages-${this.state.uid}`)
-      .push({ username: data.username, text: `I'm ${data.status}` })
-  }
-
-  _handleClick = () => {
-    database
-      .ref(`/messages-${this.state.uid}`)
-      .push({ username: this.state.currentUser.email, text: this.state.text })
+  componentWillUnmount = () => {
+    closeChat()
   }
 
   render() {
     const { currentUser, uid } = this.state
     return (
-      <View style={styles.container}>
-        <Header title="Chat" navigation={this.props.navigation} />
-        <View style={styles.content}>
-          <Text style={styles.text}>Uid: {uid}</Text>
-          <TextInput
-            style={styles.textInput}
-            placeholder="Message"
-            autoCapitalize="none"
-            onChangeText={text => this.setState({ text })}
-            value={this.state.text}
-          />
-          <ButtonPrimary onPress={() => this._handleClick()} text="Envoyer" buttonColor="#33AAFF" />
-        </View>
-      </View>
+      <GiftedChat
+        messages={this.state.messages}
+        onSend={message => {
+          sendMessage(message)
+        }}
+        user={{
+          _id: getUid(),
+          name: 'Maxime',
+        }}
+      />
+      // <View style={styles.container}>
+      //   <Header title="Chat" navigation={this.props.navigation} />
+      //   <View style={styles.content}>
+      //     <Text style={styles.text}>Uid: {uid}</Text>
+      //     {this.state.chat.map(this.renderMessanges)}
+      //     <TextInput
+      //       style={styles.textInput}
+      //       placeholder="Message"
+      //       autoCapitalize="none"
+      //       onChangeText={text => this.setState({ msg: { text: text } })}
+      //       value={this.state.msg.text}
+      //     />
+      //     <ButtonPrimary onPress={() => this._handleClick()} text="Envoyer" buttonColor="#33AAFF" />
+      //   </View>
+      // </View>
     )
   }
 }
