@@ -1,34 +1,9 @@
 import firebase from 'react-native-firebase'
 const database = firebase.database()
-// class BackendChat {
-
-//   constructor() {
-//     firebase.auth().onAuthStateChanged(user => {
-//       if (user) {
-//         this.setUid(user.uid)
-//       } else {
-//         firebase
-//           .auth()
-//           .signInAnonymously()
-//           .catch(error => {
-//             alert(error.message)
-//           })
-//       }
-//     })
-//   }
-//   setUid(value) {
-//     this.uid = value
-//   }
-//   getUid() {
-//     return this.uid
-//   }
-
-// get user infos
 
 export async function getUid() {
   const { currentUser } = await firebase.auth()
-  let uid = currentUser.email.replace(/\.|@/g, '')
-  return 'maxime'
+  return currentUser.uid
 }
 
 // retrieve the messages from the backend
