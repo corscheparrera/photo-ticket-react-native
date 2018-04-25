@@ -84,6 +84,7 @@ export default class ChatContainer extends Component {
           _id: getUid(),
           name: 'Maxime',
         }}
+        placeholder="Écrire un message..."
       />
       // <View style={styles.container}>
       //   <Header title="Chat" navigation={this.props.navigation} />

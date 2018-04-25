@@ -28,3 +28,6 @@ https://cloud.google.com/vision/?hl=fr
 
 Firebase
 https://firebase.google.com/
+
+Gifted Chat
+https://github.com/FaridSafi/react-native-gifted-chat

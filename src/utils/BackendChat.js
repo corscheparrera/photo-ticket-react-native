@@ -28,7 +28,7 @@ const database = firebase.database()
 export async function getUid() {
   const { currentUser } = await firebase.auth()
   let uid = currentUser.email.replace(/\.|@/g, '')
-  return uid
+  return 'maxime'
 }
 
 // retrieve the messages from the backend
