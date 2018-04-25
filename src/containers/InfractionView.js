@@ -26,7 +26,10 @@ export default class Cam extends React.Component {
               <Text style={styles.title}>Conditions:</Text>
               <Text style={styles.text}>{data.conditions}</Text>
             </View>
-            <Button title="Consulter un avocat gratuitement" />
+            <Button
+              title="Consulter un avocat gratuitement"
+              onPress={() => navigation.navigate('ChatContainer')}
+            />
           </View>
         </ScrollView>
       </View>

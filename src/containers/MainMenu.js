@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet, Image } from 'react-native'
+import { View, Text, StyleSheet, Image, Button } from 'react-native'
 import { material, iOSColors, systemWeights } from 'react-native-typography'
 
 import Header from '../components/Header'
@@ -22,6 +22,10 @@ export default class Menus extends React.Component {
           <ButtonPrimary
             onPress={() => this.props.navigation.navigate('MentionsLegales')}
             text="Mentions légales"
+          />
+          <Button
+            title="Consulter un avocat gratuitement"
+            onPress={() => this.props.navigation.navigate('ChatContainer')}
           />
         </View>
       </View>

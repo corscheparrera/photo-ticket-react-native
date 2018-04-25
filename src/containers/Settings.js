@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import { View, Text, Button, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import firebase from 'react-native-firebase'
-import Icon from 'react-native-vector-icons/FontAwesome'
 import { material, iOSColors, systemWeights } from 'react-native-typography'
 
 import Header from '../components/Header'
