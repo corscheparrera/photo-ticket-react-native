@@ -1,7 +1,7 @@
 import firebase from 'react-native-firebase'
 const database = firebase.database()
 
-class Backend {
+class BackendChat {
   constructor() {
     firebase.auth().onAuthStateChanged(user => {
       this.setUid(user.uid)
@@ -13,10 +13,9 @@ class Backend {
   getUid() {
     return this.uid
   }
-
   // retrieve the messages from the backend
   loadMessages(callback) {
-    let messagesRef = firebase.database().ref('chat')
+    let messagesRef = firebase.database().ref(`all-chat/chat-${this.uid}`)
     //   messagesRef.off()
     const onReceive = data => {
       const message = data.val()
@@ -35,7 +34,7 @@ class Backend {
 
   // send the message to the Backend
   sendMessage(message) {
-    let messagesRef = firebase.database().ref('chat')
+    let messagesRef = firebase.database().ref(`all-chat/chat-${this.uid}`)
     for (let i = 0; i < message.length; i++) {
       messagesRef.push({
         text: message[i].text,
@@ -54,4 +53,4 @@ class Backend {
   }
 }
 
-export default new Backend()
+export default new BackendChat()
