@@ -25,6 +25,6 @@ target 'ticketPhoto' do
   pod 'Crashlytics', '~> 3.10.1'
   
 
-  pod 'react-native-camera', :path => '../node_modules/react-native-camera'
+
 
 end

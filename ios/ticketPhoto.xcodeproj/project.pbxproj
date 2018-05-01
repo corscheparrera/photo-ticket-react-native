@@ -36,7 +36,7 @@
 		A038CD85D39748E122AC50D7 /* libPods-ticketPhoto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 333056BA5B7ADABE709DF4A1 /* libPods-ticketPhoto.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B1EE7437B52B4A80B44E4850 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 140BE8575D2E49769C7A7360 /* SimpleLineIcons.ttf */; };
-		BD4BFEC9208FC0460052954B /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4BFEC6208FC0290052954B /* libRNCamera.a */; };
+		BD523E142093C62000865CD9 /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD523E132093C61000865CD9 /* libRNCamera.a */; };
 		BD9D641E2086C6BE00DC1850 /* libRNFetchBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9D641C2086C67E00DC1850 /* libRNFetchBlob.a */; };
 		CF250DF3259847E29324BE66 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C96DE5F6900145AE883289E2 /* Foundation.ttf */; };
 		E0FD8CF057604775B0458659 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1ADCD2EA4DBB460EA449178D /* Feather.ttf */; };
@@ -317,9 +317,9 @@
 			remoteGlobalIDString = EBF21BFA1FC4989A0052F4D5;
 			remoteInfo = "jsinspector-tvOS";
 		};
-		BD4BFEC5208FC0290052954B /* PBXContainerItemProxy */ = {
+		BD523E122093C61000865CD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BD4BFE9C208FC0280052954B /* RNCamera.xcodeproj */;
+			containerPortal = BD523E0E2093C61000865CD9 /* RNCamera.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4107012F1ACB723B00C6AA39;
 			remoteInfo = RNCamera;
@@ -372,7 +372,7 @@
 		ADF4CB3C3BF44D3EBA8B78C4 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
 		B0E4A2094D5B41A19C378505 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		B7AFA8AA9A1CFD17320E9074 /* Pods-ticketPhoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ticketPhoto.release.xcconfig"; path = "Pods/Target Support Files/Pods-ticketPhoto/Pods-ticketPhoto.release.xcconfig"; sourceTree = "<group>"; };
-		BD4BFE9C208FC0280052954B /* RNCamera.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RNCamera.xcodeproj"; sourceTree = "<group>"; };
+		BD523E0E2093C61000865CD9 /* RNCamera.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RNCamera.xcodeproj"; sourceTree = "<group>"; };
 		BD9D63F12086C67E00DC1850 /* RNFetchBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNFetchBlob.xcodeproj; path = "../node_modules/react-native-fetch-blob/ios/RNFetchBlob.xcodeproj"; sourceTree = "<group>"; };
 		C96DE5F6900145AE883289E2 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		FBC8C743C046423C960F2237 /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
@@ -391,7 +391,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD4BFEC9208FC0460052954B /* libRNCamera.a in Frameworks */,
+				BD523E142093C62000865CD9 /* libRNCamera.a in Frameworks */,
 				BD9D641E2086C6BE00DC1850 /* libRNFetchBlob.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
@@ -578,7 +578,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				BD4BFE9C208FC0280052954B /* RNCamera.xcodeproj */,
+				BD523E0E2093C61000865CD9 /* RNCamera.xcodeproj */,
 				BD9D63F12086C67E00DC1850 /* RNFetchBlob.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -666,10 +666,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BD4BFE9D208FC0280052954B /* Products */ = {
+		BD523E0F2093C61000865CD9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BD4BFEC6208FC0290052954B /* libRNCamera.a */,
+				BD523E132093C61000865CD9 /* libRNCamera.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -804,8 +804,8 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = BD4BFE9D208FC0280052954B /* Products */;
-					ProjectRef = BD4BFE9C208FC0280052954B /* RNCamera.xcodeproj */;
+					ProductGroup = BD523E0F2093C61000865CD9 /* Products */;
+					ProjectRef = BD523E0E2093C61000865CD9 /* RNCamera.xcodeproj */;
 				},
 				{
 					ProductGroup = BD9D63F22086C67E00DC1850 /* Products */;
@@ -1091,11 +1091,11 @@
 			remoteRef = BD1F51F6208644FE00283AC7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BD4BFEC6208FC0290052954B /* libRNCamera.a */ = {
+		BD523E132093C61000865CD9 /* libRNCamera.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNCamera.a;
-			remoteRef = BD4BFEC5208FC0290052954B /* PBXContainerItemProxy */;
+			remoteRef = BD523E122093C61000865CD9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		BD9D641C2086C67E00DC1850 /* libRNFetchBlob.a */ = {
@@ -1378,6 +1378,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1413,6 +1417,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../../React/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;

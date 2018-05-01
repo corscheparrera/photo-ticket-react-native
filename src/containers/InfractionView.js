@@ -1,7 +1,6 @@
 import React from 'react'
 import { View, StyleSheet, Text, ScrollView, Button } from 'react-native'
 import { material, iOSColors, systemWeights } from 'react-native-typography'
-// import Icon from 'react-native-vector-icons/FontAwesome'
 
 import Header from '../components/Header'
 import ButtonPrimary from '../components/ButtonPrimary'
@@ -24,19 +23,19 @@ export default class Cam extends React.Component {
             </View>
             <View style={styles.paragraph}>
               <Text style={styles.title}>Conditions:</Text>
-              <Text style={styles.text}>{data.conditions}</Text>
+              <View style={styles.text}>{data.conditions}</View>
+
+              <Button
+                title="Consulter un avocat gratuitement"
+                onPress={() => navigation.navigate('ChatContainer')}
+              />
             </View>
-            <Button
-              title="Consulter un avocat gratuitement"
-              onPress={() => navigation.navigate('ChatContainer')}
-            />
           </View>
         </ScrollView>
       </View>
     )
   }
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -52,9 +51,9 @@ const styles = StyleSheet.create({
     // alignItems: 'center',
   },
   text: {
-    ...material.titleObject,
+    // ...material.titleObject,
     color: iOSColors.black,
-    ...systemWeights.light,
+    // ...systemWeights.light,
     fontSize: 14,
   },
   title: {
@@ -64,3 +63,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 })
+const markdownStyles = {
+  text: {
+    // ...material.titleObject,
+    color: iOSColors.black,
+    // ...systemWeights.light,
+    fontSize: 16,
+  },
+}
