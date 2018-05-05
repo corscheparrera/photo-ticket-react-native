@@ -10,6 +10,7 @@ import Home from './src/containers/Home'
 import MentionsLegales from './src/containers/MentionsLegales'
 import Settings from './src/containers/Settings'
 import ChatContainer from './src/containers/ChatContainer'
+import MyTickets from './src/containers/MyTickets'
 
 // configurer les routes avec React Native est un peu différent de React
 // J'ai donc suivi la documentation de React Navigation qui fournis un exemple pour native
@@ -21,6 +22,7 @@ const AppStack = StackNavigator(
     MentionsLegales: MentionsLegales,
     Settings: Settings,
     ChatContainer: ChatContainer,
+    MyTickets: MyTickets
   },
   {
     headerMode: 'none',

@@ -1,6 +1,6 @@
 import React from 'react'
-import { View, Text, StyleSheet, Image, Button } from 'react-native'
-import { material, iOSColors, systemWeights } from 'react-native-typography'
+import {View, Text, StyleSheet, Image, Button} from 'react-native'
+import {material, iOSColors, systemWeights} from 'react-native-typography'
 
 import Header from '../components/Header'
 import ButtonPrimary from '../components/ButtonPrimary'
@@ -9,24 +9,27 @@ export default class Menus extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Header title="Photo Ticket" navigation={this.props.navigation} />
+        <Header title="Photo Ticket" navigation={this.props.navigation}/>
         <View style={styles.content}>
           <Text style={styles.text}>
             Bienvenu {this.props.currentUser && this.props.currentUser.email}{' '}
           </Text>
           <Image
-            style={{ marginBottom: 40, marginTop: 40 }}
-            source={require('../images/logo.png')}
-          />
-          <ButtonPrimary onPress={() => this.props.openCam()} text="Prendre une photo" />
+            style={{
+            marginBottom: 40,
+            marginTop: 40
+          }}
+            source={require('../images/logo.png')}/>
+          <ButtonPrimary onPress={() => this.props.openCam()} text="Prendre une photo"/>
           <ButtonPrimary
             onPress={() => this.props.navigation.navigate('MentionsLegales')}
-            text="Mentions légales"
-          />
+            text="Mentions légales"/>
+          <ButtonPrimary
+            onPress={() => this.props.navigation.navigate('MyTickets')}
+            text="Mes tickets"/>
           <Button
             title="Consulter un avocat gratuitement"
-            onPress={() => this.props.navigation.navigate('ChatContainer')}
-          />
+            onPress={() => this.props.navigation.navigate('ChatContainer')}/>
         </View>
       </View>
     )
@@ -34,17 +37,17 @@ export default class Menus extends React.Component {
 }
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 1
   },
   content: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   },
 
   text: {
     ...material.titleObject,
     color: iOSColors.black,
-    ...systemWeights.light,
-  },
+    ...systemWeights.light
+  }
 })

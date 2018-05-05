@@ -147,7 +147,7 @@ export default class Home extends React.Component {
         return <BadFocus retryPicture={this.retryPicture} navigation={this.props.navigation} />
         break
       default:
-        return <InfractionView data={this.state.formattedText} navigation={this.props.navigation} />
+        return <InfractionView data={this.state.formattedText} navigation={this.props.navigation} imagePath={this.state.imagePath} />
     }
   }
 }

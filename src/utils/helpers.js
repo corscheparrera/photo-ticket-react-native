@@ -51,7 +51,6 @@ const infractions = {
           céder le passage à tout véhicule déjà engagé dans l’intersection, sans danger.
         </Text>
       ),
-
       point:
         '3 points d’inaptitude. Nous pouvons vous aider. Ce type de contravention comprend généralement un rapport policier. Il est recommandé d’en prendre connaissance avec toute chose.',
       image: '',
