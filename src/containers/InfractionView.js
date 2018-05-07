@@ -5,49 +5,55 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 import firebase from 'react-native-firebase'
 
 import Header from '../components/Header'
+import BackendChat from '../utils/BackendChat'
 
 
 const storage = firebase.storage()
+const database = firebase.database()
 
 export default class Cam extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       isLoading: false,
+      uid: BackendChat.getUid(),
+      imageURL: ''
     }
   }
 
-  uploadTicketToFireBase = async (uri, mime = 'image/jpg') => {
+
+  saveData = async (uri) => {
+    await this.uploadTicketToStorage(uri)
+    await this.uploadTicketToDB()
+  }
+
+
+  uploadTicketToStorage = async (uri, mime = 'image/jpg') => {
     this.setState({ isLoading: true });
     const sessionId = new Date().getTime()
-    const imageRef = storage.ref('images').child(`${sessionId}`)
+    const imageRef = storage.ref(`images/user_${this.state.uid}`).child(`${sessionId}`)
     await imageRef.put(uri, { contentType: mime })
-    this.setState({ isLoading: false });
-    // fs.readFile(uploadUri, 'base64')
-    //   .then((data) => {
-    //     return Blob.build(data, { type: `${mime};BASE64` })
-    //   })
-    //   .then((blob) => {
-    //     uploadBlob = blob
-    //     return imageRef.put(blob, { contentType: mime })
-    //   })
-    //   .then(() => {
-    //     uploadBlob.close()
-    //     return imageRef.getDownloadURL()
-    //   })
-    //   .then((url) => {
-    //     resolve(url)
-    //   })
-    //   .catch((error) => {
-    //     reject(error)
-    //   })
-
+    const imageURL = await imageRef.getDownloadURL()
+    this.setState({ imageURL: imageURL, isLoading: false });
   }
+
+  uploadTicketToDB = async () => {
+    let ticketRef = firebase.database().ref(`all-tickets`)
+    await ticketRef.push({
+      imageURL: this.state.imageURL,
+      user: this.state.uid,
+      createdAt: firebase.database.ServerValue.TIMESTAMP,
+      data: this.props.data
+    })
+  }
+
+
+
   renderLoadingView = () => {
     if (this.state.isLoading) {
       return (
         <View style={styles.loader}>
-          <Text>Analyse en cours</Text>
+          <Text>Sauvegarde en cours</Text>
           <ActivityIndicator size="large" />
         </View>
       )
@@ -65,7 +71,6 @@ export default class Cam extends React.Component {
                 <Text style={styles.title}>{data.art}</Text>
                 <Text style={styles.title}>{data.règlement}</Text>
               </View>
-
               <View style={styles.paragraph}>
                 <Text style={styles.title}>Résumé:
               </Text>
@@ -75,7 +80,7 @@ export default class Cam extends React.Component {
                 <Text style={styles.title}>Conditions:</Text>
                 <View style={styles.text}>{data.conditions}</View>
                 <View style={styles.saveOrDiscard}>
-                  <Icon style={styles.icon} name="save" size={34} onPress={() => this.uploadTicketToFireBase(this.props.imagePath)} />
+                  <Icon style={styles.icon} name="save" size={34} onPress={() => this.saveData(this.props.imagePath)} />
                   <Icon style={styles.icon} name="trash-o" size={34} onPress={() => { }} />
                 </View>
                 <Button

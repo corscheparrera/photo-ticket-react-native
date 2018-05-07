@@ -41,7 +41,7 @@ export default class ChatContainer extends Component {
   }
 
   render() {
-    const { currentUser, uid } = this.state
+
     return (
       <View style={styles.container}>
         <Header title="Chat" navigation={this.props.navigation} />

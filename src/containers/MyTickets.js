@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Image } from 'react-native'
 import firebase from 'react-native-firebase'
 import { material, iOSColors, systemWeights } from 'react-native-typography'
 
@@ -14,7 +14,7 @@ export default class MyTickets extends Component {
 
     this.setState({ currentUser })
   }
- 
+
   render() {
     const { currentUser } = this.state
     return (
@@ -22,6 +22,8 @@ export default class MyTickets extends Component {
         <Header title="Mes tickets" navigation={this.props.navigation} />
         <View style={styles.content}>
           <Text style={styles.text}>MY TICKETS</Text>
+          <Image style={{ width: 55, height: 55 }} source={{ uri: "https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/images%2Fuser_V68h7qVsHiWsIyLcx0T0pC2qrfQ2%2F1525703435698?alt=media&token=6b297c99-88a8-4417-9cc1-3e3df7843e97" }} />
+
         </View>
       </View>
     )
