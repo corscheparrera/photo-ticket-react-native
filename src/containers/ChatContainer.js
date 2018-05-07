@@ -41,7 +41,6 @@ export default class ChatContainer extends Component {
   }
 
   render() {
-
     return (
       <View style={styles.container}>
         <Header title="Chat" navigation={this.props.navigation} />

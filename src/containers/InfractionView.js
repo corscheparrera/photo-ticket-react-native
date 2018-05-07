@@ -38,7 +38,7 @@ export default class Cam extends React.Component {
   }
 
   uploadTicketToDB = async () => {
-    let ticketRef = firebase.database().ref(`all-tickets`)
+    let ticketRef = firebase.database().ref(`all-tickets/ticket-${this.state.uid}`)
     await ticketRef.push({
       imageURL: this.state.imageURL,
       user: this.state.uid,
@@ -46,7 +46,6 @@ export default class Cam extends React.Component {
       data: this.props.data
     })
   }
-
 
 
   renderLoadingView = () => {
