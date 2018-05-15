@@ -24,6 +24,7 @@ export default class Header extends React.Component {
             } else if (this.props.title !== 'Photo Ticket') {
               goBack()
             }
+
           }}
         />
         <Text style={styles.navBarHeader}>{this.props.title}</Text>
