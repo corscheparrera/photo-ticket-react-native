@@ -23,13 +23,18 @@ export default class Login extends React.Component {
       .catch(error => this.setState({ errorMessage: error.message }));
     this.storeUserInfos();
   };
-  storeUserInfos = () => {
+  storeUserInfos = async () => {
     let user = firebase.auth().currentUser;
     if (user != null) {
       let usersRef = firebase.database().ref(`allUsers/${user.uid}`);
-      usersRef.push({ user: user });
+      let snapshot = await usersRef.once("value");
+      const userInfos = snapshot.val();
+      if (userInfos) {
+        console.log("user exists");
+      } else usersRef.push({ ...user._user });
     }
   };
+
   render() {
     return (
       <KeyboardAvoidingView style={styles.container} behavior="padding">
