@@ -2,9 +2,7 @@ import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
 
 import BadFocus from "./BadFocus";
 import CamView from "./CamView";
-import Camera from "react-native-camera";
 import ConfirmPicView from "./ConfirmPicView";
-import Icon from "react-native-vector-icons/FontAwesome";
 import InfractionView from "./InfractionView";
 import MainMenu from "./MainMenu";
 import RNFetchBlob from "react-native-fetch-blob";
@@ -124,7 +122,6 @@ export default class Home extends React.Component {
             openCam={this.openCam}
           />
         );
-        break;
       case "Cam View":
         return (
           <CamView
@@ -133,7 +130,6 @@ export default class Home extends React.Component {
             closeCam={this.closeCam}
           />
         );
-        break;
       case "Confirm Pic View":
         return (
           <ConfirmPicView
@@ -142,7 +138,6 @@ export default class Home extends React.Component {
             discardPicture={this.discardPicture}
           />
         );
-        break;
       case "Loading":
         return (
           <View style={styles.loader}>
@@ -150,7 +145,6 @@ export default class Home extends React.Component {
             <ActivityIndicator size="large" />
           </View>
         );
-        break;
       case "Bad Focus":
         return (
           <BadFocus
@@ -158,7 +152,6 @@ export default class Home extends React.Component {
             navigation={this.props.navigation}
           />
         );
-        break;
       default:
         return (
           <InfractionView
