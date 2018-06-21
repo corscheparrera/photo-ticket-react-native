@@ -26,6 +26,7 @@ export default class ChatContainer extends Component {
       console.log(e);
     }
   };
+
   componentDidMount() {
     BackendChat.loadMessages(message => {
       this.setState(previousState => {
@@ -39,42 +40,7 @@ export default class ChatContainer extends Component {
     BackendChat.closeChat();
   };
 
-  nameView = () => {
-    return (
-      <View style={styles.container}>
-        <Header title="Chat" navigation={this.props.navigation} />
-        <View style={styles.content}>
-          <Text style={styles.title}>
-            Identifiez-vous afin de joindre Me Harvey
-          </Text>
-          {this.state.errorMessage && (
-            <Text style={{ color: "red" }}>{this.state.errorMessage}</Text>
-          )}
-          <TextInput
-            style={styles.textInput}
-            placeholder="Prénom"
-            autoCapitalize="none"
-            onChangeText={email => this.setState({ email })}
-            value={this.state.email}
-          />
-          <TextInput
-            style={styles.textInput}
-            placeholder="Nom"
-            autoCapitalize="none"
-            onChangeText={email => this.setState({ email })}
-            value={this.state.email}
-          />
-
-          <ButtonPrimary
-            onPress={this.handleLogin}
-            text="Joindre"
-            buttonColor="#33AAFF"
-          />
-        </View>
-      </View>
-    );
-  };
-  chatView = () => {
+  render() {
     return (
       <View style={styles.container}>
         <Header title="Chat" navigation={this.props.navigation} />
@@ -86,40 +52,16 @@ export default class ChatContainer extends Component {
           }}
           user={{
             _id: BackendChat.getUid(),
-            name: "max"
+            email: BackendChat.getEmail()
           }}
           placeholder="Écrire un message..."
         />
       </View>
     );
-  };
-
-  render() {
-    return this.nameView();
   }
 }
 const styles = StyleSheet.create({
   container: {
     flex: 1
-  },
-  content: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
-  },
-  title: {
-    color: "#33AAFF",
-    fontSize: 18,
-    fontWeight: "bold",
-    textAlign: "center"
-  },
-  textInput: {
-    height: 40,
-    width: "90%",
-    borderColor: "#33AAFF",
-    borderWidth: 1,
-    borderRadius: 10,
-    marginTop: 8,
-    textAlign: "center"
   }
 });

@@ -1,27 +1,46 @@
-import React from 'react'
-import { StyleSheet, Text, TextInput, View, Image, KeyboardAvoidingView } from 'react-native'
-import firebase from 'react-native-firebase'
+import React from "react";
+import {
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+  Image,
+  KeyboardAvoidingView
+} from "react-native";
+import firebase from "react-native-firebase";
 
-import ButtonPrimary from '../components/ButtonPrimary'
+import ButtonPrimary from "../components/ButtonPrimary";
 
 export default class Login extends React.Component {
-  state = { email: '', password: '', errorMessage: null }
+  state = { email: "", password: "", errorMessage: null };
 
-  handleLogin = () => {
-    const { email, password } = this.state
-    firebase
+  handleLogin = async () => {
+    const { email, password } = this.state;
+    await firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
-      .then(() => this.props.navigation.navigate('Home'))
-      .catch(error => this.setState({ errorMessage: error.message }))
-  }
-
+      .then(() => this.props.navigation.navigate("Home"))
+      .catch(error => this.setState({ errorMessage: error.message }));
+    this.storeUserInfos();
+  };
+  storeUserInfos = () => {
+    let user = firebase.auth().currentUser;
+    if (user != null) {
+      let usersRef = firebase.database().ref(`allUsers/${user.uid}`);
+      usersRef.push({ user: user });
+    }
+  };
   render() {
     return (
       <KeyboardAvoidingView style={styles.container} behavior="padding">
-        <Image style={{ marginBottom: 60 }} source={require('../images/logo.png')} />
+        <Image
+          style={{ marginBottom: 60 }}
+          source={require("../images/logo.png")}
+        />
         <Text style={styles.title}>Connectez-vous</Text>
-        {this.state.errorMessage && <Text style={{ color: 'red' }}>{this.state.errorMessage}</Text>}
+        {this.state.errorMessage && (
+          <Text style={{ color: "red" }}>{this.state.errorMessage}</Text>
+        )}
         <TextInput
           style={styles.textInput}
           placeholder="Email"
@@ -38,42 +57,46 @@ export default class Login extends React.Component {
           value={this.state.password}
         />
 
-        <ButtonPrimary onPress={this.handleLogin} text="Connexion" buttonColor="#33AAFF" />
+        <ButtonPrimary
+          onPress={this.handleLogin}
+          text="Connexion"
+          buttonColor="#33AAFF"
+        />
 
         <Text
           onPress={() => this.props.navigation.goBack()}
           style={{
             paddingTop: 24,
-            fontWeight: 'normal',
+            fontWeight: "normal",
             fontSize: 18,
-            color: '#000000',
+            color: "#000000"
           }}
         >
           C'est votre première utilisation?
         </Text>
       </KeyboardAvoidingView>
-    )
+    );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center"
   },
   title: {
-    color: '#33AAFF',
+    color: "#33AAFF",
     fontSize: 18,
-    fontWeight: 'bold',
+    fontWeight: "bold"
   },
   textInput: {
     height: 40,
-    width: '90%',
-    borderColor: '#33AAFF',
+    width: "90%",
+    borderColor: "#33AAFF",
     borderWidth: 1,
     borderRadius: 10,
     marginTop: 8,
-    textAlign: 'center',
-  },
-})
+    textAlign: "center"
+  }
+});

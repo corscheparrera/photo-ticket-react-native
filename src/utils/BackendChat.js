@@ -6,14 +6,23 @@ const database = firebase.database();
 class BackendChat {
   constructor() {
     firebase.auth().onAuthStateChanged(user => {
-      this.setUid(user.uid);
+      if (user) {
+        this.setUid(user.uid);
+        this.setEmail(user.email);
+      }
     });
   }
   setUid(value) {
     this.uid = value;
   }
+  setEmail(value) {
+    this.email = value;
+  }
   getUid() {
     return this.uid;
+  }
+  getEmail() {
+    return this.email;
   }
   // retrieve the messages from the backend
   loadMessages(callback) {
@@ -27,7 +36,7 @@ class BackendChat {
         createdAt: new Date(message.createdAt),
         user: {
           _id: message.user._id,
-          name: message.user.name
+          email: message.user.email
         }
       });
     };
