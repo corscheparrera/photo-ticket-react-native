@@ -31,7 +31,7 @@ export default class Login extends React.Component {
       const userInfos = snapshot.val();
       if (userInfos) {
         console.log("user exists");
-      } else usersRef.push({ ...user._user });
+      } else usersRef.update({ ...user._user });
     }
   };
 

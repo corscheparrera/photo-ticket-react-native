@@ -25,7 +25,10 @@ export default class ChatContainer extends Component {
   constructor() {
     super();
     this.state = {
-      messages: []
+      messages: [],
+      name: "",
+      lastName: "",
+      phoneNumber: ""
     };
   }
   componentWillMount() {
@@ -62,7 +65,23 @@ export default class ChatContainer extends Component {
         alert("please enter numbers only");
       }
     }
-    this.setState({ myNumber: newText });
+    this.setState({ phoneNumber: newText });
+  };
+  storeUserInfos = async () => {
+    let user = firebase.auth().currentUser;
+    if (user != null) {
+      let usersRef = firebase.database().ref(`allUsers/${user.uid}`);
+      let snapshot = await usersRef.once("value");
+      const userInfos = snapshot.val();
+      // if (userInfos) {
+      //   console.log("user exists");
+      // } else
+      usersRef.update({
+        name: this.state.name,
+        lastName: this.state.lastName,
+        phoneNumber: this.state.phoneNumber
+      });
+    }
   };
 
   userInfosView = () => {
@@ -81,26 +100,28 @@ export default class ChatContainer extends Component {
               style={styles.textInput}
               placeholder="Prénom"
               autoCapitalize="none"
-              onChangeText={email => this.setState({ email })}
-              value={this.state.email}
+              onChangeText={name => this.setState({ name })}
+              value={this.state.name}
             />
             <TextInput
               style={styles.textInput}
               placeholder="Nom"
               autoCapitalize="none"
-              onChangeText={email => this.setState({ email })}
-              value={this.state.email}
+              onChangeText={lastName => this.setState({ lastName })}
+              value={this.state.lastName}
             />
 
             <TextInput
               style={styles.textInput}
+              placeholder="1(819)445-0400"
               keyboardType="numeric"
-              onChangeText={text => this.onChanged(text)}
-              value={this.state.myNumber}
+              // onChangeText={text => this.onChanged(text)}
+              onChangeText={phoneNumber => this.setState({ phoneNumber })}
+              value={this.state.phoneNumber}
               maxLength={10} //setting limit of input
             />
             <ButtonPrimary
-              onPress={this.handleLogin}
+              onPress={this.storeUserInfos}
               text="Joindre"
               buttonColor="#33AAFF"
             />
