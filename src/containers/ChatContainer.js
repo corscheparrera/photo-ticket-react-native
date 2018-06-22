@@ -5,7 +5,8 @@ import {
   StyleSheet,
   TextInput,
   TouchableWithoutFeedback,
-  Keyboard
+  Keyboard,
+  KeyboardAvoidingView
 } from "react-native";
 import firebase from "react-native-firebase";
 import { GiftedChat } from "react-native-gifted-chat";
@@ -86,9 +87,10 @@ export default class ChatContainer extends Component {
 
   userInfosView = () => {
     return (
-      <DissmissKeyboard>
-        <View style={styles.container}>
-          <Header title="Chat" navigation={this.props.navigation} />
+      <KeyboardAvoidingView style={styles.container} behavior="padding">
+        <Header title="Chat" navigation={this.props.navigation} />
+        <DissmissKeyboard>
+          {/* <View style={styles.container}> */}
           <View style={styles.content}>
             <Text style={styles.title}>
               Identifiez-vous afin de joindre Me Harvey
@@ -126,8 +128,9 @@ export default class ChatContainer extends Component {
               buttonColor="#33AAFF"
             />
           </View>
-        </View>
-      </DissmissKeyboard>
+          {/* </View> */}
+        </DissmissKeyboard>
+      </KeyboardAvoidingView>
     );
   };
 
