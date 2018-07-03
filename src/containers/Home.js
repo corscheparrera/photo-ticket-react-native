@@ -63,7 +63,7 @@ export default class Home extends React.Component {
 
     try {
       let base64image = await fs.readFile(uri, "base64");
-      let resonse = await axios.post("http://192.168.0.126:5000/google-ocr", {
+      let response = await axios.post("http://192.168.0.126:5000/google-ocr", {
         image: base64image
       });
 

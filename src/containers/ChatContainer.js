@@ -1,27 +1,13 @@
 import React, { Component } from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  TextInput,
-  TouchableWithoutFeedback,
-  Keyboard,
-  KeyboardAvoidingView
-} from "react-native";
+import { View, StyleSheet } from "react-native";
 import firebase from "react-native-firebase";
 import { GiftedChat } from "react-native-gifted-chat";
 
 import Header from "../components/Header";
-import ButtonPrimary from "../components/ButtonPrimary";
+
 import BackendChat from "../utils/BackendChat";
 
 const database = firebase.database();
-
-const DissmissKeyboard = ({ children }) => (
-  <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
-    {children}
-  </TouchableWithoutFeedback>
-);
 export default class ChatContainer extends Component {
   constructor() {
     super();
@@ -54,90 +40,11 @@ export default class ChatContainer extends Component {
   componentWillUnmount = () => {
     BackendChat.closeChat();
   };
-  onChanged = text => {
-    let newText = "";
-    let numbers = "0123456789";
-
-    for (var i = 0; i < text.length; i++) {
-      if (numbers.indexOf(text[i]) > -1) {
-        newText = newText + text[i];
-      } else {
-        // your call back function
-        alert("please enter numbers only");
-      }
-    }
-    this.setState({ phoneNumber: newText });
-  };
-  storeUserInfos = async () => {
-    let user = firebase.auth().currentUser;
-    if (user != null) {
-      let usersRef = firebase.database().ref(`allUsers/${user.uid}`);
-      let snapshot = await usersRef.once("value");
-      const userInfos = snapshot.val();
-      // if (userInfos) {
-      //   console.log("user exists");
-      // } else
-      usersRef.update({
-        name: this.state.name,
-        lastName: this.state.lastName,
-        phoneNumber: this.state.phoneNumber
-      });
-    }
-  };
-
-  userInfosView = () => {
-    return (
-      <KeyboardAvoidingView style={styles.container} behavior="padding">
-        <Header title="Chat" navigation={this.props.navigation} />
-        <DissmissKeyboard>
-          {/* <View style={styles.container}> */}
-          <View style={styles.content}>
-            <Text style={styles.title}>
-              Identifiez-vous afin de joindre Me Harvey
-            </Text>
-            {this.state.errorMessage && (
-              <Text style={{ color: "red" }}>{this.state.errorMessage}</Text>
-            )}
-            <TextInput
-              style={styles.textInput}
-              placeholder="Prénom"
-              autoCapitalize="none"
-              onChangeText={name => this.setState({ name })}
-              value={this.state.name}
-            />
-            <TextInput
-              style={styles.textInput}
-              placeholder="Nom"
-              autoCapitalize="none"
-              onChangeText={lastName => this.setState({ lastName })}
-              value={this.state.lastName}
-            />
-
-            <TextInput
-              style={styles.textInput}
-              placeholder="1(819)445-0400"
-              keyboardType="numeric"
-              // onChangeText={text => this.onChanged(text)}
-              onChangeText={phoneNumber => this.setState({ phoneNumber })}
-              value={this.state.phoneNumber}
-              maxLength={10} //setting limit of input
-            />
-            <ButtonPrimary
-              onPress={this.storeUserInfos}
-              text="Joindre"
-              buttonColor="#33AAFF"
-            />
-          </View>
-          {/* </View> */}
-        </DissmissKeyboard>
-      </KeyboardAvoidingView>
-    );
-  };
 
   chatView = () => {
     return (
       <View style={styles.container}>
-        <Header title="Chat" navigation={this.props.navigation} />
+        {/* <Header title="Chat" navigation={this.props.navigation} /> */}
         <GiftedChat
           renderAvatar={null}
           messages={this.state.messages}
@@ -155,7 +62,7 @@ export default class ChatContainer extends Component {
   };
 
   render() {
-    return this.userInfosView();
+    return this.chatView();
   }
 }
 const styles = StyleSheet.create({

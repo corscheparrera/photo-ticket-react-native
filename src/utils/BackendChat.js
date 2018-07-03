@@ -46,7 +46,7 @@ class BackendChat {
   async notifyLawyer() {
     try {
       const chatID = this.getUid();
-      await axios.post("http://192.168.0.126:5000/send-email", { id: chatID });
+      await axios.post("http://192.168.2.11:5000/send-email", { id: chatID });
       // await axios.post('http://192.168.2.11:5000/send-email', {id:chatID})
     } catch (error) {
       console.log(error);
@@ -57,11 +57,15 @@ class BackendChat {
     const uid = await this.getUid();
     await this.notifyLawyer(uid);
     let messagesRef = firebase.database().ref(`allChat/chat${this.uid}`);
+    let usersRef = firebase.database().ref(`allUsers/${this.uid}`);
     for (let i = 0; i < message.length; i++) {
-      messagesRef.push({
+      await messagesRef.push({
         text: message[i].text,
         user: message[i].user,
         createdAt: firebase.database.ServerValue.TIMESTAMP
+      });
+      await usersRef.update({
+        lastOnline: firebase.database.ServerValue.TIMESTAMP
       });
     }
   }
