@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
     fontSize: 16
   },
   icon: {
-    color: '#05E085'
+    color: '#BE1551'
   },
   saveOrDiscard: {
     marginTop: 30,

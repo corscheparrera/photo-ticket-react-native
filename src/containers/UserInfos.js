@@ -21,8 +21,8 @@ const DissmissKeyboard = ({ children }) => (
   </TouchableWithoutFeedback>
 );
 export default class UserInfos extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       name: "",
       lastName: "",
@@ -38,9 +38,7 @@ export default class UserInfos extends Component {
       let usersRef = firebase.database().ref(`allUsers/${user.uid}`);
       let snapshot = await usersRef.once("value");
       const userInfos = snapshot.val();
-      // if (userInfos) {
-      //   console.log("user exists");
-      // } else
+
       await usersRef.update({
         name: this.state.name,
         lastName: this.state.lastName,
@@ -79,7 +77,7 @@ export default class UserInfos extends Component {
 
             <TextInput
               style={styles.textInput}
-              placeholder="18194450400"
+              placeholder="+18194450400"
               keyboardType="numeric"
               onChangeText={phoneNumber => this.setState({ phoneNumber })}
               value={this.state.phoneNumber}
@@ -97,7 +95,7 @@ export default class UserInfos extends Component {
 
   displayView = () => {
     if (this.state.showChatView) {
-      return <ChatContainer />;
+      return <ChatContainer navigation={this.props.navigation} />;
     }
     if (this.state.showUserInfosView) {
       return this.userInfosView();

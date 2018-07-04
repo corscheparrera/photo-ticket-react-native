@@ -11,32 +11,29 @@ export default class Menus extends React.Component {
       <View style={styles.container}>
         <Header title="Photo Ticket" navigation={this.props.navigation} />
         <View style={styles.content}>
-          <Text style={styles.text}>
-            Bienvenu {this.props.currentUser && this.props.currentUser.email}{" "}
-          </Text>
           <Image
             style={{
               marginBottom: 40,
               marginTop: 40
             }}
-            source={require("../images/logo.png")}
+            source={require("../images/logo_photo_ticekt_9.png")}
           />
           <ButtonPrimary
             onPress={() => this.props.openCam()}
             text="Prendre une photo"
           />
           <ButtonPrimary
-            onPress={() => this.props.navigation.navigate("MentionsLegales")}
-            text="Mentions légales"
-          />
-          <ButtonPrimary
             onPress={() => this.props.navigation.navigate("MyTickets")}
             text="Mes tickets"
           />
-          <Button
+          <ButtonPrimary
+            onPress={() => this.props.navigation.navigate("MentionsLegales")}
+            text="Mentions légales"
+          />
+          {/* <Button
             title="Consulter un avocat gratuitement"
             onPress={() => this.props.navigation.navigate("UserInfos")}
-          />
+          /> */}
         </View>
       </View>
     );

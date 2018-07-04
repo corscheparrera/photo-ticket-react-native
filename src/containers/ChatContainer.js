@@ -12,10 +12,7 @@ export default class ChatContainer extends Component {
   constructor() {
     super();
     this.state = {
-      messages: [],
-      name: "",
-      lastName: "",
-      phoneNumber: ""
+      messages: []
     };
   }
   componentWillMount() {
@@ -44,7 +41,7 @@ export default class ChatContainer extends Component {
   chatView = () => {
     return (
       <View style={styles.container}>
-        {/* <Header title="Chat" navigation={this.props.navigation} /> */}
+        <Header title="Chat" navigation={this.props.navigation} />
         <GiftedChat
           renderAvatar={null}
           messages={this.state.messages}

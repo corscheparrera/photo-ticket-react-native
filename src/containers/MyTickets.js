@@ -1,37 +1,47 @@
-import React, { Component } from 'react'
-import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity, Dimensions } from 'react-native'
-import firebase from 'react-native-firebase'
-import { material, iOSColors, systemWeights } from 'react-native-typography'
-import moment from 'moment';
-import Icon from 'react-native-vector-icons/FontAwesome'
+import React, { Component } from "react";
+import {
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  ScrollView,
+  TouchableOpacity,
+  Dimensions
+} from "react-native";
+import firebase from "react-native-firebase";
+import { material, iOSColors, systemWeights } from "react-native-typography";
+import moment from "moment";
+import Icon from "react-native-vector-icons/FontAwesome";
 
+import BackendChat from "../utils/BackendChat";
+import Header from "../components/Header";
+import ButtonPrimary from "../components/ButtonPrimary";
 
-import BackendChat from '../utils/BackendChat'
-import Header from '../components/Header'
-import ButtonPrimary from '../components/ButtonPrimary'
-
-const database = firebase.database()
+const database = firebase.database();
 
 export default class MyTickets extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       tickets: [],
       uid: BackendChat.getUid(),
       imageShouldDisplay: false
-    }
+    };
   }
   componentWillMount() {
-    this.loadTickets()
+    this.loadTickets();
   }
   // retrieve the tickets from the backend
   loadTickets = async () => {
-    const data = await firebase.database().ref(`all-tickets/ticket-${this.state.uid}`).once("value")
-    const elements = []
+    const data = await firebase
+      .database()
+      .ref(`all-tickets/ticket-${this.state.uid}`)
+      .once("value");
+    const elements = [];
     data.forEach(element => {
-      elements.push(element.val())
+      elements.push(element.val());
     });
-    const datas = data.val()
+    const datas = data.val();
     this.setState({
       tickets: [...this.state.tickets, ...elements]
     });
@@ -42,58 +52,74 @@ export default class MyTickets extends Component {
       <View style={styles.navBar}>
         <Icon
           style={styles.navBarButton}
-          name={'arrow-left'}
+          name={"arrow-left"}
           size={24}
           onPress={() => {
-            this.toggleImageDisplay()
+            this.toggleImageDisplay();
           }}
         />
-        <Text style={styles.navBarHeader}>{'Mes tickets'}</Text>
-        <Icon
-          style={styles.navBarButton}
-          name={''}
-          size={24}
-        />
+        <Text style={styles.navBarHeader}>{"Mes tickets"}</Text>
+        <Icon style={styles.navBarButton} name={""} size={24} />
       </View>
-    )
-  }
+    );
+  };
   toggleImageDisplay = () => {
     if (this.state.imageShouldDisplay) {
       this.setState({ imageShouldDisplay: false });
-    }
-    else this.setState({ imageShouldDisplay: true });
-  }
+    } else this.setState({ imageShouldDisplay: true });
+  };
 
   renderImage = () => {
     if (this.state.imageShouldDisplay) {
       return (
-        <View >
+        <View>
           {this.customNavBar()}
-          <Image style={{ height: 700, width: 400 }} source={{ uri: "https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/images%2Fuser_V68h7qVsHiWsIyLcx0T0pC2qrfQ2%2F1525703435698?alt=media&token=6b297c99-88a8-4417-9cc1-3e3df7843e97" }} />
+          <Image
+            style={{ height: 700, width: 400 }}
+            source={{
+              uri:
+                "https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/images%2Fuser_V68h7qVsHiWsIyLcx0T0pC2qrfQ2%2F1525703435698?alt=media&token=6b297c99-88a8-4417-9cc1-3e3df7843e97"
+            }}
+          />
         </View>
-      )
+      );
     }
-  }
+  };
   renderTickets = () => {
     if (!this.state.imageShouldDisplay) {
       return this.state.tickets.map(ticket => {
         return (
           <View key={ticket.createdAt}>
-            <TouchableOpacity activeOpacity={.5} onPress={() => this.toggleImageDisplay()}>
-              <Image style={{ width: 55, height: 55 }} source={{ uri: "https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/images%2Fuser_V68h7qVsHiWsIyLcx0T0pC2qrfQ2%2F1525703435698?alt=media&token=6b297c99-88a8-4417-9cc1-3e3df7843e97" }} />
+            <TouchableOpacity
+              activeOpacity={0.5}
+              onPress={() => this.toggleImageDisplay()}
+            >
+              <Image
+                style={{ width: 55, height: 55 }}
+                source={{
+                  uri:
+                    "https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/images%2Fuser_V68h7qVsHiWsIyLcx0T0pC2qrfQ2%2F1525703435698?alt=media&token=6b297c99-88a8-4417-9cc1-3e3df7843e97"
+                }}
+              />
             </TouchableOpacity>
             <Text style={styles.text}>{ticket.data.art}</Text>
-            <Text style={styles.text}>{'Date: '}{moment(ticket.createdAt).format("YYYY/MM/DD")}</Text>
-            <Text style={styles.text}>{'Résumé: '}{ticket.data.résumé}</Text>
+            <Text style={styles.text}>
+              {"Date: "}
+              {moment(ticket.createdAt).format("YYYY/MM/DD")}
+            </Text>
+            <Text style={styles.text}>
+              {"Résumé: "}
+              {ticket.data.résumé}
+            </Text>
           </View>
-        )
-      })
+        );
+      });
     }
-  }
+  };
   renderTicketsContainer = () => {
     if (!this.state.imageShouldDisplay) {
       return (
-        <View >
+        <View>
           <Header title="Mes tickets" navigation={this.props.navigation} />
           <ScrollView>
             <View style={styles.content}>
@@ -102,55 +128,52 @@ export default class MyTickets extends Component {
             </View>
           </ScrollView>
         </View>
-      )
+      );
     }
-
-  }
+  };
 
   render() {
-    const { currentUser } = this.state
+    const { currentUser } = this.state;
     return (
       <View style={styles.container}>
         {this.renderTicketsContainer()}
         {this.renderImage()}
       </View>
-
-    )
+    );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 1
   },
   content: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center"
   },
   text: {
     ...material.titleObject,
     color: iOSColors.black,
-    ...systemWeights.light,
+    ...systemWeights.light
   },
 
   navBar: {
-    flexDirection: 'row',
+    flexDirection: "row",
     paddingTop: 30,
     height: 64,
-    backgroundColor: '#05E085',
+    backgroundColor: "#BE1551"
   },
   navBarButton: {
-    color: '#FFFFFF',
-    textAlign: 'center',
-    width: 64,
+    color: "#FFFFFF",
+    textAlign: "center",
+    width: 64
   },
   navBarHeader: {
     flex: 1,
-    color: '#FFFFFF',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    fontSize: 18,
-  },
-  
-})
+    color: "#FFFFFF",
+    fontWeight: "bold",
+    textAlign: "center",
+    fontSize: 18
+  }
+});
