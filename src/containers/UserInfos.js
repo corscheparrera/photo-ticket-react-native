@@ -30,8 +30,22 @@ export default class UserInfos extends Component {
       showUserInfosView: true,
       showChatView: false
     };
+    this.getUserInfos();
   }
+  getUserInfos = async () => {
+    let user = firebase.auth().currentUser;
+    if (user != null) {
+      let usersRef = firebase.database().ref(`allUsers/${user.uid}`);
+      let snapshot = await usersRef.once("value");
+      const userInfos = snapshot.val();
 
+      this.setState({
+        name: userInfos.name,
+        lastName: userInfos.lastName,
+        phoneNumber: userInfos.phoneNumber
+      });
+    }
+  };
   storeUserInfos = async () => {
     let user = firebase.auth().currentUser;
     if (user != null) {
@@ -77,7 +91,7 @@ export default class UserInfos extends Component {
 
             <TextInput
               style={styles.textInput}
-              placeholder="+18194450400"
+              placeholder="8194450400"
               keyboardType="numeric"
               onChangeText={phoneNumber => this.setState({ phoneNumber })}
               value={this.state.phoneNumber}
