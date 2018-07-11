@@ -2,7 +2,7 @@ import { Button, ScrollView, StyleSheet, Text, View } from "react-native";
 
 import React from "react";
 // import RNFetchBlob from 'react-native-fetch-blob'
-import axios from "axios";
+
 import stringSimilarity from "string-similarity";
 
 const Bold = props => (

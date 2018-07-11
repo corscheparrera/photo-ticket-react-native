@@ -46,7 +46,9 @@ class BackendChat {
   async notifyLawyer() {
     try {
       const chatID = this.getUid();
-      await axios.post("http://192.168.2.11:5000/send-email", { id: chatID });
+      await axios.post("/api/send-email", {
+        id: chatID
+      });
       // await axios.post('http://192.168.2.11:5000/send-email', {id:chatID})
     } catch (error) {
       console.log(error);

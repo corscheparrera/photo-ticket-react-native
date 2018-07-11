@@ -63,11 +63,17 @@ export default class Home extends React.Component {
 
     try {
       let base64image = await fs.readFile(uri, "base64");
-      let response = await axios.post("http://192.168.0.126:5000/google-ocr", {
-        image: base64image
-      });
+      let response = await axios.post(
+        "http://192.168.0.126:5000/api/google-ocr",
+        {
+          image: base64image
+        }
+      );
+      console.log(response);
 
       let textIsOk = parseData(response);
+      console.log(textIsOk);
+
       if (textIsOk) {
         this.setState({
           formattedText: {
