@@ -10,6 +10,7 @@ import React from "react";
 import axios from "axios";
 import firebase from "react-native-firebase";
 import { parseData } from "../utils/helpers";
+import { mergeAllInfractions } from "../utils/infractionsList";
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -69,6 +70,7 @@ export default class Home extends React.Component {
           image: base64image
         }
       );
+      console.log(mergeAllInfractions());
       console.log(response);
 
       let textIsOk = parseData(response);
