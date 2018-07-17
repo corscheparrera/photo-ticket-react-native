@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   View,
   StyleSheet,
@@ -10,7 +11,7 @@ import {
 import { material, iOSColors, systemWeights } from "react-native-typography";
 import Icon from "react-native-vector-icons/FontAwesome";
 import firebase from "react-native-firebase";
-
+import { mergeAllInfractions } from "../utils/infractionsList";
 import Header from "../components/Header";
 import BackendChat from "../utils/BackendChat";
 
@@ -71,8 +72,8 @@ export default class Cam extends React.Component {
           <ScrollView>
             <View style={styles.content}>
               <View style={styles.paragraph}>
-                <Text style={styles.title}>{data.art}</Text>
-                <Text style={styles.title}>{data.source}</Text>
+                {/* <Text style={styles.title}>{data.art}</Text>
+                <Text style={styles.title}>{data.source}</Text> */}
               </View>
               <View style={styles.paragraph}>
                 <Text style={styles.title}>Résumé:</Text>
@@ -80,7 +81,7 @@ export default class Cam extends React.Component {
               </View>
               <View style={styles.paragraph}>
                 <Text style={styles.title}>Conditions:</Text>
-                <View style={styles.text}>{data.conditions}</View>
+                <View style={styles.text}>{mergeAllInfractions()}</View>
                 <View style={styles.saveOrDiscard}>
                   <Icon
                     style={styles.icon}

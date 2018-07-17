@@ -26,6 +26,7 @@ export default class Home extends React.Component {
   }
   componentDidMount() {
     const { currentUser } = firebase.auth();
+
     this.setState({ currentUser });
   }
   openCam = () => {
@@ -70,7 +71,7 @@ export default class Home extends React.Component {
           image: base64image
         }
       );
-      console.log(mergeAllInfractions());
+
       console.log(response);
 
       let textIsOk = parseData(response);

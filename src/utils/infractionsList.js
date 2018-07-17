@@ -1,6 +1,7 @@
 import { Button, ScrollView, StyleSheet, Text, View } from 'react-native'
 
 import React from 'react'
+import reactElementToJSXString from 'react-element-to-jsx-string';
 
 const Bold = props => <Text style={{ fontWeight: 'bold' }}>{props.children}</Text>
 const Color = props => <Text style={{ color: '#0074D9' }}>{props.children}</Text>
@@ -8017,13 +8018,13 @@ export const infractions = {
                         {'\n\n'}
                         2° le conducteur du véhicule routier ou le cycliste consulte l’information affichée sur un écran d’affichage, y compris celui d’un appareil électronique portatif, ou active une fonction de l’écran si celui-ci satisfait à l’ensemble des conditions suivantes:
                         {'\n'}
-                        a) il affiche uniquement des informations pertinentes pour la conduite du véhicule ou liées au fonctionnement de ses équipements usuels;
+                        (a) il affiche uniquement des informations pertinentes pour la conduite du véhicule ou liées au fonctionnement de ses équipements usuels;
                         {'\n'}
-                        b) il est intégré au véhicule ou installé sur un support, amovible ou non, fixé sur le véhicule;
+                        (b) il est intégré au véhicule ou installé sur un support, amovible ou non, fixé sur le véhicule;
                         {'\n'}
-                        c) il est placé de façon à ne pas obstruer la vue du conducteur du véhicule routier ou du cycliste, nuire à ses manœuvres, empêcher le fonctionnement d’un équipement ou en réduire l’efficacité et de manière à ne pas constituer un risque de lésion en cas d’accident;
+                        (c) il est placé de façon à ne pas obstruer la vue du conducteur du véhicule routier ou du cycliste, nuire à ses manœuvres, empêcher le fonctionnement d’un équipement ou en réduire l’efficacité et de manière à ne pas constituer un risque de lésion en cas d’accident;
                         {'\n'}
-                        d) il est positionné et conçu de façon à ce que le conducteur du véhicule routier ou le cycliste puisse le faire fonctionner et le consulter aisément.
+                        (d) il est positionné et conçu de façon à ce que le conducteur du véhicule routier ou le cycliste puisse le faire fonctionner et le consulter aisément.
                         {'\n\n'}
                         Pour l’application du premier alinéa, le conducteur du véhicule routier ou le cycliste qui tient en main, ou de toute autre manière, un appareil électronique portatif est présumé en faire usage.
                         {'\n\n'}
@@ -12513,11 +12514,11 @@ export const infractions = {
                         {'\n\n'}
                         <Bold>Cette exception exclue les zones de travaux, d'opérations d’entretien routier, d'événements spéciaux, de parcs et d’écoles. </Bold>
                         {'\n'}
-                        <Small>Référence: art. 33 al.1 (1) a) RRVM C-4.1.</Small>
+                        <Small>Référence: art. 33 al.1 (1) a RRVM C-4.1.</Small>
                         {'\n\n'}
                         <Bold>• Il est permis au conducteur d’un véhicule routier de stationner pour une période d’au plus 60 minutes s'il conduit un véhicule muni d'une vignette ou d'une plaque identifiant une personne handicapée, délivrée par l'Office des personnes handicapées du Québec, par la Société de l'assurance-automobile du Québec ou par une autre autorité administrative au Canada ou aux États-Unis. Cette exception exclue les zones de travaux, d'opérations d’entretien routier, d'événements spéciaux, de parcs et d’écoles. </Bold>
                         {'\n'}
-                        <Small>Référence: art. 33 al.1 (1) c) RRVM C-4.1.</Small>
+                        <Small>Référence: art. 33 al.1 (1) c RRVM C-4.1.</Small>
                         {'\n\n'}
                         <Bold>• Il est permis au conducteur d’un véhicule routier de stationner pour une période d'au plus 15 minutes, pendant une cueillette ou une livraison de courrier ou de petit colis effectuée au moyen de ce véhicule, à condition que ce véhicule soit un véhicule commercial ou un taxi. Cette exception exclue les zones de travaux, d’opérations d'entretien routier, d'événements spéciaux, de parcs et d’écoles. </Bold>
                         {'\n'}
@@ -12587,7 +12588,7 @@ export const infractions = {
                         {'\n\n'}
                         2-  près d'une école, d'un terrain de jeu ou d'un parc. 
                         {'\n\n'}
-                        Le conducteur d'un véhicule routier peut stationner sans acquitter les droits requis en vertu des articles 46 et 55, durant 30 minutes s'il respecte les conditions prévues au sous-paragraphe a) du paragraphe 1 du premier alinéa, et durant 15 minutes s'il respecte les conditions prévues aux paragraphes 2 ou 3 de cet alinéa.
+                        Le conducteur d'un véhicule routier peut stationner sans acquitter les droits requis en vertu des articles 46 et 55, durant 30 minutes s'il respecte les conditions prévues au sous-paragraphe (a) du paragraphe 1 du premier alinéa, et durant 15 minutes s'il respecte les conditions prévues aux paragraphes 2 ou 3 de cet alinéa.
                         {'\n\n'}
                         Malgré le paragraphe 1 de l'article 30, il est permis au conducteur d'un corbillard transportant un cercueil ou au conducteur d’un véhicule affecté au transport des cendres d’un défunt de stationner près du salon funéraire ou de l'établissement religieux pendant que la cérémonie funèbre est en cours.
                         {'\n\n'}
@@ -12802,11 +12803,11 @@ export const infractions = {
                         {'\n\n'}
                         <Bold>Cette exception exclue les zones de travaux, d'opérations d’entretien routier, d'événements spéciaux, de parcs et d’écoles. </Bold>
                         {'\n'}
-                        <Small>Référence: art. 33 al.1 (1) a) RRVM C-4.1.</Small>
+                        <Small>Référence: art. 33 al.1 (1) (a) RRVM C-4.1.</Small>
                         {'\n\n'}
                         <Bold>• Malgré une signalisation indiquant que le stationnement est réservé aux résidents, il est permis au conducteur d’un véhicule routier de stationner pour une période d’au plus 60 minutes s'il conduit un véhicule muni d'une vignette ou d'une plaque identifiant une personne handicapée, délivrée par l'Office des personnes handicapées du Québec, par la Société de l'assurance-automobile du Québec ou par une autre autorité administrative au Canada ou aux États-Unis. Cette exception exclue les zones de travaux, d'opérations d’entretien routier, d'événements spéciaux, de parcs et d’écoles. </Bold>
                         {'\n'}
-                        <Small>Référence: art. 33 al.1 (1) c) RRVM C-4.1.</Small>
+                        <Small>Référence: art. 33 al.1 (1) (c) RRVM C-4.1.</Small>
                         {'\n\n'}
                         <Bold>• Malgré une signalisation indiquant que le stationnement est réservé aux résidents, il est permis au conducteur d’un véhicule routier de stationner pour une période d'au plus 15 minutes, pendant une cueillette ou une livraison de courrier ou de petit colis effectuée au moyen de ce véhicule, à condition que ce véhicule soit un véhicule commercial ou un taxi. Cette exception exclue les zones de travaux, d’opérations d'entretien routier, d'événements spéciaux, de parcs et d’écoles. </Bold>
                         {'\n'}
@@ -12872,7 +12873,7 @@ export const infractions = {
                         {'\n\n'}
                         2-  près d'une école, d'un terrain de jeu ou d'un parc. 
                         {'\n\n'}
-                        Le conducteur d'un véhicule routier peut stationner sans acquitter les droits requis en vertu des articles 46 et 55, durant 30 minutes s'il respecte les conditions prévues au sous-paragraphe a) du paragraphe 1 du premier alinéa, et durant 15 minutes s'il respecte les conditions prévues aux paragraphes 2 ou 3 de cet alinéa.
+                        Le conducteur d'un véhicule routier peut stationner sans acquitter les droits requis en vertu des articles 46 et 55, durant 30 minutes s'il respecte les conditions prévues au sous-paragraphe (a) du paragraphe 1 du premier alinéa, et durant 15 minutes s'il respecte les conditions prévues aux paragraphes 2 ou 3 de cet alinéa.
                         {'\n\n'}
                         Malgré le paragraphe 1 de l'article 30, il est permis au conducteur d'un corbillard transportant un cercueil ou au conducteur d’un véhicule affecté au transport des cendres d’un défunt de stationner près du salon funéraire ou de l'établissement religieux pendant que la cérémonie funèbre est en cours.
                         {'\n\n'}
@@ -13999,11 +14000,11 @@ export const infractions = {
                         {'\n\n'}
                         <Bold>Cette exception exclue les zones de travaux, d'opérations d’entretien routier, d'événements spéciaux, de parcs et d’écoles. </Bold>
                         {'\n'}
-                        <Small>Référence: art. 33 al.1 (1) a) RRVM C-4.1.</Small>
+                        <Small>Référence: art. 33 al.1 (1) (a) RRVM C-4.1.</Small>
                         {'\n\n'}
                         <Bold>• Malgré une signalisation indiquant que le stationnement est réservé aux résidents, il est permis au conducteur d’un véhicule routier de stationner pour une période d’au plus 60 minutes s'il conduit un véhicule muni d'une vignette ou d'une plaque identifiant une personne handicapée, délivrée par l'Office des personnes handicapées du Québec, par la Société de l'assurance-automobile du Québec ou par une autre autorité administrative au Canada ou aux États-Unis. Cette exception exclue les zones de travaux, d'opérations d’entretien routier, d'événements spéciaux, de parcs et d’écoles. </Bold>
                         {'\n'}
-                        <Small>Référence: art. 33 al.1 (1) c) RRVM C-4.1.</Small>
+                        <Small>Référence: art. 33 al.1 (1) (c) RRVM C-4.1.</Small>
                         {'\n\n'}
                         <Bold>• Malgré une signalisation indiquant que le stationnement est réservé aux résidents, il est permis au conducteur d’un véhicule routier de stationner pour une période d'au plus 15 minutes, pendant une cueillette ou une livraison de courrier ou de petit colis effectuée au moyen de ce véhicule, à condition que ce véhicule soit un véhicule commercial ou un taxi. Cette exception exclue les zones de travaux, d’opérations d'entretien routier, d'événements spéciaux, de parcs et d’écoles. </Bold>
                         {'\n'}
@@ -14059,7 +14060,7 @@ export const infractions = {
                         {'\n\n'}
                         2-  près d'une école, d'un terrain de jeu ou d'un parc. 
                         {'\n\n'}
-                        Le conducteur d'un véhicule routier peut stationner sans acquitter les droits requis en vertu des articles 46 et 55, durant 30 minutes s'il respecte les conditions prévues au sous-paragraphe a) du paragraphe 1 du premier alinéa, et durant 15 minutes s'il respecte les conditions prévues aux paragraphes 2 ou 3 de cet alinéa.
+                        Le conducteur d'un véhicule routier peut stationner sans acquitter les droits requis en vertu des articles 46 et 55, durant 30 minutes s'il respecte les conditions prévues au sous-paragraphe (a) du paragraphe 1 du premier alinéa, et durant 15 minutes s'il respecte les conditions prévues aux paragraphes 2 ou 3 de cet alinéa.
                         {'\n\n'}
                         Malgré le paragraphe 1 de l'article 30, il est permis au conducteur d'un corbillard transportant un cercueil ou au conducteur d’un véhicule affecté au transport des cendres d’un défunt de stationner près du salon funéraire ou de l'établissement religieux pendant que la cérémonie funèbre est en cours.
                         {'\n\n'}
@@ -14494,7 +14495,7 @@ export const infractions = {
                         {'\n\n'}
                         2-  près d'une école, d'un terrain de jeu ou d'un parc. 
                         {'\n\n'}
-                        Le conducteur d'un véhicule routier peut stationner sans acquitter les droits requis en vertu des articles 46 et 55, durant 30 minutes s'il respecte les conditions prévues au sous-paragraphe a) du paragraphe 1 du premier alinéa, et durant 15 minutes s'il respecte les conditions prévues aux paragraphes 2 ou 3 de cet alinéa.
+                        Le conducteur d'un véhicule routier peut stationner sans acquitter les droits requis en vertu des articles 46 et 55, durant 30 minutes s'il respecte les conditions prévues au sous-paragraphe (a) du paragraphe 1 du premier alinéa, et durant 15 minutes s'il respecte les conditions prévues aux paragraphes 2 ou 3 de cet alinéa.
                         {'\n\n'}
                         Malgré le paragraphe 1 de l'article 30, il est permis au conducteur d'un corbillard transportant un cercueil ou au conducteur d’un véhicule affecté au transport des cendres d’un défunt de stationner près du salon funéraire ou de l'établissement religieux pendant que la cérémonie funèbre est en cours.
                         {'\n\n'}
@@ -16046,11 +16047,11 @@ export const infractions = {
                         {'\n\n'}
                         <Bold>• Un véhicule de commerce (Plaque “F”) peut être stationné dans le cas où l’on est en train de charger ou de décharger des marchandises et lorsque cette opération s'effectue sans interruption et ne dure pas plus de 60 minutes. </Bold>
                         {'\n'}
-                        <Small>Référence: art.  29 b) RCA06210012. </Small>
+                        <Small>Référence: art.  29 (b) RCA06210012. </Small>
                         {'\n\n'}
                         <Bold>• Un véhicule de commerce (Plaque “F”) peut être stationné dans le cas où l’on est en train de charger ou de décharger des marchandises et lorsque cette opération s'effectue sans interruption et ne dure pas plus de 60 minutes. </Bold>
                         {'\n'}
-                        <Small>Référence: art.  29 a) RCA06210012. </Small>
+                        <Small>Référence: art.  29 (a) RCA06210012. </Small>
                     </Text>
                 ),
                 point: (
@@ -16094,11 +16095,11 @@ export const infractions = {
                         {'\n\n'}
                         <Bold>• A commercial vehicle ("F" plate) may be parked while loading or unloading goods and if this operation is continuous and lasts no more than 60 minutes. </Bold>
                         {'\n'}
-                        <Small>Reference: s.  29 b) RCA06210012. </Small>
+                        <Small>Reference: s.  29 (b) RCA06210012. </Small>
                         {'\n\n'}
                         <Bold>• A road vehicle used for emergency work on a public road or for work authorized under the by-law concerning the occupancy of the public domain or the excavation by-law may be parked only if the road vehicle is necessary for the excavation work which is carried out without interruption. </Bold>
                         {'\n'}
-                        <Small>Reference: s.  29 a) RCA06210012. </Small>
+                        <Small>Reference: s.  29 (a) RCA06210012. </Small>
                     </Text>
                 ),
                 point: (
@@ -18546,11 +18547,8 @@ export const infractions = {
 }
 
 export const mergeAllInfractions = () => {
-   let j = infractions['CSR']
-   return JSON.stringify(j)
-    // let allInfractions = {}
-    // for (let key in infractions) {
-        //  allInfractions = {...infractions[key]}
-    // }
+   let j = infractions['CSR'][433].fr.conditions
+
+   return j
 
 }
