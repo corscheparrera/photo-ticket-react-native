@@ -9,8 +9,7 @@ import RNFetchBlob from "react-native-fetch-blob";
 import React from "react";
 import axios from "axios";
 import firebase from "react-native-firebase";
-import { parseData } from "../utils/helpers";
-import { mergeAllInfractions } from "../utils/infractionsList";
+import { parseData } from "../utils/OcrResponseProcessing";
 
 export default class Home extends React.Component {
   constructor(props) {

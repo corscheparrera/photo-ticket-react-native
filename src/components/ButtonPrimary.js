@@ -1,10 +1,9 @@
-import React from 'react'
-import { StyleSheet, Text, View, Button, TouchableHighlight } from 'react-native'
-import { human } from 'react-native-typography'
+import React from "react";
+import { Text, View, TouchableHighlight } from "react-native";
 
 export default class ButtonPrimary extends React.Component {
   render() {
-    let { onPress, text, txtColor, buttonColor, largeur, weight } = this.props
+    let { onPress, text, txtColor, buttonColor, largeur, weight } = this.props;
     return (
       <View>
         <TouchableHighlight
@@ -12,7 +11,7 @@ export default class ButtonPrimary extends React.Component {
             marginTop: 20,
             borderRadius: 5,
             borderWidth: 2,
-            borderColor: buttonColor,
+            borderColor: buttonColor
           }}
           onPress={onPress}
           underlayColor="white"
@@ -23,14 +22,14 @@ export default class ButtonPrimary extends React.Component {
               backgroundColor: buttonColor,
               padding: 12,
               width: largeur,
-              alignItems: 'center',
+              alignItems: "center"
             }}
           >
             <Text
               style={{
                 fontWeight: weight,
                 fontSize: 18,
-                color: txtColor,
+                color: txtColor
               }}
             >
               {text}
@@ -38,12 +37,12 @@ export default class ButtonPrimary extends React.Component {
           </View>
         </TouchableHighlight>
       </View>
-    )
+    );
   }
 }
 ButtonPrimary.defaultProps = {
-  buttonColor: '#33AAFF',
-  txtColor: '#FFFFFF',
+  buttonColor: "#33AAFF",
+  txtColor: "#FFFFFF",
   largeur: 200,
-  weight: 'bold',
-}
+  weight: "bold"
+};

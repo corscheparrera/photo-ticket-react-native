@@ -2,8 +2,6 @@ import React from "react";
 import { View, StyleSheet, Text, Image } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 
-import Header from "../components/Header";
-import ButtonPrimary from "../components/ButtonPrimary";
 export default class ConfirmPicView extends React.Component {
   render() {
     let { confirmedImage, discardPicture, uri } = this.props;

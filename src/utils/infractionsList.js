@@ -1,7 +1,5 @@
-import { Button, ScrollView, StyleSheet, Text, View } from 'react-native'
-
-import React from 'react'
-import reactElementToJSXString from 'react-element-to-jsx-string';
+import { Text } from 'react-native'
+import React from "react"
 
 const Bold = props => <Text style={{ fontWeight: 'bold' }}>{props.children}</Text>
 const Color = props => <Text style={{ color: '#0074D9' }}>{props.children}</Text>
@@ -18546,9 +18544,17 @@ export const infractions = {
     }
 }
 
-export const mergeAllInfractions = () => {
-   let j = infractions['CSR'][433].fr.conditions
 
-   return j
+export const connectInfraction = function(ob, art) {
+	let  userInfraction = {};
+	
+	for (let i in ob) {
+		if (!ob.hasOwnProperty(i)) continue;
+		else if (art in ob[i]){
+            userInfraction = ob[i][art].fr
+            return userInfraction
+        }
 
-}
+	}
+	return userInfraction;
+};

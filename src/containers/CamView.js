@@ -2,7 +2,7 @@ import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 
 import Icon from "react-native-vector-icons/FontAwesome";
-import Camera from "react-native-camera";
+import Camera from "react-native-camera/";
 import Header from "../components/Header";
 
 export default class CamView extends React.Component {
