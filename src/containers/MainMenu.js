@@ -30,10 +30,6 @@ export default class Menus extends React.Component {
             onPress={() => this.props.navigation.navigate("MentionsLegales")}
             text="Mentions légales"
           />
-          {/* <Button
-            title="Consulter un avocat gratuitement"
-            onPress={() => this.props.navigation.navigate("UserInfos")}
-          /> */}
         </View>
       </View>
     );

@@ -40,7 +40,7 @@ export default class Login extends React.Component {
       <KeyboardAvoidingView style={styles.container} behavior="padding">
         <Image
           style={{ marginBottom: 60 }}
-          source={require("../images/logo.png")}
+          source={require("../images/logo_photo_ticekt_9.png")}
         />
         <Text style={styles.title}>Connectez-vous</Text>
         {this.state.errorMessage && (
@@ -65,7 +65,7 @@ export default class Login extends React.Component {
         <ButtonPrimary
           onPress={this.handleLogin}
           text="Connexion"
-          buttonColor="#33AAFF"
+          buttonColor="#BE1551"
         />
 
         <Text
@@ -91,14 +91,14 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   title: {
-    color: "#33AAFF",
+    color: "#BE1551",
     fontSize: 18,
     fontWeight: "bold"
   },
   textInput: {
     height: 40,
     width: "90%",
-    borderColor: "#33AAFF",
+    borderColor: "#BE1551",
     borderWidth: 1,
     borderRadius: 10,
     marginTop: 8,

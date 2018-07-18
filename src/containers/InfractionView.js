@@ -106,7 +106,7 @@ export default class InfractionView extends React.Component {
             </View>
             <Button
               title="Consulter un avocat gratuitement"
-              onPress={() => navigation.navigate("ChatContainer")}
+              onPress={() => navigation.navigate("UserInfos")}
             />
           </ScrollView>
         </View>
@@ -169,45 +169,3 @@ const styles = StyleSheet.create({
     alignItems: "center"
   }
 });
-
-{
-  /* // <View>
-        //   <Header title="Infraction" navigation={navigation} />
-        //   <ScrollView>
-        //     <View style={styles.content}>
-        //       <View style={styles.paragraph}>
-        //         <Text style={styles.title}>
-        //           {data.art + " du " + data.source}
-        //         </Text>
-        //         {/* <Text style={styles.title}>{data.source}</Text> */
-}
-//       </View>
-//       <View style={styles.paragraph}>
-//         <Text style={styles.title}>Résumé:</Text>
-//         <Text style={styles.text}>{data.infraction}</Text>
-//       </View>
-//       <View style={styles.paragraph}>
-//         <Text style={styles.title}>Conditions:</Text>
-//         <Text style={styles.text}>{data.conditions}</Text>
-//         <View style={styles.saveOrDiscard}>
-//           <Icon */}
-//             style={styles.icon}
-//             name="save"
-//             size={34}
-//             onPress={() => this.saveData(this.props.imagePath)}
-//           />
-//           <Icon
-//             style={styles.icon}
-//             name="trash-o"
-//             size={34}
-//             onPress={() => {}}
-//           />
-//         </View>
-//         <Button
-//           title="Consulter un avocat gratuitement"
-//           onPress={() => navigation.navigate("ChatContainer")}
-//         />
-//       </View>
-//     </View>
-//   </ScrollView>
-// </View>

@@ -18554,7 +18554,6 @@ export const connectInfraction = function(ob, art) {
             userInfraction = ob[i][art].fr
             return userInfraction
         }
-
 	}
 	return userInfraction;
 };

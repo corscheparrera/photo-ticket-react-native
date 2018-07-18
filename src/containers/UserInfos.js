@@ -99,7 +99,7 @@ export default class UserInfos extends Component {
             <ButtonPrimary
               onPress={this.storeUserInfos}
               text="Joindre"
-              buttonColor="#33AAFF"
+              buttonColor="#BE1551"
             />
           </View>
         </DissmissKeyboard>
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   title: {
-    color: "#33AAFF",
+    color: "#BE1551",
     fontSize: 18,
     fontWeight: "bold",
     textAlign: "center"
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
   textInput: {
     height: 40,
     width: "90%",
-    borderColor: "#33AAFF",
+    borderColor: "#BE1551",
     borderWidth: 1,
     borderRadius: 10,
     marginTop: 8,
