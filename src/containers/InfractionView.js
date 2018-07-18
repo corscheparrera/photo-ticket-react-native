@@ -13,11 +13,12 @@ import Icon from "react-native-vector-icons/FontAwesome";
 import firebase from "react-native-firebase";
 import Header from "../components/Header";
 import BackendChat from "../utils/BackendChat";
+// import Accordion from "react-native-collapsible/Accordion";
+import Accordion from "../components/Accordion";
 
 const storage = firebase.storage();
-const database = firebase.database();
 
-export default class Cam extends React.Component {
+export default class InfractionView extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -52,6 +53,7 @@ export default class Cam extends React.Component {
       data: this.props.data
     });
   };
+
   renderLoadingView = () => {
     if (this.state.isLoading) {
       return (
@@ -66,41 +68,46 @@ export default class Cam extends React.Component {
     let { navigation, data } = this.props;
     if (!this.state.isLoading) {
       return (
-        <View>
+        <View style={styles.container}>
           <Header title="Infraction" navigation={navigation} />
           <ScrollView>
-            <View style={styles.content}>
-              <View style={styles.paragraph}>
-                <Text style={styles.title}>{data.art}</Text>
-                <Text style={styles.title}>{data.source}</Text>
-              </View>
-              <View style={styles.paragraph}>
-                <Text style={styles.title}>Résumé:</Text>
-                <Text style={styles.text}>{data.infraction}</Text>
-              </View>
-              <View style={styles.paragraph}>
-                <Text style={styles.title}>Conditions:</Text>
-                <Text style={styles.text}>{data.conditions}</Text>
-                <View style={styles.saveOrDiscard}>
-                  <Icon
-                    style={styles.icon}
-                    name="save"
-                    size={34}
-                    onPress={() => this.saveData(this.props.imagePath)}
-                  />
-                  <Icon
-                    style={styles.icon}
-                    name="trash-o"
-                    size={34}
-                    onPress={() => {}}
-                  />
-                </View>
-                <Button
-                  title="Consulter un avocat gratuitement"
-                  onPress={() => navigation.navigate("ChatContainer")}
-                />
-              </View>
+            <Text style={styles.headerText}>
+              {data.art + " du " + data.source}
+            </Text>
+
+            <Accordion title="Infraction">
+              <Text style={styles.text}>{data.infraction}</Text>
+            </Accordion>
+            <Accordion title="Conditions">
+              <Text style={styles.text}>{data.conditions}</Text>
+            </Accordion>
+            <Accordion title="Exceptions">
+              <Text style={styles.text}>{data.exceptions}</Text>
+            </Accordion>
+            <Accordion title="Points">
+              <Text style={styles.text}>{data.point}</Text>
+            </Accordion>
+            <Accordion title="Texte de loi">
+              <Text style={styles.text}>{data.loi}</Text>
+            </Accordion>
+            <View style={styles.saveOrDiscard}>
+              <Icon
+                style={styles.icon}
+                name="save"
+                size={34}
+                onPress={() => this.saveData(this.props.imagePath)}
+              />
+              <Icon
+                style={styles.icon}
+                name="trash-o"
+                size={34}
+                onPress={() => {}}
+              />
             </View>
+            <Button
+              title="Consulter un avocat gratuitement"
+              onPress={() => navigation.navigate("ChatContainer")}
+            />
           </ScrollView>
         </View>
       );
@@ -121,7 +128,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#F5FCFF"
   },
   paragraph: {
-    paddingBottom: 25
+    paddingBottom: 25,
+    marginBottom: 35
   },
   content: {
     flex: 1,
@@ -135,11 +143,12 @@ const styles = StyleSheet.create({
     // ...systemWeights.light,
     fontSize: 14
   },
-  title: {
+  headerText: {
     ...material.titleObject,
     color: iOSColors.black,
     ...systemWeights.semibold,
-    fontSize: 16
+    fontSize: 16,
+    textAlign: "center"
   },
   icon: {
     color: "#BE1551"
@@ -150,9 +159,55 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-around"
   },
+  header: {
+    backgroundColor: "#BE1551",
+    padding: 10
+  },
   loader: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center"
   }
 });
+
+{
+  /* // <View>
+        //   <Header title="Infraction" navigation={navigation} />
+        //   <ScrollView>
+        //     <View style={styles.content}>
+        //       <View style={styles.paragraph}>
+        //         <Text style={styles.title}>
+        //           {data.art + " du " + data.source}
+        //         </Text>
+        //         {/* <Text style={styles.title}>{data.source}</Text> */
+}
+//       </View>
+//       <View style={styles.paragraph}>
+//         <Text style={styles.title}>Résumé:</Text>
+//         <Text style={styles.text}>{data.infraction}</Text>
+//       </View>
+//       <View style={styles.paragraph}>
+//         <Text style={styles.title}>Conditions:</Text>
+//         <Text style={styles.text}>{data.conditions}</Text>
+//         <View style={styles.saveOrDiscard}>
+//           <Icon */}
+//             style={styles.icon}
+//             name="save"
+//             size={34}
+//             onPress={() => this.saveData(this.props.imagePath)}
+//           />
+//           <Icon
+//             style={styles.icon}
+//             name="trash-o"
+//             size={34}
+//             onPress={() => {}}
+//           />
+//         </View>
+//         <Button
+//           title="Consulter un avocat gratuitement"
+//           onPress={() => navigation.navigate("ChatContainer")}
+//         />
+//       </View>
+//     </View>
+//   </ScrollView>
+// </View>

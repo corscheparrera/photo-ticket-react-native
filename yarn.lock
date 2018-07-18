@@ -4094,6 +4094,12 @@ react-native-camera@^1.1.2:
     lodash "^4.17.4"
     prop-types "^15.5.10"
 
+react-native-collapsible@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/react-native-collapsible/-/react-native-collapsible-0.12.0.tgz#8ef25f23f4eec72af4a80074b3f534f8605c7f80"
+  dependencies:
+    prop-types "^15.5.10"
+
 react-native-communications@2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/react-native-communications/-/react-native-communications-2.2.1.tgz#7883b56b20a002eeb790c113f8616ea8692ca795"
