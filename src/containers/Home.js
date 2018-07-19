@@ -7,7 +7,7 @@ import InfractionView from "./InfractionView";
 import MainMenu from "./MainMenu";
 import RNFetchBlob from "react-native-fetch-blob";
 import React from "react";
-import axios from "axios";
+import axios from "../utils/axios";
 import firebase from "react-native-firebase";
 import { parseData } from "../utils/OcrResponseProcessing";
 
@@ -59,17 +59,20 @@ export default class Home extends React.Component {
     // Prepare Blob support
     const Blob = RNFetchBlob.polyfill.Blob;
     const fs = RNFetchBlob.fs;
-    window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest;
+
+    GLOBAL.XMLHttpRequest =
+      GLOBAL.originalXMLHttpRequest || GLOBAL.XMLHttpRequest; // Working
+    // window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest; // Can't see network logs
     window.Blob = Blob;
 
     try {
       let base64image = await fs.readFile(uri, "base64");
-      let response = await axios.post(
-        "http://192.168.0.126:5000/api/google-ocr",
-        {
-          image: base64image
-        }
-      );
+      console.log("FETCHING OCR");
+      // let response = await axios.get("/google-ocr");
+
+      let response = await axios.post("/google-ocr", {
+        image: base64image
+      });
 
       console.log(response);
 
@@ -93,6 +96,7 @@ export default class Home extends React.Component {
     } catch (err) {
       // Si OCR ne reconnait pas de texte OU autre
       console.log("erreur :", err);
+      console.log(err);
       this.setState({
         badFocus: true,
         isLoading: false

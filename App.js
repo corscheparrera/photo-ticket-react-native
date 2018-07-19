@@ -1,5 +1,3 @@
-import React from "react";
-import { StyleSheet, Platform, Image, Text, View } from "react-native";
 import { SwitchNavigator, StackNavigator } from "react-navigation";
 
 // import the different screens

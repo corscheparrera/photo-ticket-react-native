@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../utils/axios";
 import firebase from "react-native-firebase";
 
 const database = firebase.database();
@@ -46,7 +46,7 @@ class BackendChat {
   async notifyLawyer() {
     try {
       const chatID = this.getUid();
-      await axios.post("http://192.168.0.126:5000/api/send-email", {
+      await axios.post("/send-email", {
         id: chatID
       });
     } catch (error) {

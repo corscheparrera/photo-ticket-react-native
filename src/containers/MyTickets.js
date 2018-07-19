@@ -123,7 +123,7 @@ export default class MyTickets extends Component {
           <Header title="Mes tickets" navigation={this.props.navigation} />
           <ScrollView>
             <View style={styles.content}>
-              <Text style={styles.text}>MY TICKETS</Text>
+              {/* <Text style={styles.text}>MY TICKETS</Text> */}
               {this.state.tickets.length && this.renderTickets()}
             </View>
           </ScrollView>
@@ -133,7 +133,6 @@ export default class MyTickets extends Component {
   };
 
   render() {
-    const { currentUser } = this.state;
     return (
       <View style={styles.container}>
         {this.renderTicketsContainer()}
