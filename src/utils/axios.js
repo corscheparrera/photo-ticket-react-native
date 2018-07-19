@@ -4,7 +4,7 @@ process.env.NODE_ENV = "production";
 
 const baseURL =
   process.env.NODE_ENV === "production"
-    ? "http://photo-ticket.ca/api"
+    ? "https://photo-ticket.ca/api"
     : "http://192.168.0.126:5000/api";
 
 console.log("BASE URL : " + baseURL);
