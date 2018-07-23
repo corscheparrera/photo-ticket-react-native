@@ -6,6 +6,7 @@ import {
   Text,
   ScrollView,
   Button,
+  Image,
   ActivityIndicator
 } from "react-native";
 import { material, iOSColors, systemWeights } from "react-native-typography";
@@ -15,6 +16,7 @@ import Header from "../components/Header";
 import BackendChat from "../utils/BackendChat";
 // import Accordion from "react-native-collapsible/Accordion";
 import Accordion from "../components/Accordion";
+import AutoHeightImage from "react-native-auto-height-image";
 
 const storage = firebase.storage();
 
@@ -24,10 +26,18 @@ export default class InfractionView extends React.Component {
     this.state = {
       isLoading: false,
       uid: BackendChat.getUid(),
-      imageURL: ""
+      imageURL: "",
+      sketchURL: ""
     };
+    this.sketchDownloadURL();
   }
-
+  sketchDownloadURL = () => {
+    storage
+      .ref()
+      .child(`sketchs/${this.props.data.image}`)
+      .getDownloadURL()
+      .then(url => this.setState({ sketchURL: url }));
+  };
   saveData = async uri => {
     await this.uploadTicketToStorage(uri);
     await this.uploadTicketToDB();
@@ -66,6 +76,7 @@ export default class InfractionView extends React.Component {
   };
   renderInfraction = () => {
     let { navigation, data } = this.props;
+
     if (!this.state.isLoading) {
       return (
         <View style={styles.container}>
@@ -74,7 +85,6 @@ export default class InfractionView extends React.Component {
             <Text style={styles.headerText}>
               {data.art + " du " + data.source}
             </Text>
-
             <Accordion title="Infraction">
               <Text style={styles.text}>{data.infraction}</Text>
             </Accordion>
@@ -86,6 +96,14 @@ export default class InfractionView extends React.Component {
             </Accordion>
             <Accordion title="Points">
               <Text style={styles.text}>{data.point}</Text>
+            </Accordion>
+            <Accordion title="Image">
+              <AutoHeightImage
+                width={100}
+                source={{
+                  uri: this.state.sketchURL
+                }}
+              />
             </Accordion>
             <Accordion title="Texte de loi">
               <Text style={styles.text}>{data.loi}</Text>

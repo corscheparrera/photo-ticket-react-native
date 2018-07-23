@@ -13,8 +13,6 @@ import ChatContainer from "./ChatContainer";
 import Header from "../components/Header";
 import ButtonPrimary from "../components/ButtonPrimary";
 
-const database = firebase.database();
-
 const DissmissKeyboard = ({ children }) => (
   <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
     {children}
