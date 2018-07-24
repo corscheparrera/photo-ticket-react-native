@@ -123,8 +123,6 @@ export default class Home extends React.Component {
   };
 
   render() {
-    const { currentUser } = this.state;
-
     switch (this.displayView()) {
       case "Main Menu":
         return (
