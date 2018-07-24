@@ -5,8 +5,7 @@ import {
   StyleSheet,
   Image,
   ScrollView,
-  TouchableOpacity,
-  Dimensions
+  TouchableOpacity
 } from "react-native";
 import firebase from "react-native-firebase";
 import { material, iOSColors, systemWeights } from "react-native-typography";
@@ -15,9 +14,6 @@ import Icon from "react-native-vector-icons/FontAwesome";
 
 import BackendChat from "../utils/BackendChat";
 import Header from "../components/Header";
-import ButtonPrimary from "../components/ButtonPrimary";
-
-const database = firebase.database();
 
 export default class MyTickets extends Component {
   constructor(props) {

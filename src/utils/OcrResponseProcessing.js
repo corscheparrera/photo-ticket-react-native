@@ -13,30 +13,36 @@ export const parseData = res => {
 
   // Find the string that contains the article number
   const matcheArticle = stringSimilarity.findBestMatch("Art: ", resultArray);
-
+  console.log("matcheArticle", matcheArticle);
   // Isolate the best match
   const articleString = matcheArticle.bestMatch.target;
-
+  console.log("articleString", articleString);
   // Find the index corresponding to the best match
   const indexDescription = resultArray.findIndex(x => x == articleString); //21
 
   // Retrieve the exact line in the ticket that states the infraction number
   const article = resultArray[indexDescription]; // 'Art: 368'
-
+  console.log("article", article);
   // Isolate the infraction number only
   const number = article.match(/\d+/g).toString(); // 368
 
   // Retrieve all the infraction details from the infraction objects
 
-  const infraction = connectInfraction(infractions, number); // { type: 'Circulation', Règlement: 'C-24.2', ...
-  console.log("yollo", infraction);
+  const infraction = connectInfraction(article); // { type: 'Circulation', Règlement: 'C-24.2', ...
+  console.log(connectInfraction(article));
+
   // If there is no string with a similaroty score above 70 % with the string "Art: ", alert the user of the bad focus.
   // Otherwise, returns the infractions détails
-  if (matcheArticle.bestMatch.rating < 0.7) {
+  if (matcheArticle.bestMatch.rating < 0.58) {
+    console.log(
+      "matcheArticle.bestMatch.rating,",
+      matcheArticle.bestMatch.rating
+    );
     // if focus is bad
     return null;
   } else {
     // if focus is good
     return infraction;
+    console.log("infraction", infraction);
   }
 };
