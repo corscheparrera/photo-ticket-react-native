@@ -2,12 +2,11 @@ import React, { Component } from "react";
 import { View, StyleSheet } from "react-native";
 import firebase from "react-native-firebase";
 import { GiftedChat } from "react-native-gifted-chat";
-
+import polylgot from "../utils/translator";
 import Header from "../components/Header";
 
 import BackendChat from "../utils/BackendChat";
 
-const database = firebase.database();
 export default class ChatContainer extends Component {
   constructor() {
     super();
@@ -52,7 +51,7 @@ export default class ChatContainer extends Component {
             _id: BackendChat.getUid(),
             email: BackendChat.getEmail()
           }}
-          placeholder="Écrire un message..."
+          placeholder={polylgot.t("write")}
         />
       </View>
     );

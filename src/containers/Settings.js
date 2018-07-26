@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import firebase from "react-native-firebase";
 import { material, iOSColors, systemWeights } from "react-native-typography";
-
+import polyglot from "../utils/translator";
 import Header from "../components/Header";
 import ButtonPrimary from "../components/ButtonPrimary";
 
@@ -31,7 +31,10 @@ export default class Settings extends Component {
           <Text style={styles.text}>
             Email: {currentUser && currentUser.email}
           </Text>
-          <ButtonPrimary text="Déconnexion" onPress={this.signOutUser} />
+          <ButtonPrimary
+            text={polyglot.t("disconnect")}
+            onPress={this.signOutUser}
+          />
         </View>
       </View>
     );

@@ -4,7 +4,7 @@ import { View, StyleSheet, Text } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import Camera from "react-native-camera/";
 import Header from "../components/Header";
-
+import polyglot from "../utils/translator";
 export default class CamView extends React.Component {
   takePicture = () => {
     const options = {};
@@ -34,7 +34,7 @@ export default class CamView extends React.Component {
               fontWeight: "bold"
             }}
           >
-            Frame your ticket
+            {polyglot.t("frame")}
           </Text>
           <Icon
             color="#BE1551"

@@ -7,7 +7,7 @@ import {
   KeyboardAvoidingView
 } from "react-native";
 import firebase from "react-native-firebase";
-
+import polyglot from "../utils/translator";
 import ButtonPrimary from "../components/ButtonPrimary";
 
 export default class Login extends React.Component {
@@ -41,7 +41,7 @@ export default class Login extends React.Component {
           style={{ marginBottom: 60 }}
           source={require("../images/logo_photo_ticekt_9.png")}
         />
-        <Text style={styles.title}>Connectez-vous</Text>
+        <Text style={styles.title}>{polyglot.t("login")}</Text>
         {this.state.errorMessage && (
           <Text style={{ color: "red" }}>{this.state.errorMessage}</Text>
         )}
@@ -56,14 +56,14 @@ export default class Login extends React.Component {
           style={styles.textInput}
           secureTextEntry
           autoCapitalize="none"
-          placeholder="Password"
+          placeholder={polyglot.t("password")}
           onChangeText={password => this.setState({ password })}
           value={this.state.password}
         />
 
         <ButtonPrimary
           onPress={this.handleLogin}
-          text="Connexion"
+          text={polyglot.t("login")}
           buttonColor="#BE1551"
         />
 
@@ -76,7 +76,7 @@ export default class Login extends React.Component {
             color: "#000000"
           }}
         >
-          C'est votre première utilisation?
+          {polyglot.t("firstUse")}
         </Text>
       </KeyboardAvoidingView>
     );

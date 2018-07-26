@@ -14,6 +14,7 @@ import Icon from "react-native-vector-icons/FontAwesome";
 import firebase from "react-native-firebase";
 import Header from "../components/Header";
 import BackendChat from "../utils/BackendChat";
+import polyglot from "../utils/translator";
 // import Accordion from "react-native-collapsible/Accordion";
 import Accordion from "../components/Accordion";
 import AutoHeightImage from "react-native-auto-height-image";
@@ -80,12 +81,12 @@ export default class InfractionView extends React.Component {
     if (!this.state.isLoading) {
       return (
         <View style={styles.container}>
-          <Header title="Infraction" navigation={navigation} />
+          <Header title={polyglot.t("offence")} navigation={navigation} />
           <ScrollView>
             <Text style={styles.headerText}>
-              {data.art + " du " + data.source}
+              {data.art + polyglot.t("of") + data.source}
             </Text>
-            <Accordion title="Infraction">
+            <Accordion title={polyglot.t("offence")}>
               <Text style={styles.text}>{data.infraction}</Text>
             </Accordion>
             <Accordion title="Conditions">
@@ -105,7 +106,7 @@ export default class InfractionView extends React.Component {
                 }}
               />
             </Accordion>
-            <Accordion title="Texte de loi">
+            <Accordion title={polyglot.t("law")}>
               <Text style={styles.text}>{data.loi}</Text>
             </Accordion>
             <View style={styles.saveOrDiscard}>
@@ -123,7 +124,7 @@ export default class InfractionView extends React.Component {
               />
             </View>
             <Button
-              title="Consulter un avocat gratuitement"
+              title={polyglot.t("freeConsultation")}
               onPress={() => navigation.navigate("UserInfos")}
             />
           </ScrollView>

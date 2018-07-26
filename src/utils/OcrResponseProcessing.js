@@ -33,7 +33,7 @@ export const parseData = res => {
 
   // If there is no string with a similaroty score above 70 % with the string "Art: ", alert the user of the bad focus.
   // Otherwise, returns the infractions détails
-  if (matcheArticle.bestMatch.rating < 0.58) {
+  if (matcheArticle.bestMatch.rating < 0.5) {
     console.log(
       "matcheArticle.bestMatch.rating,",
       matcheArticle.bestMatch.rating

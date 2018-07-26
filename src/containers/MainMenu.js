@@ -1,7 +1,7 @@
 import React from "react";
-import { View, Text, StyleSheet, Image, Button } from "react-native";
+import { View, StyleSheet, Image } from "react-native";
 import { material, iOSColors, systemWeights } from "react-native-typography";
-
+import polyglot from "../utils/translator";
 import Header from "../components/Header";
 import ButtonPrimary from "../components/ButtonPrimary";
 
@@ -20,15 +20,15 @@ export default class Menus extends React.Component {
           />
           <ButtonPrimary
             onPress={() => this.props.openCam()}
-            text="Prendre une photo"
+            text={polyglot.t("takePhoto")}
           />
           <ButtonPrimary
             onPress={() => this.props.navigation.navigate("MyTickets")}
-            text="Mes tickets"
+            text={polyglot.t("myTickets")}
           />
           <ButtonPrimary
             onPress={() => this.props.navigation.navigate("MentionsLegales")}
-            text="Mentions légales"
+            text={polyglot.t("legalDisclaimer")}
           />
         </View>
       </View>

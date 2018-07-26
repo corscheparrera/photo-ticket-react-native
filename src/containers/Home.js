@@ -10,7 +10,7 @@ import React from "react";
 import axios from "../utils/axios";
 import firebase from "react-native-firebase";
 import { parseData } from "../utils/OcrResponseProcessing";
-
+import polyglot from "../utils/translator";
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -151,7 +151,7 @@ export default class Home extends React.Component {
       case "Loading":
         return (
           <View style={styles.loader}>
-            <Text>Analyse en cours</Text>
+            <Text>{polyglot.t("inProgress")}</Text>
             <ActivityIndicator size="large" />
           </View>
         );

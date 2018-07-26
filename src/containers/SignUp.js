@@ -3,13 +3,11 @@ import {
   StyleSheet,
   Text,
   TextInput,
-  View,
-  Button,
   Image,
   KeyboardAvoidingView
 } from "react-native";
 import firebase from "react-native-firebase";
-
+import polyglot from "../utils/translator";
 import ButtonPrimary from "../components/ButtonPrimary";
 
 export default class SignUp extends React.Component {
@@ -31,7 +29,7 @@ export default class SignUp extends React.Component {
           style={{ marginBottom: 60 }}
           source={require("../images/logo_photo_ticekt_9.png")}
         />
-        <Text style={styles.title}>Créez votre compte</Text>
+        <Text style={styles.title}>{polyglot.t("createAccount")}</Text>
         {this.state.errorMessage && (
           <Text style={{ color: "red" }}>{this.state.errorMessage}</Text>
         )}
@@ -46,7 +44,7 @@ export default class SignUp extends React.Component {
           style={styles.textInput}
           secureTextEntry
           autoCapitalize="none"
-          placeholder="Password"
+          placeholder={polyglot.t("password")}
           onChangeText={password => this.setState({ password })}
           value={this.state.password}
         />
@@ -54,7 +52,7 @@ export default class SignUp extends React.Component {
         <ButtonPrimary onPress={this.handleSignUp} text="Enregistrer" />
         <ButtonPrimary
           onPress={() => this.props.navigation.navigate("Login")}
-          text="Vous avez déjà un compte?"
+          text={polyglot.t("alreadySign")}
           buttonColor="transparent"
           largeur={300}
           weight="normal"

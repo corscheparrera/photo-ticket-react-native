@@ -2,7 +2,7 @@ import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import { material, iOSColors, systemWeights } from "react-native-typography";
-
+import polylgot from "../utils/translator";
 import Header from "../components/Header";
 import ButtonPrimary from "../components/ButtonPrimary";
 
@@ -14,11 +14,11 @@ export default class BadFocus extends React.Component {
         <Header title="Infraction" navigation={navigation} />
         <View style={styles.content}>
           <Icon color="#000000" name="eye-slash" size={96} />
-          <Text style={styles.text}>
-            Désolé, votre ticket n'a pas pu être lu. Assurez-vous de bien viser
-            le texte.
-          </Text>
-          <ButtonPrimary onPress={() => retryPicture()} text="Réessayer" />
+          <Text style={styles.text}>{polylgot.t("notFound")}</Text>
+          <ButtonPrimary
+            onPress={() => retryPicture()}
+            text={polylgot.t("retry")}
+          />
         </View>
       </View>
     );

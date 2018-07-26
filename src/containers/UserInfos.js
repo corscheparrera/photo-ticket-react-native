@@ -12,6 +12,7 @@ import firebase from "react-native-firebase";
 import ChatContainer from "./ChatContainer";
 import Header from "../components/Header";
 import ButtonPrimary from "../components/ButtonPrimary";
+import polyglot from "../utils/translator";
 
 const DissmissKeyboard = ({ children }) => (
   <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
@@ -66,22 +67,20 @@ export default class UserInfos extends Component {
         <Header title="Chat" navigation={this.props.navigation} />
         <DissmissKeyboard>
           <View style={styles.content}>
-            <Text style={styles.title}>
-              Identifiez-vous afin de joindre Me Harvey
-            </Text>
+            <Text style={styles.title}>{polyglot.t("identify")}</Text>
             {this.state.errorMessage && (
               <Text style={{ color: "red" }}>{this.state.errorMessage}</Text>
             )}
             <TextInput
               style={styles.textInput}
-              placeholder="Prénom"
+              placeholder={polyglot.t("firstName")}
               autoCapitalize="none"
               onChangeText={name => this.setState({ name })}
               value={this.state.name}
             />
             <TextInput
               style={styles.textInput}
-              placeholder="Nom"
+              placeholder={polyglot.t("name")}
               autoCapitalize="none"
               onChangeText={lastName => this.setState({ lastName })}
               value={this.state.lastName}
@@ -96,7 +95,7 @@ export default class UserInfos extends Component {
             />
             <ButtonPrimary
               onPress={this.storeUserInfos}
-              text="Joindre"
+              text={polyglot.t("join")}
               buttonColor="#BE1551"
             />
           </View>
