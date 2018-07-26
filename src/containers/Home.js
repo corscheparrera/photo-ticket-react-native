@@ -11,18 +11,23 @@ import axios from "../utils/axios";
 import firebase from "react-native-firebase";
 import { parseData } from "../utils/OcrResponseProcessing";
 import polyglot from "../utils/translator";
+
+const initialState = {
+  currentUser: null,
+  imagePath: "",
+  isLoading: false,
+  formattedText: "",
+  badFocus: false,
+  cameraIsOpen: false
+};
+
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      currentUser: null,
-      imagePath: "",
-      isLoading: false,
-      formattedText: "",
-      badFocus: false,
-      cameraIsOpen: false
-    };
+    this.state = initialState;
   }
+
+  reset = () => this.setState(initialState);
   componentDidMount() {
     const { currentUser } = firebase.auth();
 
@@ -168,6 +173,7 @@ export default class Home extends React.Component {
             data={this.state.formattedText}
             navigation={this.props.navigation}
             imagePath={this.state.imagePath}
+            reset={this.reset}
           />
         );
     }

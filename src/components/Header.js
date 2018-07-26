@@ -5,12 +5,12 @@ import Icon from "react-native-vector-icons/FontAwesome";
 
 export default class Header extends React.Component {
   render() {
-    const { navigate, goBack, state, dispatch } = this.props.navigation;
+    const { navigate, goBack } = this.props.navigation;
     // The Reset action wipes the whole navigation state
-    const resetAction = NavigationActions.reset({
-      index: 0,
-      actions: [NavigationActions.navigate({ routeName: "Home" })]
-    });
+    // const resetAction = NavigationActions.reset({
+    //   index: 0,
+    //   actions: [NavigationActions.navigate({ routeName: "Home" })]
+    // });
 
     return (
       <View style={styles.navBar}>
@@ -22,9 +22,15 @@ export default class Header extends React.Component {
             if (this.props.title === "Photo") {
               this.props.closeCam();
             }
+            if (this.props.title === "Infraction") {
+              this.props.reset();
+            }
             if (this.props.title === "Photo Ticket") {
               this.props.navigation.navigate("UserInfos");
-            } else if (this.props.title !== "Photo Ticket") {
+            } else if (
+              this.props.title !== "Photo Ticket" ||
+              this.props.title !== "Infraction"
+            ) {
               goBack();
             }
           }}

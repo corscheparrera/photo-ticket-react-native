@@ -81,7 +81,12 @@ export default class InfractionView extends React.Component {
     if (!this.state.isLoading) {
       return (
         <View style={styles.container}>
-          <Header title={polyglot.t("offence")} navigation={navigation} />
+          <Header
+            title="Infraction"
+            // title={polyglot.t("offence")}
+            navigation={navigation}
+            reset={this.props.reset}
+          />
           <ScrollView>
             <Text style={styles.headerText}>
               {data.art + polyglot.t("of") + data.source}

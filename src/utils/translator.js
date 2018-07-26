@@ -103,7 +103,7 @@ const userInfosView = {
   }
 };
 const settings = {
-  disconect: {
+  disconnect: {
     en: "Log out",
     fr: "Déconnexion"
   }
