@@ -1,8 +1,6 @@
 import axios from "../utils/axios";
 import firebase from "react-native-firebase";
 
-const database = firebase.database();
-
 class BackendChat {
   constructor() {
     firebase.auth().onAuthStateChanged(user => {

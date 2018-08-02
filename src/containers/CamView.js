@@ -37,7 +37,7 @@ export default class CamView extends React.Component {
             {polyglot.t("frame")}
           </Text>
           <Icon
-            color="#BE1551"
+            color="#ec2326"
             name="dot-circle-o"
             size={96}
             onPress={() => this.takePicture()}

@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   title: {
-    color: "#BE1551",
+    color: "#ec2326",
     fontSize: 18,
     fontWeight: "bold",
     textAlign: "center"
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
   textInput: {
     height: 40,
     width: "90%",
-    borderColor: "#BE1551",
+    borderColor: "#ec2326",
     borderWidth: 1,
     borderRadius: 10,
     marginTop: 8,

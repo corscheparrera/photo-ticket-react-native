@@ -91,19 +91,19 @@ export default class InfractionView extends React.Component {
             <Text style={styles.headerText}>
               {data.art + polyglot.t("of") + data.source}
             </Text>
-            <Accordion title={polyglot.t("offence")}>
+            <Accordion title={polyglot.t("offence")} expand={false}>
               <Text style={styles.text}>{data.infraction}</Text>
             </Accordion>
-            <Accordion title="Conditions">
+            <Accordion title="Éléments" expand={true}>
               <Text style={styles.text}>{data.conditions}</Text>
             </Accordion>
-            <Accordion title="Exceptions">
+            <Accordion title="Exceptions" expand={false}>
               <Text style={styles.text}>{data.exceptions}</Text>
             </Accordion>
-            <Accordion title="Points">
+            <Accordion title="Points" expand={false}>
               <Text style={styles.text}>{data.point}</Text>
             </Accordion>
-            <Accordion title="Image">
+            <Accordion title="Image" expand={true}>
               <AutoHeightImage
                 width={100}
                 source={{
@@ -111,7 +111,7 @@ export default class InfractionView extends React.Component {
                 }}
               />
             </Accordion>
-            <Accordion title={polyglot.t("law")}>
+            <Accordion title={polyglot.t("law")} expand={false}>
               <Text style={styles.text}>{data.loi}</Text>
             </Accordion>
             <View style={styles.saveOrDiscard}>
@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
     textAlign: "center"
   },
   icon: {
-    color: "#BE1551"
+    color: "#ec2326"
   },
   saveOrDiscard: {
     marginTop: 30,
@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-around"
   },
   header: {
-    backgroundColor: "#BE1551",
+    backgroundColor: "#ec2326",
     padding: 10
   },
   loader: {

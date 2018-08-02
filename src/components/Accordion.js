@@ -20,7 +20,7 @@ class Accordion extends Component {
 
     this.state = {
       title: props.title,
-      expanded: false
+      expanded: props.expand
     };
   }
 
@@ -33,7 +33,7 @@ class Accordion extends Component {
   render() {
     let icon = this.icons["down"];
 
-    if (this.state.expanded) {
+    if (this.state.expanded == true) {
       icon = this.icons["up"];
     }
 
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     overflow: "hidden"
   },
   titleContainer: {
-    backgroundColor: "#BE1551",
+    backgroundColor: "#ec2326",
     flexDirection: "row"
   },
   content: {

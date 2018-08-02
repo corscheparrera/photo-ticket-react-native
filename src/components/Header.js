@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     paddingTop: 30,
     height: 64,
-    backgroundColor: "#BE1551"
+    backgroundColor: "#ec2326"
   },
   navBarButton: {
     color: "#FFFFFF",
