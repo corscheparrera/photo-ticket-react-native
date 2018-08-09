@@ -1,5 +1,6 @@
 import { Text } from 'react-native'
 import React from "react"
+import polyglot from "./translator";
 
 const Bold = props => <Text style={{ fontWeight: 'bold' }}>{props.children}</Text>
 const Color = props => <Text style={{ color: '#0074D9' }}>{props.children}</Text>
@@ -18610,21 +18611,22 @@ const RRVM_B3 = {
 const infractionsArray = [CSR,RRVM_C41,RM_878,RM_2398,RM_1171,RM_1530, RM_2227,RCA06_210012, RM_726, RM_2030, RM_1498,RM_1384, RCG09_029, RM_685, RCG10_009,RM_1333,RRVM_B3  ]
 
 
-
-export const connectInfraction = (article) =>{
-    let matchArticle
-     infractionsArray.forEach( (arrayItem) => {
-        for (let key in arrayItem) {
-              let value = arrayItem[key];
-              if (article === value.fr.art) {
-                matchArticle = value.fr
-                return 
-              }
-          }
-
-    })
-    console.log(infractionsArray)
-    return matchArticle
-
-
-};
+export const connectInfraction = article => {
+    let lang = polyglot.locale; // 'en' or 'fr'
+    let matchArticle;
+    infractionsArray.forEach(arrayItem => {
+      for (let key in arrayItem) {
+        let value = arrayItem[key];
+        if (article === value.fr.art && lang == 'fr') {
+          matchArticle = value.fr;
+          return;
+        }
+        else if (article === value.fr.art && lang == 'en') {
+            matchArticle = value.en;
+            return;
+        }
+      }
+    });
+    console.log(infractionsArray);
+    return matchArticle;
+  };

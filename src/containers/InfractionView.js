@@ -94,7 +94,7 @@ export default class InfractionView extends React.Component {
             <Accordion title={polyglot.t("offence")} expand={false}>
               <Text style={styles.text}>{data.infraction}</Text>
             </Accordion>
-            <Accordion title="Éléments" expand={true}>
+            <Accordion title={polyglot.t("elements")} expand={true}>
               <Text style={styles.text}>{data.conditions}</Text>
             </Accordion>
             <Accordion title="Exceptions" expand={false}>

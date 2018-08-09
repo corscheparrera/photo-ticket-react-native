@@ -25,6 +25,10 @@ const chatContainer = {
   }
 };
 const infractionView = {
+  elements: {
+    en: "Elements",
+    fr: "Éléments"
+  },
   offence: {
     en: "Offence",
     fr: "Infraction"

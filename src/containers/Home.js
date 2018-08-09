@@ -73,8 +73,10 @@ export default class Home extends React.Component {
     window.Blob = Blob;
 
     try {
+      console.log(uri);
       const sessionId = new Date().getTime();
       const imageRef = storage.ref("GoogleVisionImages").child(`${sessionId}`);
+
       await imageRef.put(uri, { contentType: "image/jpg" });
       const imageURL = await imageRef.getDownloadURL();
       console.log(imageURL);

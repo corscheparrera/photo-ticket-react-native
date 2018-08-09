@@ -1,4 +1,4 @@
-import { connectInfraction, infractions } from "./infractionsList";
+import { connectInfraction } from "./infractionsList";
 
 import stringSimilarity from "string-similarity";
 // stringSimilarity: Finds degree of similarity between two strings, based on Dice's Coefficient, which is mostly better than Levenshtein distance.
