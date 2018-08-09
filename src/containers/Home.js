@@ -11,6 +11,7 @@ import axios from "../utils/axios";
 import firebase from "react-native-firebase";
 import { parseData } from "../utils/OcrResponseProcessing";
 import polyglot from "../utils/translator";
+const storage = firebase.storage();
 
 const initialState = {
   currentUser: null,
@@ -60,6 +61,7 @@ export default class Home extends React.Component {
       badFocus: false
     });
   };
+
   uploadImage = async uri => {
     // Prepare Blob support
     const Blob = RNFetchBlob.polyfill.Blob;
@@ -71,12 +73,17 @@ export default class Home extends React.Component {
     window.Blob = Blob;
 
     try {
-      let base64image = await fs.readFile(uri, "base64");
+      const sessionId = new Date().getTime();
+      const imageRef = storage.ref("GoogleVisionImages").child(`${sessionId}`);
+      await imageRef.put(uri, { contentType: "image/jpg" });
+      const imageURL = await imageRef.getDownloadURL();
+      console.log(imageURL);
+      // console.log(base64image);
+      // let base64image = await fs.readFile(uri, "base64");
       console.log("FETCHING OCR");
-      // let response = await axios.get("/google-ocr");
 
       let response = await axios.post("/google-ocr", {
-        image: base64image
+        linkToImg: imageURL
       });
 
       console.log(response);
