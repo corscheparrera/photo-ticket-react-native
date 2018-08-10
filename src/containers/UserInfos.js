@@ -6,6 +6,7 @@ import {
   TextInput,
   TouchableWithoutFeedback,
   Keyboard,
+  Platform,
   KeyboardAvoidingView
 } from "react-native";
 import firebase from "react-native-firebase";
@@ -63,7 +64,10 @@ export default class UserInfos extends Component {
 
   userInfosView = () => {
     return (
-      <KeyboardAvoidingView style={styles.container} behavior="padding">
+      <KeyboardAvoidingView
+        style={styles.container}
+        behavior={Platform.OS === "ios" ? "padding" : null}
+      >
         <Header title="Chat" navigation={this.props.navigation} />
         <DissmissKeyboard>
           <View style={styles.content}>
