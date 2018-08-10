@@ -41,6 +41,16 @@ subprojects {
      }
   }
 }
+subprojects {
+    afterEvaluate {project ->
+        if (project.hasProperty("android")) {
+            android {
+                compileSdkVersion 27
+                buildToolsVersion "27.0.2"
+            }
+        }
+    }
+}
 /**
 * Project-wide gradle configuration properties for use by all modules
 */

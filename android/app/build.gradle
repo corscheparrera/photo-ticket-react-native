@@ -104,7 +104,7 @@ android {
     defaultConfig {
         applicationId "com.ticketphoto.ticketphoto"
         minSdkVersion 16
-        targetSdkVersion 22
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         ndk {
@@ -113,6 +113,14 @@ android {
         // because of firestore:
         multiDexEnabled true
     }
+    signingConfigs {
+    release {
+        storeFile file(PHOTO_TICKET_RELEASE_STORE_FILE)
+        storePassword PHOTO_TICKET_RELEASE_STORE_PASSWORD
+        keyAlias PHOTO_TICKET_RELEASE_KEY_ALIAS
+        keyPassword PHOTO_TICKET_RELEASE_KEY_PASSWORD
+    }
+}
     splits {
         abi {
             reset()
