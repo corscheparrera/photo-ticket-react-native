@@ -108,6 +108,8 @@ export default class InfractionView extends React.Component {
                 width={100}
                 source={{
                   uri: this.state.sketchURL
+                    ? this.state.sketchURL
+                    : "https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2FNo_image_available.png?alt=media&token=e97ddded-68a3-47ab-9961-0f0d76caf516"
                 }}
               />
             </Accordion>
