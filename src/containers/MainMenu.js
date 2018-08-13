@@ -22,10 +22,10 @@ export default class Menus extends React.Component {
             onPress={() => this.props.openCam()}
             text={polyglot.t("takePhoto")}
           />
-          <ButtonPrimary
+          {/* <ButtonPrimary
             onPress={() => this.props.navigation.navigate("MyTickets")}
             text={polyglot.t("myTickets")}
-          />
+          /> */}
           <ButtonPrimary
             onPress={() => this.props.navigation.navigate("MentionsLegales")}
             text={polyglot.t("legalDisclaimer")}

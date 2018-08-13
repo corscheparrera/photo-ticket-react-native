@@ -64,7 +64,7 @@ export default class InfractionView extends React.Component {
       data: this.props.data
     });
   };
-
+  ifNoText = text => (text ? text : polyglot.t("noText"));
   renderLoadingView = () => {
     if (this.state.isLoading) {
       return (
@@ -95,13 +95,13 @@ export default class InfractionView extends React.Component {
               <Text style={styles.text}>{data.infraction}</Text>
             </Accordion>
             <Accordion title={polyglot.t("elements")} expand={true}>
-              <Text style={styles.text}>{data.conditions}</Text>
+              <Text style={styles.text}>{this.ifNoText(data.conditions)}</Text>
             </Accordion>
             <Accordion title="Exceptions" expand={false}>
-              <Text style={styles.text}>{data.exceptions}</Text>
+              <Text style={styles.text}>{this.ifNoText(data.exceptions)}</Text>
             </Accordion>
             <Accordion title="Points" expand={false}>
-              <Text style={styles.text}>{data.point}</Text>
+              <Text style={styles.text}>{this.ifNoText(data.point)}</Text>
             </Accordion>
             <Accordion title="Image" expand={true}>
               <AutoHeightImage
@@ -116,7 +116,7 @@ export default class InfractionView extends React.Component {
             <Accordion title={polyglot.t("law")} expand={false}>
               <Text style={styles.text}>{data.loi}</Text>
             </Accordion>
-            <View style={styles.saveOrDiscard}>
+            {/* <View style={styles.saveOrDiscard}>
               <Icon
                 style={styles.icon}
                 name="save"
@@ -129,7 +129,7 @@ export default class InfractionView extends React.Component {
                 size={34}
                 onPress={() => {}}
               />
-            </View>
+            </View> */}
             <Button
               title={polyglot.t("freeConsultation")}
               onPress={() => navigation.navigate("UserInfos")}

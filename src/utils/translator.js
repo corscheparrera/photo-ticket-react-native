@@ -29,6 +29,10 @@ const infractionView = {
     en: "Elements",
     fr: "Éléments"
   },
+  noText: {
+    en: "No Information for this section",
+    fr: "Pas d'information sur cette section."
+  },
   offence: {
     en: "Offence",
     fr: "Infraction"
@@ -55,6 +59,7 @@ const login = {
     en: "Password",
     fr: "Mot de passe"
   },
+
   firstUse: {
     en: "It's your first time with us?",
     fr: "C'est votre première utilisation?"
@@ -62,7 +67,7 @@ const login = {
 };
 const signUp = {
   createAccount: {
-    en: "Log in",
+    en: "Create an account",
     fr: "Créez votre compte"
   },
   password: {
@@ -70,7 +75,7 @@ const signUp = {
     fr: "Mot de passe"
   },
   alreadySign: {
-    en: "It's your first time with us?",
+    en: "You already have an account?",
     fr: "Vous avez déjà un compte?"
   }
 };
@@ -118,6 +123,20 @@ const home = {
     fr: "Analyse en cours..."
   }
 };
+const legal = {
+  titleLegal: {
+    en: "Legal Terms",
+    fr: "Mentions légales"
+  },
+  thanks: {
+    en: "Thank you for your confidence!",
+    fr: "Merci de votre confiance!"
+  },
+  start: {
+    en: "Start",
+    fr: "Débuter"
+  }
+};
 
 const translations = {
   ...badFocus,
@@ -129,7 +148,8 @@ const translations = {
   ...settings,
   ...signUp,
   ...userInfosView,
-  ...home
+  ...home,
+  ...legal
 };
 
 function getUserLanguage() {

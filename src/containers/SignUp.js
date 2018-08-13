@@ -13,12 +13,24 @@ import ButtonPrimary from "../components/ButtonPrimary";
 export default class SignUp extends React.Component {
   state = { email: "", password: "", errorMessage: null };
 
+  storeUserInfos = async () => {
+    let user = firebase.auth().currentUser;
+    if (user != null) {
+      let usersRef = firebase.database().ref(`allUsers/${user.uid}`);
+      let snapshot = await usersRef.once("value");
+      const userInfos = snapshot.val();
+      if (userInfos) {
+        console.log("user exists");
+      } else usersRef.update({ ...user._user });
+    }
+  };
   handleSignUp = () => {
     const { email, password } = this.state;
     firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
-      .then(user => this.props.navigation.navigate("Main"))
+      .then(() => this.storeUserInfos())
+      .then(() => this.props.navigation.navigate("MentionsLegales"))
       .catch(error => this.setState({ errorMessage: error.message }));
   };
 

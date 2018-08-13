@@ -4,6 +4,7 @@ import BadFocus from "./BadFocus";
 import CamView from "./CamView";
 import ConfirmPicView from "./ConfirmPicView";
 import InfractionView from "./InfractionView";
+import MentionsLegales from "./MentionsLegales";
 import MainMenu from "./MainMenu";
 import RNFetchBlob from "react-native-fetch-blob";
 import React from "react";
@@ -14,6 +15,7 @@ import polyglot from "../utils/translator";
 const storage = firebase.storage();
 
 const initialState = {
+  agreedLegalTerms: false,
   currentUser: null,
   imagePath: "",
   isLoading: false,
@@ -34,6 +36,11 @@ export default class Home extends React.Component {
 
     this.setState({ currentUser });
   }
+  agreeedTerms = () => {
+    this.setState({
+      agreedLegalTerms: true
+    });
+  };
   openCam = () => {
     this.setState({
       cameraIsOpen: true
@@ -123,6 +130,8 @@ export default class Home extends React.Component {
       return "Main Menu";
     } else if (!this.state.imagePath) {
       return "Cam View";
+    } else if (!this.state.cameraIsOpen) {
+      return "Legal";
     } else if (
       !this.state.isLoading &&
       !this.state.badFocus &&
@@ -146,6 +155,14 @@ export default class Home extends React.Component {
             openCam={this.openCam}
           />
         );
+      // case "Legal":
+      //   return (
+      //     <MentionsLegales
+      //       navigation={this.props.navigation}
+      //       agreeedTerms={this.agreeedTerms}
+      //     />
+      //   );
+
       case "Cam View":
         return (
           <CamView

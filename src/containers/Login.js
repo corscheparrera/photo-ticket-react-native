@@ -22,17 +22,17 @@ export default class Login extends React.Component {
       .catch(error => this.setState({ errorMessage: error.message }));
     this.storeUserInfos();
   };
-  storeUserInfos = async () => {
-    let user = firebase.auth().currentUser;
-    if (user != null) {
-      let usersRef = firebase.database().ref(`allUsers/${user.uid}`);
-      let snapshot = await usersRef.once("value");
-      const userInfos = snapshot.val();
-      if (userInfos) {
-        console.log("user exists");
-      } else usersRef.update({ ...user._user });
-    }
-  };
+  // storeUserInfos = async () => {
+  //   let user = firebase.auth().currentUser;
+  //   if (user != null) {
+  //     let usersRef = firebase.database().ref(`allUsers/${user.uid}`);
+  //     let snapshot = await usersRef.once("value");
+  //     const userInfos = snapshot.val();
+  //     if (userInfos) {
+  //       console.log("user exists");
+  //     } else usersRef.update({ ...user._user });
+  //   }
+  // };
 
   render() {
     return (
