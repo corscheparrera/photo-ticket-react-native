@@ -187,145 +187,130 @@ const guide = {
   descriptiveGuide: {
     en: (
       <View>
-        <H1>{"Comment ça marche Photo-Ticket?"}</H1>
+        <H1>{"How does Photo-Ticket works?"}</H1>
+        <P>{"Sorry for your ticket… However, you should know your rights."}</P>
+        <P>{"Understanding the app:"}</P>
         <P>
           {
-            "Désolé pour votre contravention… Cependant, il est important de connaître vos droits."
-          }
-        </P>
-        <P>{"Comprendre l’application :"}</P>
-        <P>
-          {
-            "Après avoir pris une photo de votre contravention, l’infraction vous est présentée et décortiquée de cette manière :"
+            "After taking a picture of your ticket, the offence will be shown and explained to you in the following way:"
           }
         </P>
         <P>
-          {"« L’infraction est commise lorsque les"}
-          <Color>{" trois éléments "}</Color>
-          {"suivants sont prouvés :"}
+          {"“ The infraction is committed when"}
+          <Color>{" three elements "}</Color>
+          {"are proven :"}
           <Color>
             {"\n"}
             {"1-..."}
             {"\n"}
             {"2-…"}
             {"\n"}
-            {"3-... »"}
+            {"3-... “"}
           </Color>
         </P>
         <P>
-          {"Ces"}
-          <Color>{" éléments "}</Color>
-          {"doivent être prouvés"}
-          <Italic>{" hors de tout doute raisonnable "}</Italic>{" "}
+          {"These"}
+          <Color>{" elements "}</Color>
+          {"must be proven"}
+          <Italic>{" without reasonable doubt "}</Italic>{" "}
           {
-            "par la poursuite pour qu’une déclaration de culpabilité soit prononcée à la fin d’un procès."
-          }
-        </P>
-        <P>
-          {"Il est à votre avantage d’en prendre connaissance, puisque si un"}
-          <Color>{" élément "}</Color>
-          {
-            "est manquant, l’infraction n’est pas commise. Votre avocat pourra vous expliquer les subtilités de chaque"
-          }
-          <Color>{" élément "}</Color>
-          {"ou"}
-          <Bold>{" exception."}</Bold>
-        </P>
-        <H1>{"Contester ou payer?"}</H1>
-        <P>
-          {
-            "Vous disposez de 30 jours pour payer ou contester votre contravention."
-          }
-        </P>
-        <P>
-          <Bold>{"Si vous payez : "}</Bold>
-          {
-            "le paiement correspond à plaider coupable. Le cas échéant, les points d’inaptitude seront inscrits à votre dossier de conduite."
-          }
-        </P>
-        <P>
-          <Bold>{"Si vous contestez seul : "}</Bold>
-          {
-            "vous recevrez une date d’audience pour aller donner vos explications. Des frais supplémentaires peuvent vous être imposés."
-          }
-        </P>
-        <P>
-          <Bold>{"Si vous mandatez un avocat : "}</Bold>
-          {
-            "votre avocat demandera à voir le rapport policier et l’analysera pour vous conseiller sur la meilleure stratégie à adopter selon votre situation. Vous n’aurez pas à vous déplacer ni à vous rendre à la cour."
-          }
-        </P>
-        <H1>{"Avant un procès: "}</H1>
-        <P>
-          {
-            "Même sans avocat, il est important de bien se préparer. Voici quelques conseils généraux :"
+            "by the prosecution in order to obtain a declaration of guilt at the end of a trial."
           }
         </P>
         <P>
           {
-            "1- Si vous croyez qu’un panneau était absent ou non visible, prenez une photo. Une image vaut mille mots. Ces photos doivent être imprimées."
+            "It is to your advantage to be aware of those conditions, because if one of them is missing the offence is not committed."
+          }
+        </P>
+        <H1>{"Guilty or not guilty?"}</H1>
+        <P>
+          {
+            "You have 30 days after receiving your statement of offence (ticket) to decide whether you pay or contest."
+          }
+        </P>
+        <P>
+          <Bold>{"If you pay : "}</Bold>
+          {
+            "The payment of the fine results in a guilty plea. The demerit points, if any, will be registered in your driving record."
+          }
+        </P>
+        <P>
+          <Bold>{"If you contest by your own : "}</Bold>
+          {
+            "You will receive a hearing date to explain your case. Additional fees may be charged."
+          }
+        </P>
+        <P>
+          <Bold>{"If you hire a lawyer : "}</Bold>
+          {
+            " Your lawyer will request and analyze the police report to advise you on the best strategy to adopt according to your situation. You will not have to go to court."
+          }
+        </P>
+        <H1>{"Before trial: "}</H1>
+        <P>
+          {
+            "Even without a lawyer, you need to prepare yourself to maximize your chance of success. Here is some general advice : "
+          }
+        </P>
+        <P>
+          {
+            "1- Take a photo if you think a sign was absent or not visible, or had misled you. A picture is worth a thousand words. You need to print your pictures in order to use them in court."
           }
           {"\n"}
           {"\n"}
           {
-            "2- Si vous désirez expliquer une manœuvre de conduite, dessinez un plan sur lequel vous pourrez situer votre voiture et les manœuvres que vous avez effectuées. De cette manière, vos propos seront plus clairs et vous vous assurerez que le juge vous comprenne."
+            "2- If you want to explain a driving manoeuvre, draw a sketch of the scene in which you can position your vehicle and the manoeuvres you executed. Your explanations will be clearer and the judge might better understand you."
           }
           {"\n"}
           {"\n"}
           {
-            "3- Si votre défense s’organise autour d’un paiement (paiement de stationnement, paiement d’immatriculation, paiement de permis de conduire, etc.), assurez-vous d’avoir un document attestant ce paiement. Imprimez-le avant de vous présenter devant le tribunal."
+            "3- If your defence implies a payment (parking payment, registration payment, driver’s licence payment, etc.), ensure to have the relevant documentation before going to court. You need to print your payment proof."
           }
           {"\n"}
           {"\n"}
           {
-            "4- Si vous désirez expliquer ce qu’une autre personne a vu ou entendu, cette personne doit être présente devant le tribunal. Vous ne pouvez rapporter les paroles de quelqu’un d’autre, il s’agit de ouï-dire."
+            "4- If you want to explain what another person saw or heard, you need to bring this person with you in court. You can’t repeat what another person has witnessed, it’s called hearsay."
           }
         </P>
-        <H1>{"Le procès"}</H1>
-        <P>{"Le procès se déroule en étapes :"}</P>
-        <P>{"1. La preuve de la poursuite :"}</P>
+        <H1>{"The trial"}</H1>
+        <P>{"A trial always goes the same way :"}</P>
+        <P>{"1. The proof of the prosecution :"}</P>
         <Bullet>
-          {"La poursuite doit faire la preuve de tous les"}
-          <Color>{" éléments "}</Color> {"de l’infraction reprochée."}
+          {"The prosecutor needs to prove the"}
+          <Color>{" elements "}</Color> {"required by the law."}
         </Bullet>
         <Bullet>
           {
-            "Votre avocat s’assure que tous les éléments sont valablement mis en preuve."
+            "Your lawyer ensures that all elements are validly put in as evidence."
           }
         </Bullet>
-        <P>{"2. Votre défense :"}</P>
+        <P>{"2. The defence :"}</P>
         <Bullet>
           {
-            "C’est le moment d’expliquer ce qui s’est passé au juge si vous le désirez. Vous devez expliquer ce que vous avez vu et entendu personnellement."
-          }
-        </Bullet>
-        <Bullet>
-          {
-            "C’est le moment de montrer vos photos imprimées, vos vidéos sur une clé USB ou un CD, votre croquis illustrant la scène ou toute autre preuve pertinente."
+            "This is the time to explain what happened to the judge if you wish. You must explain what you have seen and heard personally."
           }
         </Bullet>
         <Bullet>
           {
-            "Votre avocat pourra vous aider à bien cerner les éléments pertinents à votre défense."
+            "This is the time to show your printed photos, your videos on a USB key or CD, your sketch illustrating the scene or any other relevant evidence."
           }
-        </Bullet>
-        <P>{"3. Plaidoiries :"}</P>
-        <Bullet>
-          {"La poursuite argumente sur les éléments qu’elle estime pertinents."}
         </Bullet>
         <Bullet>
           {
-            "Votre avocat argumente sur les éléments pertinents à votre défense."
+            "Your lawyer will be able to help you prepare your testimony in order to clearly identify the elements relevant to your defence."
           }
         </Bullet>
-        <P>{"4. Le juge rend sa décision:"}</P>
+        <P>{"3. Arguments :"}</P>
         <Bullet>
-          {"Si vous gagnez, vous n’avez pas à payer la contravention."}
+          {"The prosecution argues on the elements that it considers relevant."}
         </Bullet>
         <Bullet>
-          {
-            "Si vous perdez, des frais supplémentaires peuvent vous être imposés par le tribunal."
-          }
+          {"Your lawyer argues on the elements relevant to your defence."}
+        </Bullet>
+        <P>{"4. Decision:"}</P>
+        <Bullet>{"If you win, you won’t have to pay the ticket."}</Bullet>
+        <Bullet>
+          {"If you lose, additional fees may be imposed by the court."}
         </Bullet>
       </View>
     ),
