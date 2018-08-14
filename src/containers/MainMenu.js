@@ -30,6 +30,10 @@ export default class Menus extends React.Component {
             onPress={() => this.props.navigation.navigate("MentionsLegales")}
             text={polyglot.t("legalDisclaimer")}
           />
+          <ButtonPrimary
+            onPress={() => this.props.navigation.navigate("Guide")}
+            text={"Guide"}
+          />
         </View>
       </View>
     );

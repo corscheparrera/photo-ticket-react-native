@@ -6,6 +6,7 @@ import SignUp from "./src/containers/SignUp";
 import Login from "./src/containers/Login";
 import Home from "./src/containers/Home";
 import MentionsLegales from "./src/containers/MentionsLegales";
+import Guide from "./src/containers/Guide";
 import Settings from "./src/containers/Settings";
 import ChatContainer from "./src/containers/ChatContainer";
 import UserInfos from "./src/containers/UserInfos";
@@ -19,6 +20,7 @@ const AppStack = StackNavigator(
   {
     Home: Home,
     MentionsLegales: MentionsLegales,
+    Guide: Guide,
     Settings: Settings,
     ChatContainer: ChatContainer,
     UserInfos: UserInfos,
