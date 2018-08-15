@@ -1,11 +1,54 @@
 import React from "react";
-import { View, StyleSheet, Image } from "react-native";
+import {
+  View,
+  StyleSheet,
+  Image,
+  PermissionsAndroid,
+  Platform
+} from "react-native";
 import { material, iOSColors, systemWeights } from "react-native-typography";
 import polyglot from "../utils/translator";
 import Header from "../components/Header";
 import ButtonPrimary from "../components/ButtonPrimary";
 
 export default class Menus extends React.Component {
+  componentDidMount() {
+    this.requestPermissions();
+  }
+  requestPermissions = async () => {
+    try {
+      if (Platform.OS === "android") {
+        const grantedStorage = await PermissionsAndroid.request(
+          PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE,
+          {
+            title: "Access storage",
+            message:
+              "Photo Ticket App needs access to your photos " +
+              "so you we can analyse the ticket."
+          }
+        );
+        const grantedCamera = await PermissionsAndroid.request(
+          PermissionsAndroid.PERMISSIONS.CAMERA,
+          {
+            title: "Access storage",
+            message:
+              "Photo Ticket App needs access to your camera " +
+              "so you we can analyse the ticket."
+          }
+        );
+        if (
+          grantedStorage === PermissionsAndroid.RESULTS.GRANTED &&
+          grantedCamera === PermissionsAndroid.RESULTS.GRANTED
+        ) {
+          console.log("You can use the storage and the camera");
+        } else {
+          console.log("Storage and camera permission denied");
+        }
+      }
+    } catch (err) {
+      console.warn(err);
+    }
+  };
   render() {
     return (
       <View style={styles.container}>

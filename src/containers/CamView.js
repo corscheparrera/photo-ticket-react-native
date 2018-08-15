@@ -6,7 +6,9 @@ import Camera from "react-native-camera/";
 import Header from "../components/Header";
 import polyglot from "../utils/translator";
 export default class CamView extends React.Component {
-  takePicture = () => {
+  takePicture = async () => {
+    console.log("takePicture");
+
     const options = {};
     this.camera.capture({ metadata: options }).then(data => {
       this.props.getUrl(data);
@@ -20,7 +22,6 @@ export default class CamView extends React.Component {
           navigation={this.props.navigation}
           closeCam={this.props.closeCam}
         />
-
         <Camera
           ref={cam => {
             this.camera = cam;
