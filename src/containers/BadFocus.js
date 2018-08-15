@@ -11,7 +11,11 @@ export default class BadFocus extends React.Component {
     let { navigation, retryPicture } = this.props;
     return (
       <View style={styles.container}>
-        <Header title="Infraction" navigation={navigation} />
+        <Header
+          title="Infraction"
+          navigation={navigation}
+          reset={this.props.reset}
+        />
         <View style={styles.content}>
           <Icon color="#000000" name="eye-slash" size={96} />
           <Text style={styles.text}>{polylgot.t("notFound")}</Text>

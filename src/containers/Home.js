@@ -30,6 +30,7 @@ export default class Home extends React.Component {
   }
 
   reset = () => this.setState(initialState);
+
   componentDidMount() {
     const { currentUser } = firebase.auth();
 
@@ -180,6 +181,7 @@ export default class Home extends React.Component {
           <BadFocus
             retryPicture={this.retryPicture}
             navigation={this.props.navigation}
+            reset={this.reset}
           />
         );
       default:
