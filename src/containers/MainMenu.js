@@ -23,7 +23,16 @@ export default class Menus extends React.Component {
           {
             title: "Access storage",
             message:
-              "Photo Ticket App needs access to your photos " +
+              "Photo Ticket App needs access to your storage " +
+              "so you we can analyse the ticket."
+          }
+        );
+        const grantedWriteStorage = await PermissionsAndroid.request(
+          PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE,
+          {
+            title: "Write to storage",
+            message:
+              "Photo Ticket App needs access to write files to storage " +
               "so you we can analyse the ticket."
           }
         );
@@ -38,6 +47,7 @@ export default class Menus extends React.Component {
         );
         if (
           grantedStorage === PermissionsAndroid.RESULTS.GRANTED &&
+          grantedWriteStorage === PermissionsAndroid.RESULTS.GRANTED &&
           grantedCamera === PermissionsAndroid.RESULTS.GRANTED
         ) {
           console.log("You can use the storage and the camera");
