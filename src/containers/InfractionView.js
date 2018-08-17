@@ -75,6 +75,18 @@ export default class InfractionView extends React.Component {
       );
     }
   };
+
+  loopThroughData = data => {
+    for (var property in data) {
+      if (data.hasOwnProperty(property)) {
+        return (
+          <Accordion title={polyglot.t("offence")} expand={false}>
+            <Text style={styles.text}>{data[property]}</Text>
+          </Accordion>
+        );
+      }
+    }
+  };
   renderInfraction = () => {
     let { navigation, data } = this.props;
 
@@ -91,18 +103,27 @@ export default class InfractionView extends React.Component {
             <Text style={styles.headerText}>
               {data.art + polyglot.t("of") + data.source}
             </Text>
-            <Accordion title={polyglot.t("offence")} expand={false}>
-              <Text style={styles.text}>{data.infraction}</Text>
-            </Accordion>
-            <Accordion title={polyglot.t("elements")} expand={true}>
-              <Text style={styles.text}>{this.ifNoText(data.conditions)}</Text>
-            </Accordion>
-            <Accordion title="Exceptions" expand={false}>
-              <Text style={styles.text}>{this.ifNoText(data.exceptions)}</Text>
-            </Accordion>
-            <Accordion title="Points" expand={false}>
-              <Text style={styles.text}>{this.ifNoText(data.point)}</Text>
-            </Accordion>
+            {/* <View>{this.loopThroughData(this.props.data)}</View> */}
+            <View style={data.infraction ? styles.show : styles.hide}>
+              <Accordion title={polyglot.t("offence")} expand={false}>
+                <Text style={styles.text}>{data.infraction}</Text>
+              </Accordion>
+            </View>
+            <View style={data.conditions ? styles.show : styles.hide}>
+              <Accordion title={polyglot.t("elements")} expand={true}>
+                <Text style={styles.text}>{data.conditions}</Text>
+              </Accordion>
+            </View>
+            <View style={data.exceptions ? styles.show : styles.hide}>
+              <Accordion title="Exceptions" expand={false}>
+                <Text style={styles.text}>{data.exceptions}</Text>
+              </Accordion>
+            </View>
+            <View style={data.point ? styles.show : styles.hide}>
+              <Accordion title="Points" expand={false}>
+                <Text style={styles.text}>{data.point}</Text>
+              </Accordion>
+            </View>
             <Accordion title="Image" expand={true}>
               <AutoHeightImage
                 width={100}
@@ -116,6 +137,7 @@ export default class InfractionView extends React.Component {
             <Accordion title={polyglot.t("law")} expand={false}>
               <Text style={styles.text}>{data.loi}</Text>
             </Accordion>
+
             {/* <View style={styles.saveOrDiscard}>
               <Icon
                 style={styles.icon}
@@ -162,6 +184,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     padding: 15
     // alignItems: 'center',
+  },
+  show: {
+    display: "flex"
+  },
+  hide: {
+    display: "none"
   },
   text: {
     // ...material.titleObject,
