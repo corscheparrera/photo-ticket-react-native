@@ -460,7 +460,12 @@ const guide = {
     )
   }
 };
-
+const manualInput = {
+  search: {
+    en: "Search",
+    fr: "Recherche"
+  }
+};
 const translations = {
   ...badFocus,
   ...camView,
@@ -473,7 +478,8 @@ const translations = {
   ...userInfosView,
   ...home,
   ...legal,
-  ...guide
+  ...guide,
+  ...manualInput
 };
 
 function getUserLanguage() {

@@ -1,6 +1,10 @@
 import React, { Component } from "react";
+import { View, Text, StyleSheet, Button } from "react-native";
 import SearchableDropdown from "react-native-searchable-dropdown";
-
+import { material, iOSColors, systemWeights } from "react-native-typography";
+import Header from "../components/Header";
+import polyglot from "../utils/translator";
+import ButtonPrimary from "../components/ButtonPrimary";
 const items = [
   { id: 0, name: "6 Code de la sécurité routière, C-24.2" },
   { id: 1, name: "27 Code de la sécurité routière, C-24.2" },
@@ -190,43 +194,284 @@ const items = [
   { id: 185, name: "121 par. 4 R.M. 1333 Anjou" },
   { id: 186, name: "6 par. 2  R.R.V.M. B-3" }
 ];
+
+const itemEN = [
+  { id: 0, name: "6 Highway safety Code, C-24.2" },
+  { id: 1, name: "27 Highway safety code, C-24.2" },
+  { id: 2, name: "30 Highway safety code, C-24.2" },
+  { id: 3, name: "34 Highway safety code, C-24.2" },
+  { id: 4, name: "35 Highway safety code, C-24.2" },
+  { id: 5, name: "37 Highway safety code, C-24.2" },
+  { id: 6, name: "54 Highway safety code, C-24.2" },
+  { id: 7, name: "undefined Highway safety code, C-24.2" },
+  { id: 8, name: "95 Highway safety code, C-24.2" },
+  { id: 9, name: "97 Highway safety code, C-24.2" },
+  { id: 10, name: "98 Highway safety code, C-24.2" },
+  { id: 11, name: "99 Highway safety code, C-24.2" },
+  { id: 12, name: "100 Highway safety code, C-24.2" },
+  { id: 13, name: "105 Highway safety code, C-24.2" },
+  { id: 14, name: "106 Highway safety code, C-24.2" },
+  { id: 15, name: "168 Highway safety code, C-24.2" },
+  { id: 16, name: "170 Highway safety code, C-24.2" },
+  { id: 17, name: "171 Highway safety code, C-24.2" },
+  { id: 18, name: "211 Highway safety code, C-24.2" },
+  { id: 19, name: "212 Highway safety code, C-24.2" },
+  { id: 20, name: "213 Highway safety code, C-24.2" },
+  { id: 21, name: "215 Highway safety code, C-24.2" },
+  { id: 22, name: "232 Highway safety code, C-24.2" },
+  { id: 23, name: "233 Highway safety code, C-24.2" },
+  { id: 24, name: "237 Highway safety code, C-24.2" },
+  { id: 25, name: "238 Highway safety code, C-24.2" },
+  { id: 26, name: "239 Highway safety code, C-24.2" },
+  { id: 27, name: "247 Highway safety code, C-24.2" },
+  { id: 28, name: "256 Highway safety code, C-24.2" },
+  { id: 29, name: "258 Highway safety code, C-24.2" },
+  { id: 30, name: "256 Highway safety Code, C-24.2" },
+  { id: 31, name: "270 Highway safety code, C-24.2" },
+  { id: 32, name: "299 Highway safety code, C-24.2" },
+  { id: 33, name: "310 Highway safety code, C-24.2" },
+  { id: 34, name: "311 Highway safety code, C-24.2" },
+  { id: 35, name: "312 Highway safety code, C-24.2" },
+  { id: 36, name: "327 Highway safety code, C-24.2" },
+  { id: 37, name: "328 Highway safety code, C-24.2" },
+  { id: 38, name: "330 Highway safety code, C-24.2" },
+  { id: 39, name: "335 Highway safety code, C-24.2" },
+  { id: 40, name: "341 Highway safety code, C-24.2" },
+  { id: 41, name: "342 Highway safety code, C-24.2" },
+  { id: 42, name: "345 Highway safety code, C-24.2" },
+  { id: 43, name: "346 Highway safety Code, C-24.2" },
+  { id: 44, name: "349 Highway safety code, C-24.2" },
+  { id: 45, name: "350 Highway safety code, C-24.2" },
+  { id: 46, name: "359 Highway safety code, C-24.2" },
+  { id: 47, name: "360 Highway safety code, C-24.2" },
+  { id: 48, name: "361 Highway safety Code, C-24.2" },
+  { id: 49, name: "364 Highway safety Code, C-24.2" },
+  { id: 50, name: "366 Highway safety Code, C-24.2" },
+  { id: 51, name: "368 Highway safety Code, C-24.2" },
+  { id: 52, name: "370 Highway safety Code, C-24.2" },
+  { id: 53, name: "371 Highway safety Code, C-24.2" },
+  { id: 54, name: "372 Highway safety Code, C-24.2" },
+  { id: 55, name: "381 Highway safety Code, C-24.2" },
+  { id: 56, name: "382 Highway safety Code, C-24.2" },
+  { id: 57, name: "388 Highway safety Code, C-24.2" },
+  { id: 58, name: "391 Highway safety Code, C-24.2" },
+  { id: 59, name: "395 Highway safety Code, C-24.2" },
+  { id: 60, name: "396 Highway safety Code, C-24.2" },
+  { id: 61, name: "401 Highway safety Code, C-24.2" },
+  { id: 62, name: "406 Highway safety Code, C-24.2" },
+  { id: 63, name: "410 Highway safety Code, C-24.2" },
+  { id: 64, name: "411 Highway safety Code, C-24.2" },
+  { id: 65, name: "418 Highway safety Code, C-24.2" },
+  { id: 66, name: "422 Highway safety Code, C-24.2" },
+  { id: 67, name: "424 Highway safety Code, C-24.2" },
+  { id: 68, name: "433 Highway safety code, C-24.2" },
+  { id: 69, name: "434 Highway safety code, C-24.2" },
+  { id: 70, name: "435 Highway safety code, C-24.2" },
+  { id: 71, name: "440 Highway safety Code, C-24.2" },
+  { id: 72, name: "442 Highway safety code, C-24.2" },
+  { id: 73, name: "444 Highway safety Code, C-24.2" },
+  { id: 74, name: "445 Highway safety Code, C-24.2" },
+  { id: 75, name: "448 Highway safety Code, C-24.2" },
+  { id: 76, name: "450 Highway safety Code, C-24.2" },
+  { id: 77, name: "451 Highway safety Code, C-24.2" },
+  { id: 78, name: "452 Highway safety Code, C-24.2" },
+  { id: 79, name: "460 Highway safety Code, C-24.2" },
+  { id: 80, name: "471 Highway safety code, C-24.2" },
+  { id: 81, name: "478 Highway safety code, C-24.2" },
+  { id: 82, name: "484 Highway safety Code, C-24.2" },
+  { id: 83, name: "487 Highway safety Code, C-24.2" },
+  { id: 84, name: "488 Highway safety Code, C-24.2" },
+  { id: 85, name: "498 Highway safety Code, C-24.2" },
+  { id: 86, name: "523 Highway safety Code, C-24.2" },
+  { id: 87, name: "531 Highway safety Code, C-24.2" },
+  { id: 88, name: "534 Highway safety Code, C-24.2" },
+  { id: 89, name: "636 Highway safety Code, C-24.2" },
+  { id: 90, name: "31.1 Highway safety code, C-24.2" },
+  { id: 91, name: "32 (2) Highway safety code, C-24.2" },
+  { id: 92, name: "39.1 Highway safety code, C-24.2" },
+  { id: 93, name: "93.1 Highway safety code, C-24.2" },
+  { id: 94, name: "161.1 Highway safety code, C-24.2" },
+  { id: 95, name: "202.2 Highway safety code, C-24.2" },
+  { id: 96, name: "303.2 Highway safety code, C-24.2" },
+  { id: 97, name: "326.1 Highway safety code, C-24.2" },
+  { id: 98, name: "406.1 (1) Highway safety Code, C-24.2" },
+  { id: 99, name: "406.1 (2) Highway safety Code, C-24.2" },
+  { id: 100, name: "406.1 (4) Highway safety Code, C-24.2" },
+  { id: 101, name: "439.1 Highway safety Code, C-24.2" },
+  { id: 102, name: "440.1 Highway safety Code, C-24.2" },
+  { id: 103, name: "443.1 Highway safety code, C-24.2" },
+  { id: 104, name: "443.2 Highway safety Code, C-24.2" },
+  { id: 105, name: "484.1 Highway safety Code, C-24.2" },
+  { id: 106, name: "492.1 Highway safety Code, C-24.2" },
+  { id: 107, name: "498.1 Highway safety Code, C-24.2" },
+  { id: 108, name: "519.2 Highway safety Code, C-24.2" },
+  { id: 109, name: "638.1 Highway safety Code, C-24.2" },
+  { id: 110, name: "383 (1) Highway safety Code, C-24.2" },
+  { id: 111, name: "383 (2) Highway safety Code, C-24.2" },
+  { id: 112, name: "386 (1) Highway safety Code, C-24.2" },
+  { id: 113, name: "386 (2) Highway safety Code, C-24.2" },
+  { id: 114, name: "386 (4) Highway safety Code, C-24.2" },
+  { id: 115, name: "386 (4.1) Highway safety Code, C-24.2" },
+  { id: 116, name: "386 (5) Highway safety Code, C-24.2" },
+  { id: 117, name: "386 (7.1) Highway safety Code, C-24.2" },
+  { id: 118, name: "386 (8) Highway safety Code, C-24.2" },
+  { id: 119, name: "386 (9) Highway safety Code, C-24.2" },
+  { id: 120, name: "388.1 Highway safety Code, C-24.2" },
+  { id: 121, name: "12 R.R.V.M. C-4.1" },
+  { id: 122, name: "14 R.R.V.M. C-4.1" },
+  { id: 123, name: "15 R.R.V.M. C-4.1" },
+  { id: 124, name: "22 R.R.V.M. C-4.1" },
+  { id: 125, name: "26 R.R.V.M. C-4.1" },
+  { id: 126, name: "29 R.R.V.M. C-4.1" },
+  { id: 127, name: "32 R.R.V.M. C-4.1" },
+  { id: 128, name: "37 R.R.V.M. C-4.1" },
+  { id: 129, name: "38 R.R.V.M. C-4.1" },
+  { id: 130, name: "42 R.R.V.M. C-4.1" },
+  { id: 131, name: "43 R.R.V.M. C-4.1" },
+  { id: 132, name: "49 R.R.V.M. C-4.1" },
+  { id: 133, name: "51 R.R.V.M. C-4.1" },
+  { id: 134, name: "55 R.R.V.M. C-4.1" },
+  { id: 135, name: "58 R.R.V.M. C-4.1" },
+  { id: 136, name: "60 R.R.V.M. C-4.1" },
+  { id: 137, name: "30 (1) R.R.V.M. C-4.1" },
+  { id: 138, name: "30 (3) R.R.V.M. C-4.1" },
+  { id: 139, name: "30 (4) R.R.V.M. C-4.1" },
+  { id: 140, name: "30 (8) R.R.V.M. C-4.1" },
+  { id: 141, name: "30 (9) R.R.V.M. C-4.1" },
+  { id: 142, name: "31 (1) R.R.V.M. C-4.1" },
+  { id: 143, name: "31 (3) R.R.V.M. C-4.1" },
+  { id: 144, name: "31 (4) R.R.V.M. C-4.1" },
+  { id: 145, name: "61.7 R.M. 878 St-Laurent" },
+  { id: 146, name: "61.9 R.M. 878 St-Laurent" },
+  { id: 147, name: "4.1 R.M. 2398 Côte Saint-Luc" },
+  { id: 148, name: "8.6 R.M. 8.6 Outremont" },
+  { id: 149, name: "8.20 R.M. 8.20 Outremont" },
+  { id: 150, name: "8.24.1 R.M. 878 Outremont" },
+  { id: 151, name: "undefined R.M. 878 Outremont" },
+  { id: 152, name: "8.24.24 R.M. 878 Outremont" },
+  { id: 153, name: "8.26 R.M. 8.6 Outremont" },
+  { id: 154, name: "31 (20) R.M. 1530 Montréal-Nord" },
+  { id: 155, name: "31 (23) R.M. 1530 Montréal-Nord" },
+  { id: 156, name: "22 (2) R.M. 2227 Saint-Léonard" },
+  { id: 157, name: "22 (4) R.M. 2227 Saint-Léonard" },
+  { id: 158, name: "22 (9) R.M. 2227 Saint-Léonard" },
+  { id: 159, name: "38 RCA06 210012 Verdun" },
+  { id: 160, name: "29 par. 1 RCA06 210012 Verdun" },
+  { id: 161, name: "33.1 RCA06 210012 Verdun" },
+  { id: 162, name: "36 al. 1 RCA06 210012 Verdun" },
+  { id: 163, name: "49 R.M. 726 Westmount" },
+  { id: 164, name: "51 R.M. 726 Westmount" },
+  { id: 165, name: "52.13 R.M. 726 Westmount" },
+  { id: 166, name: "52.14 R.M. 726 Westmount" },
+  { id: 167, name: "52.15 R.M. 726 Westmount" },
+  { id: 168, name: "52.16 R.M. 726 Westmount" },
+  { id: 169, name: "198 R.M. 2030 LaSalle" },
+  { id: 170, name: "194.2 R.M. 2030 LaSalle" },
+  { id: 171, name: "195 (7) R.M. 2030 LaSalle" },
+  { id: 172, name: "195 par. 27 R.M. 2030 LaSalle" },
+  { id: 173, name: "195 par. 28 R.M. 2030 LaSalle" },
+  { id: 174, name: "195 par. 39 R.M. 2030 LaSalle" },
+  { id: 175, name: "225-k R.M. 2030 LaSalle" },
+  { id: 176, name: "6 (2) R.M. 1498 Westmount" },
+  { id: 177, name: "25 (1) R.M. 1384 Plateau-Mont-Royal" },
+  { id: 178, name: "28 (1) R.M. 1384 Plateau-Mont-Royal" },
+  { id: 179, name: "33 (1) R.M. 1384 Plateau-Mont-Royal" },
+  { id: 180, name: "60 RCG09-029" },
+  { id: 181, name: "62 RCG09-029" },
+  { id: 182, name: "10 R.M. 685 Westmount" },
+  { id: 183, name: "132 RCG10-009" },
+  { id: 184, name: "118 (17) R.M. 1333 Anjou" },
+  { id: 185, name: "121 (4) R.M. 1333 Anjou" },
+  { id: 186, name: "6 (2) R.R.V.M. B-3" }
+];
 export default class ManualInput extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedArt: null,
+      displayDropDown: true,
+      displayInfraction: false
+    };
+  }
+  showDropDown = () => {
+    if (this.state.displayDropDown) {
+      return (
+        <View style={styles.container}>
+          <Header
+            title={polyglot.t("search")}
+            navigation={this.props.navigation}
+          />
+
+          <View style={styles.content}>
+            <SearchableDropdown
+              // onTextChange={() => this.toggleSelectedArt()}
+              onItemSelect={item => this.setState({ selectedArt: item.name })}
+              containerStyle={{
+                padding: 20
+                // height: 500
+              }}
+              textInputStyle={{
+                padding: 12,
+                borderWidth: 1,
+                borderColor: "#ccc",
+                borderRadius: 5
+              }}
+              itemStyle={{
+                padding: 10,
+                marginTop: 2,
+                backgroundColor: "#ddd",
+                borderColor: "#bbb",
+                borderWidth: 1,
+                borderRadius: 5
+              }}
+              itemTextStyle={{
+                color: "#222"
+              }}
+              itemsContainerStyle={{
+                maxHeight: 340
+              }}
+              items={items}
+              defaultIndex={2}
+              placeholder="Placeholder."
+              resetValue={false}
+              underlineColorAndroid="transparent"
+            />
+            {/* <Text style={styles.text}>{this.state.selectedArt}</Text> */}
+            <Button onPress={() => {}} title={polyglot.t("search")} />
+          </View>
+        </View>
+      );
+    }
+  };
+  showInfraction = () => {
+    if (this.state.displayInfraction) {
+      return (
+        <InfractionView
+          data={this.state.formattedText}
+          navigation={this.props.navigation}
+          imagePath={this.state.imagePath}
+          reset={this.reset}
+        />
+      );
+    }
+  };
   render() {
-    return (
-      <SearchableDropdown
-        // onTextChange={text => alert(text)}
-        onItemSelect={item => alert(JSON.stringify(item))}
-        containerStyle={{
-          padding: 40,
-          paddingTop: 80,
-          height: 500
-        }}
-        textInputStyle={{
-          padding: 12,
-          borderWidth: 1,
-          borderColor: "#ccc",
-          borderRadius: 5
-        }}
-        itemStyle={{
-          padding: 10,
-          marginTop: 2,
-          backgroundColor: "#ddd",
-          borderColor: "#bbb",
-          borderWidth: 1,
-          borderRadius: 5
-        }}
-        itemTextStyle={{
-          color: "#222"
-        }}
-        itemsContainerStyle={{
-          maxHeight: 340
-        }}
-        items={items}
-        defaultIndex={2}
-        placeholder="Placeholder."
-        resetValue={false}
-        underlineColorAndroid="transparent"
-      />
-    );
+    return this.showDropDown();
   }
 }
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  content: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  text: {
+    fontSize: 10,
+    ...material.titleObject,
+    color: iOSColors.black,
+    ...systemWeights.light
+  }
+});
