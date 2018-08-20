@@ -80,8 +80,8 @@ export default class Menus extends React.Component {
             text={polyglot.t("myTickets")}
           /> */}
           <ButtonPrimary
-            onPress={() => this.props.navigation.navigate("MentionsLegales")}
-            text={polyglot.t("legalDisclaimer")}
+            onPress={() => this.props.navigation.navigate("ManualInput")}
+            text={"Input manuel"}
           />
           <ButtonPrimary
             onPress={() => this.props.navigation.navigate("Guide")}

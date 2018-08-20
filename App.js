@@ -8,6 +8,7 @@ import Home from "./src/containers/Home";
 import MentionsLegales from "./src/containers/MentionsLegales";
 import Guide from "./src/containers/Guide";
 import Settings from "./src/containers/Settings";
+import ManualInput from "./src/containers/ManualInput";
 import ChatContainer from "./src/containers/ChatContainer";
 import UserInfos from "./src/containers/UserInfos";
 import MyTickets from "./src/containers/MyTickets";
@@ -22,6 +23,7 @@ const AppStack = StackNavigator(
     MentionsLegales: MentionsLegales,
     Guide: Guide,
     Settings: Settings,
+    ManualInput: ManualInput,
     ChatContainer: ChatContainer,
     UserInfos: UserInfos,
     MyTickets: MyTickets

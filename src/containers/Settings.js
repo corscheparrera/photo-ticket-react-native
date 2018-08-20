@@ -35,6 +35,10 @@ export default class Settings extends Component {
             text={polyglot.t("disconnect")}
             onPress={this.signOutUser}
           />
+          <ButtonPrimary
+            onPress={() => this.props.navigation.navigate("MentionsLegales")}
+            text={polyglot.t("legalDisclaimer")}
+          />
         </View>
       </View>
     );

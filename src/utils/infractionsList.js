@@ -18610,7 +18610,6 @@ const RRVM_B3 = {
 
 const infractionsArray = [CSR,RRVM_C41,RM_878,RM_2398,RM_1171,RM_1530, RM_2227,RCA06_210012, RM_726, RM_2030, RM_1498,RM_1384, RCG09_029, RM_685, RCG10_009,RM_1333,RRVM_B3  ]
 
-
 export const connectInfraction = article => {
     let lang = polyglot.locale; // 'en' or 'fr'
     let matchArticle;
@@ -18630,3 +18629,5 @@ export const connectInfraction = article => {
     console.log(infractionsArray);
     return matchArticle;
   };
+
+module.exports = infractionsArray

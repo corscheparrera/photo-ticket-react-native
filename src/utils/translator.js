@@ -136,7 +136,7 @@ const mainMenu = {
   },
   legalDisclaimer: {
     en: "Legal disclaimer",
-    fr: "Mentions légales?"
+    fr: "Mentions légales"
   }
 };
 const userInfosView = {
