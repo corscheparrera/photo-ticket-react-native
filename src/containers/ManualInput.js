@@ -2027,7 +2027,7 @@ const itemsEN = [
     id: 151,
     source: "R.M. 878 Outremont",
     art: "Section 8.24.16",
-    name: "Section 8.24.16 R.M. 878 Outremont"
+    name: "8.24.16 R.M. 878 Outremont"
   },
   {
     id: 152,
