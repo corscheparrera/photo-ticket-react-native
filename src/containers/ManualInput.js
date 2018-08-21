@@ -2340,9 +2340,7 @@ export default class ManualInput extends Component {
           <Text style={styles.text}>{polyglot.t("select")}</Text>
           <SearchableDropdown
             // onTextChange={() => this.toggleSelectedArt()}
-            onItemSelect={item =>
-              this.setState({ selectedArt: item.art }, this.getInfractionData)
-            }
+            onItemSelect={item => this.setState({ selectedArt: item.art })}
             containerStyle={{
               padding: 20
               // height: 500
@@ -2374,7 +2372,12 @@ export default class ManualInput extends Component {
             underlineColorAndroid="transparent"
           />
 
-          <Button onPress={() => {}} title={polyglot.t("search")} />
+          <Button
+            onPress={() => {
+              this.getInfractionData();
+            }}
+            title={polyglot.t("search")}
+          />
         </View>
       );
     }

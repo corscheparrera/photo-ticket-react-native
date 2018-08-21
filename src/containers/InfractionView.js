@@ -137,6 +137,15 @@ export default class InfractionView extends React.Component {
             <Accordion title={polyglot.t("law")} expand={false}>
               <Text style={styles.text}>{data.loi}</Text>
             </Accordion>
+            <Accordion title={polyglot.t("resource")} expand={true}>
+              <View style={{ alignItems: "center", paddingBottom: 30 }}>
+                <Text style={styles.text}>{polyglot.t("talkToLawyer")}</Text>
+              </View>
+              <Button
+                title={polyglot.t("freeConsultation")}
+                onPress={() => navigation.navigate("UserInfos")}
+              />
+            </Accordion>
 
             {/* <View style={styles.saveOrDiscard}>
               <Icon
@@ -152,10 +161,6 @@ export default class InfractionView extends React.Component {
                 onPress={() => {}}
               />
             </View> */}
-            <Button
-              title={polyglot.t("freeConsultation")}
-              onPress={() => navigation.navigate("UserInfos")}
-            />
           </ScrollView>
         </View>
       );
@@ -183,7 +188,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     padding: 15
-    // alignItems: 'center',
   },
   show: {
     display: "flex"
@@ -202,7 +206,9 @@ const styles = StyleSheet.create({
     color: iOSColors.black,
     ...systemWeights.semibold,
     fontSize: 16,
-    textAlign: "center"
+    textAlign: "center",
+    height: 50,
+    paddingTop: 15
   },
   icon: {
     color: "#ec2326"
