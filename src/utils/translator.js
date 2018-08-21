@@ -498,6 +498,10 @@ const manualInput = {
   alertMsg: {
     en: "You need to enter your article to proceed.",
     fr: "Vous devez entrer votre article pour continuer."
+  },
+  writeNumber: {
+    en: "Write number here...",
+    fr: "Inscrire le chiffre ici..."
   }
 };
 const translations = {

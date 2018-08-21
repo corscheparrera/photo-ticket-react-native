@@ -1121,907 +1121,907 @@ const itemsEN = [
     id: 0,
     source: "Highway safety Code, C-24.2",
     art: "Section 6",
-    name: "Section 6 Highway safety Code, C-24.2"
+    name: "6 Highway safety Code, C-24.2"
   },
   {
     id: 1,
     source: "Highway safety code, C-24.2",
     art: "Section 27",
-    name: "Section 27 Highway safety code, C-24.2"
+    name: "27 Highway safety code, C-24.2"
   },
   {
     id: 2,
     source: "Highway safety code, C-24.2",
     art: "Section 30",
-    name: "Section 30 Highway safety code, C-24.2"
+    name: "30 Highway safety code, C-24.2"
   },
   {
     id: 3,
     source: "Highway safety code, C-24.2",
     art: "Section 34",
-    name: "Section 34 Highway safety code, C-24.2"
+    name: "34 Highway safety code, C-24.2"
   },
   {
     id: 4,
     source: "Highway safety code, C-24.2",
     art: "Section 35",
-    name: "Section 35 Highway safety code, C-24.2"
+    name: "35 Highway safety code, C-24.2"
   },
   {
     id: 5,
     source: "Highway safety code, C-24.2",
     art: "Section 37",
-    name: "Section 37 Highway safety code, C-24.2"
+    name: "37 Highway safety code, C-24.2"
   },
   {
     id: 6,
     source: "Highway safety code, C-24.2",
     art: "Section 54",
-    name: "Section 54 Highway safety code, C-24.2"
+    name: "54 Highway safety code, C-24.2"
   },
   {
     id: 7,
     source: "Highway safety code, C-24.2",
     art: "Section 65",
-    name: "Section 65 Highway safety code, C-24.2"
+    name: "65 Highway safety code, C-24.2"
   },
   {
     id: 8,
     source: "Highway safety code, C-24.2",
     art: "Section 95",
-    name: "Section 95 Highway safety code, C-24.2"
+    name: "95 Highway safety code, C-24.2"
   },
   {
     id: 9,
     source: "Highway safety code, C-24.2",
     art: "Section 97",
-    name: "Section 97 Highway safety code, C-24.2"
+    name: "97 Highway safety code, C-24.2"
   },
   {
     id: 10,
     source: "Highway safety code, C-24.2",
     art: "Section 98",
-    name: "Section 98 Highway safety code, C-24.2"
+    name: "98 Highway safety code, C-24.2"
   },
   {
     id: 11,
     source: "Highway safety code, C-24.2",
     art: "Section 99",
-    name: "Section 99 Highway safety code, C-24.2"
+    name: "99 Highway safety code, C-24.2"
   },
   {
     id: 12,
     source: "Highway safety code, C-24.2",
     art: "Section 100",
-    name: "Section 100 Highway safety code, C-24.2"
+    name: "100 Highway safety code, C-24.2"
   },
   {
     id: 13,
     source: "Highway safety code, C-24.2",
     art: "Section 105",
-    name: "Section 105 Highway safety code, C-24.2"
+    name: "105 Highway safety code, C-24.2"
   },
   {
     id: 14,
     source: "Highway safety code, C-24.2",
     art: "Section 106",
-    name: "Section 106 Highway safety code, C-24.2"
+    name: "106 Highway safety code, C-24.2"
   },
   {
     id: 15,
     source: "Highway safety code, C-24.2",
     art: "Section 168",
-    name: "Section 168 Highway safety code, C-24.2"
+    name: "168 Highway safety code, C-24.2"
   },
   {
     id: 16,
     source: "Highway safety code, C-24.2",
     art: "Section 170",
-    name: "Section 170 Highway safety code, C-24.2"
+    name: "170 Highway safety code, C-24.2"
   },
   {
     id: 17,
     source: "Highway safety code, C-24.2",
     art: "Section 171",
-    name: "Section 171 Highway safety code, C-24.2"
+    name: "171 Highway safety code, C-24.2"
   },
   {
     id: 18,
     source: "Highway safety code, C-24.2",
     art: "Section 211",
-    name: "Section 211 Highway safety code, C-24.2"
+    name: "211 Highway safety code, C-24.2"
   },
   {
     id: 19,
     source: "Highway safety code, C-24.2",
     art: "Section 212",
-    name: "Section 212 Highway safety code, C-24.2"
+    name: "212 Highway safety code, C-24.2"
   },
   {
     id: 20,
     source: "Highway safety code, C-24.2",
     art: "Section 213",
-    name: "Section 213 Highway safety code, C-24.2"
+    name: "213 Highway safety code, C-24.2"
   },
   {
     id: 21,
     source: "Highway safety code, C-24.2",
     art: "Section 215",
-    name: "Section 215 Highway safety code, C-24.2"
+    name: "215 Highway safety code, C-24.2"
   },
   {
     id: 22,
     source: "Highway safety code, C-24.2",
     art: "Section 232",
-    name: "Section 232 Highway safety code, C-24.2"
+    name: "232 Highway safety code, C-24.2"
   },
   {
     id: 23,
     source: "Highway safety code, C-24.2",
     art: "Section 233",
-    name: "Section 233 Highway safety code, C-24.2"
+    name: "233 Highway safety code, C-24.2"
   },
   {
     id: 24,
     source: "Highway safety code, C-24.2",
     art: "Section 237",
-    name: "Section 237 Highway safety code, C-24.2"
+    name: "237 Highway safety code, C-24.2"
   },
   {
     id: 25,
     source: "Highway safety code, C-24.2",
     art: "Section 238",
-    name: "Section 238 Highway safety code, C-24.2"
+    name: "238 Highway safety code, C-24.2"
   },
   {
     id: 26,
     source: "Highway safety code, C-24.2",
     art: "Section 239",
-    name: "Section 239 Highway safety code, C-24.2"
+    name: "239 Highway safety code, C-24.2"
   },
   {
     id: 27,
     source: "Highway safety code, C-24.2",
     art: "Section 247",
-    name: "Section 247 Highway safety code, C-24.2"
+    name: "247 Highway safety code, C-24.2"
   },
   {
     id: 28,
     source: "Highway safety code, C-24.2",
     art: "Section 256",
-    name: "Section 256 Highway safety code, C-24.2"
+    name: "256 Highway safety code, C-24.2"
   },
   {
     id: 29,
     source: "Highway safety code, C-24.2",
     art: "Section 258",
-    name: "Section 258 Highway safety code, C-24.2"
+    name: "258 Highway safety code, C-24.2"
   },
   {
     id: 30,
     source: "Highway safety Code, C-24.2",
     art: "Section 256",
-    name: "Section 256 Highway safety Code, C-24.2"
+    name: "256 Highway safety Code, C-24.2"
   },
   {
     id: 31,
     source: "Highway safety code, C-24.2",
     art: "Section 270",
-    name: "Section 270 Highway safety code, C-24.2"
+    name: "270 Highway safety code, C-24.2"
   },
   {
     id: 32,
     source: "Highway safety code, C-24.2",
     art: "Section 299",
-    name: "Section 299 Highway safety code, C-24.2"
+    name: "299 Highway safety code, C-24.2"
   },
   {
     id: 33,
     source: "Highway safety code, C-24.2",
     art: "Section 310",
-    name: "Section 310 Highway safety code, C-24.2"
+    name: "310 Highway safety code, C-24.2"
   },
   {
     id: 34,
     source: "Highway safety code, C-24.2",
     art: "Section 311",
-    name: "Section 311 Highway safety code, C-24.2"
+    name: "311 Highway safety code, C-24.2"
   },
   {
     id: 35,
     source: "Highway safety code, C-24.2",
     art: "Section 312",
-    name: "Section 312 Highway safety code, C-24.2"
+    name: "312 Highway safety code, C-24.2"
   },
   {
     id: 36,
     source: "Highway safety code, C-24.2",
     art: "Section 327",
-    name: "Section 327 Highway safety code, C-24.2"
+    name: "327 Highway safety code, C-24.2"
   },
   {
     id: 37,
     source: "Highway safety code, C-24.2",
     art: "Section 328",
-    name: "Section 328 Highway safety code, C-24.2"
+    name: "328 Highway safety code, C-24.2"
   },
   {
     id: 38,
     source: "Highway safety code, C-24.2",
     art: "Section 330",
-    name: "Section 330 Highway safety code, C-24.2"
+    name: "330 Highway safety code, C-24.2"
   },
   {
     id: 39,
     source: "Highway safety code, C-24.2",
     art: "Section 335",
-    name: "Section 335 Highway safety code, C-24.2"
+    name: "335 Highway safety code, C-24.2"
   },
   {
     id: 40,
     source: "Highway safety code, C-24.2",
     art: "Section 341",
-    name: "Section 341 Highway safety code, C-24.2"
+    name: "341 Highway safety code, C-24.2"
   },
   {
     id: 41,
     source: "Highway safety code, C-24.2",
     art: "Section 342",
-    name: "Section 342 Highway safety code, C-24.2"
+    name: "342 Highway safety code, C-24.2"
   },
   {
     id: 42,
     source: "Highway safety code, C-24.2",
     art: "Section 345",
-    name: "Section 345 Highway safety code, C-24.2"
+    name: "345 Highway safety code, C-24.2"
   },
   {
     id: 43,
     source: "Highway safety Code, C-24.2",
     art: "Section 346",
-    name: "Section 346 Highway safety Code, C-24.2"
+    name: "346 Highway safety Code, C-24.2"
   },
   {
     id: 44,
     source: "Highway safety code, C-24.2",
     art: "Section 349",
-    name: "Section 349 Highway safety code, C-24.2"
+    name: "349 Highway safety code, C-24.2"
   },
   {
     id: 45,
     source: "Highway safety code, C-24.2",
     art: "Section 350",
-    name: "Section 350 Highway safety code, C-24.2"
+    name: "350 Highway safety code, C-24.2"
   },
   {
     id: 46,
     source: "Highway safety code, C-24.2",
     art: "Section 359",
-    name: "Section 359 Highway safety code, C-24.2"
+    name: "359 Highway safety code, C-24.2"
   },
   {
     id: 47,
     source: "Highway safety code, C-24.2",
     art: "Section 360",
-    name: "Section 360 Highway safety code, C-24.2"
+    name: "360 Highway safety code, C-24.2"
   },
   {
     id: 48,
     source: "Highway safety Code, C-24.2",
     art: "Section 361",
-    name: "Section 361 Highway safety Code, C-24.2"
+    name: "361 Highway safety Code, C-24.2"
   },
   {
     id: 49,
     source: "Highway safety Code, C-24.2",
     art: "Section 364",
-    name: "Section 364 Highway safety Code, C-24.2"
+    name: "364 Highway safety Code, C-24.2"
   },
   {
     id: 50,
     source: "Highway safety Code, C-24.2",
     art: "Section 366",
-    name: "Section 366 Highway safety Code, C-24.2"
+    name: "366 Highway safety Code, C-24.2"
   },
   {
     id: 51,
     source: "Highway safety Code, C-24.2",
     art: "Section 368",
-    name: "Section 368 Highway safety Code, C-24.2"
+    name: "368 Highway safety Code, C-24.2"
   },
   {
     id: 52,
     source: "Highway safety Code, C-24.2",
     art: "Section 370",
-    name: "Section 370 Highway safety Code, C-24.2"
+    name: "370 Highway safety Code, C-24.2"
   },
   {
     id: 53,
     source: "Highway safety Code, C-24.2",
     art: "Section 371",
-    name: "Section 371 Highway safety Code, C-24.2"
+    name: "371 Highway safety Code, C-24.2"
   },
   {
     id: 54,
     source: "Highway safety Code, C-24.2",
     art: "Section 372",
-    name: "Section 372 Highway safety Code, C-24.2"
+    name: "372 Highway safety Code, C-24.2"
   },
   {
     id: 55,
     source: "Highway safety Code, C-24.2",
     art: "Section 381",
-    name: "Section 381 Highway safety Code, C-24.2"
+    name: "381 Highway safety Code, C-24.2"
   },
   {
     id: 56,
     source: "Highway safety Code, C-24.2",
     art: "Section 382",
-    name: "Section 382 Highway safety Code, C-24.2"
+    name: "382 Highway safety Code, C-24.2"
   },
   {
     id: 57,
     source: "Highway safety Code, C-24.2",
     art: "Section 388",
-    name: "Section 388 Highway safety Code, C-24.2"
+    name: "388 Highway safety Code, C-24.2"
   },
   {
     id: 58,
     source: "Highway safety Code, C-24.2",
     art: "Section 391",
-    name: "Section 391 Highway safety Code, C-24.2"
+    name: "391 Highway safety Code, C-24.2"
   },
   {
     id: 59,
     source: "Highway safety Code, C-24.2",
     art: "Section 395",
-    name: "Section 395 Highway safety Code, C-24.2"
+    name: "395 Highway safety Code, C-24.2"
   },
   {
     id: 60,
     source: "Highway safety Code, C-24.2",
     art: "Section 396",
-    name: "Section 396 Highway safety Code, C-24.2"
+    name: "396 Highway safety Code, C-24.2"
   },
   {
     id: 61,
     source: "Highway safety Code, C-24.2",
     art: "Section 401",
-    name: "Section 401 Highway safety Code, C-24.2"
+    name: "401 Highway safety Code, C-24.2"
   },
   {
     id: 62,
     source: "Highway safety Code, C-24.2",
     art: "Section 406",
-    name: "Section 406 Highway safety Code, C-24.2"
+    name: "406 Highway safety Code, C-24.2"
   },
   {
     id: 63,
     source: "Highway safety Code, C-24.2",
     art: "Section 410",
-    name: "Section 410 Highway safety Code, C-24.2"
+    name: "410 Highway safety Code, C-24.2"
   },
   {
     id: 64,
     source: "Highway safety Code, C-24.2",
     art: "Section 411",
-    name: "Section 411 Highway safety Code, C-24.2"
+    name: "411 Highway safety Code, C-24.2"
   },
   {
     id: 65,
     source: "Highway safety Code, C-24.2",
     art: "Section 418",
-    name: "Section 418 Highway safety Code, C-24.2"
+    name: "418 Highway safety Code, C-24.2"
   },
   {
     id: 66,
     source: "Highway safety Code, C-24.2",
     art: "Section 422",
-    name: "Section 422 Highway safety Code, C-24.2"
+    name: "422 Highway safety Code, C-24.2"
   },
   {
     id: 67,
     source: "Highway safety Code, C-24.2",
     art: "Section 424",
-    name: "Section 424 Highway safety Code, C-24.2"
+    name: "424 Highway safety Code, C-24.2"
   },
   {
     id: 68,
     source: "Highway safety code, C-24.2",
     art: "Section 433",
-    name: "Section 433 Highway safety code, C-24.2"
+    name: "433 Highway safety code, C-24.2"
   },
   {
     id: 69,
     source: "Highway safety code, C-24.2",
     art: "Section 434",
-    name: "Section 434 Highway safety code, C-24.2"
+    name: "434 Highway safety code, C-24.2"
   },
   {
     id: 70,
     source: "Highway safety code, C-24.2",
     art: "Section 435",
-    name: "Section 435 Highway safety code, C-24.2"
+    name: "435 Highway safety code, C-24.2"
   },
   {
     id: 71,
     source: "Highway safety Code, C-24.2",
     art: "Section 440",
-    name: "Section 440 Highway safety Code, C-24.2"
+    name: "440 Highway safety Code, C-24.2"
   },
   {
     id: 72,
     source: "Highway safety code, C-24.2",
     art: "Section 442",
-    name: "Section 442 Highway safety code, C-24.2"
+    name: "442 Highway safety code, C-24.2"
   },
   {
     id: 73,
     source: "Highway safety Code, C-24.2",
     art: "Section 444",
-    name: "Section 444 Highway safety Code, C-24.2"
+    name: "444 Highway safety Code, C-24.2"
   },
   {
     id: 74,
     source: "Highway safety Code, C-24.2",
     art: "Section 445",
-    name: "Section 445 Highway safety Code, C-24.2"
+    name: "445 Highway safety Code, C-24.2"
   },
   {
     id: 75,
     source: "Highway safety Code, C-24.2",
     art: "Section 448",
-    name: "Section 448 Highway safety Code, C-24.2"
+    name: "448 Highway safety Code, C-24.2"
   },
   {
     id: 76,
     source: "Highway safety Code, C-24.2",
     art: "Section 450",
-    name: "Section 450 Highway safety Code, C-24.2"
+    name: "450 Highway safety Code, C-24.2"
   },
   {
     id: 77,
     source: "Highway safety Code, C-24.2",
     art: "Section 451",
-    name: "Section 451 Highway safety Code, C-24.2"
+    name: "451 Highway safety Code, C-24.2"
   },
   {
     id: 78,
     source: "Highway safety Code, C-24.2",
     art: "Section 452",
-    name: "Section 452 Highway safety Code, C-24.2"
+    name: "452 Highway safety Code, C-24.2"
   },
   {
     id: 79,
     source: "Highway safety Code, C-24.2",
     art: "Section 460",
-    name: "Section 460 Highway safety Code, C-24.2"
+    name: "460 Highway safety Code, C-24.2"
   },
   {
     id: 80,
     source: "Highway safety code, C-24.2",
     art: "Section 471",
-    name: "Section 471 Highway safety code, C-24.2"
+    name: "471 Highway safety code, C-24.2"
   },
   {
     id: 81,
     source: "Highway safety code, C-24.2",
     art: "Section 478",
-    name: "Section 478 Highway safety code, C-24.2"
+    name: "478 Highway safety code, C-24.2"
   },
   {
     id: 82,
     source: "Highway safety Code, C-24.2",
     art: "Section 484",
-    name: "Section 484 Highway safety Code, C-24.2"
+    name: "484 Highway safety Code, C-24.2"
   },
   {
     id: 83,
     source: "Highway safety Code, C-24.2",
     art: "Section 487",
-    name: "Section 487 Highway safety Code, C-24.2"
+    name: "487 Highway safety Code, C-24.2"
   },
   {
     id: 84,
     source: "Highway safety Code, C-24.2",
     art: "Section 488",
-    name: "Section 488 Highway safety Code, C-24.2"
+    name: "488 Highway safety Code, C-24.2"
   },
   {
     id: 85,
     source: "Highway safety Code, C-24.2",
     art: "Section 498",
-    name: "Section 498 Highway safety Code, C-24.2"
+    name: "498 Highway safety Code, C-24.2"
   },
   {
     id: 86,
     source: "Highway safety Code, C-24.2",
     art: "Section 523",
-    name: "Section 523 Highway safety Code, C-24.2"
+    name: "523 Highway safety Code, C-24.2"
   },
   {
     id: 87,
     source: "Highway safety Code, C-24.2",
     art: "Section 531",
-    name: "Section 531 Highway safety Code, C-24.2"
+    name: "531 Highway safety Code, C-24.2"
   },
   {
     id: 88,
     source: "Highway safety Code, C-24.2",
     art: "Section 534",
-    name: "Section 534 Highway safety Code, C-24.2"
+    name: "534 Highway safety Code, C-24.2"
   },
   {
     id: 89,
     source: "Highway safety Code, C-24.2",
     art: "Section 636",
-    name: "Section 636 Highway safety Code, C-24.2"
+    name: "636 Highway safety Code, C-24.2"
   },
   {
     id: 90,
     source: "Highway safety code, C-24.2",
     art: "Section 31.1",
-    name: "Section 31.1 Highway safety code, C-24.2"
+    name: "31.1 Highway safety code, C-24.2"
   },
   {
     id: 91,
     source: "Highway safety code, C-24.2",
     art: "Section 32 (2)",
-    name: "Section 32 (2) Highway safety code, C-24.2"
+    name: "32 (2) Highway safety code, C-24.2"
   },
   {
     id: 92,
     source: "Highway safety code, C-24.2",
     art: "Section 39.1",
-    name: "Section 39.1 Highway safety code, C-24.2"
+    name: "39.1 Highway safety code, C-24.2"
   },
   {
     id: 93,
     source: "Highway safety code, C-24.2",
     art: "Section 93.1",
-    name: "Section 93.1 Highway safety code, C-24.2"
+    name: "93.1 Highway safety code, C-24.2"
   },
   {
     id: 94,
     source: "Highway safety code, C-24.2",
     art: "Section 161.1",
-    name: "Section 161.1 Highway safety code, C-24.2"
+    name: "161.1 Highway safety code, C-24.2"
   },
   {
     id: 95,
     source: "Highway safety code, C-24.2",
     art: "Section 202.2",
-    name: "Section 202.2 Highway safety code, C-24.2"
+    name: "202.2 Highway safety code, C-24.2"
   },
   {
     id: 96,
     source: "Highway safety code, C-24.2",
     art: "Section 303.2",
-    name: "Section 303.2 Highway safety code, C-24.2"
+    name: "303.2 Highway safety code, C-24.2"
   },
   {
     id: 97,
     source: "Highway safety code, C-24.2",
     art: "Section 326.1",
-    name: "Section 326.1 Highway safety code, C-24.2"
+    name: "326.1 Highway safety code, C-24.2"
   },
   {
     id: 98,
     source: "Highway safety Code, C-24.2",
     art: "Section 406.1 (1)",
-    name: "Section 406.1 (1) Highway safety Code, C-24.2"
+    name: "406.1 (1) Highway safety Code, C-24.2"
   },
   {
     id: 99,
     source: "Highway safety Code, C-24.2",
     art: "Section 406.1 (2)",
-    name: "Section 406.1 (2) Highway safety Code, C-24.2"
+    name: "406.1 (2) Highway safety Code, C-24.2"
   },
   {
     id: 100,
     source: "Highway safety Code, C-24.2",
     art: "Section 406.1 (4)",
-    name: "Section 406.1 (4) Highway safety Code, C-24.2"
+    name: "406.1 (4) Highway safety Code, C-24.2"
   },
   {
     id: 101,
     source: "Highway safety Code, C-24.2",
     art: "Section 439.1",
-    name: "Section 439.1 Highway safety Code, C-24.2"
+    name: "439.1 Highway safety Code, C-24.2"
   },
   {
     id: 102,
     source: "Highway safety Code, C-24.2",
     art: "Section 440.1",
-    name: "Section 440.1 Highway safety Code, C-24.2"
+    name: "440.1 Highway safety Code, C-24.2"
   },
   {
     id: 103,
     source: "Highway safety code, C-24.2",
     art: "Section 443.1",
-    name: "Section 443.1 Highway safety code, C-24.2"
+    name: "443.1 Highway safety code, C-24.2"
   },
   {
     id: 104,
     source: "Highway safety Code, C-24.2",
     art: "Section 443.2",
-    name: "Section 443.2 Highway safety Code, C-24.2"
+    name: "443.2 Highway safety Code, C-24.2"
   },
   {
     id: 105,
     source: "Highway safety Code, C-24.2",
     art: "Section 484.1",
-    name: "Section 484.1 Highway safety Code, C-24.2"
+    name: "484.1 Highway safety Code, C-24.2"
   },
   {
     id: 106,
     source: "Highway safety Code, C-24.2",
     art: "Section 492.1",
-    name: "Section 492.1 Highway safety Code, C-24.2"
+    name: "492.1 Highway safety Code, C-24.2"
   },
   {
     id: 107,
     source: "Highway safety Code, C-24.2",
     art: "Section 498.1",
-    name: "Section 498.1 Highway safety Code, C-24.2"
+    name: "498.1 Highway safety Code, C-24.2"
   },
   {
     id: 108,
     source: "Highway safety Code, C-24.2",
     art: "Section 519.2",
-    name: "Section 519.2 Highway safety Code, C-24.2"
+    name: "519.2 Highway safety Code, C-24.2"
   },
   {
     id: 109,
     source: "Highway safety Code, C-24.2",
     art: "Section 638.1",
-    name: "Section 638.1 Highway safety Code, C-24.2"
+    name: "638.1 Highway safety Code, C-24.2"
   },
   {
     id: 110,
     source: "Highway safety Code, C-24.2",
     art: "Section 383 (1)",
-    name: "Section 383 (1) Highway safety Code, C-24.2"
+    name: "383 (1) Highway safety Code, C-24.2"
   },
   {
     id: 111,
     source: "Highway safety Code, C-24.2",
     art: "Section 383 (2)",
-    name: "Section 383 (2) Highway safety Code, C-24.2"
+    name: "383 (2) Highway safety Code, C-24.2"
   },
   {
     id: 112,
     source: "Highway safety Code, C-24.2",
     art: "Section 386 (1)",
-    name: "Section 386 (1) Highway safety Code, C-24.2"
+    name: "386 (1) Highway safety Code, C-24.2"
   },
   {
     id: 113,
     source: "Highway safety Code, C-24.2",
     art: "Section 386 (2)",
-    name: "Section 386 (2) Highway safety Code, C-24.2"
+    name: "386 (2) Highway safety Code, C-24.2"
   },
   {
     id: 114,
     source: "Highway safety Code, C-24.2",
     art: "Section 386 (4)",
-    name: "Section 386 (4) Highway safety Code, C-24.2"
+    name: "386 (4) Highway safety Code, C-24.2"
   },
   {
     id: 115,
     source: "Highway safety Code, C-24.2",
     art: "Section 386 (4.1)",
-    name: "Section 386 (4.1) Highway safety Code, C-24.2"
+    name: "386 (4.1) Highway safety Code, C-24.2"
   },
   {
     id: 116,
     source: "Highway safety Code, C-24.2",
     art: "Section 386 (5)",
-    name: "Section 386 (5) Highway safety Code, C-24.2"
+    name: "386 (5) Highway safety Code, C-24.2"
   },
   {
     id: 117,
     source: "Highway safety Code, C-24.2",
     art: "Section 386 (7.1)",
-    name: "Section 386 (7.1) Highway safety Code, C-24.2"
+    name: "386 (7.1) Highway safety Code, C-24.2"
   },
   {
     id: 118,
     source: "Highway safety Code, C-24.2",
     art: "Section 386 (8)",
-    name: "Section 386 (8) Highway safety Code, C-24.2"
+    name: "386 (8) Highway safety Code, C-24.2"
   },
   {
     id: 119,
     source: "Highway safety Code, C-24.2",
     art: "Section 386 (9)",
-    name: "Section 386 (9) Highway safety Code, C-24.2"
+    name: "386 (9) Highway safety Code, C-24.2"
   },
   {
     id: 120,
     source: "Highway safety Code, C-24.2",
     art: "Section 388.1",
-    name: "Section 388.1 Highway safety Code, C-24.2"
+    name: "388.1 Highway safety Code, C-24.2"
   },
   {
     id: 121,
     source: "R.R.V.M. C-4.1",
     art: "Section 12",
-    name: "Section 12 R.R.V.M. C-4.1"
+    name: "12 R.R.V.M. C-4.1"
   },
   {
     id: 122,
     source: "R.R.V.M. C-4.1",
     art: "Section 14",
-    name: "Section 14 R.R.V.M. C-4.1"
+    name: "14 R.R.V.M. C-4.1"
   },
   {
     id: 123,
     source: "R.R.V.M. C-4.1",
     art: "Section 15",
-    name: "Section 15 R.R.V.M. C-4.1"
+    name: "15 R.R.V.M. C-4.1"
   },
   {
     id: 124,
     source: "R.R.V.M. C-4.1",
     art: "Section 22",
-    name: "Section 22 R.R.V.M. C-4.1"
+    name: "22 R.R.V.M. C-4.1"
   },
   {
     id: 125,
     source: "R.R.V.M. C-4.1",
     art: "Section 26",
-    name: "Section 26 R.R.V.M. C-4.1"
+    name: "26 R.R.V.M. C-4.1"
   },
   {
     id: 126,
     source: "R.R.V.M. C-4.1",
     art: "Section 29",
-    name: "Section 29 R.R.V.M. C-4.1"
+    name: "29 R.R.V.M. C-4.1"
   },
   {
     id: 127,
     source: "R.R.V.M. C-4.1",
     art: "Section 32",
-    name: "Section 32 R.R.V.M. C-4.1"
+    name: "32 R.R.V.M. C-4.1"
   },
   {
     id: 128,
     source: "R.R.V.M. C-4.1",
     art: "Section 37",
-    name: "Section 37 R.R.V.M. C-4.1"
+    name: "37 R.R.V.M. C-4.1"
   },
   {
     id: 129,
     source: "R.R.V.M. C-4.1",
     art: "Section 38",
-    name: "Section 38 R.R.V.M. C-4.1"
+    name: "38 R.R.V.M. C-4.1"
   },
   {
     id: 130,
     source: "R.R.V.M. C-4.1",
     art: "Section 42",
-    name: "Section 42 R.R.V.M. C-4.1"
+    name: "42 R.R.V.M. C-4.1"
   },
   {
     id: 131,
     source: "R.R.V.M. C-4.1",
     art: "Section 43",
-    name: "Section 43 R.R.V.M. C-4.1"
+    name: "43 R.R.V.M. C-4.1"
   },
   {
     id: 132,
     source: "R.R.V.M. C-4.1",
     art: "Section 49",
-    name: "Section 49 R.R.V.M. C-4.1"
+    name: "49 R.R.V.M. C-4.1"
   },
   {
     id: 133,
     source: "R.R.V.M. C-4.1",
     art: "Section 51",
-    name: "Section 51 R.R.V.M. C-4.1"
+    name: "51 R.R.V.M. C-4.1"
   },
   {
     id: 134,
     source: "R.R.V.M. C-4.1",
     art: "Section 55",
-    name: "Section 55 R.R.V.M. C-4.1"
+    name: "55 R.R.V.M. C-4.1"
   },
   {
     id: 135,
     source: "R.R.V.M. C-4.1",
     art: "Section 58",
-    name: "Section 58 R.R.V.M. C-4.1"
+    name: "58 R.R.V.M. C-4.1"
   },
   {
     id: 136,
     source: "R.R.V.M. C-4.1",
     art: "Section 60",
-    name: "Section 60 R.R.V.M. C-4.1"
+    name: "60 R.R.V.M. C-4.1"
   },
   {
     id: 137,
     source: "R.R.V.M. C-4.1",
     art: "Section 30 (1)",
-    name: "Section 30 (1) R.R.V.M. C-4.1"
+    name: "30 (1) R.R.V.M. C-4.1"
   },
   {
     id: 138,
     source: "R.R.V.M. C-4.1",
     art: "Section 30 (3)",
-    name: "Section 30 (3) R.R.V.M. C-4.1"
+    name: "30 (3) R.R.V.M. C-4.1"
   },
   {
     id: 139,
     source: "R.R.V.M. C-4.1",
     art: "Section 30 (4)",
-    name: "Section 30 (4) R.R.V.M. C-4.1"
+    name: "30 (4) R.R.V.M. C-4.1"
   },
   {
     id: 140,
     source: "R.R.V.M. C-4.1",
     art: "Section 30 (8)",
-    name: "Section 30 (8) R.R.V.M. C-4.1"
+    name: "30 (8) R.R.V.M. C-4.1"
   },
   {
     id: 141,
     source: "R.R.V.M. C-4.1",
     art: "Section 30 (9)",
-    name: "Section 30 (9) R.R.V.M. C-4.1"
+    name: "30 (9) R.R.V.M. C-4.1"
   },
   {
     id: 142,
     source: "R.R.V.M. C-4.1",
     art: "Section 31 (1)",
-    name: "Section 31 (1) R.R.V.M. C-4.1"
+    name: "31 (1) R.R.V.M. C-4.1"
   },
   {
     id: 143,
     source: "R.R.V.M. C-4.1",
     art: "Section 31 (3)",
-    name: "Section 31 (3) R.R.V.M. C-4.1"
+    name: "31 (3) R.R.V.M. C-4.1"
   },
   {
     id: 144,
     source: "R.R.V.M. C-4.1",
     art: "Section 31 (4)",
-    name: "Section 31 (4) R.R.V.M. C-4.1"
+    name: "31 (4) R.R.V.M. C-4.1"
   },
   {
     id: 145,
     source: "R.M. 878 St-Laurent",
     art: "Section 61.7",
-    name: "Section 61.7 R.M. 878 St-Laurent"
+    name: "61.7 R.M. 878 St-Laurent"
   },
   {
     id: 146,
     source: "R.M. 878 St-Laurent",
     art: "Section 61.9",
-    name: "Section 61.9 R.M. 878 St-Laurent"
+    name: "61.9 R.M. 878 St-Laurent"
   },
   {
     id: 147,
     source: "R.M. 2398 Côte Saint-Luc",
     art: "Section 4.1",
-    name: "Section 4.1 R.M. 2398 Côte Saint-Luc"
+    name: "4.1 R.M. 2398 Côte Saint-Luc"
   },
   {
     id: 148,
     source: "R.M. 8.6 Outremont",
     art: "Section 8.6",
-    name: "Section 8.6 R.M. 8.6 Outremont"
+    name: "8.6 R.M. 8.6 Outremont"
   },
   {
     id: 149,
     source: "R.M. 8.20 Outremont",
     art: "Section 8.20",
-    name: "Section 8.20 R.M. 8.20 Outremont"
+    name: "8.20 R.M. 8.20 Outremont"
   },
   {
     id: 150,
     source: "R.M. 878 Outremont",
     art: "Section 8.24.1",
-    name: "Section 8.24.1 R.M. 878 Outremont"
+    name: "8.24.1 R.M. 878 Outremont"
   },
   {
     id: 151,
@@ -2032,211 +2032,211 @@ const itemsEN = [
     id: 152,
     source: "R.M. 878 Outremont",
     art: "Section 8.24.24",
-    name: "Section 8.24.24 R.M. 878 Outremont"
+    name: "8.24.24 R.M. 878 Outremont"
   },
   {
     id: 153,
     source: "R.M. 8.6 Outremont",
     art: "Section 8.26",
-    name: "Section 8.26 R.M. 8.6 Outremont"
+    name: "8.26 R.M. 8.6 Outremont"
   },
   {
     id: 154,
     source: "R.M. 1530 Montréal-Nord",
     art: "Section 31 (20)",
-    name: "Section 31 (20) R.M. 1530 Montréal-Nord"
+    name: "31 (20) R.M. 1530 Montréal-Nord"
   },
   {
     id: 155,
     source: "R.M. 1530 Montréal-Nord",
     art: "Section 31 (23)",
-    name: "Section 31 (23) R.M. 1530 Montréal-Nord"
+    name: "31 (23) R.M. 1530 Montréal-Nord"
   },
   {
     id: 156,
     source: "R.M. 2227 Saint-Léonard",
     art: "Section 22 (2)",
-    name: "Section 22 (2) R.M. 2227 Saint-Léonard"
+    name: "22 (2) R.M. 2227 Saint-Léonard"
   },
   {
     id: 157,
     source: "R.M. 2227 Saint-Léonard",
     art: "Section 22 (4)",
-    name: "Section 22 (4) R.M. 2227 Saint-Léonard"
+    name: "22 (4) R.M. 2227 Saint-Léonard"
   },
   {
     id: 158,
     source: "R.M. 2227 Saint-Léonard",
     art: "Section 22 (9)",
-    name: "Section 22 (9) R.M. 2227 Saint-Léonard"
+    name: "22 (9) R.M. 2227 Saint-Léonard"
   },
   {
     id: 159,
     source: "RCA06 210012 Verdun",
     art: "Section 38",
-    name: "Section 38 RCA06 210012 Verdun"
+    name: "38 RCA06 210012 Verdun"
   },
   {
     id: 160,
     source: "RCA06 210012 Verdun",
     art: "Section 29 par. 1",
-    name: "Section 29 par. 1 RCA06 210012 Verdun"
+    name: "29 par. 1 RCA06 210012 Verdun"
   },
   {
     id: 161,
     source: "RCA06 210012 Verdun",
     art: "Section 33.1",
-    name: "Section 33.1 RCA06 210012 Verdun"
+    name: "33.1 RCA06 210012 Verdun"
   },
   {
     id: 162,
     source: "RCA06 210012 Verdun",
     art: "Section 36 al. 1",
-    name: "Section 36 al. 1 RCA06 210012 Verdun"
+    name: "36 al. 1 RCA06 210012 Verdun"
   },
   {
     id: 163,
     source: "R.M. 726 Westmount",
     art: "Section 49",
-    name: "Section 49 R.M. 726 Westmount"
+    name: "49 R.M. 726 Westmount"
   },
   {
     id: 164,
     source: "R.M. 726 Westmount",
     art: "Section 51",
-    name: "Section 51 R.M. 726 Westmount"
+    name: "51 R.M. 726 Westmount"
   },
   {
     id: 165,
     source: "R.M. 726 Westmount",
     art: "Section 52.13",
-    name: "Section 52.13 R.M. 726 Westmount"
+    name: "52.13 R.M. 726 Westmount"
   },
   {
     id: 166,
     source: "R.M. 726 Westmount",
     art: "Section 52.14",
-    name: "Section 52.14 R.M. 726 Westmount"
+    name: "52.14 R.M. 726 Westmount"
   },
   {
     id: 167,
     source: "R.M. 726 Westmount",
     art: "Section 52.15",
-    name: "Section 52.15 R.M. 726 Westmount"
+    name: "52.15 R.M. 726 Westmount"
   },
   {
     id: 168,
     source: "R.M. 726 Westmount",
     art: "Section 52.16",
-    name: "Section 52.16 R.M. 726 Westmount"
+    name: "52.16 R.M. 726 Westmount"
   },
   {
     id: 169,
     source: "R.M. 2030 LaSalle",
     art: "Section 198",
-    name: "Section 198 R.M. 2030 LaSalle"
+    name: "198 R.M. 2030 LaSalle"
   },
   {
     id: 170,
     source: "R.M. 2030 LaSalle",
     art: "Section 194.2",
-    name: "Section 194.2 R.M. 2030 LaSalle"
+    name: "194.2 R.M. 2030 LaSalle"
   },
   {
     id: 171,
     source: "R.M. 2030 LaSalle",
     art: "Section 195 (7)",
-    name: "Section 195 (7) R.M. 2030 LaSalle"
+    name: "195 (7) R.M. 2030 LaSalle"
   },
   {
     id: 172,
     source: "R.M. 2030 LaSalle",
     art: "Section 195 par. 27",
-    name: "Section 195 par. 27 R.M. 2030 LaSalle"
+    name: "195 par. 27 R.M. 2030 LaSalle"
   },
   {
     id: 173,
     source: "R.M. 2030 LaSalle",
     art: "Section 195 par. 28",
-    name: "Section 195 par. 28 R.M. 2030 LaSalle"
+    name: "195 par. 28 R.M. 2030 LaSalle"
   },
   {
     id: 174,
     source: "R.M. 2030 LaSalle",
     art: "Section 195 par. 39",
-    name: "Section 195 par. 39 R.M. 2030 LaSalle"
+    name: "195 par. 39 R.M. 2030 LaSalle"
   },
   {
     id: 175,
     source: "R.M. 2030 LaSalle",
     art: "Section 225-k",
-    name: "Section 225-k R.M. 2030 LaSalle"
+    name: "225-k R.M. 2030 LaSalle"
   },
   {
     id: 176,
     source: "R.M. 1498 Westmount",
     art: "Section 6 (2)",
-    name: "Section 6 (2) R.M. 1498 Westmount"
+    name: "6 (2) R.M. 1498 Westmount"
   },
   {
     id: 177,
     source: "R.M. 1384 Plateau-Mont-Royal",
     art: "Section 25 (1)",
-    name: "Section 25 (1) R.M. 1384 Plateau-Mont-Royal"
+    name: "25 (1) R.M. 1384 Plateau-Mont-Royal"
   },
   {
     id: 178,
     source: "R.M. 1384 Plateau-Mont-Royal",
     art: "Section 28 (1)",
-    name: "Section 28 (1) R.M. 1384 Plateau-Mont-Royal"
+    name: "28 (1) R.M. 1384 Plateau-Mont-Royal"
   },
   {
     id: 179,
     source: "R.M. 1384 Plateau-Mont-Royal",
     art: "Section 33 (1)",
-    name: "Section 33 (1) R.M. 1384 Plateau-Mont-Royal"
+    name: "33 (1) R.M. 1384 Plateau-Mont-Royal"
   },
   {
     id: 180,
     source: "RCG09-029",
     art: "Section 60",
-    name: "Section 60 RCG09-029"
+    name: "60 RCG09-029"
   },
   {
     id: 181,
     source: "RCG09-029",
     art: "Section 62",
-    name: "Section 62 RCG09-029"
+    name: "62 RCG09-029"
   },
   {
     id: 182,
     source: "R.M. 685 Westmount",
     art: "Section 10",
-    name: "Section 10 R.M. 685 Westmount"
+    name: "10 R.M. 685 Westmount"
   },
   {
     id: 183,
     source: "RCG10-009",
     art: "Section 132",
-    name: "Section 132 RCG10-009"
+    name: "132 RCG10-009"
   },
   {
     id: 184,
     source: "R.M. 1333 Anjou",
     art: "Section 118 (17)",
-    name: "Section 118 (17) R.M. 1333 Anjou"
+    name: "118 (17) R.M. 1333 Anjou"
   },
   {
     id: 185,
     source: "R.M. 1333 Anjou",
     art: "Section 121 (4)",
-    name: "Section 121 (4) R.M. 1333 Anjou"
+    name: "121 (4) R.M. 1333 Anjou"
   },
   {
     id: 186,
     source: "R.R.V.M. B-3",
     art: "Section 6 (2)",
-    name: "Section 6 (2) R.R.V.M. B-3"
+    name: "6 (2) R.R.V.M. B-3"
   }
 ];
 
@@ -2360,7 +2360,7 @@ export default class ManualInput extends Component {
             }}
             items={this.itemLangSet()}
             defaultIndex={2}
-            placeholder="Art."
+            placeholder={polyglot.t("writeNumber")}
             resetValue={false}
             underlineColorAndroid="transparent"
           />
@@ -2403,6 +2403,7 @@ export default class ManualInput extends Component {
         <Header
           title={polyglot.t("search")}
           navigation={this.props.navigation}
+          style={{ zIndex: 1 }}
         />
       );
     }
@@ -2426,7 +2427,8 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    zIndex: 0
   },
   text: {
     margin: 30,
