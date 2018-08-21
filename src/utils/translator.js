@@ -56,6 +56,10 @@ const badFocus = {
   retry: {
     en: "Retry",
     fr: "Réessayer"
+  },
+  manualSearch: {
+    en: "Manual search",
+    fr: "Recherche manuelle"
   }
 };
 const camView = {
@@ -145,12 +149,20 @@ const mainMenu = {
   legalDisclaimer: {
     en: "Legal disclaimer",
     fr: "Mentions légales"
+  },
+  lost: {
+    en: "Lost ticket",
+    fr: "Contravention égaré"
+  },
+  myTicketAnymore: {
+    en: "my ticket anymore",
+    fr: "mon ticket"
   }
 };
 const userInfosView = {
   identify: {
-    en: "Identify yourself to join Me Harvey",
-    fr: "Identifiez-vous afin de joindre Me Harvey"
+    en: "Identify yourself to join your lawyer",
+    fr: "Identifiez-vous afin de joindre votre avocat"
   },
   firstName: {
     en: "First name",
@@ -175,6 +187,14 @@ const home = {
   inProgress: {
     en: "Analysis in progress...",
     fr: "Analyse en cours..."
+  },
+  reachAlawyer: {
+    en: "Talk to your lawyer.",
+    fr: " Parler à mon avocat"
+  },
+  composeTel: {
+    en: "Dial 438-872-5034",
+    fr: "Composer le 438-872-5034"
   }
 };
 const legal = {

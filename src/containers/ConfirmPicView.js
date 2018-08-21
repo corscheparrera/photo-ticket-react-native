@@ -14,7 +14,7 @@ export default class ConfirmPicView extends React.Component {
             size={24}
             onPress={() => confirmedImage()}
           />
-          <Text style={styles.navBarHeader}>Photo Ticket</Text>
+          <Text style={styles.navBarHeader}>Photo-Ticket</Text>
           <Icon
             style={styles.navBarButton}
             name="remove"

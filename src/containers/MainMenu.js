@@ -4,7 +4,8 @@ import {
   StyleSheet,
   Image,
   PermissionsAndroid,
-  Platform
+  Platform,
+  Text
 } from "react-native";
 import { material, iOSColors, systemWeights } from "react-native-typography";
 import polyglot from "../utils/translator";
@@ -23,7 +24,7 @@ export default class Menus extends React.Component {
           {
             title: "Access storage",
             message:
-              "Photo Ticket App needs access to your storage " +
+              "Photo-Ticket App needs access to your storage " +
               "so you we can analyse the ticket."
           }
         );
@@ -32,7 +33,7 @@ export default class Menus extends React.Component {
           {
             title: "Write to storage",
             message:
-              "Photo Ticket App needs access to write files to storage " +
+              "Photo-Ticket App needs access to write files to storage " +
               "so you we can analyse the ticket."
           }
         );
@@ -41,7 +42,7 @@ export default class Menus extends React.Component {
           {
             title: "Access storage",
             message:
-              "Photo Ticket App needs access to your camera " +
+              "Photo-Ticket App needs access to your camera " +
               "so you we can analyse the ticket."
           }
         );
@@ -62,31 +63,50 @@ export default class Menus extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Header title="Photo Ticket" navigation={this.props.navigation} />
+        <Header title="Photo-Ticket" navigation={this.props.navigation} />
         <View style={styles.content}>
-          <Image
-            style={{
-              marginBottom: 40,
-              marginTop: 40
-            }}
-            source={require("../images/logo_photo_ticekt_9.png")}
-          />
+          {/* <Text style={styles.text}>{"Bienvenue chez Photo-Ticket!"}</Text> */}
+          <Image source={require("../images/logo_photo_ticekt_9.png")} />
+
           <ButtonPrimary
             onPress={() => this.props.openCam()}
             text={polyglot.t("takePhoto")}
+            largeur={200}
           />
+          <ButtonPrimary
+            largeur={200}
+            onPress={() => this.props.navigation.navigate("UserInfos")}
+            text={polyglot.t("lost")}
+          />
+
           {/* <ButtonPrimary
             onPress={() => this.props.navigation.navigate("MyTickets")}
             text={polyglot.t("myTickets")}
           /> */}
-          <ButtonPrimary
-            onPress={() => this.props.navigation.navigate("ManualInput")}
-            text={polyglot.t("manualInput")}
-          />
-          <ButtonPrimary
-            onPress={() => this.props.navigation.navigate("Guide")}
-            text={"Guide"}
-          />
+
+          <View style={styles.buttonView}>
+            <View>
+              <ButtonPrimary
+                largeur={75}
+                onPress={() => this.props.navigation.navigate("Guide")}
+                text="Guide"
+              />
+            </View>
+
+            <View>
+              <ButtonPrimary
+                largeur={115}
+                onPress={() =>
+                  this.props.navigation.navigate("MentionsLegales")
+                }
+                text={polyglot.t("legalDisclaimer")}
+              />
+              {/* <Button
+                onPress={() => this.props.navigation.navigate("ManualInput")}
+                title="Guide"
+              /> */}
+            </View>
+          </View>
         </View>
       </View>
     );
@@ -106,5 +126,10 @@ const styles = StyleSheet.create({
     ...material.titleObject,
     color: iOSColors.black,
     ...systemWeights.light
+  },
+  buttonView: {
+    width: 200,
+    flexDirection: "row",
+    justifyContent: "space-between"
   }
 });

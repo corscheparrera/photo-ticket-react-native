@@ -1,7 +1,7 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
-import { NavigationActions } from "react-navigation";
+import { View, Text, StyleSheet, Platform, Alert } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
+import polyglot from "../utils/translator";
 
 export default class Header extends React.Component {
   render() {
@@ -16,7 +16,7 @@ export default class Header extends React.Component {
       <View style={styles.navBar}>
         <Icon
           style={styles.navBarButton}
-          name={this.props.title === "Photo Ticket" ? "inbox" : "arrow-left"}
+          name={this.props.title === "Photo-Ticket" ? "phone" : "arrow-left"}
           size={24}
           onPress={() => {
             if (this.props.title === "Photo") {
@@ -25,10 +25,15 @@ export default class Header extends React.Component {
             if (this.props.title === "Infraction") {
               this.props.reset();
             }
-            if (this.props.title === "Photo Ticket") {
-              this.props.navigation.navigate("UserInfos");
+            if (this.props.title === "Photo-Ticket") {
+              return Alert.alert(
+                polyglot.t("reachAlawyer"),
+                polyglot.t("composeTel"),
+                [{ text: "OK", onPress: () => console.log("OK Pressed") }],
+                { cancelable: false }
+              );
             } else if (
-              this.props.title !== "Photo Ticket" ||
+              this.props.title !== "Photo-Ticket" ||
               this.props.title !== "Infraction"
             ) {
               goBack();
@@ -56,7 +61,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     paddingTop: 30,
     height: 64,
-    backgroundColor: "#ec2326"
+    backgroundColor: "#ec2326",
+    marginTop: Platform.OS === "android" ? -10 : 0
   },
   navBarButton: {
     color: "#FFFFFF",

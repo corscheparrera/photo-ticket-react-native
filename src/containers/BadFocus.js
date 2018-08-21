@@ -23,6 +23,10 @@ export default class BadFocus extends React.Component {
             onPress={() => retryPicture()}
             text={polylgot.t("retry")}
           />
+          <ButtonPrimary
+            onPress={() => this.props.navigation.navigate("ManualInput")}
+            text={polylgot.t("manualSearch")}
+          />
         </View>
       </View>
     );

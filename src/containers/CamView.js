@@ -32,11 +32,13 @@ export default class CamView extends React.Component {
         >
           <Text
             style={{
-              fontWeight: "bold"
+              fontWeight: "bold",
+              color: "#ec2326"
             }}
           >
             {polyglot.t("frame")}
           </Text>
+
           <Icon
             color="#ec2326"
             name="dot-circle-o"

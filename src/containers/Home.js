@@ -4,7 +4,7 @@ import BadFocus from "./BadFocus";
 import CamView from "./CamView";
 import ConfirmPicView from "./ConfirmPicView";
 import InfractionView from "./InfractionView";
-
+import ProgressBar from "../components/ProgressBar";
 import MainMenu from "./MainMenu";
 import RNFetchBlob from "react-native-fetch-blob";
 import React from "react";
@@ -171,10 +171,11 @@ export default class Home extends React.Component {
         );
       case "Loading":
         return (
-          <View style={styles.loader}>
-            <Text>{polyglot.t("inProgress")}</Text>
-            <ActivityIndicator size="large" />
-          </View>
+          <ProgressBar />
+          // <View style={styles.loader}>
+          //   <Text>{polyglot.t("inProgress")}</Text>
+          //   <ActivityIndicator size="large" />
+          // </View>
         );
       case "Bad Focus":
         return (

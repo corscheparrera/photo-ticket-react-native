@@ -3,7 +3,15 @@ import { Text, View, TouchableHighlight } from "react-native";
 
 export default class ButtonPrimary extends React.Component {
   render() {
-    let { onPress, text, txtColor, buttonColor, largeur, weight } = this.props;
+    let {
+      onPress,
+      text,
+      txtColor,
+      buttonColor,
+      largeur,
+      weight,
+      hauteur
+    } = this.props;
     return (
       <View>
         <TouchableHighlight
@@ -22,7 +30,9 @@ export default class ButtonPrimary extends React.Component {
               backgroundColor: buttonColor,
               padding: 12,
               width: largeur,
-              alignItems: "center"
+              alignItems: "center",
+              justifyContent: "center",
+              height: hauteur
             }}
           >
             <Text
@@ -44,5 +54,6 @@ ButtonPrimary.defaultProps = {
   buttonColor: "#33AAFF",
   txtColor: "#FFFFFF",
   largeur: 200,
+  hauteur: 50,
   weight: "bold"
 };
