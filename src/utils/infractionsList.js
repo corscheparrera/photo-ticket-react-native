@@ -1093,7 +1093,7 @@ const CSR = {
                 analyse: '',
             },
             en: {
-                section: 'Section 65',
+                art: 'Section 65',
                 type: 'Circulation',
                 source: 'Highway safety code, C-24.2',
                 infraction: 'Appropriate driver’s licence.',

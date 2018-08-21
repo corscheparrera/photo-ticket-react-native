@@ -3,10 +3,11 @@ import { View, Text, StyleSheet, Button } from "react-native";
 import SearchableDropdown from "react-native-searchable-dropdown";
 import { material, iOSColors, systemWeights } from "react-native-typography";
 import Header from "../components/Header";
+import InfractionView from "./InfractionView";
 import polyglot from "../utils/translator";
-import { connectInfraction } from "../utils/infractionsList";
+import infractionsArray from "../utils/infractionsList";
 
-const items = [
+const itemsFR = [
   {
     id: 0,
     source: "Code de la sécurité routière, C-24.2",
@@ -1115,8 +1116,7 @@ const items = [
     name: "6 par. 2  R.R.V.M. B-3"
   }
 ];
-
-const itemEN = [
+const itemsEN = [
   {
     id: 0,
     source: "Highway safety Code, C-24.2",
@@ -1162,7 +1162,8 @@ const itemEN = [
   {
     id: 7,
     source: "Highway safety code, C-24.2",
-    name: "undefined Highway safety code, C-24.2"
+    art: "Section 65",
+    name: "Section 65 Highway safety code, C-24.2"
   },
   {
     id: 8,
@@ -2250,95 +2251,130 @@ export default class ManualInput extends Component {
     };
   }
 
-  // createObject = () => {
-  //   let formattedObject = itemEN.map((element, index) => {
-  //     return {
-  //       id: index,
-  //       source: element.source,
-  //       art: element.art,
-  //       name: element.art + " " + element.source
-  //     };
-  //   });
-  //   console.log(JSON.stringify(formattedObject));
-  // };
+  itemLangSet = () => {
+    let items;
+    let lang = polyglot.locale; // 'en' or 'fr'
+    if (polyglot.locale == "fr") {
+      items = itemsFR;
+    } else {
+      items = itemsEN;
+    }
+    return items;
+  };
 
-  fetchInfraction = () => {
-    let inf = connectInfraction("Art: 368"); // { type: 'Circulation', Règlement: 'C-24.2', ...
-    // console.log(connectInfraction(this.state.selectedArt));
-    // console.log("infraction", inf);
-    // this.setState({
-    //   fullInfractionsData: {
-    //     ...inf
-    //   }
-    // });
+  toggleView = () => {
+    this.state.displayDropDown
+      ? this.setState({ displayDropDown: false, displayInfraction: true })
+      : this.setState({ displayDropDown: true, displayInfraction: false });
+  };
+
+  reset = () => {};
+
+  getInfractionData = () => {
+    let article = this.state.selectedArt;
+    console.log("selected article", article);
+    let lang = polyglot.locale; // 'en' or 'fr'
+    let matchArticle;
+    infractionsArray.forEach(arrayItem => {
+      for (let key in arrayItem) {
+        let value = arrayItem[key];
+        if (article === value.fr.art && lang == "fr") {
+          matchArticle = value.fr;
+          return;
+        } else if (article === value.en.art && lang == "en") {
+          matchArticle = value.en;
+          return;
+        }
+      }
+    });
+    this.setState(
+      {
+        formattedText: {
+          ...matchArticle
+        },
+        isLoading: false
+      },
+      () => this.toggleView()
+    );
   };
 
   showDropDown = () => {
     if (this.state.displayDropDown) {
       return (
-        <View style={styles.container}>
-          <Header
-            title={polyglot.t("search")}
-            navigation={this.props.navigation}
+        <View style={styles.content}>
+          <SearchableDropdown
+            // onTextChange={() => this.toggleSelectedArt()}
+            onItemSelect={item =>
+              this.setState({ selectedArt: item.art }, this.getInfractionData)
+            }
+            containerStyle={{
+              padding: 20
+              // height: 500
+            }}
+            textInputStyle={{
+              padding: 12,
+              borderWidth: 1,
+              borderColor: "#ccc",
+              borderRadius: 5
+            }}
+            itemStyle={{
+              padding: 10,
+              marginTop: 2,
+              backgroundColor: "#ddd",
+              borderColor: "#bbb",
+              borderWidth: 1,
+              borderRadius: 5
+            }}
+            itemTextStyle={{
+              color: "#222"
+            }}
+            itemsContainerStyle={{
+              maxHeight: 340
+            }}
+            items={this.itemLangSet()}
+            defaultIndex={2}
+            placeholder="Placeholder."
+            resetValue={false}
+            underlineColorAndroid="transparent"
           />
-
-          <View style={styles.content}>
-            <SearchableDropdown
-              // onTextChange={() => this.toggleSelectedArt()}
-              onItemSelect={item =>
-                this.setState({ selectedArt: item.art }, this.fetchInfraction)
-              }
-              containerStyle={{
-                padding: 20
-                // height: 500
-              }}
-              textInputStyle={{
-                padding: 12,
-                borderWidth: 1,
-                borderColor: "#ccc",
-                borderRadius: 5
-              }}
-              itemStyle={{
-                padding: 10,
-                marginTop: 2,
-                backgroundColor: "#ddd",
-                borderColor: "#bbb",
-                borderWidth: 1,
-                borderRadius: 5
-              }}
-              itemTextStyle={{
-                color: "#222"
-              }}
-              itemsContainerStyle={{
-                maxHeight: 340
-              }}
-              items={items}
-              defaultIndex={2}
-              placeholder="Placeholder."
-              resetValue={false}
-              underlineColorAndroid="transparent"
-            />
-            {/* <Text style={styles.text}>{this.state.selectedArt}</Text> */}
-            <Button onPress={() => {}} title={polyglot.t("search")} />
-          </View>
+          {/* <Text style={styles.text}>{this.state.selectedArt}</Text> */}
+          <Button onPress={() => {}} title={polyglot.t("search")} />
         </View>
       );
     }
   };
+
   showInfraction = () => {
     if (this.state.displayInfraction) {
       return (
         <InfractionView
           data={this.state.formattedText}
           navigation={this.props.navigation}
-          imagePath={this.state.imagePath}
+          // imagePath={this.state.imagePath}
           reset={this.reset}
         />
       );
     }
   };
+
+  showHeader = () => {
+    if (this.state.displayDropDown) {
+      return (
+        <Header
+          title={polyglot.t("search")}
+          navigation={this.props.navigation}
+        />
+      );
+    }
+  };
   render() {
-    return this.showDropDown();
+    return (
+      <View style={styles.container}>
+        {this.showHeader()}
+        {this.showDropDown()}
+        {this.showInfraction()}
+      </View>
+    );
   }
 }
 const styles = StyleSheet.create({
