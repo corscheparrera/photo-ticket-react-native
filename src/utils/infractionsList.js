@@ -114,7 +114,7 @@ const CSR = {
                         4°  le même droit est accordé aux étudiants, aux coopérants ou aux stagiaires du Québec qui séjournent au lieu du domicile de cet étudiant, coopérant ou stagiaire.
                 </Text>
                 ),
-                image: '6.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F6.png?alt=media&token=4a7b7b2a-d1ac-4b4d-a47c-cd83f307a076',
                 analyse: '',
             },
             en: {
@@ -224,7 +224,7 @@ const CSR = {
                         (4)  the same right is granted to students, coopérants or trainees from Québec staying in the place of domicile of that student, coopérant or trainee.
                 </Text>
                 ),
-                image: '6.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F6.png?alt=media&token=4a7b7b2a-d1ac-4b4d-a47c-cd83f307a076',
                 analyse: '',
             },
         },
@@ -258,7 +258,7 @@ const CSR = {
                         Ce certificat doit porter la marque d’identification de la Société ou la signature d’une personne autorisée par celle-ci.
                 </Text>
                 ),
-                image: '27+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F27.png?alt=media&token=ccf2de1c-d723-4aac-952a-c8c0bdb4b663',
                 analyse: '',
             },
             en: {
@@ -289,7 +289,7 @@ const CSR = {
                         The certificate must bear the identifying mark of the Société or the signature of a person authorized by the Société.
                 </Text>
                 ),
-                image: '27+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F27.png?alt=media&token=ccf2de1c-d723-4aac-952a-c8c0bdb4b663',
                 analyse: '',
             },
         },
@@ -322,7 +322,7 @@ const CSR = {
                         Toutefois, si un règlement prescrit la délivrance de deux exemplaires de la plaque d’immatriculation, ceux-ci doivent être fixés l’un à l’avant et l’autre à l’arrière du véhicule.
                     </Text>
                 ),
-                image: '6.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F6.png?alt=media&token=4a7b7b2a-d1ac-4b4d-a47c-cd83f307a076',
                 analyse: '',
             },
             en: {
@@ -353,7 +353,7 @@ const CSR = {
                         Where a regulation prescribes the issue of two duplicates of the registration plate, one must be attached to the front of the vehicle and the other to the rear.
                       </Text>
                 ),
-                image: '6.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F6.png?alt=media&token=4a7b7b2a-d1ac-4b4d-a47c-cd83f307a076',
                 analyse: '',
             },
         },
@@ -406,7 +406,7 @@ const CSR = {
                         Nul ne peut remettre en circulation sur un chemin public un véhicule d’un modèle ou d’une catégorie dont le ministre interdit la circulation sur un tel chemin en vertu de l’article 633.1 ou dont le fabricant ou son importateur restreint l’utilisation à un usage hors route.
                 </Text>
                 ),
-                image: '31.1+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F31.1.png?alt=media&token=7616b885-584f-4787-863a-f9698f1de689',
                 analyse: '',
             },
             en: {
@@ -457,7 +457,7 @@ const CSR = {
                         No person shall put a vehicle back into operation on a public highway if it is of a model or class whose use on public highways has been prohibited by the Minister under section 633.1 or if it has been restricted to off-highway use by its manufacturer or importer.
                 </Text>
                 ),
-                image: '31.1+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F31.1.png?alt=media&token=7616b885-584f-4787-863a-f9698f1de689',
                 analyse: '',
             },
         },
@@ -502,7 +502,7 @@ const CSR = {
                         La plaque d’immatriculation doit être libre de tout objet ou de toute matière pouvant en empêcher la lecture. Elle doit, en outre, lorsqu’elle est apposée à l’arrière du véhicsule, être suffisamment éclairée.
                 </Text>
                 ),
-                image: '6.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F6.png?alt=media&token=4a7b7b2a-d1ac-4b4d-a47c-cd83f307a076',
                 analyse: '',
             },
             en: {
@@ -545,7 +545,7 @@ const CSR = {
                         The registration plate must be free of any object or matter that could impair its legibility; it must also, if attached to the rear of the vehicle, be sufficiently lighted.
                 </Text>
                 ),
-                image: '6.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F6.png?alt=media&token=4a7b7b2a-d1ac-4b4d-a47c-cd83f307a076',
                 analyse: '',
             },
         },
@@ -590,7 +590,7 @@ const CSR = {
                         Aucune plaque ou vignette qui peut être confondue avec une plaque d’immatriculation ou une vignette de contrôle délivrée par la Société ou par une autre autorité administrative compétente ne peut être fixée sur un véhicule routier ou apposée sur une plaque, sauf s’il s’agit d’une plaque ou d’une vignette requise en vertu d’une autre loi en vigueur au Québec ou d’une plaque fixée conformément aux normes et aux conditions établies en vertu du paragraphe 19° de l’article 618.
                 </Text>
                 ),
-                image: '31.1+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F31.1.png?alt=media&token=7616b885-584f-4787-863a-f9698f1de689',
                 analyse: '',
             },
             en: {
@@ -633,7 +633,7 @@ const CSR = {
                         No plate or sticker that may be confused with a registration plate or validation sticker issued by the Société or by any other competent administrative authority may be attached to a road vehicle or affixed to a plate, except in the case of a plate or sticker required under another law in force in Québec or of a plate attached in compliance with standards and conditions established under paragraph 19 of section 618.
                 </Text>
                 ),
-                image: '31.1+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F31.1.png?alt=media&token=7616b885-584f-4787-863a-f9698f1de689',
                 analyse: '',
             },
         },
@@ -776,7 +776,7 @@ const CSR = {
                         La personne au nom de laquelle l’immatriculation d’un véhicule routier a été effectuée par la Société doit demander à celle-ci le remplacement d’un certificat d’immatriculation, d’une plaque d’immatriculation ou d’une vignette illisible, endommagé ou sur lequel apparaît un renseignement erroné.
                 </Text>
                 ),
-                image: '6.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F6.png?alt=media&token=4a7b7b2a-d1ac-4b4d-a47c-cd83f307a076',
                 analyse: '',
             },
             en: {
@@ -815,7 +815,7 @@ const CSR = {
                         The person in whose name registration of a road vehicle has been effected by the Société must request the latter to replace any registration certificate, registration plate or sticker which is illegible, damaged or which contains inaccurate information.
                 </Text>
                 ),
-                image: '6.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F6.png?alt=media&token=4a7b7b2a-d1ac-4b4d-a47c-cd83f307a076',
                 analyse: '',
             },
         },
@@ -863,7 +863,7 @@ const CSR = {
                         Nul ne peut remettre en circulation un véhicule routier à l’égard duquel une décision de la Société rendue en vertu de l’un des articles 188, 194 et 196 à 202.0.1 est en vigueur. Il en est de même lorsque la Société agit en vertu de l’article 189.
                 </Text>
                 ),
-                image: '105+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F105.png?alt=media&token=4dfaa8de-11c7-4487-a251-dd6f2f8ffd7b',
                 analyse: '',
             },
             en: {
@@ -909,7 +909,7 @@ const CSR = {
                         No person may put back into operation any road vehicle in respect of which a decision of the Société rendered under any of sections 188, 194 or 196 to 202.0.1 is in force. The same applies where the Société acts under section 189.
                 </Text>
                 ),
-                image: '105+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F105.png?alt=media&token=4dfaa8de-11c7-4487-a251-dd6f2f8ffd7b',
                 analyse: '',
             },
         },
@@ -956,7 +956,7 @@ const CSR = {
                         La personne qui conduit un véhicule routier ou le propriétaire qui laisse circuler son véhicule muni d’une plaque d’immatriculation d’une catégorie autre que celle correspondant à ce véhicule ou dont l’immatriculation atteste un usage du véhicule autre que celui qui en est réellement fait ou un véhicule routier muni d’une plaque d’immatriculation délivrée pour un autre véhicule routier commet une infraction et est passible d’une amende de 200 $ à 300 $.
                 </Text>
                 ),
-                image: '31.1+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F31.1.png?alt=media&token=7616b885-584f-4787-863a-f9698f1de689',
                 analyse: '',
             },
             en: {
@@ -1001,7 +1001,7 @@ const CSR = {
                         Every person who drives a road vehicle and every owner who allows his vehicle to be driven carrying a registration plate of a class other than the class corresponding to that vehicle, or which is being used for a purpose other than the purpose indicated in its registration, or carrying a registration plate issued for another road vehicle, is guilty of an offence and is liable to a fine of $200 to $300.
                 </Text>
                 ),
-                image: '31.1+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F31.1.png?alt=media&token=7616b885-584f-4787-863a-f9698f1de689',
                 analyse: '',
             },
         },
@@ -1089,7 +1089,7 @@ const CSR = {
                         Malgré les articles 85 et 86, le non-résident qui est titulaire d’un permis de conduire international peut conduire, pendant la période de validité de ce permis, les véhicules routiers que le permis sur la base duquel son permis de conduire international a été délivré l’autorise à conduire.
                 </Text>
                 ),
-                image: '65+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F65.png?alt=media&token=6f6010c1-7b6e-47da-a182-4ee5cb9d2469',
                 analyse: '',
             },
             en: {
@@ -1175,7 +1175,7 @@ const CSR = {
                         Notwithstanding sections 85 and 86, a non-resident holding an International Driver’s Permit may, while it is valid, drive the road vehicles he is authorized to drive by the licence on the basis of which the International Driver’s Permit was issued to him.
                 </Text>
                 ),
-                image: '65+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F65.png?alt=media&token=6f6010c1-7b6e-47da-a182-4ee5cb9d2469',
                 analyse: '',
             },
         },
@@ -1216,7 +1216,7 @@ const CSR = {
                         La personne qui ne s’est pas conformée au premier ou au deuxième alinéa et qui demande à la Société, pendant la durée correspondant au paiement des sommes visées au premier ou au deuxième alinéa, l’obtention d’un premier permis de conduire, le renouvellement de son permis de conduire ou de son permis restreint délivré en vertu de l’article 76.1.1 ou l’autorisation de conduire de nouveau un véhicule routier, doit alors acquitter ces sommes ainsi que les frais supplémentaires prévus par règlement, conformément aux conditions et aux modalités prévues par règlement.
                 </Text>
                 ),
-                image: '65+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F65.png?alt=media&token=6f6010c1-7b6e-47da-a182-4ee5cb9d2469',
                 analyse: '',
             },
             en: {
@@ -1255,7 +1255,7 @@ const CSR = {
                         A person who has failed to comply with the first or second paragraph and applies to the Société, during the period corresponding to the payment of the sums referred to in the first or second paragraph, for the issue of his first driver’s licence, the renewal of his driver’s licence or his restricted licence issued under section 76.1.1 or authorization to resume driving road vehicles, must pay those sums and the additional fees prescribed by regulation, in accordance with the terms and conditions prescribed by regulation.
                 </Text>
                 ),
-                image: '65+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F65.png?alt=media&token=6f6010c1-7b6e-47da-a182-4ee5cb9d2469',
                 analyse: '',
             },
         },
@@ -1292,7 +1292,7 @@ const CSR = {
                         Il doit également informer la Société de tels changements dans les 30 jours qui suivent le changement.
                 </Text>
                 ),
-                image: '95+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F95.png?alt=media&token=b64f8513-5b70-4ae6-b318-e3044d9e384d',
                 analyse: '',
             },
             en: {
@@ -1327,7 +1327,7 @@ const CSR = {
                         He must also inform the Société of any such changes within 30 days after the change.
                 </Text>
                 ),
-                image: '95+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F95.png?alt=media&token=b64f8513-5b70-4ae6-b318-e3044d9e384d',
                 analyse: '',
             },
         },
@@ -1362,7 +1362,7 @@ const CSR = {
                         La personne qui conduit un véhicule routier ou qui en a la garde ou le contrôle doit avoir avec elle son permis.
                 </Text>
                 ),
-                image: '95+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F95.png?alt=media&token=b64f8513-5b70-4ae6-b318-e3044d9e384d',
                 analyse: '',
             },
             en: {
@@ -1395,7 +1395,7 @@ const CSR = {
                         The person driving a road vehicle or having the care or control of a road vehicle must carry his licence.
                 </Text>
                 ),
-                image: '95+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F95.png?alt=media&token=b64f8513-5b70-4ae6-b318-e3044d9e384d',
                 analyse: '',
             },
         },
@@ -1426,7 +1426,7 @@ const CSR = {
                         Le titulaire d’un permis doit respecter les conditions dont son permis est assorti.
                 </Text>
                 ),
-                image: '95+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F95.png?alt=media&token=b64f8513-5b70-4ae6-b318-e3044d9e384d',
                 analyse: '',
             },
             en: {
@@ -1455,7 +1455,7 @@ const CSR = {
                         The holder of a licence must comply with the conditions attached to his licence.
                 </Text>
                 ),
-                image: '95+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F95.png?alt=media&token=b64f8513-5b70-4ae6-b318-e3044d9e384d',
                 analyse: '',
             },
         },
@@ -1510,7 +1510,7 @@ const CSR = {
                         Un règlement du gouvernement peut, dans les cas et aux conditions qu’il détermine, exempter le titulaire d’un permis d’apprenti-conducteur des conditions d’assistance prévues au premier alinéa ou prévoir des conditions différentes.
                 </Text>
                 ),
-                image: '99+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F99.png?alt=media&token=64922f1e-79d7-4566-b631-52f93ff08e4c',
                 analyse: '',
             },
             en: {
@@ -1563,7 +1563,7 @@ const CSR = {
                         A government regulation may, in the cases and on the conditions it determines, exempt the holder of a learner’s licence from the assistance conditions set out in the first paragraph or prescribe different conditions.
                 </Text>
                 ),
-                image: '99+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F99.png?alt=media&token=64922f1e-79d7-4566-b631-52f93ff08e4c',
                 analyse: '',
             },
         },
@@ -1639,7 +1639,7 @@ const CSR = {
                         3° le cas échéant, la nature de son lien familial avec le conducteur.
                 </Text>
                 ),
-                image: '100+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F100.png?alt=media&token=826f4b7a-1079-4fb6-9252-ae30b2544cbb',
                 analyse: '',
             },
             en: {
@@ -1713,7 +1713,7 @@ const CSR = {
                         (3) if applicable, the nature of the passenger’s family relationship with the driver.
                 </Text>
                 ),
-                image: '100+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F100.png?alt=media&token=826f4b7a-1079-4fb6-9252-ae30b2544cbb',
                 analyse: '',
             },
         },
@@ -1761,7 +1761,7 @@ const CSR = {
                         Toutefois, le titulaire d’un permis restreint peut, sous réserve de l’article 195.1, conduire un véhicule routier dans l’exécution du principal travail dont il tire sa subsistance.
                 </Text>
                 ),
-                image: '105+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F105.png?alt=media&token=4dfaa8de-11c7-4487-a251-dd6f2f8ffd7b',
                 analyse: '',
             },
             en: {
@@ -1807,7 +1807,7 @@ const CSR = {
                         However, the holder of a restricted licence may, subject to section 195.1, drive a road vehicle to carry on his principal means of livelihood.
                 </Text>
                 ),
-                image: '105+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F105.png?alt=media&token=4dfaa8de-11c7-4487-a251-dd6f2f8ffd7b',
                 analyse: '',
             },
         },
@@ -1869,7 +1869,7 @@ const CSR = {
                         Il peut toutefois laisser conduire le véhicule par cette dernière personne si elle est, sous réserve de l’article 195.1, titulaire d’un permis restreint et conduit le véhicule dans l’exécution du principal travail dont elle tire sa subsistance.
                 </Text>
                 ),
-                image: '105+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F105.png?alt=media&token=4dfaa8de-11c7-4487-a251-dd6f2f8ffd7b',
                 analyse: '',
             },
             en: {
@@ -1929,7 +1929,7 @@ const CSR = {
                         However, he may allow the latter to drive the vehicle if that person is, subject to section 195.1, the holder of a restricted licence and drives the vehicle to carry on his principal means of livelihood.
                 </Text>
                 ),
-                image: '105+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F105.png?alt=media&token=4dfaa8de-11c7-4487-a251-dd6f2f8ffd7b',
                 analyse: '',
             },
         },
@@ -1980,7 +1980,7 @@ const CSR = {
                         http://collections.banq.qc.ca/ark:/52327/bs2796239
                 </Text>
                 ),
-                image: '161.1+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F161.1.png?alt=media&token=3e9a80d0-5a2d-4643-b57a-83e90a56905f',
                 analyse: '',
             },
             en: {
@@ -2031,7 +2031,7 @@ const CSR = {
                         http://collections.banq.qc.ca/ark:/52327/bs2796239
                 </Text>
                 ),
-                image: '161.1+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F161.1.png?alt=media&token=3e9a80d0-5a2d-4643-b57a-83e90a56905f',
                 analyse: '',
             },
         },
@@ -2076,7 +2076,7 @@ const CSR = {
                         Le conducteur d’un véhicule routier impliqué dans un accident doit rester sur les lieux ou y retourner immédiatement après l’accident et fournir l’aide nécessaire à toute personne qui a subi un préjudice.
                 </Text>
                 ),
-                image: '168+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F168.png?alt=media&token=4509993f-de3e-474f-bf22-8393855e2472',
                 analyse: '',
             },
             en: {
@@ -2119,7 +2119,7 @@ const CSR = {
                         The driver of a road vehicle involved in an accident must remain at or immediately return to the scene of the accident and render the necessary assistance to any person who has sustained injury or damage.
                 </Text>
                 ),
-                image: '168+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F168.png?alt=media&token=4509993f-de3e-474f-bf22-8393855e2472',
                 analyse: '',
             },
         },
@@ -2156,7 +2156,7 @@ const CSR = {
                         Le conducteur d’un véhicule routier impliqué dans un accident doit fournir à l’agent de la paix qui se rend sur les lieux de l’accident ou à la personne qui a subi un préjudice ses nom et adresse, le numéro de son permis, les nom et adresse du propriétaire inscrit au certificat d’immatriculation du véhicule, l’attestation d’assurance ou de solvabilité prévue par la Loi sur l’assurance automobile (chapitre A‐25) et le numéro apparaissant sur la plaque d’immatriculation du véhicule.
                 </Text>
                 ),
-                image: '168+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F168.png?alt=media&token=4509993f-de3e-474f-bf22-8393855e2472',
                 analyse: '',
             },
             en: {
@@ -2191,7 +2191,7 @@ const CSR = {
                         The driver of a road vehicle involved in an accident must give to the peace officer called to the scene of the accident or to the person having sustained injury or damage, his name and address, the number of his licence, the name and address of the owner entered on the registration certificate of the vehicle, the certificate of insurance or of financial responsibility provided for in the Automobile Insurance Act (chapter A-25), and the number appearing on the registration plate of the vehicle.
                 </Text>
                 ),
-                image: '168+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F168.png?alt=media&token=4509993f-de3e-474f-bf22-8393855e2472',
                 analyse: '',
             },
         },
@@ -2240,7 +2240,7 @@ const CSR = {
                         Le conducteur d’un véhicule routier impliqué dans un accident doit fournir à l’agent de la paix qui se rend sur les lieux de l’accident ou à la personne qui a subi un préjudice ses nom et adresse, le numéro de son permis, les nom et adresse du propriétaire inscrit au certificat d’immatriculation du véhicule, l’attestation d’assurance ou de solvabilité prévue par la Loi sur l’assurance automobile (chapitre A‐25) et le numéro apparaissant sur la plaque d’immatriculation du véhicule.
                 </Text>
                 ),
-                image: '171+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F171.png?alt=media&token=4d25dbdd-d9f2-489f-a5b0-f28041335313',
                 analyse: '',
             },
             en: {
@@ -2287,7 +2287,7 @@ const CSR = {
                         The driver of a road vehicle involved in an accident must give to the peace officer called to the scene of the accident or to the person having sustained injury or damage, his name and address, the number of his licence, the name and address of the owner entered on the registration certificate of the vehicle, the certificate of insurance or of financial responsibility provided for in the Automobile Insurance Act (chapter A-25), and the number appearing on the registration plate of the vehicle.
                 </Text>
                 ),
-                image: '171+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F171.png?alt=media&token=4d25dbdd-d9f2-489f-a5b0-f28041335313',
                 analyse: '',
             },
         },
@@ -2350,7 +2350,7 @@ const CSR = {
                         L’interdiction prévue au premier alinéa s’applique également à une personne qui, sans jamais avoir été titulaire d’un permis de conduire autre qu’un permis de conduire autorisant uniquement la conduite d’un cyclomoteur ou autorisant uniquement la conduite d’un tracteur de ferme, conduit un véhicule routier ou en a la garde ou le contrôle.
                 </Text>
                 ),
-                image: '202.2+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F202.2.jpg?alt=media&token=baabaec6-231a-4bb9-bfce-7abf17014ec3',
                 analyse: '',
             },
             en: {
@@ -2411,7 +2411,7 @@ const CSR = {
                         The prohibition set out in the first paragraph also applies to a person who, without ever having held a driver’s licence other than a licence authorizing the driving only of a moped or authorizing the driving only of a farm tractor, drives or has the care or control of a road vehicle.
                 </Text>
                 ),
-                image: '202.2+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F202.2.jpg?alt=media&token=baabaec6-231a-4bb9-bfce-7abf17014ec3',
                 analyse: '',
             },
         },
@@ -2558,7 +2558,7 @@ const CSR = {
                         https://saaq.gouv.qc.ca/securite-routiere/moyens-deplacement/velo/velo-equipements/
                 </Text>
                 ),
-                image: '212.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F212.png?alt=media&token=8dbc55f0-53ed-4d46-94cc-33252300cf1e',
                 analyse: '',
             },
             en: {
@@ -2595,7 +2595,7 @@ const CSR = {
                         https://saaq.gouv.qc.ca/en/road-safety/modes-transportation/bicycle/bicycles-and-accessories/
                 </Text>
                 ),
-                image: '212.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F212.png?alt=media&token=8dbc55f0-53ed-4d46-94cc-33252300cf1e',
                 analyse: '',
             },
         },
@@ -2636,7 +2636,7 @@ const CSR = {
                         En outre des chemins publics, le présent article s’applique sur les chemins soumis à l’administration du ministère des Ressources naturelles et de la Faune ou entretenus par celui-ci, sur les chemins privés ouverts à la circulation publique des véhicules routiers ainsi que sur les terrains de centres commerciaux et autres terrains où le public est autorisé à circuler.
                 </Text>
                 ),
-                image: '212.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F212.png?alt=media&token=8dbc55f0-53ed-4d46-94cc-33252300cf1e',
                 analyse: '',
             },
             en: {
@@ -2675,7 +2675,7 @@ const CSR = {
                         This section applies, in addition to public highways, to highways under the administration of or maintained by the Ministère des Ressources naturelles et de la Faune, to private roads open to public vehicular traffic as well as land occupied by shopping centres and other land where public traffic is allowed.
                 </Text>
                 ),
-                image: '212.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F212.png?alt=media&token=8dbc55f0-53ed-4d46-94cc-33252300cf1e',
                 analyse: '',
             },
         },
@@ -2762,7 +2762,7 @@ const CSR = {
                         Les feux visés au paragraphe 2° ne sont pas requis pour tout véhicule dont la largeur excède 2,03 mètres.
                 </Text>
                 ),
-                image: '215.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F215.png?alt=media&token=a3af4fab-de76-4eb8-aa67-b1e51473322b',
                 analyse: '',
             },
             en: {
@@ -2847,7 +2847,7 @@ const CSR = {
                         The lights referred to in subparagraph 2 of the first paragraph are not required on any vehicle exceeding 2.03 metres in width.
                 </Text>
                 ),
-                image: '215.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F215.png?alt=media&token=a3af4fab-de76-4eb8-aa67-b1e51473322b',
                 analyse: '',
             },
         },
@@ -2929,7 +2929,7 @@ const CSR = {
                         Une remorque tirée par une bicyclette doit être munie soit de deux réflecteurs rouges à l’arrière, aussi éloignés que possible l’un de l’autre, soit d’une bande réfléchissante rouge placée de façon aussi horizontale que possible sur toute la largeur de la remorque.
                 </Text>
                 ),
-                image: '232.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F232.png?alt=media&token=1321f592-d89b-44b1-8766-a6f7e1cc3573',
                 analyse: '',
             },
             en: {
@@ -3009,7 +3009,7 @@ const CSR = {
                         A trailer towed by a bicycle must carry two red reflectors at the rear, as far apart as practicable, or a red reflective strip placed as close to horizontal as possible across the width of the trailer.
                 </Text>
                 ),
-                image: '232.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F232.png?alt=media&token=1321f592-d89b-44b1-8766-a6f7e1cc3573',
                 analyse: '',
             },
         },
@@ -3044,7 +3044,7 @@ const CSR = {
                         Toute bicyclette doit également, la nuit, être munie d’un phare blanc à l’avant et d’un feu rouge à l’arrière,lesquels peuvent être clignotants.
                 </Text>
                 ),
-                image: '232.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F232.png?alt=media&token=1321f592-d89b-44b1-8766-a6f7e1cc3573',
                 analyse: '',
             },
             en: {
@@ -3077,7 +3077,7 @@ const CSR = {
                         At night, every bicycle must also carry, at least a white headlight or light and one red tail-light both of which may be flashing.
                 </Text>
                 ),
-                image: '232.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F232.png?alt=media&token=1321f592-d89b-44b1-8766-a6f7e1cc3573',
                 analyse: '',
             },
         },
@@ -3126,7 +3126,7 @@ const CSR = {
                         Aucun dispositif ou matière monté ou apposé sur le véhicule routier, sur le phare, le feu ou la lentille ne doit masquer la lumière du phare ou du feu ou en réduire l’intensité.
                 </Text>
                 ),
-                image: '215.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F215.png?alt=media&token=a3af4fab-de76-4eb8-aa67-b1e51473322b',
                 analyse: '',
             },
             en: {
@@ -3173,7 +3173,7 @@ const CSR = {
                         No device or material mounted or affixed to a road vehicle, a headlight, a light or a lens shall hide or dim the light.
                 </Text>
                 ),
-                image: '215.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F215.png?alt=media&token=a3af4fab-de76-4eb8-aa67-b1e51473322b',
                 analyse: '',
             },
         },
@@ -3214,7 +3214,7 @@ const CSR = {
                         Le conducteur doit se conformer à cette exigence.
                 </Text>
                 ),
-                image: '215.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F215.png?alt=media&token=a3af4fab-de76-4eb8-aa67-b1e51473322b',
                 analyse: '',
             },
             en: {
@@ -3253,7 +3253,7 @@ const CSR = {
                         The driver must comply with the requirement of the peace officer.
                 </Text>
                 ),
-                image: '215.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F215.png?alt=media&token=a3af4fab-de76-4eb8-aa67-b1e51473322b',
                 analyse: '',
             },
         },
@@ -3363,7 +3363,7 @@ const CSR = {
                         Pour l’application du présent article, un véhicule de service est un véhicule automobile agencé pour l’approvisionnement, la réparation ou le remorquage des véhicules routiers et un véhicule d’équipement est un véhicule automobile servant au transport de l’équipement qui y est fixé en permanence et comportant un espace pour le chargement.
                 </Text>
                 ),
-                image: '239.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F239.png?alt=media&token=640c4736-1388-478a-b437-3956a16926fb',
                 analyse: '',
             },
             en: {
@@ -3471,7 +3471,7 @@ const CSR = {
                         For the purposes of this section, “service vehicle” is a motor vehicle equipped to refuel, repair or tow road vehicles and an “equipment vehicle” is a motor vehicle used for the transportation of permanently attached equipment and provided with a load space.
                 </Text>
                 ),
-                image: '239.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F239.png?alt=media&token=640c4736-1388-478a-b437-3956a16926fb',
                 analyse: '',
             },
         },
@@ -3506,7 +3506,7 @@ const CSR = {
                         Toute bicyclette et toute trottinette doivent être munies d’au moins un système de freins agissant sur la roue arrière. Ce système doit être suffisamment puissant pour bloquer rapidement la rotation de la roue, sur une chaussée pavée, sèche et plane.
                 </Text>
                 ),
-                image: '232.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F232.png?alt=media&token=1321f592-d89b-44b1-8766-a6f7e1cc3573',
                 analyse: '',
             },
             en: {
@@ -3539,7 +3539,7 @@ const CSR = {
                         Every bicycle and non-motorized scooter must be equipped with at least one brake system acting on the rear wheel. The system must be sufficiently powerful to quickly block the rotation of the wheel on a paved, dry and level roadway.
                 </Text>
                 ),
-                image: '232.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F232.png?alt=media&token=1321f592-d89b-44b1-8766-a6f7e1cc3573',
                 analyse: '',
             },
         },
@@ -3572,7 +3572,7 @@ const CSR = {
                         En outre des chemins publics, le présent article s’applique sur les chemins privés ouverts à la circulation publique des véhicules routiers ainsi que sur les terrains de centres commerciaux et autres terrains où le public est autorisé à circuler.
                 </Text>
                 ),
-                image: '256.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F256.png?alt=media&token=3df787c4-f8b3-428e-90f7-9a6eda547f8f',
                 analyse: '',
             },
             en: {
@@ -3603,7 +3603,7 @@ const CSR = {
                         In addition to public highways, this section applies on private roads open to public vehicular traffic, as well as on land occupied by shopping centres and other land where public traffic is allowed.
                 </Text>
                 ),
-                image: '256.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F256.png?alt=media&token=3df787c4-f8b3-428e-90f7-9a6eda547f8f',
                 analyse: '',
             },
         },
@@ -3642,7 +3642,7 @@ const CSR = {
                         Tout véhicule automobile, à l’exception d’un véhicule qui n’utilise aucun carburant comme source d’énergie, doit être muni d’un système d’échappement conforme aux normes établies par règlement.
                 </Text>
                 ),
-                image: '258.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F258.png?alt=media&token=79872202-9817-47d6-9588-f48c2bd056b3',
                 analyse: '',
             },
             en: {
@@ -3679,7 +3679,7 @@ const CSR = {
                         Every motor vehicle, except a vehicle that does not use fuel as its source of energy, must be equipped with an exhaust system that conforms to the standards established by regulation.
                 </Text>
                 ),
-                image: '258.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F258.png?alt=media&token=79872202-9817-47d6-9588-f48c2bd056b3',
                 analyse: '',
             },
         },
@@ -3739,7 +3739,7 @@ const CSR = {
                         https://saaq.gouv.qc.ca/securite-routiere/moyens-deplacement/auto/auto-modifiee/vitres-teintees/
                 </Text>
                 ),
-                image: '265+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F265.png?alt=media&token=044bd94e-7138-468c-94fe-fffac4219ddc',
                 analyse: '',
             },
             en: {
@@ -3797,7 +3797,7 @@ const CSR = {
                         https://saaq.gouv.qc.ca/en/road-safety/modes-transportation/automobile/modified-cars/tinted-windows/
                 </Text>
                 ),
-                image: '265+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F265.png?alt=media&token=044bd94e-7138-468c-94fe-fffac4219ddc',
                 analyse: '',
             },
         },
@@ -3888,7 +3888,7 @@ const CSR = {
                         8°  la roue doit être de la dimension et de la capacité déterminées par le fabricant de la roue pour le pneu qui y est installé.
                 </Text>
                 ),
-                image: '270.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F270.png?alt=media&token=9693f6d0-68db-415b-94f4-39a0de457cb0',
                 analyse: '',
             },
             en: {
@@ -3977,7 +3977,7 @@ const CSR = {
                         (8)  a wheel shall be of the dimension and capacity determined by the wheel manufacturer for the tire mounted on it.
                 </Text>
                 ),
-                image: '270.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F270.png?alt=media&token=9693f6d0-68db-415b-94f4-39a0de457cb0',
                 analyse: '',
             },
         },
@@ -4018,7 +4018,7 @@ const CSR = {
                         Nul ne peut circuler à une vitesse supérieure à la limite indiquée sur la signalisation installée en vertu du présent article.
                 </Text>
                 ),
-                image: '299+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F299.png?alt=media&token=337d3136-7f39-4fc8-9b6b-26c216a6da31',
                 analyse: '',
             },
             en: {
@@ -4057,7 +4057,7 @@ const CSR = {
                         No person may travel at a rate of speed exceeding the limit indicated on any signs erected under this section.
                 </Text>
                 ),
-                image: '299+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F299.png?alt=media&token=337d3136-7f39-4fc8-9b6b-26c216a6da31',
                 analyse: '',
             },
         },
@@ -4102,7 +4102,7 @@ const CSR = {
                         Nul ne peut circuler à une vitesse supérieure à la limite de vitesse indiquée sur la signalisation installée en vertu de l’article 303.1.
                 </Text>
                 ),
-                image: '303.2.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F303.2.jpg?alt=media&token=325cac63-ca4e-4e6e-b5cd-198527af1c93',
                 analyse: '',
             },
             en: {
@@ -4145,7 +4145,7 @@ const CSR = {
                         No person may travel at a rate of speed exceeding the limit indicated on the signs or signals erected under section 303.1.
                 </Text>
                 ),
-                image: '303.2.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F303.2.jpg?alt=media&token=325cac63-ca4e-4e6e-b5cd-198527af1c93',
                 analyse: '',
             },
         },
@@ -4182,7 +4182,7 @@ const CSR = {
                         Toute personne est tenue de se conformer à la signalisation installée en vertu du présent code.
                 </Text>
                 ),
-                image: '310.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F310.png?alt=media&token=8659377a-0c3b-4eed-bc1f-109d5017a303',
                 analyse: '',
             },
             en: {
@@ -4217,7 +4217,7 @@ const CSR = {
                         Every person must comply with every road or traffic sign or signal erected under this Code.
                 </Text>
                 ),
-                image: '310.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F310.png?alt=media&token=8659377a-0c3b-4eed-bc1f-109d5017a303',
                 analyse: '',
             },
         },
@@ -4266,7 +4266,7 @@ const CSR = {
                         Lorsque la circulation est dirigée par un agent de la paix, un brigadier scolaire ou un signaleur chargé de diriger la circulation lors de travaux, toute personne doit, malgré une signalisation contraire, obéir à leurs ordres et signaux.
                 </Text>
                 ),
-                image: '311.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F311.jpg?alt=media&token=474d411f-4553-4fce-abb0-1bb2d5e7ca43',
                 analyse: '',
             },
             en: {
@@ -4313,7 +4313,7 @@ const CSR = {
                         Where traffic is directed by a peace officer, a school crossing guard or a flag person in charge of directing traffic around or about work sites, every person shall obey his orders or signals even if contrary to existing traffic signs or signals.
                 </Text>
                 ),
-                image: '311.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F311.jpg?alt=media&token=474d411f-4553-4fce-abb0-1bb2d5e7ca43',
                 analyse: '',
             },
         },
@@ -4344,7 +4344,7 @@ const CSR = {
                         Nul ne peut circuler sur une propriété privée afin d’éviter de se conformer à une signalisation.
                 </Text>
                 ),
-                image: '312+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F312.png?alt=media&token=f968f2bf-c92a-4fff-a0d9-49f051de6ab0',
                 analyse: '',
             },
             en: {
@@ -4373,7 +4373,7 @@ const CSR = {
                         No person may drive on private property to avoid compliance with a traffic sign or signal.
                 </Text>
                 ),
-                image: '312+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F312.png?alt=media&token=f968f2bf-c92a-4fff-a0d9-49f051de6ab0',
                 analyse: '',
             },
         },
@@ -4446,7 +4446,7 @@ const CSR = {
                         (6)  traverser une voie de circulation réservée exclusivement à certains véhicules.
                 </Text>
                 ),
-                image: '326.1.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F326.1.png?alt=media&token=58c317f6-f042-4008-a8c7-b295d6072510',
                 analyse: '',
             },
             en: {
@@ -4517,7 +4517,7 @@ const CSR = {
                         (6)  cross a traffic lane reserved for the exclusive use of certain vehicles.
                 </Text>
                 ),
-                image: '326.1.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F326.1.png?alt=media&token=58c317f6-f042-4008-a8c7-b295d6072510',
                 analyse: '',
             },
         },
@@ -4572,7 +4572,7 @@ const CSR = {
                         En outre des chemins publics, le présent article s’applique sur les chemins soumis à l’administration du ministère des Ressources naturelles et de la Faune ou entretenus par celui-ci, sur les chemins privés ouverts à la circulation publique des véhicules routiers ainsi que sur les terrains de centres commerciaux et autres terrains où le public est autorisé à circuler.
                 </Text>
                 ),
-                image: '327.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F327.png?alt=media&token=c7f70e3f-34c1-4d88-bee0-59e8b67d9331',
                 analyse: '',
             },
             en: {
@@ -4625,7 +4625,7 @@ const CSR = {
                         In addition to public highways, this section applies on highways under the administration of or maintained by the Ministère des Ressources naturelles et de la Faune, on private roads open to public vehicular traffic, as well as on land occupied by shopping centres and other land where public traffic is allowed.
                 </Text>
                 ),
-                image: '327.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F327.png?alt=media&token=c7f70e3f-34c1-4d88-bee0-59e8b67d9331',
                 analyse: '',
             },
         },
@@ -4680,7 +4680,7 @@ const CSR = {
                         Les paragraphes 2°, 3° et 4° du premier alinéa s’appliquent sur les chemins soumis à l’administration du ministère des Ressources naturelles et de la Faune ou entretenus par celui-ci. Le ministre, sur recommandation du ministre des Ressources naturelles et de la Faune, peut, par arrêté, modifier la limite de vitesse sur tout ou partie de ces chemins.
                 </Text>
                 ),
-                image: '299+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F299.png?alt=media&token=337d3136-7f39-4fc8-9b6b-26c216a6da31',
                 analyse: '',
             },
             en: {
@@ -4735,7 +4735,7 @@ const CSR = {
                         Subparagraphs 2, 3 and 4 of the first paragraph apply on highways under the administration of or maintained by the Ministère des Ressources naturelles et de la Faune. The Minister, on the recommendation of the Minister of Natural Resources and Wildlife, may by order change the speed limit on all or any part of such highways.
                 </Text>
                 ),
-                image: '299+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F299.png?alt=media&token=337d3136-7f39-4fc8-9b6b-26c216a6da31',
                 analyse: ''
             }
         },
@@ -4788,7 +4788,7 @@ const CSR = {
                         Le conducteur d’un véhicule routier doit réduire la vitesse de son véhicule lorsque les conditions de visibilité sont rendues insuffisantes à cause de l’obscurité, du brouillard, de la pluie ou d’autres précipitations ou lorsque la chaussée est glissante ou n’est pas entièrement dégagée.
                 </Text>
                 ),
-                image: '330.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F330.png?alt=media&token=99950d4e-3339-41fb-8fa9-5adbac22cc23',
                 analyse: '',
             },
             en: {
@@ -4839,7 +4839,7 @@ const CSR = {
                         The driver of a road vehicle must reduce the speed of his vehicle when visibility conditions become inadequate because of darkness, fog, rain or other precipitation or when the roadway is slippery or not completely cleared.
                 </Text>
                 ),
-                image: '330.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F330.png?alt=media&token=99950d4e-3339-41fb-8fa9-5adbac22cc23',
                 analyse: '',
             },
         },
@@ -4880,7 +4880,7 @@ const CSR = {
                         Le conducteur d’un véhicule routier qui suit un autre véhicule routier ou une bicyclette doit le faire à une distance prudente et raisonnable en tenant compte de la vitesse, de la densité de la circulation, des conditions atmosphériques et de l’état de la chaussée.
                 </Text>
                 ),
-                image: '335+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F335.png?alt=media&token=64dcef19-0571-4aec-b8cf-9bbdb95144eb',
                 analyse: '',
             },
             en: {
@@ -4919,7 +4919,7 @@ const CSR = {
                         The driver of a road vehicle shall not follow another road vehicle or a bicycle more closely than is prudent and reasonable, taking account of speed, traffic density, atmospheric conditions and the condition of the roadway.
                 </Text>
                 ),
-                image: '335+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F335.png?alt=media&token=64dcef19-0571-4aec-b8cf-9bbdb95144eb',
                 analyse: '',
             },
         },
@@ -4971,7 +4971,7 @@ const CSR = {
                         Le présent article s’applique au conducteur d’un véhicule routier lorsqu’il croise ou dépasse un piéton, avec les adaptations nécessaires. Il s’applique également à un tel conducteur lorsqu’un cycliste ou un piéton circule sur l’accotement ou sur une voie cyclable qui n’est pas séparée de la chaussée par un terre-plein ou un autre dispositif physique surélevé.
                 </Text>
                 ),
-                image: '232.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F232.png?alt=media&token=1321f592-d89b-44b1-8766-a6f7e1cc3573',
                 analyse: '',
             },
             en: {
@@ -5022,7 +5022,7 @@ const CSR = {
                         This section applies to the driver of a road vehicle when meeting or passing a pedestrian, with the necessary modifications. It also applies to such a driver if the cyclist or pedestrian is travelling on the shoulder or on a cycle lane that is not separated from the roadway by a median strip or any other raised physical device.
                 </Text>
                 ),
-                image: '232.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F232.png?alt=media&token=1321f592-d89b-44b1-8766-a6f7e1cc3573',
                 analyse: '',
             },
         },
@@ -5059,7 +5059,7 @@ const CSR = {
                         Le conducteur d’un véhicule routier ne peut effectuer en zigzag plusieurs dépassements successifs sur une chaussée à deux voies ou plus de circulation à sens unique.
                 </Text>
                 ),
-                image: '342+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F342.png?alt=media&token=cab10b34-81a5-47c3-9ed8-0345b0d57dac',
                 analyse: '',
             },
             en: {
@@ -5094,7 +5094,7 @@ const CSR = {
                         In no case may the driver of a road vehicle successively pass two or more vehicles in a zigzag pattern on a one-way roadway having two or more traffic lanes.
                 </Text>
                 ),
-                image: '342+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F342.png?alt=media&token=cab10b34-81a5-47c3-9ed8-0345b0d57dac',
                 analyse: '',
             },
         },
@@ -5139,7 +5139,7 @@ const CSR = {
                         2°  à l’approche et à l’intérieur d’une intersection, d’un passage à niveau, d’un tunnel ou d’un passage pour piétons dûment identifié.
                 </Text>
                 ),
-                image: '345.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F345.png?alt=media&token=f0ff8489-ce36-44ee-80a2-d5020a2ab66d',
                 analyse: '',
             },
             en: {
@@ -5182,7 +5182,7 @@ const CSR = {
                         (2)  in or upon, or when approaching an intersection, a level crossing, a tunnel or a pedestrian crosswalk identified as such.
                 </Text>
                 ),
-                image: '345.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F345.png?alt=media&token=f0ff8489-ce36-44ee-80a2-d5020a2ab66d',
                 analyse: '',
             },
         },
@@ -5232,7 +5232,7 @@ const CSR = {
                         Nul ne peut effectuer un dépassement par la droite, sauf pour dépasser un véhicule qui effectue ou est sur le point d’effectuer un virage à gauche, un véhicule qui se dirige vers une voie de sortie d’un chemin à accès limité ou un véhicule qui effectue du déneigement ou de l’entretien sur la voie de gauche d’une chaussée à deux voies ou plus de circulation à sens unique.
                 </Text>
                 ),
-                image: '346+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F346.png?alt=media&token=4d05b831-0a5c-4197-adc9-543ae6cf4f22',
                 analyse: '',
             },
             en: {
@@ -5280,7 +5280,7 @@ const CSR = {
                         No driver of a road vehicle may pass another vehicle to the right, except where the vehicle being passed is turning left, is about to turn left, is moving toward an exit ramp on a limited access highway or is a snow removal or road maintenance vehicle doing work on the left-hand lane of a one-way roadway with two lanes or over.
                 </Text>
                 ),
-                image: '346+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F346.png?alt=media&token=4d05b831-0a5c-4197-adc9-543ae6cf4f22',
                 analyse: '',
             },
         },
@@ -5325,7 +5325,7 @@ const CSR = {
                         Le conducteur d’un véhicule routier ou d’une bicyclette qui effectue un virage à une intersection doit céder le passage aux piétons et aux cyclistes qui traversent la chaussée qu’il s’apprête à emprunter.
                 </Text>
                 ),
-                image: '450.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F450.jpg?alt=media&token=487c22de-6f47-4541-a496-2b1878a7f43f',
                 analyse: '',
             },
             en: {
@@ -5368,7 +5368,7 @@ const CSR = {
                         The driver of a road vehicle or any person riding a bicycle who is turning at an intersection must yield the right of way to pedestrians and cyclists crossing the roadway he is about to enter.
                 </Text>
                 ),
-                image: '450.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F450.jpg?alt=media&token=487c22de-6f47-4541-a496-2b1878a7f43f',
                 analyse: '',
             },
         },
@@ -5410,7 +5410,7 @@ const CSR = {
                         Le conducteur d’un véhicule routier ou d’une bicyclette qui s’apprête à effectuer un virage à gauche doit céder le passage à tout véhicule qui circule en sens inverse et qui se trouve à une distance telle qu’il y aurait danger à effectuer cette manoeuvre.
                 </Text>
                 ),
-                image: '350+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F350.png?alt=media&token=e48e1b5c-0c06-4145-ac1a-7618e66814fb',
                 analyse: '',
             },
             en: {
@@ -5449,7 +5449,7 @@ const CSR = {
                         The driver of a road vehicle or any person riding a bicycle who is about to make a left turn must yield the right of way to any vehicle moving in the opposite direction, and is so close that it constitutes a hazard.
                 </Text>
                 ),
-                image: '350+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F350.png?alt=media&token=e48e1b5c-0c06-4145-ac1a-7618e66814fb',
                 analyse: '',
             },
         },
@@ -5512,7 +5512,7 @@ const CSR = {
                         Il est interdit de faire des virages à droite aux feux rouges sur tout le territoire de l’île de Montréal.
                 </Text>
                 ),
-                image: '359+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F359.png?alt=media&token=e44d7077-f710-4fdc-afec-31b9b403ed8e',
                 analyse: '',
             },
             en: {
@@ -5573,7 +5573,7 @@ const CSR = {
                         It is forbidden to make right turn at red light on the island of Montréal.
                 </Text>
                 ),
-                image: '359+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F359.png?alt=media&token=e44d7077-f710-4fdc-afec-31b9b403ed8e',
                 analyse: '',
             },
         },
@@ -5622,7 +5622,7 @@ const CSR = {
                         À moins d’une signalisation contraire, face à un feu rouge clignotant, le conducteur d’un véhicule routier ou d’une bicyclette doit immobiliser son véhicule et céder le passage à tout véhicule qui, circulant sur une autre chaussée, s’engage dans l’intersection ou se trouve à une distance telle qu’il y a danger d’accident.
                 </Text>
                 ),
-                image: '360+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F360.png?alt=media&token=85f77fa2-60ab-40f5-801d-a8c47995e126',
                 analyse: '',
             },
             en: {
@@ -5669,7 +5669,7 @@ const CSR = {
                         Unless otherwise directed by a sign or signal, when facing a flashing red light, the driver of a road vehicle or any person riding a bicycle must stop his vehicle and yield the right of way to a vehicle approaching on another roadway that is entering the intersection, or is so close that it constitutes a hazard.
                 </Text>
                 ),
-                image: '360+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F360.png?alt=media&token=85f77fa2-60ab-40f5-801d-a8c47995e126',
                 analyse: '',
             },
         },
@@ -5719,7 +5719,7 @@ const CSR = {
                         Un feu jaune en forme de flèche peut être utilisé pour régir l’immobilisation pour une manœuvre particulière.
                 </Text>
                 ),
-                image: '361+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F361.png?alt=media&token=5282d258-7f24-49bf-bb1d-95b8fd031ff5',
                 analyse: '',
             },
             en: {
@@ -5767,7 +5767,7 @@ const CSR = {
                         An amber light in the shape of an arrow may be used to regulate stopping before a specific manoeuvre.
                 </Text>
                 ),
-                image: '361+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F361.png?alt=media&token=5282d258-7f24-49bf-bb1d-95b8fd031ff5',
                 analyse: '',
             },
         },
@@ -5808,7 +5808,7 @@ const CSR = {
                         À moins d’une signalisation contraire, face à une flèche verte, le conducteur d’un véhicule routier ou d’une bicyclette doit, après avoir cédé le passage aux véhicules routiers, aux cyclistes et aux piétons déjà engagés dans l’intersection, circuler dans le sens indiqué par la flèche.
                 </Text>
                 ),
-                image: '364+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F364.png?alt=media&token=e5985fb8-306f-426a-a175-d52f38b1d9f5',
                 analyse: '',
             },
             en: {
@@ -5847,7 +5847,7 @@ const CSR = {
                         Unless otherwise directed by a sign or signal, when facing a green arrow, the driver of a road vehicle or any person riding a bicycle must move in the direction indicated by the arrow, after yielding the right of way to road vehicles, cyclists and pedestrians crossing the intersection.
                 </Text>
                 ),
-                image: '364+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F364.png?alt=media&token=e5985fb8-306f-426a-a175-d52f38b1d9f5',
                 analyse: '',
             },
         },
@@ -5880,7 +5880,7 @@ const CSR = {
                         Même si un feu de circulation le permet, le conducteur d’un véhicule routier ne peut s’engager dans une intersection quand le véhicule ne dispose pas à l’avant d’un espace suffisant pour ne pas bloquer l’intersection. Dans ce cas, le conducteur doit immobiliser son véhicule avant la ligne latérale de la chaussée qu’il s’apprête à croiser.
                 </Text>
                 ),
-                image: '366+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F366.png?alt=media&token=8c09b610-577d-4ea7-9187-a6e8d6f0ddd9',
                 analyse: '',
             },
             en: {
@@ -5911,7 +5911,7 @@ const CSR = {
                         Even if permitted by the traffic lights, no driver of a road vehicle may enter an intersection if there is not sufficient space ahead of the vehicle to proceed without blocking the intersection; in such a case, the driver must stop his vehicle before the near side of the roadway he is about to cross.
                 </Text>
                 ),
-                image: '366+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F366.png?alt=media&token=8c09b610-577d-4ea7-9187-a6e8d6f0ddd9',
                 analyse: '',
             },
         },
@@ -5966,7 +5966,7 @@ const CSR = {
                         À moins d’une signalisation contraire, face à un feu rouge clignotant, le conducteur d’un véhicule routier ou d’une bicyclette doit immobiliser son véhicule et céder le passage à tout véhicule qui, circulant sur une autre chaussée, s’engage dans l’intersection ou se trouve à une distance telle qu’il y a danger d’accident.
                 </Text>
                 ),
-                image: '368.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F368.jpg?alt=media&token=ebefe75e-c9e6-4b40-ac94-9baa9606332e',
                 analyse: '',
             },
             en: {
@@ -6019,7 +6019,7 @@ const CSR = {
                         Unless otherwise directed by a sign or signal, when facing a flashing red light, the driver of a road vehicle or any person riding a bicycle must stop his vehicle and yield the right of way to a vehicle approaching on another roadway that is entering the intersection, or is so close that it constitutes a hazard.
                 </Text>
                 ),
-                image: '368.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F368.jpg?alt=media&token=ebefe75e-c9e6-4b40-ac94-9baa9606332e',
                 analyse: '',
             },
         },
@@ -6068,7 +6068,7 @@ const CSR = {
                         À une intersection réglementée par des panneaux d’arrêt pour toutes les directions, le conducteur d’un véhicule routier ou le cycliste doit immobiliser son véhicule et céder le passage à tout véhicule qui a rejoint l’intersection avant lui. Il doit également céder le passage aux piétons qui traversent ou longent la chaussée qu’il s’apprête à croiser ou à emprunter.
                 </Text>
                 ),
-                image: '368.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F368.jpg?alt=media&token=ebefe75e-c9e6-4b40-ac94-9baa9606332e',
                 analyse: '',
             },
             en: {
@@ -6115,7 +6115,7 @@ const CSR = {
                         At an intersection regulated by stop signs for all directions, the driver of a road vehicle or a cyclist must stop his vehicle and yield the right of way to any vehicle having reached the intersection before him. He must also yield the right of way to pedestrians crossing or walking or cycling alongside the roadway he is about to cross or enter.
                 </Text>
                 ),
-                image: '368.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F368.jpg?alt=media&token=ebefe75e-c9e6-4b40-ac94-9baa9606332e',
                 analyse: '',
             },
         },
@@ -6152,7 +6152,7 @@ const CSR = {
                         Le conducteur d’un véhicule routier ou d’une bicyclette qui fait face à un signal lui ordonnant de céder le passage doit accorder la priorité de passage à tout véhicule qui circule sur la voie sur laquelle il veut s’engager et qui se trouve à une distance telle qu’il y a danger d’accident.
                 </Text>
                 ),
-                image: '371.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F371.png?alt=media&token=0ff18537-97ac-42f9-941d-363c41151e7d',
                 analyse: '',
             },
             en: {
@@ -6187,7 +6187,7 @@ const CSR = {
                         The driver of a road vehicle or any person riding a bicycle who is facing a “yield” sign must give priority to any vehicle moving in the lane he is about to enter where the vehicle is so close that entering the lane would constitute a hazard.
                 </Text>
                 ),
-                image: '371.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F371.png?alt=media&token=0ff18537-97ac-42f9-941d-363c41151e7d',
                 analyse: '',
             },
         },
@@ -6232,7 +6232,7 @@ const CSR = {
                         Le conducteur d’un véhicule routier qui s’apprête à effectuer un virage, à changer de voie de circulation, à faire demi-tour ou à réintégrer la chaussée en provenance de l’accotement ou d’une aire de stationnement doit signaler son intention à l’aide des feux de changement de direction et s’assurer qu’il peut effectuer cette manoeuvre sans danger.
                 </Text>
                 ),
-                image: '372.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F372.png?alt=media&token=4dda9db7-418f-4ec5-aac7-270f9a06b3ee',
                 analyse: '',
             },
             en: {
@@ -6275,7 +6275,7 @@ const CSR = {
                         The driver of a road vehicle who is about to make a turn, change lanes, make a U-turn or return to the roadway from the shoulder or a parking area must, after ascertaining that he may do so in safety, signal his intention by means of his turn-signal lights.
                 </Text>
                 ),
-                image: '372.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F372.png?alt=media&token=4dda9db7-418f-4ec5-aac7-270f9a06b3ee',
                 analyse: '',
             },
         },
@@ -6314,7 +6314,7 @@ const CSR = {
                         Nul ne peut abandonner un véhicule routier sur un chemin public, un chemin privé ouvert à la circulation publique des véhicules routiers, ainsi que sur un terrain de centre commercial ou autre terrain où le public est autorisé à circuler.
                 </Text>
                 ),
-                image: '391+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F391.png?alt=media&token=af5819ca-ddb1-4f7b-ab3a-3c0b851eb85f',
                 analyse: '',
             },
             en: {
@@ -6351,7 +6351,7 @@ const CSR = {
                         No person may abandon a road vehicle on a public highway, on a private road open to public vehicular traffic, as well as on land occupied by shopping centres and other land where public traffic is allowed.
                 </Text>
                 ),
-                image: '391+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F391.png?alt=media&token=af5819ca-ddb1-4f7b-ab3a-3c0b851eb85f',
                 analyse: '',
             },
         },
@@ -6392,7 +6392,7 @@ const CSR = {
                         Sous réserve de l’article 398, nul ne peut conduire un véhicule routier dont la ceinture de sécurité ou un sac gonflable, pour le conducteur ou pour la place qu’occupe un passager, est manquant, modifié ou hors d’usage.
                 </Text>
                 ),
-                image: '396.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F396.png?alt=media&token=36caf8f2-4770-4ffe-a4d3-e2faef4c5895',
                 analyse: '',
             },
             en: {
@@ -6431,7 +6431,7 @@ const CSR = {
                         Subject to section 398, no person shall drive a road vehicle in which the seat belt or an air bag provided for the driver or for the seat occupied by a passenger is missing or has been modified or rendered inoperative.
                 </Text>
                 ),
-                image: '396.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F396.png?alt=media&token=36caf8f2-4770-4ffe-a4d3-e2faef4c5895',
                 analyse: '',
             },
         },
@@ -6491,7 +6491,7 @@ const CSR = {
                         En outre des chemins publics, le présent article s’applique sur les chemins soumis à l’administration du ministère des Ressources naturelles et de la Faune ou entretenus par celui-ci.
                 </Text>
                 ),
-                image: '396.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F396.png?alt=media&token=36caf8f2-4770-4ffe-a4d3-e2faef4c5895',
                 analyse: '',
             },
             en: {
@@ -6549,7 +6549,7 @@ const CSR = {
                         This section applies, in addition to public highways, to highways under the administration of or maintained by the Ministère des Ressources naturelles et de la Faune.
                 </Text>
                 ),
-                image: '396.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F396.png?alt=media&token=36caf8f2-4770-4ffe-a4d3-e2faef4c5895',
                 analyse: '',
             },
         },
@@ -6608,7 +6608,7 @@ const CSR = {
                         En outre des chemins publics, le présent article s’applique sur les chemins soumis à l’administration du ministère des Ressources naturelles et de la Faune ou entretenus par celui-ci.
                 </Text>
                 ),
-                image: '396.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F396.png?alt=media&token=36caf8f2-4770-4ffe-a4d3-e2faef4c5895',
                 analyse: '',
             },
             en: {
@@ -6665,7 +6665,7 @@ const CSR = {
                         This section applies, in addition to public highways, to highways under the administration of or maintained by the Ministère des Ressources naturelles et de la Faune.
                 </Text>
                 ),
-                image: '396.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F396.png?alt=media&token=36caf8f2-4770-4ffe-a4d3-e2faef4c5895',
                 analyse: '',
             },
         },
@@ -6714,7 +6714,7 @@ const CSR = {
                         Le conducteur d’un véhicule routier ou d’une bicyclette doit céder le passage à tout véhicule d’urgence dont les signaux lumineux ou sonores sont en marche, en réduisant la vitesse de son véhicule, en serrant à droite le plus possible et, si nécessaire, en immobilisant son véhicule.
                 </Text>
                 ),
-                image: '406+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F406.png?alt=media&token=5549ab5e-cc33-4c46-8c0d-a8090577563f',
                 analyse: '',
             },
             en: {
@@ -6761,7 +6761,7 @@ const CSR = {
                         The driver of a road vehicle or any person riding a bicycle must yield to any emergency vehicle whose lights or sound producing device are in operation by reducing speed, keeping as far to the right as practicable and, if necessary, bringing his vehicle to a standstill.
                 </Text>
                 ),
-                image: '406+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F406.png?alt=media&token=5549ab5e-cc33-4c46-8c0d-a8090577563f',
                 analyse: '',
             },
         },
@@ -6812,7 +6812,7 @@ const CSR = {
                         Le présent article s’applique également lorsqu’est immobilisé sur un chemin public un véhicule routier sur lequel est actionné le signal lumineux d’une flèche jaune prescrivant un changement de voie. Le changement de voie doit alors être fait dans le sens indiqué par la flèche.
                 </Text>
                 ),
-                image: '406.1-1+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F406.1.png?alt=media&token=5e416184-69c3-47c4-a376-242a6d6f96bf',
                 analyse: '',
             },
             en: {
@@ -6861,7 +6861,7 @@ const CSR = {
                         This section also applies when a road vehicle with an activated yellow arrow light signal directing a lane change is stopped on a public highway. The lane change must be carried out in the direction indicated by the arrow.
                 </Text>
                 ),
-                image: '406.1-1+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F406.1.png?alt=media&token=5e416184-69c3-47c4-a376-242a6d6f96bf',
                 analyse: '',
             },
         },
@@ -6916,7 +6916,7 @@ const CSR = {
                         Le présent article s’applique également lorsqu’est immobilisé sur un chemin public un véhicule routier sur lequel est actionné le signal lumineux d’une flèche jaune prescrivant un changement de voie. Le changement de voie doit alors être fait dans le sens indiqué par la flèche.
                 </Text>
                 ),
-                image: '406.1-2+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F406.2.png?alt=media&token=c1142cc7-8fff-43b0-9f4e-a60927310bb2',
                 analyse: '',
             },
             en: {
@@ -6969,7 +6969,7 @@ const CSR = {
                         This section also applies when a road vehicle with an activated yellow arrow light signal directing a lane change is stopped on a public highway. The lane change must be carried out in the direction indicated by the arrow.
                 </Text>
                 ),
-                image: '406.1-2+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F406.2.png?alt=media&token=c1142cc7-8fff-43b0-9f4e-a60927310bb2',
                 analyse: '',
             },
     
@@ -7017,7 +7017,7 @@ const CSR = {
                         Le présent article s’applique également lorsqu’est immobilisé sur un chemin public un véhicule routier sur lequel est actionné le signal lumineux d’une flèche jaune prescrivant un changement de voie. Le changement de voie doit alors être fait dans le sens indiqué par la flèche.
                 </Text>
                 ),
-                image: '406.1-4+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F406.4.png?alt=media&token=c029bdef-5a6f-4526-8b65-f428f98cf4ac',
                 analyse: '',
             },
             en: {
@@ -7062,7 +7062,7 @@ const CSR = {
                         This section also applies when a road vehicle with an activated yellow arrow light signal directing a lane change is stopped on a public highway. The lane change must be carried out in the direction indicated by the arrow.
                 </Text>
                 ),
-                image: '406.1-4+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F406.4.png?alt=media&token=c029bdef-5a6f-4526-8b65-f428f98cf4ac',
                 analyse: '',
             },
     
@@ -7106,7 +7106,7 @@ const CSR = {
                         Lorsqu’un piéton s’engage ou manifeste clairement son intention de s’engager dans un passage pour piétons, le conducteur d’un véhicule routier doit immobiliser son véhicule pour lui permettre de traverser. À un tel passage, le cycliste doit également accorder la priorité aux piétons.
                 </Text>
                 ),
-                image: '410.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F410.png?alt=media&token=e2684c71-0778-4c2a-bb36-371a6986f43b',
                 analyse: '',
             },
             en: {
@@ -7147,7 +7147,7 @@ const CSR = {
                         When a pedestrian enters or clearly demonstrates the intention to enter a pedestrian crosswalk, the driver of a road vehicle must stop his vehicle to allow the pedestrian to cross. At such a crossing, a cyclist must also give pedestrians the priority.
                 </Text>
                 ),
-                image: '410.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F410.png?alt=media&token=e2684c71-0778-4c2a-bb36-371a6986f43b',
                 analyse: '',
             },
         },
@@ -7196,7 +7196,7 @@ const CSR = {
                         À un passage à niveau, le conducteur d’un véhicule routier ou d’une bicyclette doit immobiliser son véhicule à au moins 5 mètres de la voie ferrée lorsqu’une signalisation, une barrière abaissée ou un employé de chemin de fer signale l’approche d’un véhicule sur rails ou qu’il peut apercevoir ou entendre un tel véhicule qui approche du passage à niveau.
                 </Text>
                 ),
-                image: '411.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F411.png?alt=media&token=569de573-608b-41a7-9122-eb9f99772e99',
                 analyse: '',
             },
             en: {
@@ -7243,7 +7243,7 @@ const CSR = {
                         At a level crossing, the driver of a road vehicle or any person riding a bicycle must stop his vehicle not less than 5 metres from the railway where a sign or signal, a lowered gate or a railway employee signals an approaching rail vehicle, or where the driver or cyclist sees or hears a rail vehicle approaching the level crossing.
                 </Text>
                 ),
-                image: '411.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F411.png?alt=media&token=569de573-608b-41a7-9122-eb9f99772e99',
                 analyse: '',
             },
         },
@@ -7285,7 +7285,7 @@ const CSR = {
                         Le conducteur d’un véhicule routier ne peut circuler sur l’accotement ou sur le trottoir, sauf en cas de nécessité ou à moins qu’une signalisation ne le prescrive ou ne le permette.
                 </Text>
                 ),
-                image: '418.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F418.png?alt=media&token=e455bcf8-f982-4951-b788-2a35f0e31c8d',
                 analyse: '',
             },
             en: {
@@ -7325,7 +7325,7 @@ const CSR = {
                         In no case may the driver of a road vehicle drive on the shoulder of a public highway or on the sidewalk except in case of necessity or unless so directed or allowed by a sign or signal.
                 </Text>
                 ),
-                image: '418.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F418.png?alt=media&token=e455bcf8-f982-4951-b788-2a35f0e31c8d',
                 analyse: '',
             },
         },
@@ -7362,7 +7362,7 @@ const CSR = {
                         Nul ne peut conduire un véhicule routier pour une course avec un autre véhicule, un pari ou un enjeu, sauf s’il s’agit d’un rallye effectué conformément aux normes établies dans un règlement pris ou approuvé par le ministre de l’Éducation, du Loisir et du Sport, en vertu de la Loi sur la sécurité dans les sports (chapitre S‐3.1).
                 </Text>
                 ),
-                image: '422+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F422.png?alt=media&token=cd421557-5fdf-4bb5-853f-f39ce838fef1',
                 analyse: '',
             },
             en: {
@@ -7397,7 +7397,7 @@ const CSR = {
                         No person may drive a road vehicle in a race with another vehicle, or for a wager or a stake except in the case of a rally conducted in conformity with the standards prescribed in a regulation made or approved by the Minister of Education, Recreation and Sports pursuant to the Act respecting safety in sports (chapter S‐3.1).
                 </Text>
                 ),
-                image: '422+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F422.png?alt=media&token=cd421557-5fdf-4bb5-853f-f39ce838fef1',
                 analyse: '',
             },
         },
@@ -7439,7 +7439,7 @@ const CSR = {
                         Le premier alinéa s’applique également au conducteur d’une bicyclette à l’égard du phare et du feu dont elle doit être munie.
                 </Text>
                 ),
-                image: '215.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F215.png?alt=media&token=a3af4fab-de76-4eb8-aa67-b1e51473322b',
                 analyse: '',
             },
             en: {
@@ -7480,7 +7480,7 @@ const CSR = {
                         The first paragraph also applies to the person riding a bicycle with respect to the lights with which his bicycle must be equipped.
                 </Text>
                 ),
-                image: '215.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F215.png?alt=media&token=a3af4fab-de76-4eb8-aa67-b1e51473322b',
                 analyse: '',
             },
         },
@@ -7529,7 +7529,7 @@ const CSR = {
                         Toutefois, une personne, pour exécuter ses fonctions, peut se tenir sur une partie extérieure d’un véhicule aménagée à cette fin.
                 </Text>
                 ),
-                image: '327.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F327.png?alt=media&token=c7f70e3f-34c1-4d88-bee0-59e8b67d9331',
                 analyse: '',
             },
             en: {
@@ -7576,7 +7576,7 @@ const CSR = {
                         However, a person may, in order to perform his duties, stand on any outer part of a vehicle designed for such use.
                 </Text>
                 ),
-                image: '327.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F327.png?alt=media&token=c7f70e3f-34c1-4d88-bee0-59e8b67d9331',
                 analyse: '',
             },
         },
@@ -7623,7 +7623,7 @@ const CSR = {
                         Nul ne peut, alors qu’un véhicule routier est en mouvement, s’y agripper ou être tiré ou poussé par le véhicule et le conducteur ne peut tolérer une telle pratique.
                 </Text>
                 ),
-                image: '327.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F327.png?alt=media&token=c7f70e3f-34c1-4d88-bee0-59e8b67d9331',
                 analyse: '',
             },
             en: {
@@ -7668,7 +7668,7 @@ const CSR = {
                         No person may hang on to, or be pulled or pushed by, a moving road vehicle, and no driver may tolerate such a practice.
                 </Text>
                 ),
-                image: '327.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F327.png?alt=media&token=c7f70e3f-34c1-4d88-bee0-59e8b67d9331',
                 analyse: '',
             },
         },
@@ -7715,7 +7715,7 @@ const CSR = {
                         En outre des chemins publics, le présent article s’applique sur les chemins privés ouverts à la circulation publique des véhicules routiers, ainsi que sur les terrains de centres commerciaux et autres terrains où le public est autorisé à circuler.
                 </Text>
                 ),
-                image: '435.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F435.png?alt=media&token=0ce670b1-e380-4d03-afda-a67dc2917bef',
                 analyse: '',
             },
             en: {
@@ -7760,7 +7760,7 @@ const CSR = {
                         In addition to public highways, this section applies on private roads open to public vehicular traffic, as well as on land occupied by shopping centres and other land where public traffic is allowed.
                 </Text>
                 ),
-                image: '435.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F435.png?alt=media&token=0ce670b1-e380-4d03-afda-a67dc2917bef',
                 analyse: '',
             },
         },
@@ -7803,7 +7803,7 @@ const CSR = {
                         Le ministre peut, par arrêté, prévoir d’autres situations ou types d’appareil qui ne sont pas visés par l’interdiction prévue au premier alinéa.
                 </Text>
                 ),
-                image: '439.1.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F439.1.png?alt=media&token=d53dbfc1-40a0-42d3-a554-c96209982dea',
                 analyse: '',
             },
             en: {
@@ -7844,7 +7844,7 @@ const CSR = {
                         The Minister may, by order, determine other situations or types of devices to which the prohibition set out in the first paragraph does not apply.
                 </Text>
                 ),
-                image: '439.1.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F439.1.png?alt=media&token=d53dbfc1-40a0-42d3-a554-c96209982dea',
                 analyse: '',
             },
         },
@@ -7888,7 +7888,7 @@ const CSR = {
                         Le présent article ne s’applique cependant pas à un appareil servant à l’échange de conversations entre ses usagers dans la mesure où celui-ci permet de capter les bruits de la circulation environnante.
                 </Text>
                 ),
-                image: '440.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F440.png?alt=media&token=f852f663-c804-4359-8e42-5029aaef3a04',
                 analyse: '',
             },
             en: {
@@ -7930,7 +7930,7 @@ const CSR = {
                         This section does not apply to a device used in conversational exchanges among its users to the extent that the device allows surrounding traffic noises to be heard.
                 </Text>
                 ),
-                image: '440.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F440.png?alt=media&token=f852f663-c804-4359-8e42-5029aaef3a04',
                 analyse: '',
             },
         },
@@ -7975,7 +7975,7 @@ const CSR = {
                         Le ministre peut, par règlement, prévoir des catégories de véhicules lourds, de véhicules-outils ou de machines agricoles pour lesquelles l’interdiction prévue au premier alinéa s’applique.
                 </Text>
                 ),
-                image: '440.1.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F440.1.png?alt=media&token=3ae65da9-3986-4ed7-b034-07319761be27',
                 analyse: '',
             },
             en: {
@@ -8018,7 +8018,7 @@ const CSR = {
                         The Minister may, by regulation, determine classes of heavy vehicles, tool vehicles or farm machines to which the prohibition under the first paragraph applies.
                 </Text>
                 ),
-                image: '440.1.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F440.1.png?alt=media&token=3ae65da9-3986-4ed7-b034-07319761be27',
                 analyse: '',
             },
         },
@@ -8134,6 +8134,8 @@ const CSR = {
                     <Text>
                         <Bold>Exceptions:</Bold>
                         {'\n\n'}
+                        <Bold>• Le conducteur du véhicule routier fait ou reçoit des appels téléphoniques en utilisant un dispositif mains libres. </Bold>
+                        {'\n\n'}
                         <Bold>• Le conducteur du véhicule routier ou le cycliste peut consulter l’information affichée sur un écran d’affichage, y compris celui d’un appareil électronique portatif, ou active une fonction de l’écran si celui-ci satisfait à l’ensemble des conditions suivantes: </Bold>
                         {'\n\n'}
                         <Bold>(a) il affiche uniquement des informations pertinentes pour la conduite du véhicule ou liées au fonctionnement de ses équipements usuels; </Bold>
@@ -8191,7 +8193,7 @@ const CSR = {
                         2° à un cycliste, s’il est immobilisé en bordure de la chaussée ou sur l’accotement de façon à ne pas gêner la circulation.
                 </Text>
                 ),
-                image: '439.1.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F439.1.png?alt=media&token=d53dbfc1-40a0-42d3-a554-c96209982dea',
                 analyse: '',
             },
             en: {
@@ -8219,6 +8221,8 @@ const CSR = {
                 exceptions: (
                     <Text>
                         <Bold>Exceptions:</Bold>
+                        {'\n\n'}
+                        <Bold>• The driver of the road vehicle sends or receives telephone calls using a hands-free device. </Bold>
                         {'\n\n'}
                         <Bold>• The driver of the road vehicle or the cyclist may consult the information displayed on a display screen, including that of a portable electronic device, or activates a screen function if the screen; </Bold>
                         {'\n\n'}
@@ -8277,7 +8281,7 @@ const CSR = {
                         (2) to a cyclist, if he is stopped on the side of the roadway or on the shoulder in such a way that does not obstruct traffic.
                 </Text>
                 ),
-                image: '439.1.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F439.1.png?alt=media&token=d53dbfc1-40a0-42d3-a554-c96209982dea',
                 analyse: '',
             },
         },
@@ -8336,7 +8340,7 @@ const CSR = {
                         2°  à un cycliste, s’il est immobilisé en bordure de la chaussée ou sur l’accotement de façon à ne pas gêner la circulation.
                 </Text>
                 ),
-                image: '440.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F440.png?alt=media&token=f852f663-c804-4359-8e42-5029aaef3a04',
                 analyse: '',
             },
             en: {
@@ -8392,7 +8396,7 @@ const CSR = {
                         (2) to a cyclist, if he is stopped on the side of the roadway or on the shoulder in such a way that does not obstruct traffic.
                 </Text>
                 ),
-                image: '440.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F440.png?alt=media&token=f852f663-c804-4359-8e42-5029aaef3a04',
                 analyse: '',
             },
         },
@@ -8433,7 +8437,7 @@ const CSR = {
                         En face d’un feu clignotant accompagné d’un décompte numérique, un piéton peut s’engager sur la chaussée seulement s’il est en mesure d’atteindre l’autre trottoir ou la zone de sécurité avant que le feu ne passe à la main orange fixe.
                 </Text>
                 ),
-                image: '444+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F444.jpg?alt=media&token=5d08176f-bfd7-4b2f-97be-c2dae64d3f16',
                 analyse: '',
             },
             en: {
@@ -8472,7 +8476,7 @@ const CSR = {
                         When facing a flashing signal with a countdown display, a pedestrian may only start crossing the roadway if he is able to reach the other sidewalk or the safety zone before the signal changes to the orange hand signal.
                 </Text>
                 ),
-                image: '444+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F444.jpg?alt=media&token=5d08176f-bfd7-4b2f-97be-c2dae64d3f16',
                 analyse: '',
             },
         },
@@ -8505,7 +8509,7 @@ const CSR = {
                         Lorsqu’il n’y a pas de feux pour piétons, un piéton doit se conformer aux feux de circulation.
                 </Text>
                 ),
-                image: '445.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F445.jpg?alt=media&token=7f02ed98-7837-49e3-8147-223adeec0699',
                 analyse: '',
             },
             en: {
@@ -8536,7 +8540,7 @@ const CSR = {
                         Where there are no pedestrian lights, pedestrians must comply with the traffic lights.
                 </Text>
                 ),
-                image: '445.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F445.jpg?alt=media&token=7f02ed98-7837-49e3-8147-223adeec0699',
                 analyse: '',
             },
         },
@@ -8645,7 +8649,7 @@ const CSR = {
                         Lorsqu’il y a une intersection ou un passage pour piétons à proximité, un piéton ne peut traverser un chemin public qu’à l’un de ces endroits.
                 </Text>
                 ),
-                image: '450.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F450.jpg?alt=media&token=487c22de-6f47-4541-a496-2b1878a7f43f',
                 analyse: '',
             },
             en: {
@@ -8680,7 +8684,7 @@ const CSR = {
                         If there is an intersection or a pedestrian crosswalk nearby, a pedestrian may cross a public highway only at such a place.
                     </Text>
                 ),
-                image: '450.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F450.jpg?alt=media&token=487c22de-6f47-4541-a496-2b1878a7f43f',
                 analyse: '',
             },
         },
@@ -8719,7 +8723,7 @@ const CSR = {
                         Un piéton est tenu de traverser la chaussée perpendiculairement à son axe. Il ne peut la traverser en diagonale que s’il y est autorisé par un agent de la paix, un brigadier scolaire ou une signalisation.
                 </Text>
                 ),
-                image: '450.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F450.jpg?alt=media&token=487c22de-6f47-4541-a496-2b1878a7f43f',
                 analyse: '',
             },
             en: {
@@ -8755,7 +8759,7 @@ const CSR = {
                         A pedestrian must cross the roadway perpendicularly to its axis. A pedestrian may cross the roadway diagonally only if authorized to do so by a peace officer or school crossing guard, or by a sign or signal.
                 </Text>
                 ),
-                image: '450.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F450.jpg?alt=media&token=487c22de-6f47-4541-a496-2b1878a7f43f',
                 analyse: '',
             },
         },
@@ -8798,7 +8802,7 @@ const CSR = {
                         En cas d’impossibilité d’utiliser le trottoir, le piéton peut longer celui-ci sur le bord de la chaussée, en s’assurant qu’il peut le faire sans danger.
                 </Text>
                 ),
-                image: '452.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F452.png?alt=media&token=35abf035-a819-48c7-9ae0-c1e72ca9eb8c',
                 analyse: '',
             },
             en: {
@@ -8838,7 +8842,7 @@ const CSR = {
                         Where it is impossible to use the sidewalk, a pedestrian may walk alongside the curb on the roadway after ascertaining that he can do so in safety.
                 </Text>
                 ),
-                image: '452.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F452.png?alt=media&token=35abf035-a819-48c7-9ae0-c1e72ca9eb8c',
                 analyse: '',
             },
         },
@@ -8906,7 +8910,7 @@ const CSR = {
                         Le premier alinéa ne s’applique pas à un conducteur d’un véhicule routier et à un cycliste lorsqu’ils croisent un autobus ou un minibus affecté au transport d’écoliers sur une chaussée adjacente séparée par un terre-plein ou un autre dispositif physique surélevé.
                 </Text>
                 ),
-                image: '460.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F460.png?alt=media&token=6383075b-5a61-447f-85b5-6425caf220b4',
                 analyse: '',
             },
             en: {
@@ -8972,7 +8976,7 @@ const CSR = {
                         The first paragraph does not apply to the driver of a road vehicle or a cyclist meeting a bus or minibus used for the transportation of school children on an adjacent roadway separated by a median strip or other raised physical device.
                 </Text>
                 ),
-                image: '460.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F460.png?alt=media&token=6383075b-5a61-447f-85b5-6425caf220b4',
                 analyse: '',
             },
         },
@@ -9155,7 +9159,7 @@ const CSR = {
                         Le paragraphe 1° du premier alinéa s’applique au cycliste, sauf lorsque la voie sur laquelle il circule est contiguë à une voie réservée à l’exécution du virage à droite.
                 </Text>
                 ),
-                image: '478+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F478.png?alt=media&token=6f7bc744-fe33-405d-a7d9-7c929b49c55f',
                 analyse: '',
             },
             en: {
@@ -9208,7 +9212,7 @@ const CSR = {
                         Subparagraph 1 of the first paragraph applies to cyclists, except when the lane in which the cyclist is travelling is contiguous to a lane reserved for right turns.
                 </Text>
                 ),
-                image: '478+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F478.png?alt=media&token=6f7bc744-fe33-405d-a7d9-7c929b49c55f',
                 analyse: '',
             },
         },
@@ -9269,7 +9273,7 @@ const CSR = {
                         http://legisquebec.gouv.qc.ca/fr/ShowDoc/cr/C-24.2,%20r.%206
                 </Text>
                 ),
-                image: '484.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F484.png?alt=media&token=109e4bca-297c-40e0-b1ee-a19df3e7a2d8',
                 analyse: '',
             },
             en: {
@@ -9328,7 +9332,7 @@ const CSR = {
                         http://legisquebec.gouv.qc.ca/en/ShowDoc/cr/C-24.2,%20r.%206
                 </Text>
                 ),
-                image: '484.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F484.png?alt=media&token=109e4bca-297c-40e0-b1ee-a19df3e7a2d8',
                 analyse: '',
             },
         },
@@ -9367,7 +9371,7 @@ const CSR = {
                         Le niveau sonore du système d’échappement d’une motocyclette ou d’un cyclomoteur peut être mesuré selon la méthode prescrite par règlement à l’aide d’un sonomètre conforme aux normes techniques et d’entretien déterminées par règlement du gouvernement et utilisé par un agent de la paix qui a suivi avec succès une formation reconnue par la Société.
                 </Text>
                 ),
-                image: '258.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F258.png?alt=media&token=79872202-9817-47d6-9588-f48c2bd056b3',
                 analyse: '',
             },
             en: {
@@ -9404,7 +9408,7 @@ const CSR = {
                         The sound level of a motorcycle’s or moped’s exhaust system may be measured according to the method prescribed by regulation by means of a sound level meter that complies with the technical and maintenance standards determined by government regulation and used by a peace officer who has successfully completed training recognized by the Société.
                 </Text>
                 ),
-                image: '258.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F258.png?alt=media&token=79872202-9817-47d6-9588-f48c2bd056b3',
                 analyse: '',
             },
         },
@@ -9454,7 +9458,7 @@ const CSR = {
                         Le premier alinéa ne s’applique pas au cycliste lorsqu’il s’apprête à effectuer un virage à gauche, s’il est autorisé à circuler à contresens ou en cas de nécessité.
                 </Text>
                 ),
-                image: '232.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F232.png?alt=media&token=1321f592-d89b-44b1-8766-a6f7e1cc3573',
                 analyse: '',
             },
             en: {
@@ -9502,7 +9506,7 @@ const CSR = {
                         The first paragraph does not apply to a cyclist about to make a left turn, if he is authorized to ride against traffic or in case of necessity.
                 </Text>
                 ),
-                image: '232.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F232.png?alt=media&token=1321f592-d89b-44b1-8766-a6f7e1cc3573',
                 analyse: '',
             },
         },
@@ -9535,7 +9539,7 @@ const CSR = {
                         Le conducteur d’une bicyclette doit se conformer à toute signalisation.
                 </Text>
                 ),
-                image: '232.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F232.png?alt=media&token=1321f592-d89b-44b1-8766-a6f7e1cc3573',
                 analyse: '',
             },
             en: {
@@ -9566,7 +9570,7 @@ const CSR = {
                         All cyclists must comply with all traffic signs and signals.
                 </Text>
                 ),
-                image: '232.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F232.png?alt=media&token=1321f592-d89b-44b1-8766-a6f7e1cc3573',
                 analyse: '',
             },
         },
@@ -9607,7 +9611,7 @@ const CSR = {
                         Le cycliste ne peut circuler sur un trottoir, sauf en cas de nécessité ou à moins que la signalisation ne le prescrive ou ne le permette. Il doit alors circuler à une vitesse raisonnable et prudente et accorder la priorité aux piétons.
                 </Text>
                 ),
-                image: '232.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F232.png?alt=media&token=1321f592-d89b-44b1-8766-a6f7e1cc3573',
                 analyse: '',
             },
             en: {
@@ -9645,7 +9649,7 @@ const CSR = {
                         A cyclist may not ride a bicycle on a sidewalk except in case of necessity or where directed or allowed to do so by a sign or signal. In such a case, the cyclist must ride at a safe, reasonable speed and give pedestrians the priority.
                 </Text>
                 ),
-                image: '232.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F232.png?alt=media&token=1321f592-d89b-44b1-8766-a6f7e1cc3573',
                 analyse: '',
             },
         },
@@ -9691,7 +9695,7 @@ const CSR = {
                         Il est interdit de jeter, déposer ou abandonner des objets ou matières quelconques sur un chemin public, sauf exception autorisée par la personne responsable de l’entretien de ce chemin.
                 </Text>
                 ),
-                image: '498.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F498.png?alt=media&token=a7de5bd0-2796-4cb6-b116-341186199958',
                 analyse: '',
             },
             en: {
@@ -9735,7 +9739,7 @@ const CSR = {
                         No person may dispose of, deposit or abandon any objects or substances on a public highway, unless authorized to do so by the person responsible for the maintenance of that highway.
                 </Text>
                 ),
-                image: '498.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F498.png?alt=media&token=a7de5bd0-2796-4cb6-b116-341186199958',
                 analyse: '',
             },
         },
@@ -9777,7 +9781,7 @@ const CSR = {
                         Nul ne peut circuler avec un véhicule couvert de neige, de glace ou de toute autre matière pouvant s’en détacher et susceptible de présenter un danger pour les usagers de la route.
                     </Text>
                 ),
-                image: '330.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F330.png?alt=media&token=99950d4e-3339-41fb-8fa9-5adbac22cc23',
                 analyse: '',
             },
             en: {
@@ -9816,7 +9820,7 @@ const CSR = {
                         No person may drive a vehicle covered with snow, ice or any other matter that may detach from the vehicle and that may constitute a hazard for road users.
                     </Text>
                 ),
-                image: '330.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F330.png?alt=media&token=99950d4e-3339-41fb-8fa9-5adbac22cc23',
                 analyse: '',
             },
         },
@@ -9858,7 +9862,7 @@ const CSR = {
                         Cette ronde de sécurité peut, toutefois, être effectuée par une autre personne que l’exploitant désigne. La personne ainsi désignée est tenue aux obligations prévues au premier alinéa et doit remplir et signer le rapport prévu à l’article 519.3 et inscrire et signaler, conformément à l’article 519.5, toute défectuosité.
                     </Text>
                 ),
-                image: '212.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F212.png?alt=media&token=8dbc55f0-53ed-4d46-94cc-33252300cf1e',
                 analyse: '',
             },
             en: {
@@ -9897,7 +9901,7 @@ const CSR = {
                         The operator may, however, designate another person to conduct the circle check. The person designated must comply with the obligations provided for in the first paragraph and must complete and sign the report prescribed in section 519.3 and note and report any mechanical defect in accordance with section 519.5.
                     </Text>
                 ),
-                image: '212.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F212.png?alt=media&token=8dbc55f0-53ed-4d46-94cc-33252300cf1e',
                 analyse: '',
             },
         },
@@ -9992,7 +9996,7 @@ const CSR = {
                         Les paragraphes 10° et 10.1° s’appliquent aux véhicules qui circulent sur les chemins soumis à l’administration du ministère des Ressources naturelles et de la Faune ou entretenus par celui-ci, sur les chemins privés ouverts à la circulation publique des véhicules routiers ainsi que sur les terrains des centres commerciaux et autres terrains où le public est autorisé à circuler.
                     </Text>
                 ),
-                image: '212.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F212.png?alt=media&token=8dbc55f0-53ed-4d46-94cc-33252300cf1e',
                 analyse: '',
             },
             en: {
@@ -10085,7 +10089,7 @@ const CSR = {
                         Subparagraphs 10 and 10.1 apply to vehicles being operated on highways under the administration of or maintained by the Ministère des Ressources naturelles et de la Faune, on private roads open to public vehicular traffic and on land occupied by shopping centres or other land where public traffic is allowed.
                     </Text>
                 ),
-                image: '212.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F212.png?alt=media&token=8dbc55f0-53ed-4d46-94cc-33252300cf1e',
                 analyse: '',
             },
         },
@@ -10132,7 +10136,7 @@ const CSR = {
                         À l’expiration de ce délai, nul ne peut remettre le véhicule en circulation à moins que la preuve ne soit faite, à la satisfaction de la Société ou d’une personne autorisée à effectuer la vérification mécanique pour celle-ci, que le véhicule est conforme au présent code.
                     </Text>
                 ),
-                image: '212.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F212.png?alt=media&token=8dbc55f0-53ed-4d46-94cc-33252300cf1e',
                 analyse: '',
             },
             en: {
@@ -10177,7 +10181,7 @@ const CSR = {
                         At the expiry of that period, no person may put the vehicle back into operation unless it is proved, to the satisfaction of the Société or a person authorized to perform the inspection of vehicles for the Société, that the vehicle conforms to this Code.
                     </Text>
                 ),
-                image: '212.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F212.png?alt=media&token=8dbc55f0-53ed-4d46-94cc-33252300cf1e',
                 analyse: '',
             },
         },
@@ -10222,7 +10226,7 @@ const CSR = {
                         Lorsque le certificat de vérification mécanique indique qu’un véhicule routier présente une défectuosité majeure, nul ne peut remettre le véhicule en circulation à moins que la preuve ne soit faite, à la satisfaction de la Société ou d’une personne autorisée à effectuer la vérification mécanique pour celle-ci, que le véhicule est conforme au présent code.
                     </Text>
                 ),
-                image: '212.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F212.png?alt=media&token=8dbc55f0-53ed-4d46-94cc-33252300cf1e',
                 analyse: '',
             },
             en: {
@@ -10265,7 +10269,7 @@ const CSR = {
                         Where a certificate of mechanical inspection indicates that a road vehicle has a major defect, no person may put the vehicle back into operation unless it is proved, to the satisfaction of the Société or a person authorized to perform the inspection of vehicles for the Société, that the vehicle conforms to this Code.
                     </Text>
                 ),
-                image: '212.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F212.png?alt=media&token=8dbc55f0-53ed-4d46-94cc-33252300cf1e',
                 analyse: '',
             },
         },
@@ -10302,7 +10306,7 @@ const CSR = {
                         Un agent de la paix, identifiable à première vue comme tel, peut, dans le cadre des fonctions qu’il exerce en vertu du présent code, des ententes conclues en vertu de l’article 519.65 et de la Loi concernant les propriétaires, les exploitants et les conducteurs de véhicules lourds (chapitre P-30.3), exiger que le conducteur d’un véhicule routier immobilise son véhicule. Le conducteur doit se conformer sans délai à cette exigence.
                     </Text>
                 ),
-                image: '327.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F327.png?alt=media&token=c7f70e3f-34c1-4d88-bee0-59e8b67d9331',
                 analyse: '',
             },
             en: {
@@ -10337,7 +10341,7 @@ const CSR = {
                         Every peace officer recognizable as such at first sight may, in the performance of his duties under this Code, agreements entered into under section 519.65 and the Act respecting owners, operators and drivers of heavy vehicles (chapter P-30.3), require the driver of a road vehicle to stop his vehicle. The driver must comply with this requirement without delay.
                     </Text>
                 ),
-                image: '327.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F327.png?alt=media&token=c7f70e3f-34c1-4d88-bee0-59e8b67d9331',
                 analyse: '',
             },
         },
@@ -10372,7 +10376,7 @@ const CSR = {
                         Quiconque entrave, de quelque manière que ce soit, l’action d’un agent de la paix agissant en vertu du présent code, de la Loi concernant les propriétaires, les exploitants et les conducteurs de véhicules lourds (chapitre P-30.3) ou d’une loi dont la Société, conformément aux dispositions de l’article 519.64, est chargée de l’application, notamment en le trompant par réticence ou par de fausses déclarations, en refusant de lui fournir des renseignements ou des documents qu’il a le pouvoir d’exiger ou d’examiner, en cachant ou en détruisant un document ou un bien concerné par une inspection, commet une infraction et est passible d’une amende de 300 $ à 600 $ ou, si l’infraction est commise dans le cadre d’une intervention relative à un véhicule lourd, de 700 $ à 2 100 $.
                     </Text>
                 ),
-                image: '327.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F327.png?alt=media&token=c7f70e3f-34c1-4d88-bee0-59e8b67d9331',
                 analyse: '',
             },
             en: {
@@ -10405,7 +10409,7 @@ const CSR = {
                         Every person who in any way hinders a peace officer in the performance of duties under this Code, the Act respecting owners, operators and drivers of heavy vehicles (chapter P-30.3) or an Act the Société is responsible for enforcing in accordance with section 519.64, in particular by misleading the peace officer by concealment or false declarations, refusing to provide the peace officer with any information or document the peace officer is entitled to require or examine, or concealing or destroying any document or property relevant to an inspection is guilty of an offence and is liable to a fine of $300 to $600 or, if the offence is committed during an intervention involving a heavy vehicle, $700 to $2,100.
                     </Text>
                 ),
-                image: '327.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F327.png?alt=media&token=c7f70e3f-34c1-4d88-bee0-59e8b67d9331',
                 analyse: '',
             },
         },
@@ -10442,7 +10446,7 @@ const CSR = {
                         Nul ne peut laisser sans surveillance un véhicule routier dont il a la garde sans avoir préalablement enlevé la clef de contact et verrouillé les portières.
                     </Text>
                 ),
-                image: '381.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F381.png?alt=media&token=f998d981-0f25-489f-9365-ef447ce31e56',
                 analyse: '',
             },
             en: {
@@ -10477,7 +10481,7 @@ const CSR = {
                         No person may leave unattended a road vehicle that is in his custody without previously removing the ignition key and locking the doors.
                     </Text>
                 ),
-                image: '381.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F381.png?alt=media&token=f998d981-0f25-489f-9365-ef447ce31e56',
                 analyse: '',
             },
         },
@@ -10530,7 +10534,7 @@ const CSR = {
                         Sauf en cas de nécessité, nul ne peut immobiliser un véhicule routier de manière à rendre une signalisation inefficace, à gêner la circulation, l’exécution de travaux ou l’entretien du chemin ou à entraver l’accès à une propriété.
                 </Text>
                 ),
-                image: '382+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F382.png?alt=media&token=5eba7535-9f15-4890-a298-ded46b7563bd',
                 analyse: '',
             },
             en: {
@@ -10580,7 +10584,7 @@ const CSR = {
                         Except in case of necessity, no person may stop a road vehicle in such a manner that it will block a sign or signal, obstruct traffic, hinder the performance of work or the maintenance of highways or prevent access to any property.
                 </Text>
                 ),
-                image: '382+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F382.png?alt=media&token=5eba7535-9f15-4890-a298-ded46b7563bd',
                 analyse: '',
             },
         },
@@ -10629,7 +10633,7 @@ const CSR = {
                         Cependant, une motocyclette et un cyclomoteur peuvent être stationnés en oblique avec la bordure la plus rapprochée de la chaussée, dans le même sens que la circulation, de façon à ce que tout déplacement du véhicule se fasse vers la bordure la plus rapprochée.
                 </Text>
                 ),
-                image: '383-1+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F383-1.png?alt=media&token=6f6b0c45-ed26-47f1-b064-69c5a50291b1',
                 analyse: '',
             },
             en: {
@@ -10675,7 +10679,7 @@ const CSR = {
                         Notwithstanding the foregoing, a motorcycle or moped may be angle-parked against the near edge of the roadway, in the same direction as the traffic, so that if the vehicle moves of its own momentum it will do so toward the near edge of the roadway.
                 </Text>
                 ),
-                image: '383-1+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F383-1.png?alt=media&token=6f6b0c45-ed26-47f1-b064-69c5a50291b1',
                 analyse: '',
             },
         },
@@ -10726,7 +10730,7 @@ const CSR = {
                         Cependant, une motocyclette et un cyclomoteur peuvent être stationnés en oblique avec la bordure la plus rapprochée de la chaussée, dans le même sens que la circulation, de façon à ce que tout déplacement du véhicule se fasse vers la bordure la plus rapprochée.
                 </Text>
                 ),
-                image: '383-2+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F383-2.png?alt=media&token=cb517958-ec5f-4c5c-a464-aa15e0dc594d',
                 analyse: '',
             },
             en: {
@@ -10774,7 +10778,7 @@ const CSR = {
                         Notwithstanding the foregoing, a motorcycle or moped may be angle-parked against the near edge of the roadway, in the same direction as the traffic, so that if the vehicle moves of its own momentum it will do so toward the near edge of the roadway.
                 </Text>
                 ),
-                image: '383-2+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F383-2.png?alt=media&token=cb517958-ec5f-4c5c-a464-aa15e0dc594d',
                 analyse: '',
             },
         },
@@ -10849,7 +10853,7 @@ const CSR = {
                         Malgré les interdictions prévues à l’article 386 et dans la mesure où cette manoeuvre peut être effectuée sans danger, le conducteur d’un véhicule routier qui transporte une personne handicapée peut immobiliser son véhicule pour permettre à cette personne d’y monter ou d’en descendre.
                 </Text>
                 ),
-                image: '386-1+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-1.png?alt=media&token=bf25563d-f39c-4f57-99f9-77937a0b4e7c',
                 analyse: '',
             },
             en: {
@@ -10922,7 +10926,7 @@ const CSR = {
                         Notwithstanding the prohibitions provided in section 386, the driver of a road vehicle used for the transportation of a handicapped person may stop his vehicle to take on or discharge that person, if it can be done in safety.
                 </Text>
                 ),
-                image: '386-1+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-1.png?alt=media&token=bf25563d-f39c-4f57-99f9-77937a0b4e7c',
                 analyse: '',
             },
         },
@@ -10995,7 +10999,7 @@ const CSR = {
                         Malgré les interdictions prévues à l’article 386 et dans la mesure où cette manoeuvre peut être effectuée sans danger, le conducteur d’un véhicule routier qui transporte une personne handicapée peut immobiliser son véhicule pour permettre à cette personne d’y monter ou d’en descendre.
                 </Text>
                 ),
-                image: '386-2++.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-2.png?alt=media&token=28d62f73-ef65-44c4-bb4f-eec2f52ac57e',
                 analyse: '',
             },
             en: {
@@ -11066,7 +11070,7 @@ const CSR = {
                         Notwithstanding the prohibitions provided in section 386, the driver of a road vehicle used for the transportation of a handicapped person may stop his vehicle to take on or discharge that person, if it can be done in safety.
                 </Text>
                 ),
-                image: '386-2++.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-2.png?alt=media&token=28d62f73-ef65-44c4-bb4f-eec2f52ac57e',
                 analyse: '',
             },
         },
@@ -11145,7 +11149,7 @@ const CSR = {
                         Malgré les interdictions prévues à l’article 386 et dans la mesure où cette manoeuvre peut être effectuée sans danger, le conducteur d’un véhicule routier qui transporte une personne handicapée peut immobiliser son véhicule pour permettre à cette personne d’y monter ou d’en descendre.
                 </Text>
                 ),
-                image: '386-4++.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-4.png?alt=media&token=1dcbd0ec-16ea-4125-89d7-a17bafcd8420',
                 analyse: '',
             },
             en: {
@@ -11222,7 +11226,7 @@ const CSR = {
                         Notwithstanding the prohibitions provided in section 386, the driver of a road vehicle used for the transportation of a handicapped person may stop his vehicle to take on or discharge that person, if it can be done in safety.
                 </Text>
                 ),
-                image: '386-4++.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-4.png?alt=media&token=1dcbd0ec-16ea-4125-89d7-a17bafcd8420',
                 analyse: '',
             },
         },
@@ -11293,7 +11297,7 @@ const CSR = {
                         Malgré les interdictions prévues à l’article 386 et dans la mesure où cette manoeuvre peut être effectuée sans danger, le conducteur d’un véhicule routier qui transporte une personne handicapée peut immobiliser son véhicule pour permettre à cette personne d’y monter ou d’en descendre.
                 </Text>
                 ),
-                image: '386-4.1.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-4.1.jpg?alt=media&token=6b53905c-c30c-457f-8a3f-2de49ee9a282',
                 analyse: '',
             },
             en: {
@@ -11362,7 +11366,7 @@ const CSR = {
                         Notwithstanding the prohibitions provided in section 386, the driver of a road vehicle used for the transportation of a handicapped person may stop his vehicle to take on or discharge that person, if it can be done in safety.
                 </Text>
                 ),
-                image: '386-4.1.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-4.1.jpg?alt=media&token=6b53905c-c30c-457f-8a3f-2de49ee9a282',
                 analyse: '',
             },
         },
@@ -11437,7 +11441,7 @@ const CSR = {
                         Malgré les interdictions prévues à l’article 386 et dans la mesure où cette manoeuvre peut être effectuée sans danger, le conducteur d’un véhicule routier qui transporte une personne handicapée peut immobiliser son véhicule pour permettre à cette personne d’y monter ou d’en descendre.
                 </Text>
                 ),
-                image: '386-5+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-5.png?alt=media&token=e5df2d97-2415-47a1-a549-f569dea3dcbd',
                 analyse: '',
             },
             en: {
@@ -11510,7 +11514,7 @@ const CSR = {
                         Notwithstanding the prohibitions provided in section 386, the driver of a road vehicle used for the transportation of a handicapped person may stop his vehicle to take on or discharge that person, if it can be done in safety.
                 </Text>
                 ),
-                image: '386-5+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-5.png?alt=media&token=e5df2d97-2415-47a1-a549-f569dea3dcbd',
                 analyse: '',
             },
         },
@@ -11581,7 +11585,7 @@ const CSR = {
                         Malgré les interdictions prévues à l’article 386 et dans la mesure où cette manoeuvre peut être effectuée sans danger, le conducteur d’un véhicule routier qui transporte une personne handicapée peut immobiliser son véhicule pour permettre à cette personne d’y monter ou d’en descendre.
                 </Text>
                 ),
-                image: '386-7.1+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-7.1.png?alt=media&token=a44005f2-c4a7-4fb7-a9aa-ecfee9993b72',
                 analyse: '',
             },
             en: {
@@ -11650,7 +11654,7 @@ const CSR = {
                         Notwithstanding the prohibitions provided in section 386, the driver of a road vehicle used for the transportation of a handicapped person may stop his vehicle to take on or discharge that person, if it can be done in safety.
                 </Text>
                 ),
-                image: '386-7.1+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-7.1.png?alt=media&token=a44005f2-c4a7-4fb7-a9aa-ecfee9993b72',
                 analyse: '',
             },
         },
@@ -11721,7 +11725,7 @@ const CSR = {
                         Malgré les interdictions prévues à l’article 386 et dans la mesure où cette manoeuvre peut être effectuée sans danger, le conducteur d’un véhicule routier qui transporte une personne handicapée peut immobiliser son véhicule pour permettre à cette personne d’y monter ou d’en descendre.
                 </Text>
                 ),
-                image: '386-8+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-8.png?alt=media&token=387995e0-3a91-4954-bab4-422c9e534d99',
                 analyse: '',
             },
             en: {
@@ -11790,7 +11794,7 @@ const CSR = {
                         Notwithstanding the prohibitions provided in section 386, the driver of a road vehicle used for the transportation of a handicapped person may stop his vehicle to take on or discharge that person, if it can be done in safety.
                 </Text>
                 ),
-                image: '386-8+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-8.png?alt=media&token=387995e0-3a91-4954-bab4-422c9e534d99',
                 analyse: '',
             },
         },
@@ -11861,7 +11865,7 @@ const CSR = {
                         Malgré les interdictions prévues à l’article 386 et dans la mesure où cette manoeuvre peut être effectuée sans danger, le conducteur d’un véhicule routier qui transporte une personne handicapée peut immobiliser son véhicule pour permettre à cette personne d’y monter ou d’en descendre.
                 </Text>
                 ),
-                image: '386-9+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-9.png?alt=media&token=a9a947b9-99aa-494c-bb26-f60d587018a5',
                 analyse: '',
             },
             en: {
@@ -11930,7 +11934,7 @@ const CSR = {
                         Notwithstanding the prohibitions provided in section 386, the driver of a road vehicle used for the transportation of a handicapped person may stop his vehicle to take on or discharge that person, if it can be done in safety.
                 </Text>
                 ),
-                image: '386-9+.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-9.png?alt=media&token=a9a947b9-99aa-494c-bb26-f60d587018a5',
                 analyse: '',
             },
         },
@@ -11983,7 +11987,7 @@ const CSR = {
                         En outre des chemins publics, le présent article s’applique sur les chemins privés ouverts à la circulation publique des véhicules routiers ainsi que sur les terrains de centres commerciaux et autres terrains où le public est autorisé à circuler.
                 </Text>
                 ),
-                image: '388.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F388.jpg?alt=media&token=7d6cf6f2-6b57-4e96-988c-73966d686dd1',
                 analyse: '',
             },
             en: {
@@ -12033,7 +12037,7 @@ const CSR = {
                         In addition to public highways, this section applies on private roads open to public vehicular traffic, as well as on land occupied by shopping centres and other land where public traffic is allowed.
                 </Text>
                 ),
-                image: '388.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F388.jpg?alt=media&token=7d6cf6f2-6b57-4e96-988c-73966d686dd1',
                 analyse: '',
             },
         },
@@ -12076,7 +12080,7 @@ const CSR = {
                         En outre des chemins publics, le présent article s’applique sur les chemins privés ouverts à la circulation publique des véhicules routiers ainsi que sur les terrains de centres commerciaux et autres terrains où le public est autorisé à circuler.
                 </Text>
                 ),
-                image: '388.1.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F388.1.jpg?alt=media&token=35931b58-3383-4130-bc93-6e210a2f04ae',
                 analyse: '',
             },
             en: {
@@ -12116,7 +12120,7 @@ const CSR = {
                         In addition to public highways, this section applies on private roads open to public vehicular traffic and on land occupied by shopping centres or other land where public traffic is allowed.
                 </Text>
                 ),
-                image: '388.1.png',
+                image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F388.1.jpg?alt=media&token=35931b58-3383-4130-bc93-6e210a2f04ae',
                 analyse: '',
             },
         }
@@ -12160,7 +12164,7 @@ const RRVM_C41 = {
                     Il est interdit au conducteur d'un véhicule routier de circuler dans le sens contraire de la circulation sauf pour effectuer, conformément au Code, un dépassement ou une marche arrière. 
             </Text>
             ),
-            image: 'rm-12.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-12.png?alt=media&token=043ce2f7-6d10-4db1-8444-2d7cc9cb7b5b',
             analyse: '',
         },
         en: {
@@ -12198,7 +12202,7 @@ const RRVM_C41 = {
                     No person may drive a road vehicle in the opposite direction of traffic unless it is to pass or back up in accordance with the Code.
             </Text>
             ),
-            image: 'rm-12.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-12.png?alt=media&token=043ce2f7-6d10-4db1-8444-2d7cc9cb7b5b',
             analyse: '',
         },
     },
@@ -12232,7 +12236,7 @@ const RRVM_C41 = {
                     Le conducteur d'un véhicule routier ne peut circuler dans une ruelle à seule fin de passer d'une rue à une autre. 
             </Text>
             ),
-            image: 'rm-14+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-14.png?alt=media&token=850c7091-c473-499a-800d-be9b9df9518e',
             analyse: '',
         },
         en: {
@@ -12263,7 +12267,7 @@ const RRVM_C41 = {
                     No person may drive a road vehicle on a lane for the sole purpose of going from one street to another.
             </Text>
             ),
-            image: 'rm-14+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-14.png?alt=media&token=850c7091-c473-499a-800d-be9b9df9518e',
             analyse: '',
         },
     },
@@ -12302,7 +12306,7 @@ const RRVM_C41 = {
                     Le conducteur d'un véhicule routier ne peut circuler sur un trottoir sauf pour le traverser par le bateau. 
             </Text>
             ),
-            image: '386-1+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-1.png?alt=media&token=bf25563d-f39c-4f57-99f9-77937a0b4e7c',
             analyse: '',
         },
         en: {
@@ -12338,7 +12342,7 @@ const RRVM_C41 = {
                     No person may drive a road vehicle on a sidewalk unless it is to cross it by the curbcut.
             </Text>
             ),
-            image: '386-1+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-1.png?alt=media&token=bf25563d-f39c-4f57-99f9-77937a0b4e7c',
             analyse: '',
         },
     },
@@ -12395,7 +12399,7 @@ const RRVM_C41 = {
                     Sur la voie réservée du boulevard Pie-IX, les exceptions prévues aux paragraphes 1 et 2 de l'article 22 ne s'appliquent pas.   
             </Text>
             ),
-            image: 'rm-22.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-22.jpg?alt=media&token=151eb70a-5fa9-42f1-90dd-43a6bc92980a',
             analyse: '',
         },
         en: {
@@ -12449,7 +12453,7 @@ const RRVM_C41 = {
                     The exceptions provided for in paragraphs 1 and 2 of article 22 do not apply to the reserved lane of Pie-IX Boulevard.
             </Text>
             ),
-            image: 'rm-22.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-22.jpg?alt=media&token=151eb70a-5fa9-42f1-90dd-43a6bc92980a',
             analyse: '',
         },
     },
@@ -12496,7 +12500,7 @@ const RRVM_C41 = {
                     Malgré l'article 26, le conducteur d'un taxi peut immobiliser son véhicule sur une voie réservée aux taxis, le temps nécessaire pour permettre aux passagers d'y monter ou d'en descendre. Le premier alinéa n'autorise pas l'immobilisation d'un taxi contrairement au paragraphe 5 de l'article 386 du Code.     
             </Text>
             ),
-            image: 'rm-26+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-26.jpg?alt=media&token=f64f42f8-ff02-434f-ac5c-b5a4839538bb',
             analyse: '',
         },
         en: {
@@ -12540,7 +12544,7 @@ const RRVM_C41 = {
                     Despite article 26, the driver of a taxi may stop his vehicle on a lane reserved for taxis to allow passengers to get on or get off.
             </Text>
             ),
-            image: 'rm-26+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-26.jpg?alt=media&token=f64f42f8-ff02-434f-ac5c-b5a4839538bb',
             analyse: '',
         },
     },
@@ -12601,7 +12605,7 @@ const RRVM_C41 = {
                     Le premier alinéa n'a pas pour objet de limiter l'application de l'article 382 du Code aux cas décrits aux paragraphes 1 et 2 de cet alinéa.
             </Text>
             ),
-            image: 'rm-29+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-29.png?alt=media&token=1c7dc888-69c1-4dec-b21c-8aa47e4e90cc',
             analyse: '',
         },
         en: {
@@ -12659,7 +12663,7 @@ const RRVM_C41 = {
                     The first paragraph is not intended to limit the application of section 382 of the Code to the cases referred to in paragraph 1 and 2 of that paragraph.
             </Text>
             ),
-            image: 'rm-29+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-29.png?alt=media&token=1c7dc888-69c1-4dec-b21c-8aa47e4e90cc',
             analyse: '',
         },
     },
@@ -12804,7 +12808,7 @@ const RRVM_C41 = {
                     Un véhicule de transport d’équipement ne peut tirer une remorque qui transporte autre chose qu’un appareil de levage ou ses accessoires. 
             </Text>
             ),
-            image: 'rm-30-1.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-1.png?alt=media&token=f23785c0-af35-423c-9ce3-f98c826058cf',
             analyse: '',
         },
         en: {
@@ -12946,7 +12950,7 @@ const RRVM_C41 = {
                     Equipment transport vehicles may tow trailers carrying only a lifting device or its accessories. 
             </Text>
             ),
-            image: 'rm-30-1.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-1.png?alt=media&token=f23785c0-af35-423c-9ce3-f98c826058cf',
             analyse: '',
         },
     },
@@ -13089,7 +13093,7 @@ const RRVM_C41 = {
                     Un véhicule de transport d’équipement ne peut tirer une remorque qui transporte autre chose qu’un appareil de levage ou ses accessoires. 
             </Text>
             ),
-            image: 'rm-30-3+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-3.png?alt=media&token=bf533a54-bddf-4fba-93f5-e20898e11eae',
             analyse: '',
         },
         en: {
@@ -13229,7 +13233,7 @@ const RRVM_C41 = {
                     Equipment transport vehicles may tow trailers carrying only a lifting device or its accessories. 
             </Text>
             ),
-            image: 'rm-30-3+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-3.png?alt=media&token=bf533a54-bddf-4fba-93f5-e20898e11eae',
             analyse: '',
         },
     },
@@ -13296,7 +13300,7 @@ const RRVM_C41 = {
                     Malgré le paragraphe 4 de l'article 30, il est permis au conducteur d'un véhicule routier de le stationner dans une ruelle pendant un chargement ou un déchargement de marchandises effectué au moyen de ce véhicule, à condition que ces opérations se fassent de façon continue.
             </Text>
             ),
-            image: 'rm-30-4+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-4.png?alt=media&token=5b88af8a-4fb2-48f4-bb54-a358cc35543d',
             analyse: '',
         },
         en: {
@@ -13360,7 +13364,7 @@ const RRVM_C41 = {
                     Despite paragraph 4 of article 30, the driver of a road vehicle may park on a lane to load or unload goods from his vehicle, provided the operations are carried out continuously.  
             </Text>
             ),
-            image: 'rm-30-4+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-4.png?alt=media&token=5b88af8a-4fb2-48f4-bb54-a358cc35543d',
             analyse: '',
         },
     },
@@ -13424,7 +13428,7 @@ const RRVM_C41 = {
                     (9) en un endroit où l'immobilisation est interdite en vertu du Code ou du présent règlement. 
             </Text>
             ),
-            image: 'rm-30-8+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-8.png?alt=media&token=df5145a4-34c0-4a73-a228-d4cd35bc4b40',
             analyse: '',
         },
         en: {
@@ -13485,7 +13489,7 @@ const RRVM_C41 = {
                     (9) at a place where stopping is prohibited under the Code or this by-law.  
             </Text>
             ),
-            image: 'rm-30-8+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-8.png?alt=media&token=df5145a4-34c0-4a73-a228-d4cd35bc4b40',
             analyse: '',
         },
     },
@@ -13537,7 +13541,7 @@ const RRVM_C41 = {
                     (9) en un endroit où l'immobilisation est interdite en vertu du Code ou du présent règlement. 
             </Text>
             ),
-            image: 'rm-26+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-26.jpg?alt=media&token=f64f42f8-ff02-434f-ac5c-b5a4839538bb',
             analyse: '',
         },
         en: {
@@ -13586,7 +13590,7 @@ const RRVM_C41 = {
                     (9) at a place where stopping is prohibited under the Code or this by-law.  
             </Text>
             ),
-            image: 'rm-26+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-26.jpg?alt=media&token=f64f42f8-ff02-434f-ac5c-b5a4839538bb',
             analyse: '',
         },
     },
@@ -13628,7 +13632,7 @@ const RRVM_C41 = {
                     (4) plus longtemps que ne l'autorise la signalisation lorsqu'une période limitée y est indiquée.  
             </Text>
             ),
-            image: 'rm-31-1+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-31-1.png?alt=media&token=63900b97-b81a-4ec4-a278-0c5c79618874',
             analyse: '',
         },
         en: {
@@ -13667,7 +13671,7 @@ const RRVM_C41 = {
                     (4) longer than the prescribed period when a limited period is indicated on signs.  
             </Text>
             ),
-            image: 'rm-31-1+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-31-1.png?alt=media&token=63900b97-b81a-4ec4-a278-0c5c79618874',
             analyse: '',
         },
     },
@@ -13709,7 +13713,7 @@ const RRVM_C41 = {
                     (4) plus longtemps que ne l'autorise la signalisation lorsqu'une période limitée y est indiquée.  
             </Text>
             ),
-            image: '386-5+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-5.png?alt=media&token=e5df2d97-2415-47a1-a549-f569dea3dcbd',
             analyse: '',
         },
         en: {
@@ -13748,7 +13752,7 @@ const RRVM_C41 = {
                     (4) longer than the prescribed period when a limited period is indicated on signs.  
             </Text>
             ),
-            image: '386-5+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-5.png?alt=media&token=e5df2d97-2415-47a1-a549-f569dea3dcbd',
             analyse: '',
         },
     },
@@ -13787,7 +13791,7 @@ const RRVM_C41 = {
                     (4) plus longtemps que ne l'autorise la signalisation lorsqu'une période limitée y est indiquée.  
             </Text>
             ),
-            image: 'rm-31-4+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-31-4.png?alt=media&token=e92c91f1-ed56-4d50-9f25-3b920795130b',
             analyse: '',
         },
         en: {
@@ -13824,7 +13828,7 @@ const RRVM_C41 = {
                     (4) longer than the prescribed period when a limited period is indicated on signs.  
             </Text>
             ),
-            image: 'rm-31-4+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-31-4.png?alt=media&token=e92c91f1-ed56-4d50-9f25-3b920795130b',
             analyse: '',
         },
     },
@@ -13864,7 +13868,7 @@ const RRVM_C41 = {
                     Il est interdit de stationner sur un chemin public une remorque ou une semi-remorque non rattachée à un véhicule automobile, sauf en conformité d'un permis d'occupation temporaire du domaine public délivré en vertu du Règlement sur l'occupation du domaine public (chapitre O-0.1).  
             </Text>
             ),
-            image: 'rm-32.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-32.png?alt=media&token=f86c1a48-162f-4895-a90c-61179a211e78',
             analyse: '',
         },
         en: {
@@ -13902,7 +13906,7 @@ const RRVM_C41 = {
                     No trailer or semi-trailer that is not attached to a motor vehicle may be parked on a public thoroughfare, except in accordance with a permit for the temporary occupancy of public property issued under the By-law concerning the occupancy of public property (R.B.C.M., chapter O-0.1). 
             </Text>
             ),
-            image: 'rm-32.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-32.png?alt=media&token=f86c1a48-162f-4895-a90c-61179a211e78',
             analyse: '',
         },
     },
@@ -13943,7 +13947,7 @@ const RRVM_C41 = {
                     Les roues d'un véhicule routier stationné dans une allée de stationnement doivent se trouver à l'intérieur des limites marquées par la ligne blanche continue ou discontinue, s'il en est, et n'empiéter aucunement sur cette ligne. Contrevient au premier alinéa le conducteur qui stationne dans une allée de stationnement un véhicule routier dont la largeur est telle qu'il ne peut se conformer aux exigences de cet alinéa.   
             </Text>
             ),
-            image: '383-1+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F383-1.png?alt=media&token=6f6b0c45-ed26-47f1-b064-69c5a50291b1',
             analyse: '',
         },
         en: {
@@ -13982,7 +13986,7 @@ const RRVM_C41 = {
                     The wheels of a road vehicle parked on a parking lane must be within the limits marked off by a continuous or discontinuous white line, if any, and may not encroach on that line. Any driver who parks on a parking lane a road vehicle whose width is such that it does not conform to the first paragraph contravenes that paragraph.  
             </Text>
             ),
-            image: '383-1+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F383-1.png?alt=media&token=6f6b0c45-ed26-47f1-b064-69c5a50291b1',
             analyse: '',
         },
     },
@@ -14024,7 +14028,7 @@ const RRVM_C41 = {
                     Un véhicule routier ne peut être stationné en oblique que lorsque la signalisation l'impose. Lorsqu'il est stationné en oblique, un véhicule routier doit être placé dans le sens de la circulation. 
             </Text>
             ),
-            image: 'rm-38+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-38.png?alt=media&token=fe3aa83f-2b30-49cf-8ef7-a68ca30b68b6',
             analyse: '',
         },
         en: {
@@ -14064,7 +14068,7 @@ const RRVM_C41 = {
                     A road vehicle may be parked diagonally only where signs so require. Every road vehicle parked diagonally must be in the direction of traffic.  
             </Text>
             ),
-            image: 'rm-38+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-38.png?alt=media&token=fe3aa83f-2b30-49cf-8ef7-a68ca30b68b6',
             analyse: '',
         },
     },
@@ -14101,7 +14105,7 @@ const RRVM_C41 = {
                     Le conducteur d'un véhicule de promenade pour lequel un permis de stationnement réservé aux résidants a été délivré, conformément à une résolution prévue au paragraphe 7 de l'article 4, peut stationner ce véhicule dans une place de stationnement réservée aux résidants d'un secteur désigné par une telle résolution. Le permis de stationnement réservé aux résidants est délivré sous la forme d'une vignette autocollante. Cette vignette doit être collée sur le véhicule visé par le permis de la manière indiquée par une résolution prévue au paragraphe 7 de l'article 4 et être complètement visible en tout temps.
             </Text>
             ),
-            image: 'rm-30-3+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-3.png?alt=media&token=bf533a54-bddf-4fba-93f5-e20898e11eae',
             analyse: '',
         },
         en: {
@@ -14136,7 +14140,7 @@ const RRVM_C41 = {
                     Any driver of a passenger vehicle for which a reserved parking permit was issued under a resolution referred to in paragraph 7 of article 4 may park the vehicle in a space reserved for residents in a sector designated under that resolution. The reserved parking permit is issued as a sticker. It must be placed on the vehicle covered by the permit, as specified in the resolution referred to in paragraph 4 of article 4, and be fully visible at all times.
             </Text>
             ),
-            image: 'rm-30-3+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-3.png?alt=media&token=bf533a54-bddf-4fba-93f5-e20898e11eae',
             analyse: '',
         },
     },
@@ -14276,7 +14280,7 @@ const RRVM_C41 = {
                     Un véhicule de transport d’équipement ne peut tirer une remorque qui transporte autre chose qu’un appareil de levage ou ses accessoires.   
             </Text>
             ),
-            image: 'rm-30-3+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-3.png?alt=media&token=bf533a54-bddf-4fba-93f5-e20898e11eae',
             analyse: '',
         },
         en: {
@@ -14414,7 +14418,7 @@ const RRVM_C41 = {
                     Equipment transport vehicles may tow trailers carrying only a lifting device or its accessories. 
             </Text>
             ),
-            image: 'rm-30-3+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-3.png?alt=media&token=bf533a54-bddf-4fba-93f5-e20898e11eae',
             analyse: '',
         },
     },
@@ -14457,7 +14461,7 @@ const RRVM_C41 = {
                     Malgré le paragraphe 2 du premier alinéa, lorsque la largeur ou la longueur d'un véhicule routier rend impossible son stationnement à l'intérieur d'une seule place de stationnement, il est permis d'utiliser plus d'une place à condition de payer le tarif requis à chacun des parcomètres visant les places utilisées.
                 </Text> 
             ),
-            image: 'rm-55.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-55.png?alt=media&token=665dbf27-80db-445b-8043-ca0111e8d72e',
             analyse: '',
         },
         en: {
@@ -14498,7 +14502,7 @@ const RRVM_C41 = {
                     Despite paragraph 2 of the first paragraph, where a motor vehicle is too wide or too long to be parked in a single space, more than one space may be used provided the fees for every parking meter are paid.
             </Text>
             ),
-            image: 'rm-55.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-55.png?alt=media&token=665dbf27-80db-445b-8043-ca0111e8d72e',
             analyse: '',
         },
     },
@@ -14546,7 +14550,7 @@ const RRVM_C41 = {
                     Pour attester ce paiement, le ticket de stationnement émis par le distributeur et indiquant la période pour laquelle le tarif du stationnement a été payé doit être placé à l'intérieur du véhicule, contre le pare-brise avant, du côté gauche, de façon qu'il soit visible et entièrement lisible de l'extérieur.     
             </Text>
             ),
-            image: 'rm-55.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-55.png?alt=media&token=665dbf27-80db-445b-8043-ca0111e8d72e',
             analyse: '',
         },
         en: {
@@ -14588,7 +14592,7 @@ const RRVM_C41 = {
                     As proof of payment, the parking ticket issued by the ticket machine and specifying the period for which parking fees were paid must be placed inside the vehicle, on the left side of the front windshield, so that it is fully visible and legible from the outside.  
             </Text>
             ),
-            image: 'rm-55.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-55.png?alt=media&token=665dbf27-80db-445b-8043-ca0111e8d72e',
             analyse: '',
         },
     },
@@ -14711,7 +14715,7 @@ const RRVM_C41 = {
                     Un véhicule de transport d’équipement ne peut tirer une remorque qui transporte autre chose qu’un appareil de levage ou ses accessoires. 
             </Text>
             ),
-            image: 'rm-55.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-55.png?alt=media&token=665dbf27-80db-445b-8043-ca0111e8d72e',
             analyse: '',
         },
         en: {
@@ -14831,7 +14835,7 @@ const RRVM_C41 = {
                     Equipment transport vehicles may tow trailers carrying only a lifting device or its accessories. 
             </Text>
             ),
-            image: 'rm-55.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-55.png?alt=media&token=665dbf27-80db-445b-8043-ca0111e8d72e',
             analyse: '',
         },
     },
@@ -14864,7 +14868,7 @@ const RRVM_C41 = {
                     Il est interdit au conducteur d'un véhicule routier de le stationner sur un terrain privé s'il n'y est pas autorisé par le propriétaire ou l'occupant du terrain. Aux fins du présent article, les mots «terrain privé» signifient un emplacement ne faisant pas partie du domaine public de la Ville. 
             </Text>
             ),
-            image: 'rm-58.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-58.jpg?alt=media&token=74b18900-c03f-499e-a339-141a8c05a78b',
             analyse: '',
         },
         en: {
@@ -14895,7 +14899,7 @@ const RRVM_C41 = {
                     No driver of a road vehicle may park on a private lot without the authorization of the owner or occupant of the lot. For the purposes of this article, the words “private lot” mean a site that is not part of public property of the city.
             </Text>
             ),
-            image: 'rm-58.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-58.jpg?alt=media&token=74b18900-c03f-499e-a339-141a8c05a78b',
             analyse: '',
         },
     },
@@ -15185,7 +15189,7 @@ const RM_2398 = {
                     Il est interdit de stationner un véhicule à moteur dans une rue entre 3 h et 6 h, à moins qu'un permis de stationnement de nuit n'ait été délivré par la Ville. 
             </Text>
             ),
-            image: 'rm-2398-4.1.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-2398-4.1.jpg?alt=media&token=8999dd49-ea7f-42bb-9fdf-68d93b86e47a',
             analyse: '',
         },
         en: {
@@ -15224,7 +15228,7 @@ const RM_2398 = {
                     It shall be unlawful to Park a Motor Vehicle on a Street between 3:00 AM and 6:00 AM unless an Overnight Parking Permit has been issued by the City. 
             </Text>
             ),
-            image: 'rm-2398-4.1.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-2398-4.1.jpg?alt=media&token=8999dd49-ea7f-42bb-9fdf-68d93b86e47a',
             analyse: '',
         },
     },
@@ -15270,7 +15274,7 @@ const RM_1171 = {
                     Il est défendu de stationner un véhicule dans les ruelles publiques ou privées à l’exception des véhicules que l’on est en train de charger ou de décharger, mais cette opération doit s’exécuter sans interruption.
             </Text>
             ),
-            image: 'rm-30-4+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-4.png?alt=media&token=5b88af8a-4fb2-48f4-bb54-a358cc35543d',
             analyse: '',
         },
         en: {
@@ -15312,7 +15316,7 @@ const RM_1171 = {
                     Il est défendu de stationner un véhicule dans les ruelles publiques ou privées à l’exception des véhicules que l’on est en train de charger ou de décharger, mais cette opération doit s’exécuter sans interruption. 
             </Text>
             ),
-            image: 'rm-30-4+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-4.png?alt=media&token=5b88af8a-4fb2-48f4-bb54-a358cc35543d',
             analyse: '',
         },
     },
@@ -15348,7 +15352,7 @@ const RM_1171 = {
                     Le tarif horaire applicable pour l’usage d’une place de stationnement située dans une rue contrôlé par un parcomètre, une borne, un horodateur ou tout autre appareil ayant pour fonction de recevoir le paiement du tarif exigé est de 2,00 $ jusqu’à un maximum de deux heures pour les périodes s’étendant du lundi au vendredi de 9 h à 21 h et le samedi de 9 h à 18 h [...].
             </Text>
             ),
-            image: 'rm-55.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-55.png?alt=media&token=665dbf27-80db-445b-8043-ca0111e8d72e',
             analyse: '',
         },
         en: {
@@ -15383,7 +15387,7 @@ const RM_1171 = {
                     Le tarif horaire applicable pour l’usage d’une place de stationnement située dans une rue contrôlé par un parcomètre, une borne, un horodateur ou tout autre appareil ayant pour fonction de recevoir le paiement du tarif exigé est de 2,00 $ jusqu’à un maximum de deux heures pour les périodes s’étendant du lundi au vendredi de 9 h à 21 h et le samedi de 9 h à 18 h [...].
             </Text>
             ),
-            image: 'rm-55.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-55.png?alt=media&token=665dbf27-80db-445b-8043-ca0111e8d72e',
             analyse: '',
         },
     },
@@ -15418,7 +15422,7 @@ const RM_1171 = {
                     Aux fins du présent article et de l’article 8.24.2, on entend par « terrain privé » un emplacement extérieur ne faisant pas partie du domaine public. Cette expression ne vise toutefois pas les terrains de stationnement qui desservent les institutions d’enseignement.  
             </Text>
             ),
-            image: 'rm-58.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-58.jpg?alt=media&token=74b18900-c03f-499e-a339-141a8c05a78b',
             analyse: '',
         },
         en: {
@@ -15453,7 +15457,7 @@ const RM_1171 = {
                     Aux fins du présent article et de l’article 8.24.2, on entend par « terrain privé » un emplacement extérieur ne faisant pas partie du domaine public. Cette expression ne vise toutefois pas les terrains de stationnement qui desservent les institutions d’enseignement.  
             </Text>
             ),
-            image: 'rm-58.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-58.jpg?alt=media&token=74b18900-c03f-499e-a339-141a8c05a78b',
             analyse: '',
         },
     },
@@ -15486,11 +15490,11 @@ const RM_1171 = {
                     Nul ne peut immobiliser un véhicule routier sur un passage pour piétons clairement identifié ni à moins de 5 mètres de celui-ci.
             </Text>
             ),
-            image: 'rm-1171-8.24.16.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm1171-8.24.16.png?alt=media&token=8ddf3212-1fa5-40b0-b488-8d6aa1c69300',
             analyse: '',
         },
         en: {
-            section: 'Section 8.24.16',
+            art: 'Section 8.24.16',
             type: 'Parking',
             source: 'R.M. 878 Outremont',
             infraction: 'Stopping a vehicle less than 5 metres from a crosswalk',
@@ -15519,7 +15523,7 @@ const RM_1171 = {
                     Nul ne peut immobiliser un véhicule routier sur un passage pour piétons clairement identifié ni à moins de 5 mètres de celui-ci. 
             </Text>
             ),
-            image: 'rm-1171-8.24.16.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm1171-8.24.16.png?alt=media&token=8ddf3212-1fa5-40b0-b488-8d6aa1c69300',
             analyse: '',
         },
     },
@@ -15552,7 +15556,7 @@ const RM_1171 = {
                     Nul ne peut immobiliser un véhicule routier dans un endroit où le stationnement est interdit par une signalisation installée conformément au Code de la sécurité routière.  
             </Text>
             ),
-            image: 'rm-30-1.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-1.png?alt=media&token=f23785c0-af35-423c-9ce3-f98c826058cf',
             analyse: '',
         },
         en: {
@@ -15585,7 +15589,7 @@ const RM_1171 = {
                     Nul ne peut immobiliser un véhicule routier dans un endroit où le stationnement est interdit par une signalisation installée conformément au Code de la sécurité routière. 
             </Text>
             ),
-            image: 'rm-30-1.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-1.png?alt=media&token=f23785c0-af35-423c-9ce3-f98c826058cf',
             analyse: '',
         },
     },
@@ -15628,7 +15632,7 @@ const RM_1171 = {
                     Le permis accordé au résident d’un secteur en vertu de ce chapitre n’est valide que pour le secteur de sa résidence.
             </Text>
             ),
-            image: 'rien.png',
+            image: 'rien',
             analyse: '',
         },
         en: {
@@ -15724,7 +15728,7 @@ const RM_1530 = {
                     Stationnement : immobilisation d'un véhicule pour une période de trois (3) minutes et plus.
             </Text>
             ),
-            image: 'rm-30-1.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-1.png?alt=media&token=f23785c0-af35-423c-9ce3-f98c826058cf',
             analyse: '',
         },
         en: {
@@ -15774,7 +15778,7 @@ const RM_1530 = {
                     Stationnement : immobilisation d'un véhicule pour une période de trois (3) minutes et plus.
             </Text>
             ),
-            image: 'rm-30-1.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-1.png?alt=media&token=f23785c0-af35-423c-9ce3-f98c826058cf',
             analyse: '',
         },
 
@@ -15830,7 +15834,7 @@ const RM_1530 = {
                     Stationnement : immobilisation d'un véhicule pour une période de trois (3) minutes et plus.
             </Text>
             ),
-            image: 'rm-30-8.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-8.png?alt=media&token=df5145a4-34c0-4a73-a228-d4cd35bc4b40',
             analyse: '',
         },
         en: {
@@ -15884,7 +15888,7 @@ const RM_1530 = {
                     Stationnement : immobilisation d'un véhicule pour une période de trois (3) minutes et plus.
             </Text>
             ),
-            image: 'rm-30-8.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-8.png?alt=media&token=df5145a4-34c0-4a73-a228-d4cd35bc4b40',
             analyse: '',
         },
 
@@ -15934,7 +15938,7 @@ const RM_2227 = {
                     2° à moins de cinq mètres (5 m) d’une borne-fontaine et d’un signal d’arrêt; 
             </Text>
             ),
-            image: '386-2++.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-2.png?alt=media&token=28d62f73-ef65-44c4-bb4f-eec2f52ac57e',
             analyse: '',
         },
         en: {
@@ -15979,7 +15983,7 @@ const RM_2227 = {
                     2° à moins de cinq mètres (5 m) d’une borne-fontaine et d’un signal d’arrêt;
             </Text>
             ),
-            image: '386-2++.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-2.png?alt=media&token=28d62f73-ef65-44c4-bb4f-eec2f52ac57e',
             analyse: '',
         },
     },
@@ -16029,7 +16033,7 @@ const RM_2227 = {
                     4°  dans une intersection, sur un passage pour piétons clairement identifié et sur un passage à niveau ni à moins de 5 mètres de ceux-ci; 
             </Text>
             ),
-            image: '386-4++.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-4.png?alt=media&token=1dcbd0ec-16ea-4125-89d7-a17bafcd8420',
             analyse: '',
         },
         en: {
@@ -16078,7 +16082,7 @@ const RM_2227 = {
                     4°  dans une intersection, sur un passage pour piétons clairement identifié et sur un passage à niveau ni à moins de 5 mètres de ceux-ci;
             </Text>
             ),
-            image: '386-4++.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-4.png?alt=media&token=1dcbd0ec-16ea-4125-89d7-a17bafcd8420',
             analyse: '',
         },
     },
@@ -16135,7 +16139,7 @@ const RM_2227 = {
                     Les exceptions prévues au premier alinéa ne s’appliquent pas à l’encontre d’une signalisation interdisant l’immobilisation ou le stationnement dans les zones de sécurité incendie, les passages incendie et les voies d’accès incendie.
             </Text>
             ),
-            image: 'rm-30-1.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-1.png?alt=media&token=f23785c0-af35-423c-9ce3-f98c826058cf',
             analyse: '',
         },
         en: {
@@ -16191,7 +16195,7 @@ const RM_2227 = {
                     Les exceptions prévues au premier alinéa ne s’appliquent pas à l’encontre d’une signalisation interdisant l’immobilisation ou le stationnement dans les zones de sécurité incendie, les passages incendie et les voies d’accès incendie.
             </Text>
             ),
-            image: 'rm-30-1.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-1.png?alt=media&token=f23785c0-af35-423c-9ce3-f98c826058cf',
             analyse: '',
         },
 
@@ -16246,7 +16250,7 @@ const RCA06_210012 = {
                     (b) Le stationnement d’un véhicule de commerce dans le cas où l’on est en train de charger ou de décharger des marchandises et lorsque cette opération s'effectue sans interruption et ne dure pas plus de 60 minutes. 
             </Text>
             ),
-            image: 'rm-30-1.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-1.png?alt=media&token=f23785c0-af35-423c-9ce3-f98c826058cf',
             analyse: '',
         },
         en: {
@@ -16296,7 +16300,7 @@ const RCA06_210012 = {
                     (b) Le stationnement d’un véhicule de commercer dans le cas où l’on est en train de charger ou de décharger des marchandises et lorsque cette opération s'effectue sans interruption et ne dure pas plus de 60 minutes.
             </Text>
             ),
-            image: 'rm-30-1.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-1.png?alt=media&token=f23785c0-af35-423c-9ce3-f98c826058cf',
             analyse: '',
         },
     },
@@ -16334,7 +16338,7 @@ const RCA06_210012 = {
                     Il est interdit de stationner un véhicule routier dans un espace de stationnement sur les chemins publics muni d’un parcomètre, décrits à l’annexe “K” pendant la période décrite dans payer les droits prescrits. Il est interdit de stationner un véhicule routier dans un espace de stationnement muni d’un parcomètre, décrit à l’annexe “K”, lorsque celui-ci est hors service. 
             </Text>
             ),
-            image: 'rm-55.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-55.png?alt=media&token=665dbf27-80db-445b-8043-ca0111e8d72e',
             analyse: '',
         },
         en: {
@@ -16371,7 +16375,7 @@ const RCA06_210012 = {
                     Il est interdit de stationner un véhicule routier dans un espace de stationnement sur les chemins publics muni d’un parcomètre, décrits à l’annexe “K” pendant la période décrite dans payer les droits prescrits. Il est interdit de stationner un véhicule routier dans un espace de stationnement muni d’un parcomètre, décrit à l’annexe “K”, lorsque celui-ci est hors service.
             </Text>
             ),
-            image: 'rm-55.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-55.png?alt=media&token=665dbf27-80db-445b-8043-ca0111e8d72e',
             analyse: '',
         },
     },
@@ -16420,7 +16424,7 @@ const RCA06_210012 = {
                     Pour les fins de l’application du présent article, l’autorité compétente doit installer une signalisation temporaire prohibant le stationnement au moins quatre (4) heures avant l’exécution de travaux de déneigement et au moins douze (12) heures dans les autres cas.
             </Text>
             ),
-            image: 'rm-30-8.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-8.png?alt=media&token=df5145a4-34c0-4a73-a228-d4cd35bc4b40',
             analyse: '',
         },
         en: {
@@ -16468,7 +16472,7 @@ const RCA06_210012 = {
                     Pour les fins de l’application du présent article, l’autorité compétente doit installer une signalisation temporaire prohibant le stationnement au moins quatre (4) heures avant l’exécution de travaux de déneigement et au moins douze (12) heures dans les autres cas.
             </Text>
             ),
-            image: 'rm-30-8.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-8.png?alt=media&token=df5145a4-34c0-4a73-a228-d4cd35bc4b40',
             analyse: '',
         },
     },
@@ -16511,7 +16515,7 @@ const RCA06_210012 = {
                     Il est interdit de stationner un véhicule routier dans les ruelles publiques, à l’exception du cas où l’on est en train de charger ou de décharger des marchandises d’un véhicule de commerce, mais cette opération doit s’exécuter sans interruption et durer moins de soixante (60) minutes. 
             </Text>
             ),
-            image: 'rm-30-4+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-4.png?alt=media&token=5b88af8a-4fb2-48f4-bb54-a358cc35543d',
             analyse: '',
         },
         en: {
@@ -16553,7 +16557,7 @@ const RCA06_210012 = {
                     Il est interdit de stationner un véhicule routier dans les ruelles publiques, à l’exception du cas où l’on est en train de charger ou de décharger des marchandises d’un véhicule de commerce, mais cette opération doit s’exécuter sans interruption et durer moins de soixante (60) minutes.
             </Text>
             ),
-            image: 'rm-30-4+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-4.png?alt=media&token=5b88af8a-4fb2-48f4-bb54-a358cc35543d',
             analyse: '',
         },
     },
@@ -16701,7 +16705,7 @@ const RM_726 = {
                     Le propriétaire d'un véhicule automobile sera responsable pour toute infraction commise avec tel véhicule des dispositions de ce règlement, à moins qu'il ne puisse établir qu’au moment de l'infraction le véhicule se trouvait, sans son consentement, en la possession d'une tierce personne autre que son chauffeur.
             </Text>
             ),
-            image: '383-1+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F383-1.png?alt=media&token=6f6b0c45-ed26-47f1-b064-69c5a50291b1',
             analyse: '',
         },
         en: {
@@ -16744,7 +16748,7 @@ const RM_726 = {
                     The owner of a motor vehicle shall be responsible for any violation, committed with such vehicle, of the provisions of this By-law unless he proves that, at the time of such violation, the vehicle was, without his consent, in the possession of a third person other than his chauffeur.
             </Text>
             ),
-            image: '383-1+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F383-1.png?alt=media&token=6f6b0c45-ed26-47f1-b064-69c5a50291b1',
             analyse: '',
         },
     },
@@ -16782,7 +16786,7 @@ const RM_726 = {
                     Le propriétaire d'un véhicule automobile sera responsable pour toute infraction commise avec tel véhicule des dispositions de ce règlement, à moins qu'il ne puisse établir qu’au moment de l'infraction le véhicule se trouvait, sans son consentement, en la possession d'une tierce personne autre que son chauffeur.
             </Text>
             ),
-            image: 'rm-30-1.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-1.png?alt=media&token=f23785c0-af35-423c-9ce3-f98c826058cf',
             analyse: '',
         },
         en: {
@@ -16817,7 +16821,7 @@ const RM_726 = {
                     The owner of a motor vehicle shall be responsible for any violation, committed with such vehicle, of the provisions of this By-law unless he proves that, at the time of such violation, the vehicle was, without his consent, in the possession of a third person other than his chauffeur.
             </Text>
             ),
-            image: 'rm-30-1.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-1.png?alt=media&token=f23785c0-af35-423c-9ce3-f98c826058cf',
             analyse: '',
         },
     },
@@ -16855,7 +16859,7 @@ const RM_726 = {
                     Le propriétaire d'un véhicule automobile sera responsable pour toute infraction commise avec tel véhicule des dispositions de ce règlement, à moins qu'il ne puisse établir qu’au moment de l'infraction le véhicule se trouvait, sans son consentement, en la possession d'une tierce personne autre que son chauffeur.
                 </Text>
             ),
-            image: '388.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F388.jpg?alt=media&token=7d6cf6f2-6b57-4e96-988c-73966d686dd1',
             analyse: '',
         },
         en: {
@@ -16890,7 +16894,7 @@ const RM_726 = {
                     The owner of a motor vehicle shall be responsible for any violation, committed with such vehicle, of the provisions of this By-law unless he proves that, at the time of such violation, the vehicle was, without his consent, in the possession of a third person other than his chauffeur.
             </Text>
             ),
-            image: '388.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F388.jpg?alt=media&token=7d6cf6f2-6b57-4e96-988c-73966d686dd1',
             analyse: '',
         },
     },
@@ -16935,7 +16939,7 @@ const RM_726 = {
                     Le propriétaire d'un véhicule automobile sera responsable pour toute infraction commise avec tel véhicule des dispositions de ce règlement, à moins qu'il ne puisse établir qu’au moment de l'infraction le véhicule se trouvait, sans son consentement, en la possession d'une tierce personne autre que son chauffeur.
             </Text>
             ),
-            image: 'rm-30-3+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-3.png?alt=media&token=bf533a54-bddf-4fba-93f5-e20898e11eae',
             analyse: '',
         },
         en: {
@@ -16977,7 +16981,7 @@ const RM_726 = {
                     The owner of a motor vehicle shall be responsible for any violation, committed with such vehicle, of the provisions of this By-law unless he proves that, at the time of such violation, the vehicle was, without his consent, in the possession of a third person other than his chauffeur.
                 </Text>
             ),
-            image: 'rm-30-3+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-3.png?alt=media&token=bf533a54-bddf-4fba-93f5-e20898e11eae',
             analyse: '',
         },
     },
@@ -17015,7 +17019,7 @@ const RM_726 = {
                     Le propriétaire d'un véhicule automobile sera responsable pour toute infraction commise avec tel véhicule des dispositions de ce règlement, à moins qu'il ne puisse établir qu’au moment de l'infraction le véhicule se trouvait, sans son consentement, en la possession d'une tierce personne autre que son chauffeur.
             </Text>
             ),
-            image: 'rm-31-4+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-31-4.png?alt=media&token=e92c91f1-ed56-4d50-9f25-3b920795130b',
             analyse: '',
         },
         en: {
@@ -17050,7 +17054,7 @@ const RM_726 = {
                     The owner of a motor vehicle shall be responsible for any violation, committed with such vehicle, of the provisions of this By-law unless he proves that, at the time of such violation, the vehicle was, without his consent, in the possession of a third person other than his chauffeur.
             </Text>
             ),
-            image: 'rm-31-4+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-31-4.png?alt=media&token=e92c91f1-ed56-4d50-9f25-3b920795130b',
             analyse: '',
         },
     },
@@ -17112,7 +17116,7 @@ const RM_2030 = {
                     Stationnement: L'immobilisation d'un véhicule routier sur un chemin public, durant une période de temps de 3 minutes ou plus, pour un motif autre que celui de satisfaire aux exigences de la circulation ou de faire monter ou descendre des passagers.
             </Text>
             ),
-            image: 'rm-2030-194.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm2030-194.png?alt=media&token=cf1d654a-c1fe-4be7-b29e-1729c7887f71',
             analyse: '',
         },
         en: {
@@ -17171,7 +17175,7 @@ const RM_2030 = {
                     Stationnement L'immobilisation d'un véhicule routier sur un chemin public, durant une période de temps de 3 minutes ou plus, pour un motif autre que celui de satisfaire aux exigences de la circulation ou de faire monter ou descendre des passagers.
             </Text>
             ),
-            image: 'rm2030-194.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm2030-194.png?alt=media&token=cf1d654a-c1fe-4be7-b29e-1729c7887f71',
             analyse: '',
         },
     },
@@ -17209,7 +17213,7 @@ const RM_2030 = {
                     dans une intersection ni à moins de cinq mètres (5 m) de celle-ci.
             </Text>
             ),
-            image: '386-4++.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-4.png?alt=media&token=1dcbd0ec-16ea-4125-89d7-a17bafcd8420',
             analyse: '',
         },
         en: {
@@ -17247,7 +17251,7 @@ const RM_2030 = {
                     dans une intersection ni à moins de cinq mètres (5 m) de celle-ci.
             </Text>
             ),
-            image: '386-4++.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-4.png?alt=media&token=1dcbd0ec-16ea-4125-89d7-a17bafcd8420',
             analyse: '',
         },
     },
@@ -17361,7 +17365,7 @@ const RM_2030 = {
                     au-delà de la limite de temps indiquée par la signalisation appropriée.
             </Text>
             ),
-            image: 'rm-31-4+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-31-4.png?alt=media&token=e92c91f1-ed56-4d50-9f25-3b920795130b',
             analyse: '',
         },
         en: {
@@ -17399,7 +17403,7 @@ const RM_2030 = {
                     au-delà de la limite de temps indiquée par la signalisation appropriée.
             </Text>
             ),
-            image: 'rm-31-4+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-31-4.png?alt=media&token=e92c91f1-ed56-4d50-9f25-3b920795130b',
             analyse: '',
         },
     },
@@ -17445,7 +17449,7 @@ const RM_2030 = {
                     Au-delà des cases de stationnement marquées sur la chaussée et sur une chaussée marquée de hachures. 
             </Text>
             ),
-            image: 'rm2030-195-39.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm2030-195-39.png?alt=media&token=6f970e62-58ae-4335-b6fd-f62318d2defc',
             analyse: '',
         },
         en: {
@@ -17491,7 +17495,7 @@ const RM_2030 = {
                     Au-delà des cases de stationnement marquées sur la chaussée et sur une chaussée marquée de hachures.
             </Text>
             ),
-            image: 'rm2030-195-39.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm2030-195-39.png?alt=media&token=6f970e62-58ae-4335-b6fd-f62318d2defc',
             analyse: '',
         },
     },
@@ -17525,7 +17529,7 @@ const RM_2030 = {
                     Nul ne peut laisser un véhicule routier stationné sur un chemin public où a été placé par le directeur des Travaux publics de la Ville ou ses préposés, des enseignes temporaires prohibant le stationnement.
             </Text>
             ),
-            image: 'rm-30-8+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-8.png?alt=media&token=df5145a4-34c0-4a73-a228-d4cd35bc4b40',
             analyse: '',
         },
         en: {
@@ -17559,7 +17563,7 @@ const RM_2030 = {
                     Nul ne peut laisser un véhicule routier stationné sur un chemin public où a été placé par le directeur des Travaux publics de la Ville ou ses préposés, des enseignes temporaires prohibant le stationnement. 
             </Text>
             ),
-            image: 'rm-30-8+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-8.png?alt=media&token=df5145a4-34c0-4a73-a228-d4cd35bc4b40',
             analyse: '',
         },
     },
@@ -17604,7 +17608,7 @@ const RM_2030 = {
                     Stationnement: L'immobilisation d'un véhicule routier sur un chemin public, durant une période de temps de 3 minutes ou plus, pour un motif autre que celui de satisfaire aux exigences de la circulation ou de faire monter ou descendre des passagers. 
             </Text>
             ),
-            image: 'rm-30-3+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-3.png?alt=media&token=bf533a54-bddf-4fba-93f5-e20898e11eae',
             analyse: '',
         },
         en: {
@@ -17649,7 +17653,7 @@ const RM_2030 = {
                     Stationnement: L'immobilisation d'un véhicule routier sur un chemin public, durant une période de temps de 3 minutes ou plus, pour un motif autre que celui de satisfaire aux exigences de la circulation ou de faire monter ou descendre des passagers.
             </Text>
             ),
-            image: 'rm-30-3+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-30-3.png?alt=media&token=bf533a54-bddf-4fba-93f5-e20898e11eae',
             analyse: '',
         },
     },
@@ -17688,7 +17692,7 @@ const RM_1498 = {
                     II est interdit à tout conducteur de stationner son véhicule dans un espace unitaire de stationnement sans payer le montant requis pour chaque plaque d'immatriculation ou de s'y stationner une durée supérieure au délai pour lequel le montant requis a été payé.
             </Text>
             ),
-            image: 'rm-55.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-55.png?alt=media&token=665dbf27-80db-445b-8043-ca0111e8d72e',
             analyse: '',
         },
         en: {
@@ -17722,7 +17726,7 @@ const RM_1498 = {
                     It is prohibited for a driver to park his or her vehicle in a parking space unit without paying the required fee for each license plate or to remain parked longer than the period for which the required fee has been paid.  
             </Text>
             ),
-            image: 'rm-55.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-55.png?alt=media&token=665dbf27-80db-445b-8043-ca0111e8d72e',
             analyse: '',
         },
     },
@@ -17972,7 +17976,7 @@ const RM_1384 = {
                     (3) toute  forme  de  vignette  ou  de  plaque  identifiant  une  personne  handicapée délivrée par une autre autorité administrative au Canada ou aux États-Unis.
             </Text>
             ),
-            image: '388.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F388.jpg?alt=media&token=7d6cf6f2-6b57-4e96-988c-73966d686dd1',
             analyse: '',
         },
         en: {
@@ -18023,7 +18027,7 @@ const RM_1384 = {
                     (3) toute  forme  de  vignette  ou  de  plaque  identifiant  une  personne  handicapée délivrée par une autre autorité administrative au Canada ou aux États-Unis. 
             </Text>
             ),
-            image: '388.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F388.jpg?alt=media&token=7d6cf6f2-6b57-4e96-988c-73966d686dd1',
             analyse: '',
         },
     },
@@ -18219,7 +18223,7 @@ const RM_685 = {
                     Il est interdit à tout conducteur de garer son véhicule dans un espace unitaire de stationnement sans payer le montant requis ou de l'y laisser pendant une période d'une durée supérieure au délai pour lequel il a payé le montant requis.  Le compteur doit être équipé d'un indicateur établissant que le paiement n'a pas été déposé ou que la période de temps payée est écoulée.
             </Text>
             ),
-            image: 'rm-55.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-55.png?alt=media&token=665dbf27-80db-445b-8043-ca0111e8d72e',
             analyse: '',
         },
         en: {
@@ -18251,7 +18255,7 @@ const RM_685 = {
                     No vehicle shall be permitted to park in a parking unit without paying the required fee nor remain parked for a period longer than that for which the required fee has been paid. The meter shall be equipped with a signal indicating either that no fee has been paid or that the period paid for has expired.   
             </Text>
             ),
-            image: 'rm-55.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-55.png?alt=media&token=665dbf27-80db-445b-8043-ca0111e8d72e',
             analyse: '',
         },
     },
@@ -18396,7 +18400,7 @@ const RM_1333 = {
                     (17) à tout autre endroit où une signalisation permanente ou temporaire prohibe le stationnement pendant la période de prohibition indiquée. 
             </Text>
             ),
-            image: '386-9+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-9.png?alt=media&token=a9a947b9-99aa-494c-bb26-f60d587018a5',
             analyse: '',
         },
         en: {
@@ -18434,7 +18438,7 @@ const RM_1333 = {
                     (17) à tout autre endroit où une signalisation permanente ou temporaire prohibe le stationnement pendant la période de prohibition indiquée.  
             </Text>
             ),
-            image: '386-9+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2F386-9.png?alt=media&token=a9a947b9-99aa-494c-bb26-f60d587018a5',
             analyse: '',
         },
     },
@@ -18477,7 +18481,7 @@ const RM_1333 = {
                     (5) dans l’emprise d’une bande cyclable, d’une piste cyclable ou d’un sentier polyvalent, durant la période où celle-ci est opérationnelle, en fonction de la signalisation en place.
             </Text>
             ),
-            image: 'rm-26+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-26.jpg?alt=media&token=f64f42f8-ff02-434f-ac5c-b5a4839538bb',
             analyse: '',
         },
         en: {
@@ -18521,7 +18525,7 @@ const RM_1333 = {
                     (5) dans l’emprise d’une bande cyclable, d’une piste cyclable ou d’un sentier polyvalent, durant la période où celle-ci est opérationnelle, en fonction de la signalisation en place. 
             </Text>
             ),
-            image: 'rm-26+.png',
+            image: 'https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2Frm-26.jpg?alt=media&token=f64f42f8-ff02-434f-ac5c-b5a4839538bb',
             analyse: '',
         },
     },
@@ -18610,6 +18614,7 @@ const RRVM_B3 = {
 
 export const infractionsArray = [CSR,RRVM_C41,RM_878,RM_2398,RM_1171,RM_1530, RM_2227,RCA06_210012, RM_726, RM_2030, RM_1498,RM_1384, RCG09_029, RM_685, RCG10_009,RM_1333,RRVM_B3  ]
 
+
 export const connectInfraction = article => {
     let lang = polyglot.locale; // 'en' or 'fr'
     let matchArticle;
@@ -18628,5 +18633,3 @@ export const connectInfraction = article => {
     });
     return matchArticle;
   };
-
-// module.exports = infractionsArray

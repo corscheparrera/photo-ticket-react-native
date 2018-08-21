@@ -30,7 +30,8 @@ export default class InfractionView extends React.Component {
       imageURL: "",
       sketchURL: ""
     };
-    this.sketchDownloadURL();
+    // this.sketchDownloadURL();
+    console.log(this.props.data.image);
   }
   sketchDownloadURL = () => {
     storage
@@ -128,8 +129,8 @@ export default class InfractionView extends React.Component {
               <AutoHeightImage
                 width={100}
                 source={{
-                  uri: this.state.sketchURL
-                    ? this.state.sketchURL
+                  uri: data.image
+                    ? data.image
                     : "https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/sketchs%2FNo_image_available.png?alt=media&token=e97ddded-68a3-47ab-9961-0f0d76caf516"
                 }}
               />
