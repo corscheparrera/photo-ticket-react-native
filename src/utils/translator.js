@@ -461,9 +461,27 @@ const guide = {
   }
 };
 const manualInput = {
+  manualInput: {
+    en: "Manual Input",
+    fr: "Entrée manuelle"
+  },
   search: {
     en: "Search",
     fr: "Recherche"
+  },
+  findArt: {
+    en:
+      "Locate the number of the aricle (art.) and the law on your constant offense.",
+    fr:
+      "Repérer le numéro de l'aricle (art.) et la loi visée sur votre constant d'infraction."
+  },
+  next: {
+    en: "Next",
+    fr: "Suivant"
+  },
+  select: {
+    en: "Select your offense number.",
+    fr: "Selectionner votre infraction."
   }
 };
 const translations = {

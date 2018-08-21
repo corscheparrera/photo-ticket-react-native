@@ -1,11 +1,18 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet, Button } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  Button,
+  Image,
+  ScrollView
+} from "react-native";
 import SearchableDropdown from "react-native-searchable-dropdown";
 import { material, iOSColors, systemWeights } from "react-native-typography";
 import Header from "../components/Header";
 import InfractionView from "./InfractionView";
 import polyglot from "../utils/translator";
-import infractionsArray from "../utils/infractionsList";
+import { infractionsArray } from "../utils/infractionsList";
 
 const itemsFR = [
   {
@@ -2246,8 +2253,9 @@ export default class ManualInput extends Component {
     this.state = {
       fullInfractionsData: null,
       selectedArt: null,
-      displayDropDown: true,
-      displayInfraction: false
+      displayDropDown: false,
+      displayInfraction: false,
+      displayInstrucitons: true
     };
   }
 
@@ -2262,10 +2270,15 @@ export default class ManualInput extends Component {
     return items;
   };
 
-  toggleView = () => {
-    this.state.displayDropDown
-      ? this.setState({ displayDropDown: false, displayInfraction: true })
-      : this.setState({ displayDropDown: true, displayInfraction: false });
+  hideInstructions = () => {
+    if (this.state.displayInstrucitons) {
+      this.setState({ displayInstrucitons: false, displayDropDown: true });
+    }
+  };
+  hideDropDown = () => {
+    if (this.state.displayDropDown) {
+      this.setState({ displayDropDown: false, displayInfraction: true });
+    }
   };
 
   reset = () => {};
@@ -2294,14 +2307,37 @@ export default class ManualInput extends Component {
         },
         isLoading: false
       },
-      () => this.toggleView()
+      () => this.hideDropDown()
     );
   };
-
+  showInstructions = () => {
+    if (this.state.displayInstrucitons) {
+      return (
+        <View style={styles.content}>
+          <Text style={styles.text}>{polyglot.t("findArt")}</Text>
+          <Image
+            style={{
+              width: 350,
+              height: 200,
+              marginBottom: 40
+            }}
+            source={require("../images/ticket_infos.png")}
+          />
+          <Button
+            onPress={() => {
+              this.hideInstructions();
+            }}
+            title={polyglot.t("next")}
+          />
+        </View>
+      );
+    }
+  };
   showDropDown = () => {
     if (this.state.displayDropDown) {
       return (
         <View style={styles.content}>
+          <Text style={styles.text}>{polyglot.t("select")}</Text>
           <SearchableDropdown
             // onTextChange={() => this.toggleSelectedArt()}
             onItemSelect={item =>
@@ -2333,11 +2369,11 @@ export default class ManualInput extends Component {
             }}
             items={this.itemLangSet()}
             defaultIndex={2}
-            placeholder="Placeholder."
+            placeholder="Art."
             resetValue={false}
             underlineColorAndroid="transparent"
           />
-          {/* <Text style={styles.text}>{this.state.selectedArt}</Text> */}
+
           <Button onPress={() => {}} title={polyglot.t("search")} />
         </View>
       );
@@ -2358,7 +2394,7 @@ export default class ManualInput extends Component {
   };
 
   showHeader = () => {
-    if (this.state.displayDropDown) {
+    if (this.state.displayDropDown || this.state.displayInstrucitons) {
       return (
         <Header
           title={polyglot.t("search")}
@@ -2371,6 +2407,7 @@ export default class ManualInput extends Component {
     return (
       <View style={styles.container}>
         {this.showHeader()}
+        {this.showInstructions()}
         {this.showDropDown()}
         {this.showInfraction()}
       </View>
@@ -2381,12 +2418,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1
   },
+
   content: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center"
   },
   text: {
+    margin: 30,
     fontSize: 10,
     ...material.titleObject,
     color: iOSColors.black,
