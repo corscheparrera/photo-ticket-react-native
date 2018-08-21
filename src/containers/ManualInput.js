@@ -4,6 +4,7 @@ import SearchableDropdown from "react-native-searchable-dropdown";
 import { material, iOSColors, systemWeights } from "react-native-typography";
 import Header from "../components/Header";
 import polyglot from "../utils/translator";
+import { connectInfraction } from "../utils/infractionsList";
 
 const items = [
   {
@@ -2242,23 +2243,34 @@ export default class ManualInput extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      fullInfractionsData: null,
       selectedArt: null,
       displayDropDown: true,
       displayInfraction: false
     };
-    this.createObject();
   }
 
-  createObject = () => {
-    let formattedObject = itemEN.map((element, index) => {
-      return {
-        id: index,
-        source: element.source,
-        art: element.art,
-        name: element.art + " " + element.source
-      };
-    });
-    console.log(JSON.stringify(formattedObject));
+  // createObject = () => {
+  //   let formattedObject = itemEN.map((element, index) => {
+  //     return {
+  //       id: index,
+  //       source: element.source,
+  //       art: element.art,
+  //       name: element.art + " " + element.source
+  //     };
+  //   });
+  //   console.log(JSON.stringify(formattedObject));
+  // };
+
+  fetchInfraction = () => {
+    let inf = connectInfraction("Art: 368"); // { type: 'Circulation', Règlement: 'C-24.2', ...
+    // console.log(connectInfraction(this.state.selectedArt));
+    // console.log("infraction", inf);
+    // this.setState({
+    //   fullInfractionsData: {
+    //     ...inf
+    //   }
+    // });
   };
 
   showDropDown = () => {
@@ -2273,7 +2285,9 @@ export default class ManualInput extends Component {
           <View style={styles.content}>
             <SearchableDropdown
               // onTextChange={() => this.toggleSelectedArt()}
-              onItemSelect={item => this.setState({ selectedArt: item.name })}
+              onItemSelect={item =>
+                this.setState({ selectedArt: item.art }, this.fetchInfraction)
+              }
               containerStyle={{
                 padding: 20
                 // height: 500
