@@ -1,12 +1,5 @@
 import React, { Component } from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  Button,
-  Image,
-  ScrollView
-} from "react-native";
+import { View, Text, StyleSheet, Button, Image, Alert } from "react-native";
 import SearchableDropdown from "react-native-searchable-dropdown";
 import { material, iOSColors, systemWeights } from "react-native-typography";
 import Header from "../components/Header";
@@ -2374,7 +2367,15 @@ export default class ManualInput extends Component {
 
           <Button
             onPress={() => {
-              this.getInfractionData();
+              if (this.state.selectedArt) {
+                this.getInfractionData();
+              } else
+                return Alert.alert(
+                  polyglot.t("alertTitle"),
+                  polyglot.t("alertMsg"),
+                  [{ text: "OK", onPress: () => console.log("OK Pressed") }],
+                  { cancelable: false }
+                );
             }}
             title={polyglot.t("search")}
           />

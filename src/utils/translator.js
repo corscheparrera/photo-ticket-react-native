@@ -490,6 +490,14 @@ const manualInput = {
   select: {
     en: "Select your offense number.",
     fr: "Selectionner votre infraction."
+  },
+  alertTitle: {
+    en: "Empty search",
+    fr: "Recherche vide"
+  },
+  alertMsg: {
+    en: "You need to enter your article to proceed.",
+    fr: "Vous devez entrer votre article pour continuer."
   }
 };
 const translations = {
