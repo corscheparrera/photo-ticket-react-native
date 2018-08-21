@@ -7,13 +7,12 @@ import Header from "../components/Header";
 import polyglot from "../utils/translator";
 export default class CamView extends React.Component {
   takePicture = async () => {
-    console.log("takePicture");
-
     const options = {};
     this.camera.capture({ metadata: options }).then(data => {
-      this.props.getUrl(data);
+      this.props.getImageUrl(data);
     });
   };
+
   render() {
     return (
       <View style={styles.container}>

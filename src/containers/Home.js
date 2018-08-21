@@ -1,7 +1,15 @@
-import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
+import {
+  ActivityIndicator,
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  Button
+} from "react-native";
 
 import BadFocus from "./BadFocus";
 import CamView from "./CamView";
+import ShowPhotoInstructions from "./ShowPhotoInstructions";
 import ConfirmPicView from "./ConfirmPicView";
 import InfractionView from "./InfractionView";
 import ProgressBar from "../components/ProgressBar";
@@ -19,8 +27,14 @@ const initialState = {
   imagePath: "",
   isLoading: false,
   formattedText: "",
-  badFocus: false,
-  cameraIsOpen: false
+  cameraIsOpen: false,
+  showInstructions: false,
+  showMainMenu: true,
+  showCam: false,
+  showPhotoConfirmation: false,
+  showLoading: false,
+  showBadFocus: false,
+  showInfractions: false
 };
 
 export default class Home extends React.Component {
@@ -33,36 +47,87 @@ export default class Home extends React.Component {
 
   componentDidMount() {
     const { currentUser } = firebase.auth();
-
     this.setState({ currentUser });
   }
 
-  openCam = () => {
+  showInstructions = () => {
     this.setState({
-      cameraIsOpen: true
+      showMainMenu: false,
+      showInstructions: true
     });
   };
+
+  showCam = () => {
+    this.setState({
+      showInstructions: false,
+      showCam: true
+    });
+  };
+
   closeCam = () => {
     this.setState({
       cameraIsOpen: false
     });
   };
-  getUrl = data => {
+
+  showPhotoConfirmation = () => {
+    this.setState({
+      showCam: false,
+      showPhotoConfirmation: true
+    });
+  };
+
+  closePhotoConfirmation = () => {
+    this.setState({
+      showPhotoConfirmation: false
+    });
+  };
+
+  showLoading = () => {
+    this.setState({
+      showPhotoConfirmation: false,
+      showLoading: true
+    });
+  };
+
+  showInfractions = () => {
+    this.setState({
+      showLoading: false,
+      showInfractions: true
+    });
+  };
+
+  showBadFocus = () => {
+    this.setState({
+      showLoading: false,
+      showBadFocus: true
+    });
+  };
+
+  closeBadFocus = () => {
+    this.setState({
+      showBadFocus: false
+    });
+  };
+
+  getImageUrl = data => {
     this.setState({ imagePath: data.path });
+    this.showPhotoConfirmation();
   };
 
   confirmedImage = () => {
-    this.setState({ isLoading: true });
+    this.showLoading();
     this.uploadImage(this.state.imagePath);
   };
+
   discardPicture = () => {
-    this.setState({ imagePath: "" });
+    this.closePhotoConfirmation();
+    this.showCam();
   };
+
   retryPicture = () => {
-    this.setState({
-      imagePath: "",
-      badFocus: false
-    });
+    this.closeBadFocus();
+    this.showCam();
   };
 
   uploadImage = async uri => {
@@ -98,109 +163,80 @@ export default class Home extends React.Component {
       console.log(textIsOk);
 
       if (textIsOk) {
-        this.setState({
-          formattedText: {
-            ...textIsOk
+        this.setState(
+          {
+            formattedText: {
+              ...textIsOk
+            }
           },
-          isLoading: false
-        });
+          this.showInfractions()
+        );
       } else {
         // Si OCR reconnait le titre mais qu'il contient trop de fautes
-        this.setState({
-          badFocus: true,
-          isLoading: false
-        });
+        this.showBadFocus();
       }
     } catch (err) {
       // Si OCR ne reconnait pas de texte OU autre
       console.log("erreur :", err);
       console.log(err);
-      this.setState({
-        badFocus: true,
-        isLoading: false
-      });
+      this.showBadFocus();
     }
-  };
-
-  displayView = () => {
-    if (!this.state.cameraIsOpen) {
-      return "Main Menu";
-    } else if (!this.state.imagePath) {
-      return "Cam View";
-    } else if (!this.state.cameraIsOpen) {
-      return "Legal";
-    } else if (
-      !this.state.isLoading &&
-      !this.state.badFocus &&
-      !this.state.formattedText
-    ) {
-      return "Confirm Pic View";
-    } else if (this.state.isLoading) {
-      return "Loading";
-    } else if (this.state.badFocus) {
-      return "Bad Focus";
-    } else return "InfractionView";
   };
 
   render() {
-    switch (this.displayView()) {
-      case "Main Menu":
-        return (
-          <MainMenu
-            navigation={this.props.navigation}
-            currentUser={this.state.currentUser}
-            openCam={this.openCam}
-          />
-        );
+    const {
+      showBadFocus,
+      showInstructions,
+      showMainMenu,
+      showCam,
+      showPhotoConfirmation,
+      showLoading,
+      showInfractions,
+      currentUser,
+      imagePath,
+      formattedText
+    } = this.state;
 
-      case "Cam View":
-        return (
-          <CamView
-            getUrl={this.getUrl}
-            navigation={this.props.navigation}
-            closeCam={this.closeCam}
-          />
-        );
-      case "Confirm Pic View":
-        return (
-          <ConfirmPicView
-            uri={this.state.imagePath}
-            confirmedImage={this.confirmedImage}
-            discardPicture={this.discardPicture}
-          />
-        );
-      case "Loading":
-        return (
-          <ProgressBar />
-          // <View style={styles.loader}>
-          //   <Text>{polyglot.t("inProgress")}</Text>
-          //   <ActivityIndicator size="large" />
-          // </View>
-        );
-      case "Bad Focus":
-        return (
-          <BadFocus
-            retryPicture={this.retryPicture}
-            navigation={this.props.navigation}
-            reset={this.reset}
-          />
-        );
-      default:
-        return (
-          <InfractionView
-            data={this.state.formattedText}
-            navigation={this.props.navigation}
-            imagePath={this.state.imagePath}
-            reset={this.reset}
-          />
-        );
-    }
+    return showMainMenu ? (
+      <MainMenu
+        navigation={this.props.navigation}
+        currentUser={currentUser}
+        showInstructions={this.showInstructions}
+      />
+    ) : showInstructions ? (
+      <ShowPhotoInstructions
+        navigation={this.props.navigation}
+        showCam={this.showCam}
+      />
+    ) : showCam ? (
+      <CamView
+        getImageUrl={this.getImageUrl}
+        navigation={this.props.navigation}
+        closeCam={this.closeCam}
+      />
+    ) : showPhotoConfirmation ? (
+      <ConfirmPicView
+        uri={imagePath}
+        confirmedImage={this.confirmedImage}
+        discardPicture={this.discardPicture}
+      />
+    ) : showLoading ? (
+      <ProgressBar />
+    ) : showBadFocus ? (
+      <BadFocus
+        retryPicture={this.retryPicture}
+        navigation={this.props.navigation}
+        reset={this.reset}
+      />
+    ) : showInfractions ? (
+      <InfractionView
+        data={formattedText}
+        navigation={this.props.navigation}
+        imagePath={imagePath}
+        reset={this.reset}
+      />
+    ) : (
+      console.log("rien à afficher")
+    );
   }
 }
-const styles = StyleSheet.create({
-  loader: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
-  }
-});

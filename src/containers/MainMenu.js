@@ -69,7 +69,7 @@ export default class Menus extends React.Component {
           <Image source={require("../images/logo_photo_ticekt_9.png")} />
 
           <ButtonPrimary
-            onPress={() => this.props.openCam()}
+            onPress={() => this.props.showInstructions()}
             text={polyglot.t("takePhoto")}
             largeur={200}
           />
