@@ -11,6 +11,7 @@ import { material, iOSColors, systemWeights } from "react-native-typography";
 import polyglot from "../utils/translator";
 import Header from "../components/Header";
 import ButtonPrimary from "../components/ButtonPrimary";
+import AutoHeightImage from "react-native-auto-height-image";
 
 export default class Menus extends React.Component {
   componentDidMount() {
@@ -65,15 +66,20 @@ export default class Menus extends React.Component {
       <View style={styles.container}>
         <Header title="Photo-Ticket" navigation={this.props.navigation} />
         <View style={styles.content}>
-          {/* <Text style={styles.text}>{"Bienvenue chez Photo-Ticket!"}</Text> */}
-          <Image source={require("../images/logo_photo_ticekt_9.png")} />
+          <Text style={styles.text}>{polyglot.t("welcome")}</Text>
+          <AutoHeightImage
+            width={200}
+            source={require("../images/logo_photo_ticekt_9.png")}
+          />
 
           <ButtonPrimary
+            grandeurPolice={12}
             onPress={() => this.props.showInstructions()}
             text={polyglot.t("takePhoto")}
             largeur={200}
           />
           <ButtonPrimary
+            grandeurPolice={12}
             largeur={200}
             onPress={() => this.props.navigation.navigate("UserInfos")}
             text={polyglot.t("lost")}
@@ -87,7 +93,8 @@ export default class Menus extends React.Component {
           <View style={styles.buttonView}>
             <View>
               <ButtonPrimary
-                largeur={75}
+                grandeurPolice={12}
+                largeur={95}
                 onPress={() => this.props.navigation.navigate("Guide")}
                 text="Guide"
               />
@@ -95,7 +102,8 @@ export default class Menus extends React.Component {
 
             <View>
               <ButtonPrimary
-                largeur={115}
+                grandeurPolice={12}
+                largeur={95}
                 onPress={() =>
                   this.props.navigation.navigate("MentionsLegales")
                 }
@@ -106,6 +114,9 @@ export default class Menus extends React.Component {
                 title="Guide"
               /> */}
             </View>
+          </View>
+          <View style={{ padding: 10 }}>
+            <Text style={styles.text}>{polyglot.t("version")}</Text>
           </View>
         </View>
       </View>

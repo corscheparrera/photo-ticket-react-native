@@ -147,12 +147,12 @@ const mainMenu = {
     fr: "Mes tickets"
   },
   legalDisclaimer: {
-    en: "Legal disclaimer",
-    fr: "Mentions légales"
+    en: "Legal",
+    fr: "Légal"
   },
   lost: {
     en: "Lost ticket",
-    fr: "Contravention égaré"
+    fr: "Contravention égarée"
   },
   myTicketAnymore: {
     en: "my ticket anymore",
@@ -184,6 +184,10 @@ const settings = {
   }
 };
 const home = {
+  welcome: {
+    en: "Welcome to Photo-Ticket!",
+    fr: "Bienvenue chez Photo-Ticket!"
+  },
   inProgress: {
     en: "Analysis in progress...",
     fr: "Analyse en cours..."
@@ -195,6 +199,10 @@ const home = {
   composeTel: {
     en: "Dial 438-872-5034",
     fr: "Composer le 438-872-5034"
+  },
+  version: {
+    en: "BETA version",
+    fr: "Version BETA"
   }
 };
 const legal = {
@@ -500,7 +508,7 @@ const manualInput = {
   findArt: {
     en: "Locate the number of the article (art.) and the law on your ticket.",
     fr:
-      "Repérer le numéro de l'article (art.) et la loi visée sur votre constant d'infraction."
+      "Repérez le numéro de l'article (art.) et la loi visée sur votre constant d'infraction."
   },
   next: {
     en: "Next",
@@ -508,7 +516,7 @@ const manualInput = {
   },
   select: {
     en: "Select your offense number.",
-    fr: "Selectionner votre infraction."
+    fr: "Sélectionnez votre infraction."
   },
   alertTitle: {
     en: "Empty search",
@@ -528,7 +536,7 @@ const photoInstructions = {
     en:
       "In order to correctly identify your infraction, please aim at the infraction number on your ticket.",
     fr:
-      "Afin de bien identifier votre infraction, s'il vous plait, veuillez viser le numéro de l'article se trouvant sur le constat d'infractioné"
+      "Pour faciliter la lecture, veuillez viser l’article se trouvant sur votre contravention"
   }
 };
 const translations = {

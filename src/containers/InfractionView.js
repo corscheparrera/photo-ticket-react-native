@@ -15,7 +15,6 @@ import firebase from "react-native-firebase";
 import Header from "../components/Header";
 import BackendChat from "../utils/BackendChat";
 import polyglot from "../utils/translator";
-// import Accordion from "react-native-collapsible/Accordion";
 import Accordion from "../components/Accordion";
 import AutoHeightImage from "react-native-auto-height-image";
 

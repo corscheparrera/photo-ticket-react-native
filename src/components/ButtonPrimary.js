@@ -10,7 +10,8 @@ export default class ButtonPrimary extends React.Component {
       buttonColor,
       largeur,
       weight,
-      hauteur
+      hauteur,
+      grandeuPolice
     } = this.props;
     return (
       <View>
@@ -38,7 +39,7 @@ export default class ButtonPrimary extends React.Component {
             <Text
               style={{
                 fontWeight: weight,
-                fontSize: 18,
+                fontSize: grandeuPolice,
                 color: txtColor
               }}
             >
@@ -55,5 +56,6 @@ ButtonPrimary.defaultProps = {
   txtColor: "#FFFFFF",
   largeur: 200,
   hauteur: 50,
-  weight: "bold"
+  weight: "bold",
+  grandeurPolice: 18
 };

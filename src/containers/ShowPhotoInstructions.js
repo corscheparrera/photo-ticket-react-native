@@ -17,7 +17,7 @@ const ShowPhotoInstructions = props => {
         <Text style={styles.text}>{polyglot.t("aimArticle")}</Text>
         <View style={{ paddingBottom: 40 }}>
           <AutoHeightImage
-            width={350}
+            width={320}
             source={require("../images/ticket_instructions.png")}
           />
         </View>
