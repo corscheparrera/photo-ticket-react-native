@@ -223,6 +223,7 @@ function buildArrayOfScores(arr1, arr2) {
       }
     });
   });
+  console.log("arrayOfScores", arrayOfScores);
   return arrayOfScores;
 }
 
@@ -238,11 +239,30 @@ function getArtWithMinScore(arr, minScore) {
   let obj = arr.find(obj => {
     return obj.score === minScore;
   });
+  console.log("getArtWithMinScore", obj.art);
   return obj.art;
 }
 
 function scoreIsSatisfying(score) {
   return score < 4 ? true : false;
+}
+
+function articlesAreMatching(lang, input, art) {
+  return input === art[lang].art ? true : false;
+}
+
+function getInfractionInfos(input, arr, lang) {
+  let matchArticle;
+  arr.forEach(obj => {
+    for (let key in obj) {
+      let art = obj[key];
+      if (articlesAreMatching(lang, input, art)) {
+        matchArticle = art[lang];
+        break;
+      }
+    }
+  });
+  return matchArticle;
 }
 
 export const parseData = res => {
@@ -253,25 +273,8 @@ export const parseData = res => {
   );
   const minScore = getMinScore(arrayOfScores);
   const bestMatch = getArtWithMinScore(arrayOfScores, minScore);
-  const infraction = connectInfraction(bestMatch); // { type: 'Circulation', Règlement: 'C-24.2', ...
+  const infraction = getInfractionInfos(bestMatch, infractionsArray, lang); // { type: 'Circulation', Règlement: 'C-24.2', ...
   return scoreIsSatisfying(minScore)
     ? infraction
     : console.log("No article found, check resolution.");
 };
-
-function connectInfraction(article, arr) {
-  let matchArticle;
-  arr.forEach(obj => {
-    for (let key in obj) {
-      let value = obj[key];
-      if (article === value.fr.art && lang == "fr") {
-        matchArticle = value.fr;
-        return;
-      } else if (article === value.fr.art && lang == "en") {
-        matchArticle = value.en;
-        return;
-      }
-    }
-  });
-  return matchArticle;
-}
