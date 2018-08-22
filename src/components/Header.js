@@ -4,49 +4,46 @@ import Icon from "react-native-vector-icons/FontAwesome";
 import polyglot from "../utils/translator";
 
 export default class Header extends React.Component {
+  showAlertReachLawyer = () => {
+    return Alert.alert(
+      polyglot.t("reachAlawyer"),
+      polyglot.t("composeTel"),
+      [{ text: "OK", onPress: () => console.log("OK Pressed") }],
+      { cancelable: false }
+    );
+  };
   render() {
     const { navigate, goBack } = this.props.navigation;
-    // The Reset action wipes the whole navigation state
-    // const resetAction = NavigationActions.reset({
-    //   index: 0,
-    //   actions: [NavigationActions.navigate({ routeName: "Home" })]
-    // });
+    const { title } = this.props;
 
     return (
       <View style={styles.navBar}>
         <Icon
           style={styles.navBarButton}
-          name={this.props.title === "Photo-Ticket" ? "phone" : "arrow-left"}
+          name={title === "Photo-Ticket" ? "phone" : "arrow-left"}
           size={24}
           onPress={() => {
-            if (this.props.title === "Photo") {
-              this.props.closeCam();
-            }
-            if (this.props.title === "Infraction") {
+            if (
+              title === "Infraction" ||
+              title === "Instructions" ||
+              title === "Photo"
+            ) {
               this.props.reset();
             }
-            if (this.props.title === "Photo-Ticket") {
-              return Alert.alert(
-                polyglot.t("reachAlawyer"),
-                polyglot.t("composeTel"),
-                [{ text: "OK", onPress: () => console.log("OK Pressed") }],
-                { cancelable: false }
-              );
-            } else if (
-              this.props.title !== "Photo-Ticket" ||
-              this.props.title !== "Infraction"
-            ) {
+            if (title === "Photo-Ticket") {
+              this.showAlertReachLawyer();
+            } else if (title !== "Photo-Ticket" || title !== "Infraction") {
               goBack();
             }
           }}
         />
-        <Text style={styles.navBarHeader}>{this.props.title}</Text>
+        <Text style={styles.navBarHeader}>{title}</Text>
         <Icon
           style={styles.navBarButton}
-          name={this.props.title === "Settings" ? "" : "gear"}
+          name={title === "Settings" ? "" : "gear"}
           size={24}
           onPress={() => {
-            if (this.props.title !== "Settings") {
+            if (title !== "Settings") {
               navigate("Settings");
             }
           }}

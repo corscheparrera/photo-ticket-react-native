@@ -524,6 +524,14 @@ const manualInput = {
     fr: "Inscrire le chiffre ici..."
   }
 };
+const photoInstructions = {
+  aimArticle: {
+    en:
+      "In order to correctly identify your infraction, please aim at the infraction number on your ticket.",
+    fr:
+      "Afin de bien identifier votre infraction, s'il vous plait, veuillez viser le numéro de l'article se trouvant sur le constat d'infractioné"
+  }
+};
 const translations = {
   ...badFocus,
   ...camView,
@@ -537,7 +545,8 @@ const translations = {
   ...home,
   ...legal,
   ...guide,
-  ...manualInput
+  ...manualInput,
+  ...photoInstructions
 };
 
 function getUserLanguage() {

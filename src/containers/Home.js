@@ -207,12 +207,14 @@ export default class Home extends React.Component {
       <ShowPhotoInstructions
         navigation={this.props.navigation}
         showCam={this.showCam}
+        reset={this.reset}
       />
     ) : showCam ? (
       <CamView
         getImageUrl={this.getImageUrl}
         navigation={this.props.navigation}
         closeCam={this.closeCam}
+        reset={this.reset}
       />
     ) : showPhotoConfirmation ? (
       <ConfirmPicView

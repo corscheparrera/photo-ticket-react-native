@@ -20,6 +20,7 @@ export default class CamView extends React.Component {
           title="Photo"
           navigation={this.props.navigation}
           closeCam={this.props.closeCam}
+          reset={this.props.reset}
         />
         <Camera
           ref={cam => {

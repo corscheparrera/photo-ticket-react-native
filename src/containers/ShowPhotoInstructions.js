@@ -3,21 +3,25 @@ import { StyleSheet, Text, View, Image, Button } from "react-native";
 import polyglot from "../utils/translator";
 import { material, iOSColors, systemWeights } from "react-native-typography";
 import Header from "../components/Header";
+import AutoHeightImage from "react-native-auto-height-image";
 
 const ShowPhotoInstructions = props => {
   return (
     <View style={styles.container}>
-      <Header title="Photo" navigation={props.navigation} />
+      <Header
+        title="Instructions"
+        navigation={props.navigation}
+        reset={props.reset}
+      />
       <View style={styles.content}>
-        <Text style={styles.text}>{polyglot.t("findArt")}</Text>
-        <Image
-          style={{
-            width: 350,
-            height: 200,
-            marginBottom: 40
-          }}
-          source={require("../images/ticket_infos.png")}
-        />
+        <Text style={styles.text}>{polyglot.t("aimArticle")}</Text>
+        <View style={{ paddingBottom: 40 }}>
+          <AutoHeightImage
+            width={350}
+            source={require("../images/ticket_instructions.png")}
+          />
+        </View>
+
         <Button
           onPress={() => {
             props.showCam();
