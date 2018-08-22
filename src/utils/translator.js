@@ -498,10 +498,9 @@ const manualInput = {
     fr: "Recherche"
   },
   findArt: {
-    en:
-      "Locate the number of the aricle (art.) and the law on your constant offense.",
+    en: "Locate the number of the article (art.) and the law on your ticket.",
     fr:
-      "Repérer le numéro de l'aricle (art.) et la loi visée sur votre constant d'infraction."
+      "Repérer le numéro de l'article (art.) et la loi visée sur votre constant d'infraction."
   },
   next: {
     en: "Next",
