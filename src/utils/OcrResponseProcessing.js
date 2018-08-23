@@ -94,13 +94,19 @@ function getInfractionInfos(arr, input, lang) {
   //   return obj.art === input;
   // });
   // return obj;
+
   let matchArticle;
+  console.log("arr", arr);
   arr.forEach(obj => {
+    console.log("obj", obj);
+
     for (let key in obj) {
-      let article = obj[key];
-      if (articlesAreMatching(input, article)) {
-        matchArticle = article[lang];
-        return;
+      if (obj.hasOwnProperty(key)) {
+        let article = obj[key];
+        if (articlesAreMatching(input, article)) {
+          matchArticle = article[lang];
+          // return true;
+        }
       }
     }
   });
