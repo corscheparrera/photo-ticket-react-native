@@ -160,7 +160,7 @@ export default class Home extends React.Component {
       console.log("this is the response", response);
 
       let textIsOk = parseData(response);
-      console.log(textIsOk);
+      console.log("textIsOk", textIsOk);
 
       if (textIsOk) {
         this.setState(
