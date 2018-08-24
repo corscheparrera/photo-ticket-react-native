@@ -739,7 +739,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = RA9N8CMS66;
+						DevelopmentTeam = Q729V7W9BA;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1303,7 +1303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = RA9N8CMS66;
+				DEVELOPMENT_TEAM = Q729V7W9BA;
 				DISPLAY_NAME = ticketPhoto;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1316,7 +1316,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.phototicket.phototicket;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ticketPhoto.ticketPoto;
 				PRODUCT_NAME = ticketPhoto;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1332,7 +1332,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RA9N8CMS66;
+				DEVELOPMENT_TEAM = Q729V7W9BA;
 				DISPLAY_NAME = ticketPhoto;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1345,7 +1345,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.phototicket.phototicket;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ticketPhoto.ticketPoto;
 				PRODUCT_NAME = ticketPhoto;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

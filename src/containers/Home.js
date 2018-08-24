@@ -12,7 +12,6 @@ import CamView from "./CamView";
 import ShowPhotoInstructions from "./ShowPhotoInstructions";
 import ConfirmPicView from "./ConfirmPicView";
 import InfractionView from "./InfractionView";
-import ProgressBar from "../components/ProgressBar";
 import MainMenu from "./MainMenu";
 import RNFetchBlob from "react-native-fetch-blob";
 import React from "react";
@@ -223,7 +222,12 @@ export default class Home extends React.Component {
         discardPicture={this.discardPicture}
       />
     ) : showLoading ? (
-      <ProgressBar />
+      // <ProgressBar />
+
+      <View style={styles.loader}>
+        <Text>{polyglot.t("inProgress")}</Text>
+        <ActivityIndicator size="large" />
+      </View>
     ) : showBadFocus ? (
       <BadFocus
         retryPicture={this.retryPicture}
@@ -242,3 +246,10 @@ export default class Home extends React.Component {
     );
   }
 }
+const styles = StyleSheet.create({
+  loader: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center"
+  }
+});
