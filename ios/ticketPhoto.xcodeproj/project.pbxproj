@@ -739,7 +739,8 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = Q729V7W9BA;
+						DevelopmentTeam = RA9N8CMS66;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1298,9 +1299,11 @@
 			baseConfigurationReference = 4031C5D3468A6410BB4016B9 /* Pods-ticketPhoto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = Q729V7W9BA;
+				DEVELOPMENT_TEAM = RA9N8CMS66;
 				DISPLAY_NAME = ticketPhoto;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1313,9 +1316,11 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ticketphoto.ticketphoto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phototicket.phototicket;
 				PRODUCT_NAME = ticketPhoto;
-				VERSIONING_SYSTEM = "apple-generic";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				VERSIONING_SYSTEM = "";
 			};
 			name = Debug;
 		};
@@ -1324,8 +1329,10 @@
 			baseConfigurationReference = B7AFA8AA9A1CFD17320E9074 /* Pods-ticketPhoto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q729V7W9BA;
+				DEVELOPMENT_TEAM = RA9N8CMS66;
 				DISPLAY_NAME = ticketPhoto;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1338,9 +1345,11 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ticketphoto.ticketphoto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phototicket.phototicket;
 				PRODUCT_NAME = ticketPhoto;
-				VERSIONING_SYSTEM = "apple-generic";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				VERSIONING_SYSTEM = "";
 			};
 			name = Release;
 		};
