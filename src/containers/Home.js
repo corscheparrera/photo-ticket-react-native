@@ -116,7 +116,7 @@ export default class Home extends React.Component {
 
   confirmedImage = () => {
     this.showLoading();
-    this.uploadImage(this.state.imagePath);
+    this.useImage(this.state.imagePath);
   };
 
   discardPicture = () => {
@@ -129,43 +129,42 @@ export default class Home extends React.Component {
     this.showCam();
   };
 
-  uploadImage = async uri => {
+  uploadImageToFirebase = async uri => {
     // Prepare Blob support
     const Blob = RNFetchBlob.polyfill.Blob;
     const fs = RNFetchBlob.fs;
-
     GLOBAL.XMLHttpRequest =
       GLOBAL.originalXMLHttpRequest || GLOBAL.XMLHttpRequest; // Working
     // window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest; // Can't see network logs
     window.Blob = Blob;
+    console.log(uri);
+    const sessionId = new Date().getTime();
+    const imageRef = storage.ref("GoogleVisionImages").child(`${sessionId}`);
+    await imageRef.put(uri, { contentType: "image/jpg" });
+    const imageURL = await imageRef.getDownloadURL();
+    console.log(imageURL);
+    return imageURL;
+  };
 
+  sendURItoServer = async imageURI => {
+    console.log("FETCHING OCR");
+    let response = await axios.post("/google-ocr", {
+      linkToImg: imageURI
+    });
+    console.log("this is the response", response);
+    return response;
+  };
+
+  processResFromGoogleVision = async response => {
+    console.log("processing response", response);
     try {
-      console.log(uri);
-
-      const sessionId = new Date().getTime();
-      const imageRef = storage.ref("GoogleVisionImages").child(`${sessionId}`);
-
-      await imageRef.put(uri, { contentType: "image/jpg" });
-      const imageURL = await imageRef.getDownloadURL();
-      console.log(imageURL);
-      // console.log(base64image);
-      // let base64image = await fs.readFile(uri, "base64");
-      console.log("FETCHING OCR");
-
-      let response = await axios.post("/google-ocr", {
-        linkToImg: imageURL
-      });
-
-      console.log("this is the response", response);
-
-      let textIsOk = parseData(response);
-      console.log("textIsOk", textIsOk);
-
-      if (textIsOk) {
+      let articleDetails = parseData(response);
+      console.log("articleDetails", articleDetails);
+      if (articleDetails) {
         this.setState(
           {
             formattedText: {
-              ...textIsOk
+              ...articleDetails
             }
           },
           this.showInfractions()
@@ -182,6 +181,12 @@ export default class Home extends React.Component {
     }
   };
 
+  useImage = async uri => {
+    let imageURI = await this.uploadImageToFirebase(uri);
+    let response = await this.sendURItoServer(imageURI);
+    await this.processResFromGoogleVision(response);
+  };
+  showArticleChoice = () => {};
   render() {
     const {
       showBadFocus,

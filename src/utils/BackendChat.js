@@ -22,6 +22,7 @@ class BackendChat {
   getEmail() {
     return this.email;
   }
+
   // retrieve the messages from the backend
   loadMessages(callback) {
     let messagesRef = firebase.database().ref(`allChat/chat${this.uid}`);
@@ -40,7 +41,6 @@ class BackendChat {
     };
     messagesRef.limitToLast(20).on("child_added", onReceive);
   }
-
   async notifyLawyer() {
     try {
       const chatID = this.getUid();

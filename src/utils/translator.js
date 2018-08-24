@@ -150,9 +150,9 @@ const mainMenu = {
     en: "Legal",
     fr: "Légal"
   },
-  lost: {
-    en: "Lost ticket",
-    fr: "Contravention égarée"
+  chat: {
+    en: "Chat",
+    fr: "Chat"
   },
   myTicketAnymore: {
     en: "my ticket anymore",

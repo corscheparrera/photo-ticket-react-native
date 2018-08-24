@@ -33,6 +33,7 @@ export default class ChatContainer extends Component {
       });
     });
   }
+
   componentWillUnmount = () => {
     BackendChat.closeChat();
   };

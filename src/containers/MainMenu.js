@@ -78,12 +78,6 @@ export default class Menus extends React.Component {
             text={polyglot.t("takePhoto")}
             largeur={200}
           />
-          <ButtonPrimary
-            grandeurPolice={12}
-            largeur={200}
-            onPress={() => this.props.navigation.navigate("UserInfos")}
-            text={polyglot.t("lost")}
-          />
 
           {/* <ButtonPrimary
             onPress={() => this.props.navigation.navigate("MyTickets")}
@@ -104,10 +98,8 @@ export default class Menus extends React.Component {
               <ButtonPrimary
                 grandeurPolice={12}
                 largeur={95}
-                onPress={() =>
-                  this.props.navigation.navigate("MentionsLegales")
-                }
-                text={polyglot.t("legalDisclaimer")}
+                onPress={() => this.props.navigation.navigate("UserInfos")}
+                text={polyglot.t("chat")}
               />
               {/* <Button
                 onPress={() => this.props.navigation.navigate("ManualInput")}

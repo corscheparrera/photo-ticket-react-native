@@ -208,7 +208,7 @@ const styles = StyleSheet.create({
     ...systemWeights.semibold,
     fontSize: 16,
     textAlign: "center",
-    height: 50,
+    minHeight: 50,
     paddingTop: 15
   },
   icon: {
