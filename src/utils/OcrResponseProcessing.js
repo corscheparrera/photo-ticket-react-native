@@ -60,12 +60,14 @@ function getArtWithMinScore(arr, minScore) {
 }
 
 function scoreIsSatisfying(score) {
-  return score < 4 ? true : false;
+  return score < 1 ? true : false;
 }
+
 function ticketIsFrench(input) {
   console.log("input", input);
   return input.includes("Art:") ? true : false;
 }
+
 function articlesAreMatching(input, article) {
   if (ticketIsFrench(input)) {
     console.log("ticket is in french");
