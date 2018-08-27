@@ -1,7 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 import { Text, View, TouchableHighlight } from "react-native";
 
-export default class ButtonPrimary extends React.Component {
+export default class ButtonPrimary extends Component {
+  static defaultProps = {
+    buttonColor: "#33AAFF",
+    txtColor: "#FFFFFF",
+    largeur: 200,
+    hauteur: 50,
+    weight: "bold",
+    grandeurPolice: 18
+  };
   render() {
     let {
       onPress,
@@ -51,11 +59,3 @@ export default class ButtonPrimary extends React.Component {
     );
   }
 }
-ButtonPrimary.defaultProps = {
-  buttonColor: "#33AAFF",
-  txtColor: "#FFFFFF",
-  largeur: 200,
-  hauteur: 50,
-  weight: "bold",
-  grandeurPolice: 18
-};
