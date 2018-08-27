@@ -10,6 +10,24 @@ class BackendChat {
       }
     });
   }
+  check = async () => {
+    let ref = firebase.database().ref(`allChat/chat${this.uid}`);
+    let snapshot = await ref.once("value");
+    const infos = snapshot.val();
+    if (infos == null) {
+      let messagesRef = firebase.database().ref(`allChat/chat${this.uid}`);
+      await messagesRef.push({
+        text:
+          "Bonjour, je suis Maître Havrey, Ancien procureur de la ville de Montréal. Comment puis-je vous aider?",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/Divers%2Fmarc_avatar.png?alt=media&token=4c16fd37-f4b7-4cc7-96e8-897649d43fcf",
+        user: { email: "Maître Harvey" },
+        createdAt: firebase.database.ServerValue.TIMESTAMP
+      });
+      console.log("defualt mesg was sent");
+    }
+    console.log("infos", infos);
+  };
   setUid(value) {
     this.uid = value;
   }
@@ -32,6 +50,7 @@ class BackendChat {
       callback({
         _id: data.key,
         text: message.text,
+        image: message.image,
         createdAt: new Date(message.createdAt),
         user: {
           _id: message.user._id,

@@ -4,6 +4,7 @@ import firebase from "react-native-firebase";
 import { GiftedChat } from "react-native-gifted-chat";
 import polylgot from "../utils/translator";
 import Header from "../components/Header";
+import AutoHeightImage from "react-native-auto-height-image";
 
 import BackendChat from "../utils/BackendChat";
 
@@ -15,7 +16,8 @@ export default class ChatContainer extends Component {
     };
   }
   componentWillMount() {
-    this.startChat();
+    // this.startChat();
+    BackendChat.check();
   }
   startChat = async () => {
     try {
@@ -42,6 +44,7 @@ export default class ChatContainer extends Component {
     return (
       <View style={styles.container}>
         <Header title="Chat" navigation={this.props.navigation} />
+
         <GiftedChat
           renderAvatar={null}
           messages={this.state.messages}

@@ -96,8 +96,8 @@ const infractionView = {
     fr: "Loi"
   },
   freeConsultation: {
-    en: "Chat with a lawyer for free",
-    fr: "Clavarder avec un avocat gratuitement"
+    en: "Chat with a lawyer",
+    fr: "Clavarder avec un avocat"
   },
   talkToLawyer: {
     en: "Speak to my lawyer 438-872-5034",
