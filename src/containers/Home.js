@@ -12,6 +12,7 @@ import CamView from "./CamView";
 import ShowPhotoInstructions from "./ShowPhotoInstructions";
 import ConfirmPicView from "./ConfirmPicView";
 import InfractionView from "./InfractionView";
+import ArticleConfirmation from "./ArticleConfirmation";
 import MainMenu from "./MainMenu";
 import RNFetchBlob from "react-native-fetch-blob";
 import React from "react";
@@ -25,12 +26,13 @@ const initialState = {
   currentUser: null,
   imagePath: "",
   isLoading: false,
-  formattedText: "",
+  matchedArticle: "",
   cameraIsOpen: false,
   showInstructions: false,
   showMainMenu: true,
   showCam: false,
   showPhotoConfirmation: false,
+  showArticleConfirmation: false,
   showLoading: false,
   showBadFocus: false,
   showInfractions: false
@@ -91,7 +93,7 @@ export default class Home extends React.Component {
 
   showInfractions = () => {
     this.setState({
-      showLoading: false,
+      showArticleConfirmation: false,
       showInfractions: true
     });
   };
@@ -163,11 +165,11 @@ export default class Home extends React.Component {
       if (articleDetails) {
         this.setState(
           {
-            formattedText: {
+            matchedArticle: {
               ...articleDetails
             }
           },
-          this.showInfractions()
+          this.showArticleConfirmation()
         );
       } else {
         // Si OCR reconnait le titre mais qu'il contient trop de fautes
@@ -186,7 +188,18 @@ export default class Home extends React.Component {
     let response = await this.sendURItoServer(imageURI);
     await this.processResFromGoogleVision(response);
   };
-  showArticleChoice = () => {};
+
+  showArticleConfirmation = () => {
+    this.setState({
+      showLoading: false,
+      showArticleConfirmation: true
+    });
+  };
+
+  articleWasConfirmed = () => {
+    this.showInfractions();
+  };
+
   render() {
     const {
       showBadFocus,
@@ -198,7 +211,8 @@ export default class Home extends React.Component {
       showInfractions,
       currentUser,
       imagePath,
-      formattedText
+      matchedArticle,
+      showArticleConfirmation
     } = this.state;
 
     return showMainMenu ? (
@@ -228,11 +242,17 @@ export default class Home extends React.Component {
       />
     ) : showLoading ? (
       // <ProgressBar />
-
       <View style={styles.loader}>
         <Text>{polyglot.t("inProgress")}</Text>
         <ActivityIndicator size="large" />
       </View>
+    ) : showArticleConfirmation ? (
+      <ArticleConfirmation
+        art={matchedArticle.art}
+        source={matchedArticle.source}
+        navigation={this.props.navigation}
+        articleWasConfirmed={this.articleWasConfirmed}
+      />
     ) : showBadFocus ? (
       <BadFocus
         retryPicture={this.retryPicture}
@@ -241,7 +261,7 @@ export default class Home extends React.Component {
       />
     ) : showInfractions ? (
       <InfractionView
-        data={formattedText}
+        data={matchedArticle}
         navigation={this.props.navigation}
         imagePath={imagePath}
         reset={this.reset}

@@ -12,8 +12,6 @@ import {
 
 let lang = polyglot.locale; // 'en' or 'fr'
 
-let watchList = [["Art: 55", , "Art: 65"], ["Sect: 55", "Sect: 65"]];
-
 // Google Vision API response formattated in an array of strings, string is a line on the ticket.
 function formatGoogleVisionResponse(res) {
   let formatted = res["data"]["responses"]["0"]["fullTextAnnotation"][
@@ -62,7 +60,7 @@ function getArtWithMinScore(arr, minScore) {
 }
 
 function scoreIsSatisfying(score) {
-  return score < 1 ? true : false;
+  return score < 2 ? true : false;
 }
 
 function ticketIsFrench(input) {
@@ -97,34 +95,6 @@ function getInfractionInfos(arr, input, lang) {
   });
   return matchArticle;
 }
-// function isOnWatchList(input, arr) {
-//   return list.includes(input) ? true : false;
-//   if (arr.includes(input)) {
-//     if ((input = arr[0])) {
-//       problematicArticle = arr[1];
-//     } else {
-//       problematicArticle = arr[0];
-//     }
-//   }
-// }
-
-function finProblematicArticle(input, list) {
-  let problematicArticle;
-  //checkre si l'input fait parti de la list a surveiller
-  list.forEach(arr => {
-    if (i.includes(input)) {
-      if (input === arr[0]) {
-        problematicArticle = arr[1];
-      } else {
-        problematicArticle = arr[0];
-      }
-    }
-  });
-  return problematicArticle;
-
-  // si oui, renvoyer au USER deux possiblités
-  // il aura a cliquer sur une des deux pour consulter la bonne
-}
 
 export const parseData = res => {
   const formattedResponse = formatGoogleVisionResponse(res);
@@ -135,6 +105,9 @@ export const parseData = res => {
   const minScore = getMinScore(arrayOfScores);
   const bestMatch = getArtWithMinScore(arrayOfScores, minScore);
   const infraction = getInfractionInfos(infractionsArray, bestMatch, lang); // { type: 'Circulation', Règlement: 'C-24.2', ...
+  // check if if there's a similar article (visual similarity)
+  console.log("infraction", infraction);
+
   return scoreIsSatisfying(minScore)
     ? infraction
     : console.log("No article found, check resolution.");

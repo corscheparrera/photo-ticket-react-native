@@ -2296,7 +2296,7 @@ export default class ManualInput extends Component {
     });
     this.setState(
       {
-        formattedText: {
+        matchedArticle: {
           ...matchArticle
         },
         isLoading: false
@@ -2389,7 +2389,7 @@ export default class ManualInput extends Component {
     if (this.state.displayInfraction) {
       return (
         <InfractionView
-          data={this.state.formattedText}
+          data={this.state.matchedArticle}
           navigation={this.props.navigation}
           // imagePath={this.state.imagePath}
           reset={this.reset}

@@ -539,6 +539,28 @@ const photoInstructions = {
       "Pour faciliter la lecture, veuillez viser l’article se trouvant sur votre contravention"
   }
 };
+const articleConfirmation = {
+  detected: {
+    en: "We detected:",
+    fr: "Nous avons détecté:"
+  },
+  isItRightPt1: {
+    en: "Is it the article that",
+    fr: "Est-ce bien l'article"
+  },
+  isItRightPt2: {
+    en: "appears on your ticket?",
+    fr: "sur votre constant d'infraction?"
+  },
+  yesContinue: {
+    en: "Yes, continue.",
+    fr: "Oui, continuer."
+  },
+  noManualInput: {
+    en: "No, proceed by manual input.",
+    fr: "Non, effectuer une recherche manuelle."
+  }
+};
 const translations = {
   ...badFocus,
   ...camView,
@@ -553,7 +575,8 @@ const translations = {
   ...legal,
   ...guide,
   ...manualInput,
-  ...photoInstructions
+  ...photoInstructions,
+  ...articleConfirmation
 };
 
 function getUserLanguage() {
