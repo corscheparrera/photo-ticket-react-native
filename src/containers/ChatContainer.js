@@ -17,7 +17,8 @@ export default class ChatContainer extends Component {
   }
   componentWillMount() {
     // this.startChat();
-    BackendChat.check();
+    BackendChat.greeting();
+    BackendChat.preventColdStart();
   }
   startChat = async () => {
     try {
@@ -44,7 +45,6 @@ export default class ChatContainer extends Component {
     return (
       <View style={styles.container}>
         <Header title="Chat" navigation={this.props.navigation} />
-
         <GiftedChat
           renderAvatar={null}
           messages={this.state.messages}

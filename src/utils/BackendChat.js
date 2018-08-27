@@ -10,7 +10,7 @@ class BackendChat {
       }
     });
   }
-  check = async () => {
+  greeting = async () => {
     let ref = firebase.database().ref(`allChat/chat${this.uid}`);
     let snapshot = await ref.once("value");
     const infos = snapshot.val();
@@ -24,10 +24,35 @@ class BackendChat {
         user: { email: "Maître Harvey" },
         createdAt: firebase.database.ServerValue.TIMESTAMP
       });
-      console.log("defualt mesg was sent");
     }
-    console.log("infos", infos);
   };
+  preventColdStart = () => {
+    let messagesRef = firebase.database().ref(`allChat/chat${this.uid}`);
+    let newRef = this.pushSomething(messagesRef);
+    this.removeItem(newRef);
+  };
+  pushSomething = ref => {
+    // Let's push something. push() returns a reference that you can hold onto!
+    var justPushed = ref.push({
+      text: "",
+      user: { email: "Maître Harvey" }
+    });
+    // We return a reference, but you can also return the name of the newly
+    // created object with .name().
+    return justPushed;
+  };
+
+  removeItem = ref => {
+    // Now we can get back to that item we just pushed via .child().
+    ref.remove(error => {
+      console.log(
+        error
+          ? "Uh oh, cold start prevention failed!"
+          : "Success, cold start prevention worked!"
+      );
+    });
+  };
+
   setUid(value) {
     this.uid = value;
   }
