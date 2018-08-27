@@ -13,23 +13,23 @@ import {
 let lang = polyglot.locale; // 'en' or 'fr'
 
 // Google Vision API response formattated in an array of strings, string is a line on the ticket.
-function formatGoogleVisionResponse(res) {
+formatGoogleVisionResponse = res => {
   let formatted = res["data"]["responses"]["0"]["fullTextAnnotation"][
     "text"
   ].split("\n");
   console.log("formatted", formatted);
   return formatted;
-}
+};
 
-function populateArray(array, article, score) {
+populateArray = (array, article, score) => {
   array.push({
     score: score,
     art: article
   });
-}
+};
 
 // build an array containing object composed of each article and its similarity score with the user's input
-function buildArrayOfScores(arr1, arr2) {
+buildArrayOfScores = (arr1, arr2) => {
   let arrayOfScores = [];
   arr1.forEach(article => {
     arr2.forEach(input => {
@@ -41,34 +41,34 @@ function buildArrayOfScores(arr1, arr2) {
   });
   console.log("arrayOfScores", arrayOfScores);
   return arrayOfScores;
-}
+};
 
 // reduce the array of scores to identify the lowest score AKA the article with the highest similarity of the user's input
-function getMinScore(arr) {
+getMinScore = arr => {
   let minScore = arr.reduce((min, b) => Math.min(min, b.score), arr[0].score);
   console.log("min score is ", minScore);
   return minScore;
-}
+};
 
 // find the article that has the score (the lowest) identified using getMinScore()
-function getArtWithMinScore(arr, minScore) {
+getArtWithMinScore = (arr, minScore) => {
   let obj = arr.find(obj => {
     return obj.score === minScore;
   });
   console.log("getArtWithMinScore", obj.art);
   return obj.art;
-}
+};
 
-function scoreIsSatisfying(score) {
+scoreIsSatisfying = score => {
   return score < 2 ? true : false;
-}
+};
 
-function ticketIsFrench(input) {
+ticketIsFrench = input => {
   console.log("input", input);
   return input.includes("Art:") ? true : false;
-}
+};
 
-function articlesAreMatching(input, article) {
+articlesAreMatching = (input, article) => {
   if (ticketIsFrench(input)) {
     console.log("ticket is in french");
     return input === article.fr.art ? true : false;
@@ -76,9 +76,9 @@ function articlesAreMatching(input, article) {
     console.log("ticket is in english");
     return input === article.en.art ? true : false;
   }
-}
+};
 
-function getInfractionInfos(arr, input, lang) {
+getInfractionInfos = (arr, input, lang) => {
   let matchArticle;
   console.log("arr", arr);
   arr.forEach(obj => {
@@ -94,7 +94,7 @@ function getInfractionInfos(arr, input, lang) {
     }
   });
   return matchArticle;
-}
+};
 
 export const parseData = res => {
   const formattedResponse = formatGoogleVisionResponse(res);
