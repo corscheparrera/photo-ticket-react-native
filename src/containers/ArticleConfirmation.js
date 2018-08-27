@@ -8,9 +8,15 @@ import ButtonPrimary from "../components/ButtonPrimary";
 
 export default class ArticleConfirmation extends Component {
   state = { currentUser: null };
-
+  goodMatch = () => {
+    this.props.sendAnlyticsToFirebase(false);
+    this.props.articleWasConfirmed();
+  };
+  badMatch = () => {
+    this.props.sendAnlyticsToFirebase(true);
+    this.props.navigation.navigate("ManualInput");
+  };
   render() {
-    const { currentUser } = this.state;
     return (
       <View style={styles.container}>
         <Header title="Confirmation" navigation={this.props.navigation} />
@@ -28,12 +34,12 @@ export default class ArticleConfirmation extends Component {
           <ButtonPrimary
             hauteur={70}
             text={polylgot.t("yesContinue")}
-            onPress={() => this.props.articleWasConfirmed()}
+            onPress={() => this.goodMatch()}
           />
 
           <ButtonPrimary
             hauteur={70}
-            onPress={() => this.props.navigation.navigate("ManualInput")}
+            onPress={() => this.badMatch()}
             text={polylgot.t("noManualInput")}
           />
         </View>

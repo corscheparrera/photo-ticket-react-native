@@ -35,7 +35,8 @@ const initialState = {
   showArticleConfirmation: false,
   showLoading: false,
   showBadFocus: false,
-  showInfractions: false
+  showInfractions: false,
+  imageFirebaseURL: null
 };
 
 export default class Home extends React.Component {
@@ -144,6 +145,7 @@ export default class Home extends React.Component {
     const imageRef = storage.ref("GoogleVisionImages").child(`${sessionId}`);
     await imageRef.put(uri, { contentType: "image/jpg" });
     const imageURL = await imageRef.getDownloadURL();
+    this.setState({ imageFirebaseURL: imageURL });
     console.log(imageURL);
     return imageURL;
   };
@@ -200,6 +202,19 @@ export default class Home extends React.Component {
     this.showInfractions();
   };
 
+  sendAnlyticsToFirebase = async i => {
+    const { imageFirebaseURL, matchedArticle, currentUser } = this.state;
+    let analyticRef = firebase.database().ref("analytics");
+    analyticRef.push({
+      user: currentUser,
+      art: matchedArticle.art,
+      source: matchedArticle.source,
+      mismatch: i,
+      date: firebase.database.ServerValue.TIMESTAMP,
+      imageFirebaseURL: imageFirebaseURL
+    });
+  };
+
   render() {
     const {
       showBadFocus,
@@ -252,6 +267,7 @@ export default class Home extends React.Component {
         source={matchedArticle.source}
         navigation={this.props.navigation}
         articleWasConfirmed={this.articleWasConfirmed}
+        sendAnlyticsToFirebase={this.sendAnlyticsToFirebase}
       />
     ) : showBadFocus ? (
       <BadFocus
