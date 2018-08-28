@@ -1,6 +1,6 @@
 import axios from "../utils/axios";
 import firebase from "react-native-firebase";
-
+import polyglot from "../utils/translator";
 class BackendChat {
   constructor() {
     firebase.auth().onAuthStateChanged(user => {
@@ -17,8 +17,7 @@ class BackendChat {
     if (infos == null) {
       let messagesRef = firebase.database().ref(`allChat/chat${this.uid}`);
       await messagesRef.push({
-        text:
-          "Bonjour, je suis Maître Havrey, Ancien procureur de la ville de Montréal. Comment puis-je vous aider?",
+        text: polyglot.t("greetings"),
         image:
           "https://firebasestorage.googleapis.com/v0/b/photo-ticket-app.appspot.com/o/Divers%2Fmarc_avatar.png?alt=media&token=4c16fd37-f4b7-4cc7-96e8-897649d43fcf",
         user: { email: "Maître Harvey" },

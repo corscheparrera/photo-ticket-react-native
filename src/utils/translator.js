@@ -84,6 +84,12 @@ const chatContainer = {
   write: {
     en: "Write your message...",
     fr: "Écrire votre message..."
+  },
+  greetings: {
+    en:
+      "Hello, I'm Marc-Antoine Harvey, former attorney for the City of Montreal. How can I help you?",
+    fr:
+      "Bonjour, je suis Maître Harvey, ancien procureur de la ville de Montréal. Comment puis-je vous aider?"
   }
 };
 const infractionView = {
