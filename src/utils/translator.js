@@ -136,6 +136,10 @@ const login = {
   }
 };
 const signUp = {
+  register: {
+    en: "Register",
+    fr: "Enregistrer"
+  },
   createAccount: {
     en: "Create an account",
     fr: "Créez votre compte"

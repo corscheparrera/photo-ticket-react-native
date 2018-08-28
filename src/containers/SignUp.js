@@ -61,7 +61,10 @@ export default class SignUp extends React.Component {
           value={this.state.password}
         />
 
-        <ButtonPrimary onPress={this.handleSignUp} text="Enregistrer" />
+        <ButtonPrimary
+          onPress={this.handleSignUp}
+          text={polyglot.t("register")}
+        />
         <ButtonPrimary
           onPress={() => this.props.navigation.navigate("Login")}
           text={polyglot.t("alreadySign")}
