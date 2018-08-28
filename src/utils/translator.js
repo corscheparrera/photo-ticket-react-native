@@ -11,12 +11,24 @@ const Italic = props => (
 const Bold = props => (
   <Text style={{ fontWeight: "bold" }}>{props.children}</Text>
 );
-
 const H1 = props => {
   return (
     <Text
       style={{
         fontSize: 18,
+        fontWeight: "bold",
+        margin: 10
+      }}
+    >
+      {props.children}
+    </Text>
+  );
+};
+const H2 = props => {
+  return (
+    <Text
+      style={{
+        fontSize: 15,
         fontWeight: "bold",
         margin: 10
       }}
@@ -206,6 +218,137 @@ const home = {
   }
 };
 const legal = {
+  terms: {
+    en: (
+      <View>
+        <H1>{"Privacy Policy"}</H1>
+        <P>
+          {
+            "Photo-Ticket Inc. and its agents undertake not to divulge your personal data. This confidentiality agreement contains the terms and conditions to which Photo-Ticket agrees."
+          }
+        </P>
+        <H2>{"Communicate With Us"}</H2>
+        <P>
+          {
+            "Photo-Ticket is a Quebec company based in Montreal. Photo-Ticket encourages you to comment on its privacy policy at phototicketmontreal@gmail.com or 438-872-5034."
+          }
+        </P>
+        <H2>{"Personal Information"}</H2>
+        <P>
+          {
+            "By using the free services of the Photo-Ticket application, you may provide personal information. We define “personal information” as any information that may identify you. In particular, this information includes your name, address, registration number, driver’s licence number and health insurance number. Photo-Ticket is committed not to disclose any of such personal information without your express consent and to take reasonable measures to ensure confidentiality. Photo-Ticket also reserves the right to use the cookies created by the use of its platforms to improve its service and customer experience. To be able to help you, Photo-Ticket archives its data on secure web servers managed by Google. The location of these servers may be outside Canada, where the laws and authority of that country have jurisdiction. All information collected by the Photo-Ticket application is encrypted at source to ensure confidentiality. By hiring a Photo-Ticket lawyer, your information will be protected by attorney-client privilege and will not be disclosed without your express consent. The lawyer cannot use confidential information to obtain a benefit for himself or a third party."
+          }
+        </P>
+        <H2>{"Use and Protection of Your Personal Data"}</H2>
+        <P>
+          {
+            "The Photo-Ticket website and application have computer security measures protecting your information against loss, theft and unauthorized changes. Our servers use 256-bit Advanced Encryption Standard technology to protect your personal information and any information indicated on your ticket. Your financial information is held by Stripe, a company specialized in secure online payments."
+          }
+        </P>
+        <H2>{"Privacy Policy Changes"}</H2>
+        <P>
+          {
+            "Photo-Ticket reserves the right to modify its confidentiality agreement to adapt to users’ comments, legislative changes and various ethical precautions. We encourage you to regularly review our Privacy policy."
+          }
+        </P>
+        <H2>{"Withdrawal of Your Consent"}</H2>
+        <P>
+          {
+            "Subject to legal obligation, we will not disclose your personal information without your explicit permission. If you wish to consult or modify your personal information, Photo-Ticket undertakes to take reasonable means to respond to your request as soon as possible."
+          }
+        </P>
+        <H1>{"Terms and Conditions of Use"}</H1>
+        <P>
+          {
+            "Photo-Ticket Inc. is the company that administers photo-ticket.com and the Photo-Ticket application. The use of these platforms is governed by the Terms and Conditions of Use which constitute a reciprocal agreement between the company and its users. You must read the Terms and Conditions of Use before interacting with photo-ticket.com or the Photo-Ticket mobile application. Photo-Ticket reserves the right to refuse a customer or a user without specifying the reason. Photo-Ticket focuses its efforts to ensure a faithful representation of laws and regulations in force in Montreal and strives to update its content. However, Photo-Ticket cannot guarantee the content. Laws and regulations in force in Quebec are entirely available on the Government of Quebec’s web platforms. Photo-Ticket assumes no responsibility for errors or omissions in their content. The use of the Photo-Ticket application is at your own risk. Photo-Ticket Inc. and third parties involved in the creation, production and implementation of the application will not be held responsible for any direct or indirect harm related to the use of the application without having recourse to a lawyer. NO WARRANTY WILL BE GIVEN BY PHOTO-TICKET INC. AS TO THE USE OF THE INFORMATION CONTAINED IN ITS MOBILE APPLICATION. Although Photo-Ticket makes every effort to prevent such a situation, Photo-Ticket assumes no responsibility and cannot be held responsible for any damage caused by computer viruses or data loss caused by a computer attack. The content of the Photo-Ticket mobile application can only be used for non-commercial purposes. No modification, reproduction or distribution of the content is permitted without the written consent of Photo-Ticket Inc. Copyright is the exclusive property of Photo-Ticket Inc. The content of the www.photo-ticket.com website and the Photo-Ticket application is protected by the intellectual property of Photo-Ticket Inc. Any unauthorized use of Photo-Ticket’s visual material is prohibited and may lead to civil prosecution. Any use of the brand or logo is prohibited without the written consent of Photo-Ticket Inc. Any prohibited use may lead to civil prosecution. The Photo-Ticket website and application may contain web links that direct users to other web platforms. Photo-Ticket is not the administrator of these platforms and has no control over the changing content of these platforms. Photo-Ticket strives to properly guide its users but cannot be held responsible for any damage caused by an external web platform. Photo-Ticket reserves the right to change its Terms and Conditions of Use. It is your responsibility to make sure you receive and read all new policies. You are advised to read the Terms and Conditions of Use at each visit or when purchasing legal services on the website or via the Photo-Ticket application. To the extent that you do not agree with the Terms and Conditions of Use, you must no longer use the services offered by Photo-Ticket. The Photo-Ticket website and application are reserved for the exclusive use of individuals who are old enough to drive legally in Quebec (16 years old). All prices displayed on the website or in the Photo-Ticket application are in Canadian currency. The Photo-Ticket app only works with internet connection and may use your data if not connected to a Wi-Fi network. For any questions or comments regarding the Photo-Ticket policy, please contact phototicketmontreal@gmail.com."
+          }
+        </P>
+      </View>
+    ),
+    fr: (
+      <View>
+        <H1>{"Politique de confidentialité"}</H1>
+        <P>
+          {
+            "Photo-Ticket inc. et ses mandataires s’engagent à ne pas divulguer vos données personnelles. Cette entente de confidentialité contient les modalités que respecte Photo-Ticket."
+          }
+        </P>
+        <H2>{"Communiquez avec nous"}</H2>
+        <P>
+          {
+            "Photo-Ticket est une entreprise québécoise située à Montréal. Photo-Ticket vous encourage à donner vos commentaires sur sa politique de confidentialité à info@photo-ticket.com ou au 438 872-5034."
+          }
+        </P>
+        <H2>{"Renseignements personnels"}</H2>
+        <P>
+          {
+            "En utilisant les services gratuits de l’application Photo-Ticket, vous risquez de fournir des renseignements personnels. Nous définissons « renseignements personnels » comme tout renseignement susceptible de vous identifier. Notamment, ceux-ci comprennent votre nom, adresse, numéro d’immatriculation, numéro de permis de conduire et numéro d’assurance maladie. Photo-Ticket s’engage à ne divulguer aucune de ces informations personnelles sans votre consentement explicite et à prendre les moyens raisonnables pour en assurer la confidentialité. Photo-Ticket se réserve également le droit d’utiliser les cookies (témoins de connexion) créés par l’utilisation de ses plateformes pour améliorer son service et l’expérience client. Pour être en mesure de vous aider, Photo-Ticket archive ses données sur des serveurs informatiques sécurisés par l’entreprise Google. L’emplacement de ces serveurs peut être à l’extérieur du Canada, là où les lois et l’autorité de ce pays ont juridiction. Toute l’information recueillie par l’application Photo-Ticket est cryptée à la source pour en assurer la confidentialité. En mandatant un avocat de Photo-Ticket, vos informations seront protégées par le secret professionnel et ne pourront être divulguées sans votre consentement explicite. L’avocat ne peut pas faire usage d’un renseignement confidentiel en vue d’obtenir un avantage pour lui-même ou pour un tiers."
+          }
+        </P>
+        <H2>{"Usage et protection de vos données personnelles"}</H2>
+        <P>
+          {
+            "Le site web et l’application Photo-Ticket protègent vos informations contre les pertes, les vols et les modifications non autorisées grâce à des mesures de sécurité informatique. Nos serveurs utilisent la technologie 256-bit Advanced Encryption Standard pour protéger vos renseignements personnels et toute donnée apparaissant sur votre contravention. Vos données financières sont détenues par Stripe, une entreprise spécialisée dans les paiements en ligne sécurisés."
+          }
+        </P>
+        <H2>{"Changements à la politique de confidentialité"}</H2>
+        <P>
+          {
+            "Photo-Ticket se réserve le droit de modifier son entente de confidentialité pour s’adapter aux commentaires des usagers, aux modifications législatives et aux diverses précautions déontologiques. Nous vous encourageons à prendre régulièrement connaissance de nos ententes de confidentialité."
+          }
+        </P>
+        <H2>{"Retrait de votre consentement"}</H2>
+        <P>
+          {
+            "Sous réserve d’une obligation légale, nous ne divulguerons pas vos renseignements personnels sans votre autorisation explicite. Si vouS désirez consulter ou modifier vos renseignements, Photo-Ticket s’engage à prendre les moyens raisonnables pour répondre à vos demandes dans les plus brefs délais."
+          }
+        </P>
+        <H1>{"Conditions et règles d’utilisation"}</H1>
+        <P>
+          {
+            "Photo-Ticket inc. est l’entreprise qui administre le site photo-ticket.com et l’application Photo-Ticket. L’utilisation de ces plateformes est régie par des conditions et des règles d’utilisation qui constituent une entente réciproque entre l’entreprise et ses utilisateurs. Vous devez prendre connaissance des Conditions et règles d’utilisation avant toute interaction avec photo-ticket.com ou l’application mobile Photo-Ticket. Photo-Ticket se réserve le droit de refuser un client ou un utilisateur sans en préciser la raison. Photo-Ticket concentre ses efforts pour assurer une représentation fidèle des lois et des règlements en vigueur à Montréal et s’efforce de mettre à jour son contenu. Cependant, Photo-Ticket ne peut assurer aucune garantie quant à son contenu. Les lois et les règlements en vigueur au Québec sont disponibles en intégralité sur les plateformes web du gouvernement du Québec. Photo-Ticket n’assume aucune responsabilité quant aux erreurs ou aux omissions dans leur contenu. L’utilisation de l’application Photo-Ticket est à vos risques. Photo-Ticket inc. et les tiers participant à la création, à la production et à la mise en œuvre de l’application ne sauraient être tenus responsables de tout préjudice direct ou indirect lié à l’utilisation de l’application sans avoir fait appel à un avocat. AUCUNE GARANTIE NE SERA DONNÉE PAR PHOTO-TICKET INC. QUANT À L’UTILISATION DE L’INFORMATION CONTENUE DANS SON APPLICATION MOBILE. Bien que Photo-Ticket s’assure de faire le nécessaire pour prévenir une telle situation, Photo-Ticket n’assume aucune responsabilité et ne saurait être tenue responsable de tout dommage causé par des virus informatiques ou des pertes de données causées par une attaque informatique externe. Le contenu de l’application mobile Photo-Ticket ne peut qu’être utilisé à des fins non commerciales. Aucune modification, reproduction ou diffusion du contenu de l’application Photo-Ticket n’est permise sans le consentement écrit de Photo-Ticket inc. Les droits d’auteur sont la propriété exclusive de Photo-Ticket inc. Le contenu du site web photo-ticket.com et de l’application Photo-Ticket est protégé par la propriété intellectuelle de Photo-Ticket inc. Tout usage non autorisé du matériel visuel de Photo-Ticket est interdit et pourrait mener à des poursuites civiles. Tout usage de la marque ou du logo est interdit sans l’accord écrit de Photo-Ticket inc. Tout usage interdit pourrait mener à des poursuites civiles. Le site web et l’application Photo-Ticket peuvent contenir des liens dirigeant les utilisateurs vers d’autres plateformes web. Photo-Ticket n’est pas l’administrateur de ces plateformes et ne possède aucun contrôle quant au contenu changeant de celles-ci. Photo-Ticket s’efforce de guider correctement ses utilisateurs, mais ne saurait être tenue responsable de tout préjudice causé par une plateforme web externe. Photo-Ticket se réserve le droit de changer ses Conditions et règles d’utilisation. Il est de votre responsabilité de veiller à la réception et à la lecture des nouvelles politiques. Il vous est recommandé de lire les Conditions et règles d’utilisation à chaque visite ou lors de l’achat de services juridiques sur le site web ou dans l’application Photo-Ticket. Dans la mesure où vous n’êtes pas d’accord avec les Conditions et règles d’utilisation, vous ne devez plus utiliser les services offerts par Photo-Ticket. Le site web et l’application Photo-Ticket sont réservés à l’usage exclusif des individus ayant l’âge légal de conduire au Québec (16 ans). Tous les prix affichés sur le site web ou dans l’application Photo-Ticket sont en devise canadienne. L’application Photo-Ticket ne fonctionne qu’avec une connexion internet et peut utiliser vos données mobiles si votre appareil n’est pas connecté à un réseau Wi-Fi. Pour toute question ou commentaire quant à la politique de Photo-Ticket, veuillez nous écrire à l’adresse suivante : info@photo-ticket.com."
+          }
+        </P>
+      </View>
+    )
+  },
+  checkbox1: {
+    en:
+      "I understand that the information presented in the Photo-Ticket application is not exhaustive and that the interpretation of laws and regulations is the sole responsibility of the courts.",
+    fr:
+      "Je comprends que l’information présentée dans l’application Photo-Ticket n’est pas exhaustive et que l’interprétation des lois et des règlements revient exclusivement aux tribunaux."
+  },
+  checkbox2: {
+    en:
+      "I understand that the information contained in the Photo-Ticket application is only informative and cannot be perceived as legal advice in my specific case.",
+    fr:
+      "Je comprends que l’information contenue dans l’application Photo-Ticket est seulement de nature informative et ne saurait être perçue comme des conseils juridiques s’appliquant à mon cas particulier."
+  },
+  checkbox3: {
+    en:
+      "I understand that Photo-Ticket contains no legal defence and that its sole purpose is for the general understanding of the alleged offence. Only a lawyer can guide me before taking the appropriate legal action.",
+    fr:
+      "Je comprends que Photo-Ticket ne présente aucune défense et que son utilisation ne devrait servir qu’à la compréhension générale de l’infraction reprochée. Seul un avocat peut me guider avant d’entreprendre le recours judiciaire approprié."
+  },
+  checkbox4: {
+    en:
+      "I understand that the technology used in the Photo-Ticket application is not infallible and that it is my responsibility to ensure that the information provided corresponds in fact to the section of law listed in the Part C of my statement of offence.",
+    fr:
+      "Je comprends que la technologie utilisée dans l’application Photo-Ticket n’est pas infaillible et qu’il est de ma responsabilité de m’assurer que l’information qui m’est présentée correspond réellement à l’article de loi inscrit à la partie C de ma contravention."
+  },
+  checkbox5: {
+    en:
+      "I understand that the information in bold is only a summary of the elements contained in the law and that it is my responsibility to always read the original legislation.",
+    fr:
+      "Je comprends que l’information en gras n’est qu’un résumé des éléments contenus dans la loi et qu’il est de ma responsabilité de toujours prendre connaissance du texte de loi original."
+  },
+  checkbox6: {
+    en:
+      "I have read the full text of the Privacy Policy and Terms and Conditions of Use. I agree to comply with them.",
+    fr:
+      "J’ai pris connaissance de l’intégralité de la Politique de confidentialité et des Conditions et règles d’utilisation. J’accepte de les respecter."
+  },
+
   titleLegal: {
     en: "Legal Terms",
     fr: "Mentions légales"
