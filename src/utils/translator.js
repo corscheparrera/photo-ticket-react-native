@@ -661,7 +661,7 @@ const manualInput = {
   findArt: {
     en: "Locate the number of the article (art.) and the law on your ticket.",
     fr:
-      "Repérez le numéro de l'article (art.) et la loi visée sur votre constant d'infraction."
+      "Repérez le numéro de l'article (art.) et la loi visée sur votre constat d'infraction."
   },
   next: {
     en: "Next",
@@ -703,7 +703,7 @@ const articleConfirmation = {
   },
   isItRightPt2: {
     en: "appears on your ticket?",
-    fr: "sur votre constant d'infraction?"
+    fr: "sur votre constat d'infraction?"
   },
   yesContinue: {
     en: "Yes, continue.",
