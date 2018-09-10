@@ -25,32 +25,6 @@ class BackendChat {
       });
     }
   };
-  preventColdStart = () => {
-    let messagesRef = firebase.database().ref(`allChat/chat${this.uid}`);
-    let newRef = this.pushSomething(messagesRef);
-    this.removeItem(newRef);
-  };
-  pushSomething = ref => {
-    // Let's push something. push() returns a reference that you can hold onto!
-    var justPushed = ref.push({
-      text: "",
-      user: { email: "Maître Harvey" }
-    });
-    // We return a reference, but you can also return the name of the newly
-    // created object with .name().
-    return justPushed;
-  };
-
-  removeItem = ref => {
-    // Now we can get back to that item we just pushed via .child().
-    ref.remove(error => {
-      console.log(
-        error
-          ? "Uh oh, cold start prevention failed!"
-          : "Success, cold start prevention worked!"
-      );
-    });
-  };
 
   setUid(value) {
     this.uid = value;
@@ -84,9 +58,10 @@ class BackendChat {
     };
     messagesRef.limitToLast(20).on("child_added", onReceive);
   }
+
   async notifyLawyer() {
     try {
-      const chatID = this.getUid();
+      const chatID = this.uid;
       await axios.post("/send-email", {
         id: chatID
       });
@@ -94,29 +69,33 @@ class BackendChat {
       console.log(error);
     }
   }
+
   // send the message to the Backend
   async sendMessage(message) {
-    const uid = await this.getUid();
-    await this.notifyLawyer(uid);
+    console.log("sendMessage1");
     let messagesRef = firebase.database().ref(`allChat/chat${this.uid}`);
+    console.log("sendMessage2");
     let usersRef = firebase.database().ref(`allUsers/${this.uid}`);
+    console.log("sendMessage3");
     for (let i = 0; i < message.length; i++) {
       await messagesRef.push({
         text: message[i].text,
         user: message[i].user,
         createdAt: firebase.database.ServerValue.TIMESTAMP
       });
+      console.log("sendMessage4");
       await usersRef.update({
         lastOnline: firebase.database.ServerValue.TIMESTAMP
       });
     }
+    this.notifyLawyer(this.uid);
   }
 
   // close the connection to the backend
   closeChat() {
     let messagesRef = firebase.database().ref("chat");
-    if (this.messagesRef) {
-      this.messagesRef.off();
+    if (messagesRef) {
+      messagesRef.off();
     }
   }
 }

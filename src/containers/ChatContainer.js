@@ -18,7 +18,6 @@ export default class ChatContainer extends Component {
   componentWillMount() {
     // this.startChat();
     BackendChat.greeting();
-    BackendChat.preventColdStart();
   }
   startChat = async () => {
     try {

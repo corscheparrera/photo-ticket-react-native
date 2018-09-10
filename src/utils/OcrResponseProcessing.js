@@ -81,14 +81,14 @@ articlesAreMatching = (input, article) => {
 getInfractionInfos = (arr, input, lang) => {
   let matchArticle;
   console.log("arr", arr);
-  arr.forEach(obj => {
+  arr.some(obj => {
     console.log("obj", obj);
     for (let key in obj) {
       if (obj.hasOwnProperty(key)) {
         let article = obj[key];
         if (articlesAreMatching(input, article)) {
           matchArticle = article[lang];
-          // return true;
+          return true;
         }
       }
     }

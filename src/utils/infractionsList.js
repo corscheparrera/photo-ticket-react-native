@@ -19008,7 +19008,8 @@ export const infractionsArray = [
     RM_1333,
     RRVM_B3
   ];
-  export const infractionsFlatArray = [
+
+  export const infractionsFlatArray = {
     ...CSR,
     ...RRVM_C41,
     ...RM_878,
@@ -19026,5 +19027,5 @@ export const infractionsArray = [
     ...RCG10_009,
     ...RM_1333,
     ...RRVM_B3
-  ];
+  };
   
